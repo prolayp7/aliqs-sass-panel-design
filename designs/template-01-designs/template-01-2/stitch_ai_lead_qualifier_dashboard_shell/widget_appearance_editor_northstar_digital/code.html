@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#e1e3ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#79fbc8", "on-background": "#171c25", "surface-container-high": "#e5e8f5", "secondary": "#5f5e5e", "on-primary": "#ffffff", "tertiary": "#005940", "outline-variant": "#c4c5d9", "tertiary-fixed": "#77fac7", "primary-fixed-dim": "#bac3ff", "on-secondary-fixed-variant": "#474646", "primary": "#0034dc", "on-primary-fixed": "#00105b", "on-surface-variant": "#444656", "secondary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#00513a", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002115", "surface-dim": "#d6dae7", "inverse-surface": "#2c303a", "outline": "#747687", "inverse-primary": "#bac3ff", "background": "#f9f9ff", "on-secondary-fixed": "#1c1b1b", "primary-container": "#3152f4", "secondary-fixed": "#e5e2e1", "surface-container-highest": "#dfe2ef", "error": "#ba1a1a", "inverse-on-surface": "#edf0fd", "secondary-container": "#e2dfde", "on-secondary-container": "#636262", "on-surface": "#171c25", "surface-container": "#eaedfb", "surface": "#f9f9ff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#002fc9", "tertiary-container": "#007454", "surface-tint": "#2649ec", "surface-variant": "#dfe2ef", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-container-low": "#f1f3ff", "tertiary-fixed-dim": "#58ddac", "on-error": "#ffffff", "primary-fixed": "#dee0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "2.5rem", "space-xl": "1.5rem", "space-sm": "0.75rem", "space-2xl": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "card-padding": "1.5rem", "space-2xs": "0.25rem", "shell-padding": "1.75rem", "gutter-grid": "1.25rem", "space-lg": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-kpi": ["Plus Jakarta Sans"], "display-kpi-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "metric-mono": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-kpi": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-kpi-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "metric-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-low font-body-md text-on-surface antialiased min-h-screen"><div class="min-h-screen p-0 md:p-6 lg:p-8 flex justify-center items-start"><div class="w-full max-w-[1440px] bg-surface-container-lowest rounded-none md:rounded-[28px] shadow-[0_16px_40px_rgba(23,28,37,0.06)] overflow-hidden flex relative min-h-[calc(100vh-4rem)]"><aside class="w-60 shrink-0 bg-surface-container-low flex flex-col justify-between p-4 overflow-y-auto"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-2 py-1"><img alt="Nova AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between cursor-pointer group"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nova AI</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-on-surface transition-colors">unfold_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Northstar Digital</span></div></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Workspace</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-xl transition-colors bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inbox" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-lg text-label-lg">Inbox</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Leads</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-label-lg text-label-lg">Follow-ups</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Agent</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-lg text-label-lg">Qualification</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-lg text-label-lg">Knowledge Base</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-label-lg text-label-lg">Websites &amp; Widget</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-lg text-label-lg">Analytics</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-lg text-label-lg">Integrations</span></a></nav></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Administration</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Team</span></a><a class="flex items-center justify-between px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-label-lg text-label-lg">Billing &amp; Usage</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div></div><div class="flex flex-col gap-3 mt-6 pt-4"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-label-lg text-label-lg">Help &amp; Support</span></a><div class="p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(20,25,40,0.03)] flex flex-col gap-2.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Starter Plan</span><span class="font-label-sm text-label-sm text-tertiary font-bold">Active</span></div><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">742 / 1,000</span><span class="font-label-sm text-label-sm">74%</span></div><div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">Monthly AI conversations</span></div><a class="mt-1 w-full py-1.5 px-3 bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md rounded-lg text-center transition-colors" data-path="billing-and-usage" href="#">Upgrade Plan</a></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest"><header class="h-16 px-6 lg:px-8 bg-surface-container-lowest flex items-center justify-between shrink-0 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-10"><div class="flex items-center gap-4 flex-1"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full cursor-pointer"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-tertiary/20"></span><span class="font-label-md text-label-md text-on-surface">northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="relative max-w-md w-full hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search leads, chats, workflows..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-4"><button class="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_4px_12px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Create</span></button><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Maya Singh</span><span class="font-body-sm text-body-sm text-on-surface-variant">Product Lead</span></div></div></div></header><main class="flex-1 p-6 lg:p-shell-padding overflow-y-auto bg-surface-container-lowest"><div class="flex flex-col w-full">
+<script>
+    (function () {
+      const activeClasses = [
+        'bg-primary-container',
+        'text-on-primary',
+        'font-bold',
+        'shadow-[0_4px_12px_rgba(49,82,244,0.3)]'
+      ];
+      const inactiveClasses = [
+        'text-on-surface-variant',
+        'hover:bg-surface-container-high',
+        'hover:text-on-surface'
+      ];
+
+      const navLinks = document.querySelectorAll('aside nav a[data-path]');
+      navLinks.forEach((link) => {
+        const path = link.getAttribute('data-path');
+        if (path === 'websites-and-widget') {
+          link.classList.remove(...inactiveClasses);
+          link.classList.add(...activeClasses);
+        } else {
+          link.classList.remove(...activeClasses);
+          link.classList.add(...inactiveClasses);
+        }
+      });
+    })();
+  </script>
+<!-- Breadcrumbs & Status Bar -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-4">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="hover:text-on-surface cursor-pointer">Websites &amp; Widget</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 bg-surface-container-low rounded-full font-label-md text-label-md text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>northstardigital.com</span>
+</div>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Widget Editor</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-high rounded-full font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+<span class="font-semibold text-on-surface">Live v2.4</span>
+<span class="text-on-surface-variant/70">(Modified Draft)</span>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm hidden md:inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">cloud_done</span>
+        Auto-saved 1m ago
+      </span>
+</div>
+</div>
+<!-- Page Header & Main Controls -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pb-6">
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Widget Appearance &amp; Editor</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+        Customize Nova's visual identity, launcher trigger, welcoming conversation starter, and position for northstardigital.com.
+      </p>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center flex-wrap gap-2.5">
+<!-- Device Switcher -->
+<div class="flex items-center p-1 bg-surface-container-low rounded-xl">
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-lowest text-on-surface rounded-lg font-label-md text-label-md shadow-sm transition-all" id="view-desktop-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">desktop_windows</span>
+<span>Desktop</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 text-on-surface-variant hover:text-on-surface rounded-lg font-label-md text-label-md transition-all" id="view-mobile-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">smartphone</span>
+<span>Mobile</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 px-3.5 py-2 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-xl transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Draft</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-xl transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span class="hidden sm:inline">Preview on Site</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 bg-gradient-to-r from-[#4766FF] to-primary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-[0_8px_20px_rgba(49,82,244,0.28)] hover:opacity-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Publish Changes</span>
+</button>
+</div>
+</div>
+<!-- Studio Main 2-Column Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6 items-start">
+<!-- LEFT PANEL: Configuration & Settings Inspector -->
+<div class="xl:col-span-5 flex flex-col bg-surface-container-lowest rounded-2xl shadow-[0_10px_30px_rgba(20,25,40,0.04)] overflow-hidden">
+<!-- Inspector Tabs -->
+<div class="flex items-center px-4 pt-3 bg-surface-container-low gap-1 overflow-x-auto">
+<button class="flex items-center gap-1.5 px-3 py-2.5 text-primary-container font-label-lg text-label-lg font-bold relative shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+<span>Appearance</span>
+<span class="absolute bottom-0 left-2 right-2 h-0.5 bg-primary-container rounded-full"></span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2.5 text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">waving_hand</span>
+<span>Welcome</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2.5 text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">touch_app</span>
+<span>Launcher</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2.5 text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">dock_to_right</span>
+<span>Position</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2.5 text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Branding</span>
+</button>
+</div>
+<!-- Settings Accordion / Stack -->
+<div class="p-5 flex flex-col gap-6 max-h-[820px] overflow-y-auto">
+<!-- SECTION 1: Agent Identity & Avatar -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container">smart_toy</span>
+              Agent Identity &amp; Persona
+            </span>
+<span class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed/30 px-2 py-0.5 rounded-full font-bold">Synchronized</span>
+</div>
+<div class="p-4 bg-surface-container-low rounded-xl flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<!-- Avatar Display -->
+<div class="relative w-14 h-14 rounded-full bg-gradient-to-tr from-primary-container to-primary-fixed-dim flex items-center justify-center text-on-primary shadow-md shrink-0">
+<span class="material-symbols-outlined text-[28px]">auto_awesome</span>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-tertiary-fixed-dim rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col gap-1.5 flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-lg shadow-sm transition-all" type="button">
+                    Change Logo
+                  </button>
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-error font-label-sm text-label-sm transition-all" type="button">
+                    Reset
+                  </button>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recommended SVG or 256×256 PNG. Transparent background.</span>
+</div>
+</div>
+<!-- Agent Name & Subtitle Inputs -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Agent Name</label>
+<div class="relative">
+<input class="w-full h-10 px-3 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="input-agent-name" type="text" value="Nova"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Badge Tagline</label>
+<div class="relative">
+<input class="w-full h-10 px-3 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="input-agent-tagline" type="text" value="Autonomous Lead Assistant"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Color & Theme -->
+<div class="flex flex-col gap-3">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container">format_color_fill</span>
+            Theme &amp; Accent Palette
+          </span>
+<div class="p-4 bg-surface-container-low rounded-xl flex flex-col gap-4">
+<!-- Color Selection -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Primary Accent Color</span>
+<span class="font-metric-mono text-metric-mono text-on-surface-variant">#3152F4</span>
+</div>
+<div class="flex items-center gap-2.5">
+<!-- Electric Cobalt Preset (Active) -->
+<button class="w-8 h-8 rounded-full bg-[#3152F4] flex items-center justify-center text-white shadow-[0_2px_8px_rgba(49,82,244,0.4)] ring-2 ring-primary-container ring-offset-2 ring-offset-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<!-- Indigo -->
+<button class="w-8 h-8 rounded-full bg-[#4F46E5] hover:opacity-90" type="button"></button>
+<!-- Emerald -->
+<button class="w-8 h-8 rounded-full bg-[#005940] hover:opacity-90" type="button"></button>
+<!-- Charcoal -->
+<button class="w-8 h-8 rounded-full bg-[#1F2937] hover:opacity-90" type="button"></button>
+<!-- Slate -->
+<button class="w-8 h-8 rounded-full bg-[#444656] hover:opacity-90" type="button"></button>
+<!-- Custom Hex Input -->
+<div class="flex items-center gap-1.5 px-2 py-1 bg-surface-container-lowest rounded-lg ml-auto">
+<span class="font-body-sm text-body-sm text-on-surface-variant">#</span>
+<input class="w-16 font-metric-mono text-metric-mono text-on-surface bg-transparent focus:outline-none" type="text" value="3152F4"/>
+<span class="w-4 h-4 rounded bg-primary-container"></span>
+</div>
+</div>
+</div>
+<!-- Widget Appearance Theme -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-md text-label-md text-on-surface">Surface Appearance</span>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex items-center gap-2.5 p-2.5 bg-surface-container-lowest rounded-xl shadow-sm cursor-pointer ring-2 ring-primary-container">
+<span class="material-symbols-outlined text-[20px] text-primary-container">light_mode</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Light Mode</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Clean high-contrast</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 bg-surface-container-lowest/60 hover:bg-surface-container-lowest rounded-xl cursor-pointer transition-all">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">dark_mode</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dark Mode</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">OLED slate &amp; deep</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Header Style Choice -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-md text-label-md text-on-surface">Chat Header Style</span>
+<div class="grid grid-cols-3 gap-2">
+<div class="flex flex-col gap-1 p-2 bg-surface-container-lowest rounded-lg ring-2 ring-primary-container cursor-pointer">
+<div class="h-3 w-full rounded bg-surface-container-high"></div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center mt-1">Minimal White</span>
+</div>
+<div class="flex flex-col gap-1 p-2 bg-surface-container-lowest/70 hover:bg-surface-container-lowest rounded-lg cursor-pointer">
+<div class="h-3 w-full rounded bg-primary-container"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-center mt-1">Cobalt Solid</span>
+</div>
+<div class="flex flex-col gap-1 p-2 bg-surface-container-lowest/70 hover:bg-surface-container-lowest rounded-lg cursor-pointer">
+<div class="h-3 w-full rounded bg-surface-container-high/60 backdrop-blur-sm"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-center mt-1">Frosted Glass</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Shape & Styling -->
+<div class="flex flex-col gap-3">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container">rounded_corner</span>
+            Geometry &amp; Elevation
+          </span>
+<div class="p-4 bg-surface-container-low rounded-xl flex flex-col gap-4">
+<!-- Border Radius -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Corner Curvature</span>
+<span class="font-label-sm text-label-sm text-primary-container font-bold">16px (Rounded)</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-1.5 text-center rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">
+                  Sharp (8px)
+                </button>
+<button class="py-1.5 text-center rounded-xl bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm" type="button">
+                  Rounded (16px)
+                </button>
+<button class="py-1.5 text-center rounded-2xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">
+                  Soft (24px)
+                </button>
+</div>
+</div>
+<!-- Shadow Elevation -->
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-md text-label-md text-on-surface">Ambient Shadow Elevation</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-1.5 text-center rounded-lg bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm" type="button">
+                  Subtle (10px)
+                </button>
+<button class="py-1.5 text-center rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm font-semibold" type="button">
+                  Elevated (30px)
+                </button>
+<button class="py-1.5 text-center rounded-lg bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm" type="button">
+                  Deep Focus
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Launcher Configuration -->
+<div class="flex flex-col gap-3">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container">ads_click</span>
+            Launcher Button Configuration
+          </span>
+<div class="p-4 bg-surface-container-low rounded-xl flex flex-col gap-4">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface">Button Format</label>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex items-center gap-2 p-2.5 bg-surface-container-lowest/60 hover:bg-surface-container-lowest rounded-xl cursor-pointer">
+<div class="w-7 h-7 rounded-full bg-primary-container text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Icon Only (Circle)</span>
+</div>
+<div class="flex items-center gap-2 p-2.5 bg-surface-container-lowest rounded-xl cursor-pointer ring-2 ring-primary-container shadow-sm">
+<div class="px-2 py-1 rounded-full bg-primary-container text-white font-label-sm text-label-sm flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>Chat</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Pill with Text</span>
+</div>
+</div>
+</div>
+<!-- Launcher Text Input -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Button Label</label>
+<input class="w-full h-10 px-3 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="input-launcher-text" type="text" value="Chat with Nova ✨"/>
+</div>
+<!-- Position Alignment -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Screen Alignment</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Default anchor position</span>
+</div>
+<div class="flex items-center gap-1 p-1 bg-surface-container-lowest rounded-lg">
+<button class="px-3 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">
+                  Bottom Left
+                </button>
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-sm" type="button">
+                  Bottom Right
+                </button>
+</div>
+</div>
+<!-- Spacing Offsets -->
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bottom Offset</span>
+<div class="flex items-center px-3 py-1.5 bg-surface-container-lowest rounded-lg">
+<input class="w-full font-metric-mono text-metric-mono text-on-surface bg-transparent focus:outline-none" type="number" value="24"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">px</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Side Offset</span>
+<div class="flex items-center px-3 py-1.5 bg-surface-container-lowest rounded-lg">
+<input class="w-full font-metric-mono text-metric-mono text-on-surface bg-transparent focus:outline-none" type="number" value="24"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">px</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 5: White-Labeling & Branding -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container">verified</span>
+              White-label &amp; Attribution
+            </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold">
+              STARTER PLAN
+            </span>
+</div>
+<div class="p-4 bg-surface-container-low rounded-xl flex flex-col gap-3">
+<div class="flex items-center justify-between opacity-80">
+<div class="flex flex-col pr-4">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+                  Remove "Powered by Nova AI"
+                  <span class="material-symbols-outlined text-[16px] text-outline">lock</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hides credit links and security trust badge from footer</span>
+</div>
+<!-- Locked Switch -->
+<div class="w-11 h-6 bg-surface-container-high rounded-full p-0.5 cursor-not-allowed flex items-center">
+<div class="w-5 h-5 rounded-full bg-outline-variant shadow-sm"></div>
+</div>
+</div>
+<!-- Upsell Banner Box -->
+<div class="p-3 bg-gradient-to-br from-primary-fixed/30 to-surface-container-lowest rounded-xl flex items-start gap-3 mt-1">
+<span class="material-symbols-outlined text-[20px] text-primary-container shrink-0 mt-0.5">workspace_premium</span>
+<div class="flex flex-col gap-1 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Unlock 100% White-Label Experience</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+                  Upgrade to Pro or Enterprise to remove Nova branding, connect custom subdomains, and inject custom CSS variables.
+                </p>
+<a class="font-label-sm text-label-sm text-primary-container font-bold hover:underline inline-flex items-center gap-1 mt-1" href="#">
+                  Compare Pro tiers <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Interactive Live Browser Preview Canvas -->
+<div class="xl:col-span-7 flex flex-col gap-3">
+<!-- Canvas Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-3 px-4 py-2.5 bg-surface-container-low rounded-2xl">
+<div class="flex items-center gap-2 flex-1 max-w-md">
+<span class="material-symbols-outlined text-[18px] text-tertiary">lock</span>
+<span class="font-metric-mono text-metric-mono text-on-surface truncate">https://northstardigital.com</span>
+<button class="p-1 hover:bg-surface-container-high rounded-full text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+</button>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline">Desktop Canvas (1440×900) • 100%</span>
+<button class="flex items-center gap-1 px-2.5 py-1 bg-surface-container-lowest hover:bg-surface-container-high text-on-surface rounded-lg font-label-sm text-label-sm shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset Chat</span>
+</button>
+</div>
+</div>
+<!-- Browser Frame & Mock Website Container -->
+<div class="relative w-full bg-surface-container-lowest rounded-2xl shadow-[0_20px_48px_rgba(23,28,37,0.08)] overflow-hidden flex flex-col min-h-[760px]">
+<!-- macOS Chrome Topbar -->
+<div class="h-10 px-4 bg-[#F5F6FA] flex items-center justify-between select-none">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#FF5F56]"></span>
+<span class="w-3 h-3 rounded-full bg-[#FFBD2E]"></span>
+<span class="w-3 h-3 rounded-full bg-[#27C93F]"></span>
+</div>
+<div class="flex items-center justify-center gap-2 px-6 py-1 bg-white rounded-md shadow-xs text-on-surface-variant font-body-sm text-body-sm max-w-sm w-full">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span class="truncate font-metric-mono text-[12px]">northstardigital.com/enterprise</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</div>
+</div>
+<!-- Simulated Website Viewport -->
+<div class="relative flex-1 bg-gradient-to-b from-surface-container-lowest via-surface-bright to-surface-container-low overflow-hidden flex flex-col">
+<!-- Mock Website Header -->
+<nav class="h-14 px-8 flex items-center justify-between bg-surface-container-lowest/80 backdrop-blur-md">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-on-surface flex items-center justify-center text-surface">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</div>
+<span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">Northstar Digital</span>
+</div>
+<div class="hidden md:flex items-center gap-6 font-label-md text-label-md text-on-surface-variant">
+<span class="text-on-surface font-semibold cursor-pointer">Solutions</span>
+<span class="hover:text-on-surface cursor-pointer">Platform</span>
+<span class="hover:text-on-surface cursor-pointer">Case Studies</span>
+<span class="hover:text-on-surface cursor-pointer">Pricing</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md text-on-surface hidden sm:block">Sign In</span>
+<span class="px-3.5 py-1.5 rounded-full bg-on-surface text-surface font-label-md text-label-md">Book Demo</span>
+</div>
+</nav>
+<!-- Mock Website Hero -->
+<div class="px-8 pt-12 pb-16 max-w-2xl flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              Autonomous Inbound Sales 2.0
+            </div>
+<h2 class="font-headline-lg text-[34px] leading-tight text-on-surface font-extrabold tracking-tight">
+              Scale Inbound Velocity with Autonomous AI Qualified Pipelines.
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Northstar integrates instant high-intent conversational qualification directly onto your enterprise web pages. Convert qualified leads in seconds.
+            </p>
+<div class="flex items-center gap-3 pt-2">
+<button class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md" type="button">
+                Start Enterprise Pilot
+              </button>
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg" type="button">
+                View Architecture
+              </button>
+</div>
+<!-- Customer Trust Logos -->
+<div class="pt-8 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Trusted by growth-stage leaders</span>
+<div class="flex items-center gap-6 opacity-60">
+<span class="font-headline-sm text-headline-sm font-extrabold tracking-tighter">OCTANE</span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight">VERITAS</span>
+<span class="font-headline-sm text-headline-sm font-semibold">LUMEN</span>
+<span class="font-headline-sm text-headline-sm font-black tracking-wider">HYPERION</span>
+</div>
+</div>
+</div>
+<!-- MOCK FLOATING WIDGET (Bottom Right Placement) -->
+<div class="absolute bottom-6 right-6 flex flex-col items-end gap-3 z-30 pointer-events-auto">
+<!-- Open Chat Dialog Window -->
+<div class="w-[375px] max-w-[calc(100vw-3rem)] bg-surface-container-lowest rounded-2xl shadow-[0_24px_50px_rgba(20,25,40,0.18)] overflow-hidden flex flex-col transition-all" id="preview-widget-card">
+<!-- Widget Header -->
+<div class="px-4 py-3.5 bg-surface-container-lowest flex items-center justify-between shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full bg-gradient-to-tr from-primary-container to-primary-fixed-dim flex items-center justify-center text-on-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-tertiary-fixed-dim rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate" id="preview-agent-name">Nova</span>
+<span class="material-symbols-outlined text-[15px] text-primary-container">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate" id="preview-agent-tagline">Autonomous Lead Assistant</span>
+</div>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" title="Refresh chat" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+<button class="p-1 hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" title="Sound notifications" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<button class="p-1 hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" title="Minimize" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Status Notification Bar -->
+<div class="px-4 py-1.5 bg-surface-container-low flex items-center justify-between text-on-surface-variant font-body-sm text-[11px]">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Active now • Typically replies in 1.2s
+                </span>
+<span class="text-on-surface-variant/70">Encrypted</span>
+</div>
+<!-- Conversation Flow Area -->
+<div class="p-4 flex flex-col gap-3.5 max-h-[340px] overflow-y-auto bg-surface-bright/50">
+<div class="flex justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 bg-surface-container-high/60 px-2.5 py-0.5 rounded-full">
+                    Today 10:42 AM
+                  </span>
+</div>
+<!-- Nova Welcome Bubble -->
+<div class="flex items-start gap-2.5">
+<div class="w-7 h-7 rounded-full bg-primary-container text-white flex items-center justify-center shrink-0 mt-0.5 text-xs shadow-xs">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+</div>
+<div class="flex flex-col gap-1 max-w-[85%]">
+<div class="p-3.5 bg-surface-container-lowest text-on-surface rounded-2xl rounded-tl-sm shadow-[0_4px_14px_rgba(20,25,40,0.04)] font-body-sm text-body-sm leading-relaxed">
+                      👋 Hi there! I'm Nova from Northstar Digital. Are you looking to accelerate your enterprise sales pipeline with AI workflows, or exploring custom CRM integrations today?
+                    </div>
+</div>
+</div>
+<!-- Quick Action Starter Chips -->
+<div class="flex flex-col gap-1.5 pl-9">
+<button class="text-left px-3 py-2 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md shadow-xs transition-all flex items-center justify-between group" type="button">
+<span class="truncate">✨ Explore AI Automation Sprints</span>
+<span class="material-symbols-outlined text-[16px] text-primary-container opacity-0 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</button>
+<button class="text-left px-3 py-2 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md shadow-xs transition-all flex items-center justify-between group" type="button">
+<span class="truncate">💼 View Retainer Pricing &amp; SLAs</span>
+<span class="material-symbols-outlined text-[16px] text-primary-container opacity-0 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</button>
+<button class="text-left px-3 py-2 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md shadow-xs transition-all flex items-center justify-between group" type="button">
+<span class="truncate">📅 Book a 15-min Discovery Call</span>
+<span class="material-symbols-outlined text-[16px] text-primary-container opacity-0 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</button>
+</div>
+<div class="pl-9">
+<span class="font-body-sm text-[11px] text-on-surface-variant/80 italic">
+                    Click an option above or type below to test qualifying questions.
+                  </span>
+</div>
+</div>
+<!-- Widget Message Composer -->
+<div class="p-3 bg-surface-container-lowest flex flex-col gap-2">
+<div class="flex items-center gap-2 px-3 py-2 bg-surface-container-low rounded-xl">
+<input class="flex-1 bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none" placeholder="Type your message or inquiry..." type="text"/>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-on-surface transition-colors" title="Attach file" type="button">
+<span class="material-symbols-outlined text-[18px]">attach_file</span>
+</button>
+<button class="p-1 hover:text-on-surface transition-colors" title="Emoji" type="button">
+<span class="material-symbols-outlined text-[18px]">mood</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center hover:opacity-95 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+<!-- Footer Attribution -->
+<div class="flex items-center justify-between px-1 text-on-surface-variant/70 font-body-sm text-[10px]">
+<span class="flex items-center gap-1 hover:text-on-surface transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[12px] text-primary-container">bolt</span>
+                    Powered by Nova AI
+                  </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[11px]">lock</span>
+                    Privacy &amp; Terms
+                  </span>
+</div>
+</div>
+</div>
+<!-- Floating Launcher Pill Trigger -->
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-[#4766FF] to-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-[0_8px_24px_rgba(49,82,244,0.35)] hover:scale-105 active:scale-95 transition-all" id="preview-launcher-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span id="preview-launcher-text">Chat with Nova ✨</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro Client-Side Interactions -->
+<script>
+    (function() {
+      const nameInput = document.getElementById('input-agent-name');
+      const taglineInput = document.getElementById('input-agent-tagline');
+      const launcherInput = document.getElementById('input-launcher-text');
+
+      const previewName = document.getElementById('preview-agent-name');
+      const previewTagline = document.getElementById('preview-agent-tagline');
+      const previewLauncherText = document.getElementById('preview-launcher-text');
+
+      if (nameInput && previewName) {
+        nameInput.addEventListener('input', (e) => {
+          previewName.textContent = e.target.value || 'Nova';
+        });
+      }
+
+      if (taglineInput && previewTagline) {
+        taglineInput.addEventListener('input', (e) => {
+          previewTagline.textContent = e.target.value || 'Autonomous Lead Assistant';
+        });
+      }
+
+      if (launcherInput && previewLauncherText) {
+        launcherInput.addEventListener('input', (e) => {
+          previewLauncherText.textContent = e.target.value || 'Chat with Nova ✨';
+        });
+      }
+
+      const desktopBtn = document.getElementById('view-desktop-btn');
+      const mobileBtn = document.getElementById('view-mobile-btn');
+      const widgetCard = document.getElementById('preview-widget-card');
+
+      if (mobileBtn && desktopBtn && widgetCard) {
+        mobileBtn.addEventListener('click', () => {
+          mobileBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          mobileBtn.classList.remove('text-on-surface-variant');
+          desktopBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          desktopBtn.classList.add('text-on-surface-variant');
+          widgetCard.classList.remove('w-[375px]');
+          widgetCard.classList.add('w-[320px]');
+        });
+
+        desktopBtn.addEventListener('click', () => {
+          desktopBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          desktopBtn.classList.remove('text-on-surface-variant');
+          mobileBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          mobileBtn.classList.add('text-on-surface-variant');
+          widgetCard.classList.remove('w-[320px]');
+          widgetCard.classList.add('w-[375px]');
+        });
+      }
+    })();
+  </script>
+</div></main></div></div></div></body></html>

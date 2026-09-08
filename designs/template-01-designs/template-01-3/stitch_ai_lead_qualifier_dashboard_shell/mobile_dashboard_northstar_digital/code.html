@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"background":"#f9f9ff","on-tertiary-fixed-variant":"#00513a","on-tertiary-container":"#79fbc8","tertiary":"#005940","on-surface-variant":"#444656","surface":"#f9f9ff","on-error-container":"#93000a","surface-bright":"#f9f9ff","primary-fixed-dim":"#bac3ff","secondary-container":"#e2dfde","surface-dim":"#d6dae7","primary-container":"#3152f4","on-secondary-container":"#636262","on-tertiary":"#ffffff","tertiary-fixed":"#77fac7","surface-container-high":"#e5e8f5","outline":"#747687","primary-fixed":"#dee0ff","on-secondary-fixed":"#1c1b1b","on-surface":"#171c25","on-tertiary-fixed":"#002115","secondary-fixed-dim":"#c8c6c5","on-secondary":"#ffffff","error":"#ba1a1a","outline-variant":"#c4c5d9","on-secondary-fixed-variant":"#474646","inverse-surface":"#2c303a","surface-tint":"#2649ec","surface-container-highest":"#dfe2ef","surface-variant":"#dfe2ef","error-container":"#ffdad6","on-primary":"#ffffff","secondary-fixed":"#e5e2e1","inverse-primary":"#bac3ff","on-primary-fixed":"#00105b","inverse-on-surface":"#edf0fd","surface-container-lowest":"#ffffff","on-error":"#ffffff","tertiary-container":"#007454","surface-container":"#eaedfb","tertiary-fixed-dim":"#58ddac","on-primary-container":"#e1e3ff","primary":"#0034dc","surface-container-low":"#f1f3ff","secondary":"#5f5e5e","on-primary-fixed-variant":"#002fc9","on-background":"#171c25"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"card-padding":"1.5rem","space-3xl":"2.5rem","space-xs":"0.5rem","gutter-grid":"1.25rem","space-2xs":"0.25rem","space-sm":"0.75rem","space-lg":"1.25rem","space-2xl":"2rem","space-md":"1rem","space-xl":"1.5rem","shell-padding":"1.75rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"metric-mono":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-kpi-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"display-kpi":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"600"}],"metric-mono":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"display-kpi-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["26px",{"lineHeight":"34px","letterSpacing":"-0.025em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"display-kpi":["38px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0 flex-1"><img alt="Modern minimalist AI Lead Qualifier logo mark, glowing cobalt-blue geometric spark and faceted crystal emblem representing calm intelligent lead scoring. Brand logo. - Primary color: #3152f4
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-2xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nova AI</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal">• Dashboard</span></div><button class="flex items-center gap-1 text-left min-w-0 text-on-surface-variant hover:text-on-surface transition-colors py-0.5"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim shrink-0"></span><span class="font-label-sm text-label-sm truncate max-w-[130px]">northstardigital.com</span><span class="material-symbols-outlined text-[16px] leading-none shrink-0">arrow_drop_down</span></button></div></div><div class="flex items-center gap-space-2xs shrink-0"><button class="relative w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 min-w-[16px] h-4 px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></button><div class="w-11 h-11 flex items-center justify-center pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_2px_6px_rgba(20,25,40,0.08)]" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 px-space-md bg-surface min-h-screen"><div class="flex flex-col w-full space-y-space-lg">
+<!-- 1. Header Context & Quick Filters -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Good morning, Maya</h1>
+<p class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+          Today, 28 Feb • Pipeline running smoothly
+        </p>
+</div>
+<button class="min-h-[44px] px-3.5 py-2 rounded-xl bg-surface-container flex items-center justify-center text-primary-container shadow-sm active:scale-95 transition-transform" title="Live Qualified Chats">
+<span class="material-symbols-outlined text-[20px] mr-1">chat_bubble</span>
+<span class="font-label-md text-label-md font-bold">4 Live</span>
+</button>
+</div>
+<!-- Date Range & Action Buttons -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+<button class="min-h-[44px] px-3.5 py-2 rounded-full bg-surface-container-lowest shadow-sm flex items-center gap-1.5 text-on-surface hover:bg-surface-container transition-colors shrink-0">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">calendar_today</span>
+<span class="font-label-md text-label-md font-semibold">Last 30 Days</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">keyboard_arrow_down</span>
+</button>
+<button class="min-h-[44px] px-3 py-2 rounded-full bg-surface-container-lowest shadow-sm flex items-center gap-1.5 text-on-surface hover:bg-surface-container transition-colors shrink-0">
+<span class="material-symbols-outlined text-[18px] text-primary-container">download</span>
+<span class="font-label-md text-label-md font-medium">Export</span>
+</button>
+<div class="ml-auto shrink-0 flex items-center gap-1 bg-surface-container rounded-full p-1">
+<button class="min-h-[36px] px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm" id="toggle-view-summary">Metrics</button>
+<button class="min-h-[36px] px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-label-sm" id="toggle-view-realtime">Live Feed</button>
+</div>
+</div>
+</div>
+<!-- 2. Horizontally Scrollable KPI Cards -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Performance Pulse</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Swipe for velocity →</span>
+</div>
+<div class="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-2 pt-0.5 -mx-space-md px-space-md no-scrollbar">
+<!-- Card 1: New Leads (Dark Anchor) -->
+<div class="snap-start shrink-0 w-[240px] rounded-[22px] p-4 bg-gradient-to-br from-[#242424] to-[#121212] text-on-primary shadow-lg flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-primary-container/20 blur-xl"></div>
+<div class="flex items-center justify-between mb-3 z-10">
+<div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center backdrop-blur-sm">
+<span class="material-symbols-outlined text-[20px] text-white">bolt</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/80 text-on-tertiary-container font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>18.4%
+          </span>
+</div>
+<div class="z-10">
+<span class="font-display-kpi-mobile text-display-kpi-mobile font-bold tracking-tight text-white block">428</span>
+<span class="font-label-md text-label-md text-neutral-300">Total Inbound Leads</span>
+</div>
+</div>
+<!-- Card 2: Qualified Leads (Luminous Card) -->
+<div class="snap-start shrink-0 w-[240px] rounded-[22px] p-4 bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px] text-primary">verified_user</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>12.1%
+          </span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-kpi-mobile text-display-kpi-mobile font-bold tracking-tight text-on-surface">267</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">62.4% rate</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Qualified Leads</span>
+</div>
+</div>
+<!-- Card 3: Hot Leads (Semantic Red Detail) -->
+<div class="snap-start shrink-0 w-[240px] rounded-[22px] p-4 bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<div class="w-9 h-9 rounded-xl bg-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px] text-error" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>8.2%
+          </span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-kpi-mobile text-display-kpi-mobile font-bold tracking-tight text-on-surface">74</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">27.7% of qual</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Hot Priority Leads</span>
+</div>
+</div>
+<!-- Card 4: Conversion Rate -->
+<div class="snap-start shrink-0 w-[240px] rounded-[22px] p-4 bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<div class="w-9 h-9 rounded-xl bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px] text-on-secondary-fixed">pie_chart</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+            Goal: 10%
+          </span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-kpi-mobile text-display-kpi-mobile font-bold tracking-tight text-on-surface">11.1%</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">+1.8%</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Pipeline Conv. Rate</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3A. Lead Qualification Overview & Trend -->
+<div class="rounded-[22px] bg-surface-container-lowest p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Qualification Trend</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Monthly velocity breakdown</span>
+</div>
+<div class="bg-surface-container-low rounded-full p-1 flex">
+<button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">W</button>
+<button class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm">M</button>
+</div>
+</div>
+<!-- Trend Highlights -->
+<div class="flex items-baseline justify-between bg-surface-container-low/60 rounded-xl p-3">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total Triage Qualified</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">267 leads</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center">
+<span class="material-symbols-outlined text-[12px] mr-0.5">arrow_upward</span>+14.2%
+          </span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">Peak: May (92 leads)</span>
+</div>
+</div>
+<!-- Chart Visualization (Inline SVG) -->
+<div class="w-full pt-2">
+<svg class="w-full h-32 overflow-visible" viewbox="0 0 320 130">
+<!-- Horizontal Gridlines -->
+<line stroke="#DFE2EF" stroke-dasharray="3 3" stroke-width="0.8" x1="0" x2="320" y1="10" y2="10"></line>
+<line stroke="#DFE2EF" stroke-dasharray="3 3" stroke-width="0.8" x1="0" x2="320" y1="50" y2="50"></line>
+<line stroke="#DFE2EF" stroke-dasharray="3 3" stroke-width="0.8" x1="0" x2="320" y1="90" y2="90"></line>
+<!-- Bars: Jan -->
+<rect fill="#DFE2EF" height="65" rx="4" width="14" x="20" y="45"></rect>
+<rect fill="#C4C5D9" height="45" rx="4" width="14" x="38" y="65"></rect>
+<!-- Bars: Feb -->
+<rect fill="#DFE2EF" height="55" rx="4" width="14" x="80" y="55"></rect>
+<rect fill="#C4C5D9" height="40" rx="4" width="14" x="98" y="70"></rect>
+<!-- Bars: Mar -->
+<rect fill="#DFE2EF" height="75" rx="4" width="14" x="140" y="35"></rect>
+<rect fill="#C4C5D9" height="58" rx="4" width="14" x="158" y="52"></rect>
+<!-- Bars: Apr -->
+<rect fill="#DFE2EF" height="80" rx="4" width="14" x="200" y="30"></rect>
+<rect fill="#C4C5D9" height="62" rx="4" width="14" x="218" y="48"></rect>
+<!-- Highlighted Month: May (Cobalt with pill tag) -->
+<rect fill="#BAC3FF" height="95" rx="4" width="14" x="260" y="15"></rect>
+<rect fill="#3152F4" height="86" rx="4" width="14" x="278" y="24"></rect>
+<!-- Active Badge Over May -->
+<rect fill="#3152F4" height="12" rx="6" width="30" x="262" y="3"></rect>
+<text fill="#FFFFFF" font-size="7" font-weight="700" text-anchor="middle" x="277" y="12">+14%</text>
+<!-- X Labels -->
+<text fill="#747687" font-family="Plus Jakarta Sans" font-size="9" text-anchor="middle" x="36" y="122">Jan</text>
+<text fill="#747687" font-family="Plus Jakarta Sans" font-size="9" text-anchor="middle" x="96" y="122">Feb</text>
+<text fill="#747687" font-family="Plus Jakarta Sans" font-size="9" text-anchor="middle" x="156" y="122">Mar</text>
+<text fill="#747687" font-family="Plus Jakarta Sans" font-size="9" text-anchor="middle" x="216" y="122">Apr</text>
+<text fill="#3152F4" font-family="Plus Jakarta Sans" font-size="9" font-weight="700" text-anchor="middle" x="276" y="122">May</text>
+</svg>
+<div class="flex items-center justify-center gap-6 mt-3 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-container-highest"></span> Total Inbound
+        </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span> AI Qualified
+        </span>
+</div>
+</div>
+</div>
+<!-- 3B. Lead Temperature Breakdown -->
+<div class="rounded-[22px] bg-surface-container-lowest p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Lead Temperature</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Distribution across 428 active leads</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">thermostat</span>
+</div>
+<!-- Visual Donut & Metrics Side by Side -->
+<div class="flex items-center justify-between gap-4 py-1">
+<!-- Donut Chart -->
+<div class="relative w-32 h-32 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background track -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#F1F3FF" stroke-width="12"></circle>
+<!-- Cold slice: 38% = 95.5 / 251.2 -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#C4C5D9" stroke-dasharray="95.5 251.2" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Warm slice: 45% = 113 / 251.2 -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#F5A524" stroke-dasharray="113 251.2" stroke-dashoffset="-95.5" stroke-width="12"></circle>
+<!-- Hot slice: 17% = 42.7 / 251.2 -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#F04452" stroke-dasharray="42.7 251.2" stroke-dashoffset="-208.5" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">428</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total</span>
+</div>
+</div>
+<!-- Segment breakdown list -->
+<div class="flex flex-col gap-2.5 flex-1 min-w-0">
+<!-- Hot item -->
+<div class="flex items-center justify-between bg-error-container/20 rounded-xl p-2 px-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Hot</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-on-surface">74</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-1">(17%)</span>
+</div>
+</div>
+<!-- Warm item -->
+<div class="flex items-center justify-between bg-surface-container-low rounded-xl p-2 px-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#F5A524]"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Warm</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-on-surface">193</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-1">(45%)</span>
+</div>
+</div>
+<!-- Cold item -->
+<div class="flex items-center justify-between bg-surface-container-low rounded-xl p-2 px-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Cold</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-on-surface">161</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-1">(38%)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3C. Recent Hot Leads -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recent Hot Leads</h2>
+<span class="min-w-[20px] h-5 px-1.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm flex items-center justify-center font-bold">74</span>
+</div>
+<a class="font-label-md text-label-md text-primary-container font-semibold flex items-center" href="#">
+        View All (74) →
+      </a>
+</div>
+<!-- Lead Card 1: Olivia Martin -->
+<div class="rounded-[20px] bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-3 transition-transform active:scale-[0.99]">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Professional studio portrait of Olivia Martin, VP of Marketing, smiling warmly with sharp corporate office bokeh in blue tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHpHxKcVZsE3u9VsU3dcWZ6J_9FoeGimwgxf6pPw4L_kIKXJBPuIx79EVck6VkjFeZYVZqHT_o9ABZxpnhTBppoCRYAlKjnvoN8zu7zjeIXgc3aBB0-mPbPeMfFahbbgVwXIz3cXb-b_eNGmD1F0f2BHjAfJbBMdi4WZLf-F-NNZiwoBPSt_q0JV85IGsoU0WSvY5Me3_JA5cVF_C9YX04N9jATMbeP7rYxzYi97G1bJAloX2D3HQ"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-tertiary-fixed-dim border-2 border-white"></span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Olivia Martin</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">VP Marketing • Apex Dynamics</p>
+</div>
+</div>
+<span class="shrink-0 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+          86 • HOT
+        </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant bg-surface-container-low px-3 py-2 rounded-xl text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Service: AI Automation</span>
+<span>Added 2h ago • Needs 30d rollout</span>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 min-h-[44px] rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span>Open Lead</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="w-11 min-h-[44px] rounded-xl bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" title="Contact via WhatsApp / Call">
+<span class="material-symbols-outlined text-[20px] text-tertiary">call</span>
+</button>
+</div>
+</div>
+<!-- Lead Card 2: Ethan Brooks -->
+<div class="rounded-[20px] bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-3 transition-transform active:scale-[0.99]">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Headshot of Ethan Brooks, Head of Growth at ScaleUp Inc, confident tech executive portrait with clean natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMRE3342St82Hm4zNX2VLXbknvjF1iOSy34LZsdNjKOxs1vW7h_Es1wWtDVXb6kl3K6OsSfXNAABSc1cmogX9TI1_H4-mjh9CM0fPLtuASXvlx40T6XPiXlejTfJT6K7IiBGv1w5TQUQB_X3op_lU8qSDgeGZUQX3h8obljcXw-8N22zZ5-evdgLBlbgNUWE4RRVACVfQSSFxSpuMMDDFA1ud9LyC9IDvu5eHRtK4Ql8yJRxRdDkk"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-tertiary-fixed-dim border-2 border-white"></span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Ethan Brooks</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Head of Growth • ScaleUp Inc</p>
+</div>
+</div>
+<span class="shrink-0 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+          82 • HOT
+        </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant bg-surface-container-low px-3 py-2 rounded-xl text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Web Development</span>
+<span>Added 4h ago • Budget €8k-12k</span>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 min-h-[44px] rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span>Open Lead</span>
+</button>
+<button class="flex-1 min-h-[44px] rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">event</span>
+<span>Schedule Call</span>
+</button>
+</div>
+</div>
+<!-- Lead Card 3: Sophia Chen -->
+<div class="rounded-[20px] bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-3 transition-transform active:scale-[0.99]">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Modern close up corporate portrait of Sophia Chen, female founder in sleek creative agency environment with ambient cobalt glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqtRaISJnaoCikQbNWOqkow6akFKzPtQyonAxM7YMgrplTf5McTbIxkAtA1SoRVez8q_O0f0SZOibbf5TZMw6hhs9jgGa3pWr6Nn6xP8RJg18m-PXa4d8wl-rXVwqzYjLP-7AZdcTZKOpNAgXL-ftU4UommvDTPkqz3TYdp8LSqyDxQhq0jGUrHVi6czJvIJ-N-JnDiaNezd9VekIkh1t494_FJq6GYK1PB09aH-Ph4EQ1Rhk4iSM"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-tertiary-fixed-dim border-2 border-white"></span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sophia Chen</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Founder • NextPhase Media</p>
+</div>
+</div>
+<span class="shrink-0 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+          88 • HOT
+        </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant bg-surface-container-low px-3 py-2 rounded-xl text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Inbound SEO</span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Meeting Requested
+        </span>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 min-h-[44px] rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span>Review Intent Notes</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 3D. AI Insights & Recommendations (Dark Tactical Card) -->
+<div class="rounded-[22px] bg-gradient-to-br from-[#1E202A] to-[#13151D] text-white p-5 shadow-xl relative overflow-hidden flex flex-col gap-3.5">
+<div class="absolute -top-12 -right-12 w-36 h-36 bg-primary-container/25 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between z-10">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-container/30 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-white">Nova AI Intent Insights</h3>
+<span class="font-label-sm text-label-sm text-neutral-400">Autonomously synthesized from 428 chats</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-white/10 text-white font-label-sm text-label-sm">Real-time</span>
+</div>
+<!-- Synthesis Bullet Points -->
+<div class="flex flex-col gap-2.5 z-10 text-neutral-200 font-body-sm text-body-sm">
+<div class="flex items-start gap-2 bg-white/5 p-2.5 rounded-xl backdrop-blur-sm">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed shrink-0 mt-0.5">hub</span>
+<div>
+<strong class="text-white">Top visitor intent:</strong> 64% inquire specifically regarding 2-way CRM &amp; HubSpot sync capabilities.
+        </div>
+</div>
+<div class="flex items-start gap-2 bg-white/5 p-2.5 rounded-xl backdrop-blur-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<div>
+<strong class="text-white">Primary friction solved:</strong> Setup time objections reduced by 41% via automated 1-click script prompts.
+        </div>
+</div>
+<div class="flex items-start gap-2 bg-white/5 p-2.5 rounded-xl backdrop-blur-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed shrink-0 mt-0.5">tips_and_updates</span>
+<div>
+<strong class="text-white">Suggested acceleration:</strong> Auto-dispatch Calendly handoff whenever intent score exceeds 80.
+        </div>
+</div>
+</div>
+<!-- Quick CTA within Card -->
+<button class="z-10 min-h-[44px] w-full rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-md hover:opacity-95 active:scale-[0.98] transition-all mt-1">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Apply Recommendation</span>
+</button>
+</div>
+<!-- Operational Footer Micro-Status -->
+<div class="flex items-center justify-between px-2 py-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+      Agent Nova listening on 14 active landing pages
+    </span>
+<span>Synced 1m ago</span>
+</div>
+</div>
+<script>
+  // Simple view toggle micro-interaction
+  const btnMetrics = document.getElementById('toggle-view-summary');
+  const btnRealtime = document.getElementById('toggle-view-realtime');
+
+  if (btnMetrics && btnRealtime) {
+    btnMetrics.addEventListener('click', () => {
+      btnMetrics.className = 'min-h-[36px] px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm';
+      btnRealtime.className = 'min-h-[36px] px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-label-sm';
+    });
+
+    btnRealtime.addEventListener('click', () => {
+      btnRealtime.className = 'min-h-[36px] px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm';
+      btnMetrics.className = 'min-h-[36px] px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-label-sm';
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(20,25,40,0.04)]" data-active-classes="text-primary-container font-headline-sm"><div class="h-16 px-space-xs flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 transition-colors text-primary-container font-headline-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-sm text-label-sm">Dashboard</span></a><a class="relative flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant transition-colors" data-path="qualification-inbox" href="#"><span class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">inbox</span><span class="absolute -top-1 -right-2 min-w-[14px] h-3.5 px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-[9px] flex items-center justify-center font-bold">5</span></span><span class="font-label-sm text-label-sm">Inbox</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant transition-colors" data-path="leads-directory" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="font-label-sm text-label-sm">Leads</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant transition-colors" data-path="nova-ai-agent" href="#"><span class="material-symbols-outlined text-[22px]">smart_toy</span><span class="font-label-sm text-label-sm">AI</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant transition-colors" data-path="account-settings" href="#"><span class="material-symbols-outlined text-[22px]">tune</span><span class="font-label-sm text-label-sm">More</span></a></div></nav></body></html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#e1e3ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#79fbc8", "on-background": "#171c25", "surface-container-high": "#e5e8f5", "secondary": "#5f5e5e", "on-primary": "#ffffff", "tertiary": "#005940", "outline-variant": "#c4c5d9", "tertiary-fixed": "#77fac7", "primary-fixed-dim": "#bac3ff", "on-secondary-fixed-variant": "#474646", "primary": "#0034dc", "on-primary-fixed": "#00105b", "on-surface-variant": "#444656", "secondary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#00513a", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002115", "surface-dim": "#d6dae7", "inverse-surface": "#2c303a", "outline": "#747687", "inverse-primary": "#bac3ff", "background": "#f9f9ff", "on-secondary-fixed": "#1c1b1b", "primary-container": "#3152f4", "secondary-fixed": "#e5e2e1", "surface-container-highest": "#dfe2ef", "error": "#ba1a1a", "inverse-on-surface": "#edf0fd", "secondary-container": "#e2dfde", "on-secondary-container": "#636262", "on-surface": "#171c25", "surface-container": "#eaedfb", "surface": "#f9f9ff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#002fc9", "tertiary-container": "#007454", "surface-tint": "#2649ec", "surface-variant": "#dfe2ef", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-container-low": "#f1f3ff", "tertiary-fixed-dim": "#58ddac", "on-error": "#ffffff", "primary-fixed": "#dee0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "2.5rem", "space-xl": "1.5rem", "space-sm": "0.75rem", "space-2xl": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "card-padding": "1.5rem", "space-2xs": "0.25rem", "shell-padding": "1.75rem", "gutter-grid": "1.25rem", "space-lg": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-kpi": ["Plus Jakarta Sans"], "display-kpi-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "metric-mono": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-kpi": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-kpi-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "metric-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-low font-body-md text-on-surface antialiased min-h-screen"><div class="min-h-screen p-0 md:p-6 lg:p-8 flex justify-center items-start"><div class="w-full max-w-[1440px] bg-surface-container-lowest rounded-none md:rounded-[28px] shadow-[0_16px_40px_rgba(23,28,37,0.06)] overflow-hidden flex relative min-h-[calc(100vh-4rem)]"><aside class="w-60 shrink-0 bg-surface-container-low flex flex-col justify-between p-4 overflow-y-auto"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-2 py-1"><img alt="Nova AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between cursor-pointer group"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nova AI</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-on-surface transition-colors">unfold_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Northstar Digital</span></div></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Workspace</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-xl transition-colors bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inbox" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-lg text-label-lg">Inbox</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Leads</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-label-lg text-label-lg">Follow-ups</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Agent</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-lg text-label-lg">Qualification</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-lg text-label-lg">Knowledge Base</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-label-lg text-label-lg">Websites &amp; Widget</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-lg text-label-lg">Analytics</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-lg text-label-lg">Integrations</span></a></nav></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Administration</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Team</span></a><a class="flex items-center justify-between px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-label-lg text-label-lg">Billing &amp; Usage</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div></div><div class="flex flex-col gap-3 mt-6 pt-4"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-label-lg text-label-lg">Help &amp; Support</span></a><div class="p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(20,25,40,0.03)] flex flex-col gap-2.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Starter Plan</span><span class="font-label-sm text-label-sm text-tertiary font-bold">Active</span></div><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">742 / 1,000</span><span class="font-label-sm text-label-sm">74%</span></div><div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">Monthly AI conversations</span></div><a class="mt-1 w-full py-1.5 px-3 bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md rounded-lg text-center transition-colors" data-path="billing-and-usage" href="#">Upgrade Plan</a></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest"><header class="h-16 px-6 lg:px-8 bg-surface-container-lowest flex items-center justify-between shrink-0 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-10"><div class="flex items-center gap-4 flex-1"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full cursor-pointer"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-tertiary/20"></span><span class="font-label-md text-label-md text-on-surface">northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="relative max-w-md w-full hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search leads, chats, workflows..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-4"><button class="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_4px_12px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Create</span></button><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Maya Singh</span><span class="font-body-sm text-body-sm text-on-surface-variant">Product Lead</span></div></div></div></header><main class="flex-1 p-6 lg:p-shell-padding overflow-y-auto bg-surface-container-lowest"><div class="flex flex-col w-full">
+<script>
+    (function() {
+      const links = document.querySelectorAll('aside nav a');
+      links.forEach(l => {
+        if (l.getAttribute('data-path') === 'billing-and-usage') {
+          l.className = "flex items-center gap-3 px-3 py-2 rounded-xl bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)] transition-colors";
+        } else {
+          l.className = "flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors";
+        }
+      });
+    })();
+  </script>
+<div class="flex flex-col gap-8 pb-16">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between flex-wrap gap-3">
+<nav class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="hover:text-on-surface cursor-pointer">Workspace</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-on-surface cursor-pointer">Administration</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-on-surface" href="#">Billing &amp; Usage</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Upgrade Plan</span>
+</nav>
+<a class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Back to Billing &amp; Usage</span>
+</a>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pt-2">
+<div class="max-w-2xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Choose the plan that fits your sales team.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-1.5">
+            Scale autonomous lead qualification, multi-website deployments, and direct CRM integrations as your inbound volume grows.
+          </p>
+</div>
+<div class="inline-flex items-center gap-3 p-1.5 bg-surface-container-low rounded-full self-start lg:self-auto">
+<div class="relative flex items-center p-0.5 bg-surface-container-high rounded-full">
+<button class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant transition-all cursor-pointer" id="toggle-monthly" type="button">
+              Monthly billing
+            </button>
+<button class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.25)] transition-all cursor-pointer" id="toggle-annual" type="button">
+              Annual billing
+            </button>
+</div>
+<span class="px-2.5 py-1 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider rounded-full font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">percent</span>
+            Save 20% on Annual
+          </span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 items-stretch">
+<div class="flex flex-col justify-between p-6 lg:p-card-padding bg-surface-container-low/70 rounded-[24px] shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between h-7 mb-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Free</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant min-h-[36px]">
+            For solo founders exploring AI lead qualification on personal blogs or small sites.
+          </p>
+<div class="my-6 pb-6 bg-surface-container-high/40 rounded-2xl p-4">
+<div class="flex items-baseline gap-1">
+<span class="font-display-kpi text-display-kpi text-on-surface tracking-tight">₹0</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ month</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Free forever with basic heuristic triggers</p>
+</div>
+<button class="w-full py-2.5 px-4 bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg rounded-xl text-center hover:bg-surface-container-highest cursor-pointer transition-colors" type="button">
+            Downgrade to Free
+          </button>
+<div class="mt-8 flex flex-col gap-3.5">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-bold">Included Capabilities</span>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span><strong>1</strong> Website domain</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span><strong>1</strong> User seat</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span><strong>50</strong> AI conversations / month</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span>Basic lead scoring (heuristic rules)</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span>Email notifications only</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span>Community Discord support</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span>Standard "Powered by Nova" badge</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 bg-surface-container-high/20 rounded-xl p-3 flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">info</span>
+<span>No credit card required to test</span>
+</div>
+</div>
+<div class="relative flex flex-col justify-between p-6 lg:p-card-padding bg-surface-container-low rounded-[24px] shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between h-7 mb-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Starter</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold tracking-wide">
+              Current Plan
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant min-h-[36px]">
+            For growing businesses capturing and routing qualified leads from active websites.
+          </p>
+<div class="my-6 pb-6 bg-surface-container-lowest rounded-2xl p-4 shadow-sm">
+<div class="flex items-baseline gap-1.5">
+<span class="font-display-kpi text-display-kpi text-on-surface tracking-tight" id="starter-price">₹3,999</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ month</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary font-semibold mt-1" id="starter-subtext">₹3,999 / mo billed annually (₹47,988/yr)</p>
+</div>
+<button class="w-full py-2.5 px-4 bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-xl text-center cursor-default flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">task_alt</span>
+<span>Current Plan Active</span>
+</button>
+<div class="mt-8 flex flex-col gap-3.5">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-bold">Included Quotas &amp; Tools</span>
+<div class="flex items-center justify-between text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span><strong>2</strong> Website domains</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 bg-error-container text-on-error-container rounded font-bold">2/2 Full</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span><strong>3</strong> Team seats</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 bg-error-container text-on-error-container rounded font-bold">3/3 Full</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span><strong>1,000</strong> AI conversations / mo</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded">742 used</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span>Custom qualification questions &amp; scoring</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span>Standard Webhooks &amp; Slack notifications</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span>Standard lead analytics &amp; CSV exports</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span>500 Indexed knowledge pages</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span>Email &amp; In-app ticket support (24h SLA)</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 bg-surface-container-lowest rounded-xl p-3.5 flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Quota Depletion warning</span>
+<span class="font-label-sm text-label-sm text-error font-bold">At Limit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Team seats &amp; domain slots are completely saturated.</p>
+</div>
+</div>
+<div class="relative flex flex-col justify-between p-6 lg:p-card-padding bg-surface-container-lowest rounded-[24px] shadow-[0_16px_40px_rgba(49,82,244,0.12)] transition-all transform hover:-translate-y-1">
+<div class="absolute -top-3.5 right-6 px-3 py-1 bg-primary-container text-on-primary rounded-full font-label-sm text-label-sm font-bold shadow-[0_4px_12px_rgba(49,82,244,0.35)] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>RECOMMENDED</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between h-7 mb-2">
+<span class="font-headline-md text-headline-md text-primary font-bold">Premium</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant min-h-[36px]">
+            For fast-scaling sales teams requiring high volume, full CRM synchronization, and multi-domain orchestration.
+          </p>
+<div class="my-6 pb-6 bg-surface-container-low rounded-2xl p-4">
+<div class="flex items-baseline gap-1.5">
+<span class="font-display-kpi text-display-kpi text-on-surface tracking-tight" id="premium-price">₹11,999</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ month</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary font-semibold mt-1" id="premium-subtext">₹11,999 / mo billed annually (Save ₹36,000/yr)</p>
+</div>
+<button class="w-full py-3 px-4 bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg rounded-xl text-center shadow-[0_8px_20px_rgba(49,82,244,0.28)] flex items-center justify-center gap-2 cursor-pointer transition-all" type="button">
+<span>Upgrade to Premium</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<div class="mt-8 flex flex-col gap-3.5">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-bold">Unlocks Everything in Starter, Plus:</span>
+<div class="flex items-center gap-2.5 text-on-surface font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span><strong>10</strong> Website domains (8 additional)</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span><strong>15</strong> Team user seats (12 additional)</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span><strong>5,000</strong> AI conversations / month with rollover</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span>Advanced multi-factor AI scoring &amp; objection detection</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span>Native Salesforce, HubSpot &amp; WhatsApp Business sync</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span>Calendar booking &amp; live human takeover SLA</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span>Remove Nova branding &amp; custom domain CDN</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span>Unlimited indexed knowledge base pages</span>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span>Priority 24/7 Slack channel + Onboarding Engineer</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 bg-primary-fixed/30 rounded-xl p-3.5 flex items-center gap-2 text-on-primary-fixed font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">bolt</span>
+<span>Instant upgrade with pro-rated billing calculation</span>
+</div>
+</div>
+</div>
+<div class="mt-10 flex flex-col gap-6">
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Detailed Feature Comparison</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Compare all capabilities, technical limits, and SLA standards across tiers.</p>
+</div>
+<div class="w-full bg-surface-container-low/50 rounded-[24px] p-2 md:p-6 shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[700px]">
+<thead>
+<tr class="bg-surface-container-high/50 rounded-xl">
+<th class="py-4 px-4 font-label-lg text-label-lg text-on-surface rounded-l-xl w-2/5">Capabilities &amp; Features</th>
+<th class="py-4 px-4 font-label-lg text-label-lg text-on-surface-variant w-1/5">Free</th>
+<th class="py-4 px-4 font-label-lg text-label-lg text-on-surface bg-surface-container-high/70 w-1/5">
+                  Starter <span class="text-on-surface-variant font-body-sm text-body-sm">(Current)</span>
+</th>
+<th class="py-4 px-4 font-label-lg text-label-lg text-primary bg-primary-fixed/40 rounded-r-xl w-1/5">
+                  Premium <span class="text-primary font-body-sm text-body-sm">(Recommended)</span>
+</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<tr>
+<td class="pt-6 pb-2 px-4 font-label-md text-label-md uppercase tracking-wider text-primary font-bold" colspan="4">
+                  1. AI &amp; Lead Qualification
+                </td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Monthly AI Conversations</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">50 / mo</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface font-semibold bg-surface-container-high/20">1,000 / mo</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">5,000 / mo (+₹1.5/extra)</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Lead Scoring Engine</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Basic heuristic</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">Custom IF/THEN Rules</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">Advanced Multi-Factor Intent</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Autonomous Qualification</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Linear Q&amp;A</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">Multi-branch decision tree</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface font-semibold bg-primary-fixed/20">Dynamic adaptive dialogue</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Human Takeover &amp; Handoff</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant"><span class="text-error">✕</span> Not included</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">Manual inbox switch</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-semibold bg-primary-fixed/20">Instant audio chime &amp; SLA alert</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Enrichment &amp; Domain Lookup</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant"><span class="text-error">✕</span> Not included</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">Basic IP Geo-lookup</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-semibold bg-primary-fixed/20">Clearbit &amp; LinkedIn profile sync</td>
+</tr>
+<tr>
+<td class="pt-6 pb-2 px-4 font-label-md text-label-md uppercase tracking-wider text-primary font-bold" colspan="4">
+                  2. Websites &amp; Deployment
+                </td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Active Domain Integrations</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">1 site</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface font-semibold bg-surface-container-high/20">2 sites (Current limit)</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">10 sites (+ add-ons)</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Widget Customization</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Preset colors</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">Themes, avatar &amp; custom HEX</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-semibold bg-primary-fixed/20">Full White-label CSS injection</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">"Powered by Nova" Badge</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Mandatory</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">Mandatory</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-tertiary font-bold bg-primary-fixed/20">100% Removable</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Custom CNAME / CDN Proxy</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant"><span class="text-error">✕</span></td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant bg-surface-container-high/20"><span class="text-error">✕</span></td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">Included</td>
+</tr>
+<tr>
+<td class="pt-6 pb-2 px-4 font-label-md text-label-md uppercase tracking-wider text-primary font-bold" colspan="4">
+                  3. Team &amp; Collaboration
+                </td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Included User Seats</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">1 seat</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface font-semibold bg-surface-container-high/20">3 seats</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">15 seats (+₹1,200/mo/seat)</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Role-based Access (RBAC)</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Admin only</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">Admin &amp; Agent</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-semibold bg-primary-fixed/20">Custom RBAC (SDR, Manager, Ops)</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Lead Assignment Engine</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Manual</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">Round-robin</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">Weighted by skill &amp; timezone</td>
+</tr>
+<tr>
+<td class="pt-6 pb-2 px-4 font-label-md text-label-md uppercase tracking-wider text-primary font-bold" colspan="4">
+                  4. Integrations &amp; Automation
+                </td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Webhook Endpoints</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">1 active</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">3 active</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">Unlimited with replay logs</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Native CRM Direct Sync</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant"><span class="text-error">✕</span></td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant bg-surface-container-high/20">Via Zapier webhook</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">Salesforce, HubSpot &amp; Zoho</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">WhatsApp Business Cloud</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant"><span class="text-error">✕</span></td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant bg-surface-container-high/20">Add-on ($19/mo)</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-semibold bg-primary-fixed/20">Native Bundled</td>
+</tr>
+<tr>
+<td class="pt-6 pb-2 px-4 font-label-md text-label-md uppercase tracking-wider text-primary font-bold" colspan="4">
+                  5. Analytics &amp; Compliance
+                </td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Data Retention Period</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">30 days</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">12 months</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">Unlimited historical data</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Indexed Knowledge Base</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">50 pages</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">500 pages</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">Unlimited documents &amp; PDFs</td>
+</tr>
+<tr class="hover:bg-surface-container-high/20 transition-colors">
+<td class="py-3 px-4 font-body-md text-body-md text-on-surface">Support &amp; Guaranteed SLA</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Discord Community</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface bg-surface-container-high/20">Email (24-hour SLA)</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-primary font-bold bg-primary-fixed/20">24/7 Slack channel + 1h SLA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="mt-4 p-8 bg-surface-container-high/40 rounded-[28px] flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-sm text-primary">
+<span class="material-symbols-outlined text-[32px]">corporate_fare</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Need more than 10 websites or enterprise compliance?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+            Get dedicated high-concurrency LLM inference nodes, bespoke custom DPAs, SAML/SSO integration, and a dedicated Solutions Architect.
+          </p>
+</div>
+</div>
+<button class="shrink-0 px-5 py-3 bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-xl shadow-sm transition-colors cursor-pointer" type="button">
+        Talk to Sales Engineering
+      </button>
+</div>
+<div class="sticky bottom-4 z-20 mx-auto max-w-xl w-full bg-inverse-surface/95 backdrop-blur text-inverse-on-surface p-3.5 px-6 rounded-full shadow-2xl flex items-center justify-between gap-4">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim animate-pulse shrink-0"></span>
+<div class="flex flex-col truncate">
+<span class="font-label-md text-label-md font-bold text-inverse-on-surface truncate">Switch Northstar Digital to Premium</span>
+<span class="font-body-sm text-body-sm text-surface-container-high/70 truncate">Immediate access to 10 domains &amp; 15 seats</span>
+</div>
+</div>
+<button class="shrink-0 px-4 py-2 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md rounded-full shadow-md transition-colors cursor-pointer" type="button">
+        Upgrade Now
+      </button>
+</div>
+</div>
+<script>
+    (function() {
+      const btnMonthly = document.getElementById('toggle-monthly');
+      const btnAnnual = document.getElementById('toggle-annual');
+      const starterPrice = document.getElementById('starter-price');
+      const starterSubtext = document.getElementById('starter-subtext');
+      const premiumPrice = document.getElementById('premium-price');
+      const premiumSubtext = document.getElementById('premium-subtext');
+
+      let isAnnual = true;
+
+      function updatePricing() {
+        if (isAnnual) {
+          btnAnnual.className = "px-4 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.25)] transition-all cursor-pointer";
+          btnMonthly.className = "px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant transition-all cursor-pointer";
+          starterPrice.textContent = "₹3,999";
+          starterSubtext.textContent = "₹3,999 / mo billed annually (₹47,988/yr)";
+          premiumPrice.textContent = "₹11,999";
+          premiumSubtext.textContent = "₹11,999 / mo billed annually (Save ₹36,000/yr)";
+        } else {
+          btnMonthly.className = "px-4 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.25)] transition-all cursor-pointer";
+          btnAnnual.className = "px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant transition-all cursor-pointer";
+          starterPrice.textContent = "₹4,999";
+          starterSubtext.textContent = "Billed monthly (No annual commitment)";
+          premiumPrice.textContent = "₹14,999";
+          premiumSubtext.textContent = "Billed monthly (Cancel anytime)";
+        }
+      }
+
+      btnMonthly.addEventListener('click', function() {
+        isAnnual = false;
+        updatePricing();
+      });
+
+      btnAnnual.addEventListener('click', function() {
+        isAnnual = true;
+        updatePricing();
+      });
+    })();
+  </script>
+</div></main></div></div></div></body></html>

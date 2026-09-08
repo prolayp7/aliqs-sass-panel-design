@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#224f3d","status-cold":"#6F8E9E","muted-gray":"#8A938E","tertiary":"#002415","surface-container-high":"#e4eae4","surface":"#f5fbf5","status-hot":"#E55252","on-surface":"#171d1a","secondary-fixed-dim":"#7dd9a7","mint-tint":"#F0FAF5","outline":"#717973","on-tertiary-fixed-variant":"#005234","emerald-vivid":"#15945F","on-secondary-container":"#02734a","error":"#ba1a1a","on-secondary":"#ffffff","surface-container":"#e9efea","primary-container":"#0b3b2a","primary":"#002417","canvas-bg":"#F2F4F3","inverse-primary":"#a2d1b9","on-background":"#171d1a","on-error-container":"#93000a","primary-fixed-dim":"#a2d1b9","tertiary-container":"#003c25","inverse-on-surface":"#ecf2ed","on-primary-fixed":"#002115","primary-fixed":"#bdedd4","on-tertiary-container":"#43af7d","tertiary-fixed-dim":"#71dba5","on-secondary-fixed-variant":"#005233","mint-soft":"#DCF4E8","status-warm":"#E9A23B","surface-tint":"#3b6753","surface-variant":"#dee4df","status-success":"#15945F","inverse-surface":"#2c322e","body-charcoal":"#3E4742","on-error":"#ffffff","error-container":"#ffdad6","surface-container-highest":"#dee4df","outline-variant":"#c0c8c2","border-subtle":"#DDE2DF","surface-dim":"#d5dcd6","on-surface-variant":"#414944","on-tertiary-fixed":"#002112","on-primary-container":"#78a68f","shell-bg":"#FFFFFF","background":"#f5fbf5","on-secondary-fixed":"#002112","surface-container-lowest":"#ffffff","secondary":"#006c45","surface-container-low":"#eff5f0","secondary-fixed":"#99f6c2","surface-bright":"#f5fbf5","on-tertiary":"#ffffff","on-primary":"#ffffff","tertiary-fixed":"#8ef7c0","secondary-container":"#99f6c2"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-2xl":"2.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-lg":"1.5rem","shell-padding":"2rem","space-3xl":"3rem","space-xl":"2rem","gutter-tablet":"1rem","space-sm":"0.75rem","space-2xs":"0.25rem","space-xs":"0.5rem","gutter-desktop":"1.5rem"},"fontFamily":{"label-sm":["Inter"],"display-lg":["Manrope"],"body-md":["Inter"],"headline-sm":["Manrope"],"body-lg":["Inter"],"headline-lg":["Manrope"],"body-sm":["Inter"],"kpi-metric":["Manrope"],"label-md":["Inter"],"headline-md":["Manrope"]},"fontSize":{"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"kpi-metric":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased min-h-screen"><div class="p-gutter-mobile lg:p-gutter-desktop min-h-screen flex"><div class="w-full rounded-[24px] bg-shell-bg shadow-[0_8px_32px_-4px_rgba(11,59,42,0.05),0_2px_8px_-2px_rgba(17,23,20,0.03)] border border-border-subtle flex min-h-[calc(100vh-1.5rem)] lg:min-h-[calc(100vh-3rem)] self-stretch relative overflow-hidden"><aside class="w-64 flex-shrink-0 bg-shell-bg border-r border-border-subtle flex flex-col justify-between py-space-md self-stretch sticky top-0 h-screen lg:h-[calc(100vh-3rem)] overflow-y-auto"><div class="flex flex-col gap-space-md"><div class="px-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="NovaLead Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U_RVWV9ukk3tUR50J2SFd0itvU9dlX7o1A9fwm0wprNWdIyFnoq8sezQTdb0HgP2Po9iKsE0S8zozl9C4DV8nv1tDCSvX5wPShj2kRgGMqL2y0hvOejE1VMoBLbEzsYpUXESUaK3Ui0rtTEpTl40fhJC5zX3970t55eATUaLoUb6Nuj33LwyUbrCGKZNqYaz8z3ryi3zcO9grKYQPTngsFy4DvIJ2ICTC6f4mtC2OOH6kAs48xwjt6Tlw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">NovaLead</span></div><button class="flex items-center justify-between px-space-xs py-space-2xs rounded-lg bg-surface-container-low text-body-sm font-label-sm text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="flex items-center gap-1.5 truncate"><span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>Northstar Digital</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">Menu</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="dashboard" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-muted-gray">grid_view</span><span class="font-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="inbox" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-muted-gray">chat</span><span class="font-body-md">Inbox</span></div><span class="px-1.5 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[10px] font-bold">12+</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">group</span><span class="font-body-md">Leads</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">schedule_send</span><span class="font-body-md">Follow-ups</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">smart_toy</span><span class="font-body-md">AI Agent</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">rule</span><span class="font-body-md">Qualification</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">menu_book</span><span class="font-body-md">Knowledge Base</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">widgets</span><span class="font-body-md">Websites &amp; Widget</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="automations" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">account_tree</span><span class="font-body-md">Automations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">bar_chart</span><span class="font-body-md">Analytics</span></a></nav></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">General</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">hub</span><span class="font-body-md">Integrations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="team" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">badge</span><span class="font-body-md">Team</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">notifications</span><span class="font-body-md">Notifications</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">credit_card</span><span class="font-body-md">Billing &amp; Usage</span></a><a aria-current="page" class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg transition-all bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px] text-emerald-vivid">settings</span><span class="font-body-md text-on-surface font-semibold">Settings</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">help</span><span class="font-body-md">Help</span></a></nav></div></div><div class="px-space-md pt-space-xs mt-auto"><div class="rounded-xl bg-gradient-to-br from-primary-container to-primary p-space-sm text-on-primary flex flex-col gap-space-xs shadow-[0_6px_20px_-2px_rgba(11,59,42,0.18)]"><div class="flex items-center justify-between"><span class="text-[11px] font-semibold text-mint-soft tracking-wide">Starter Plan</span><span class="text-[11px] text-muted-gray">74%</span></div><div class="text-body-sm font-label-md text-on-primary font-medium">742 / 1,000 Conv.</div><div class="w-full h-1.5 bg-tertiary-container rounded-full overflow-hidden"><div class="h-full bg-status-success rounded-full w-[74%]"></div></div><div class="pt-1 flex items-center justify-between"><span class="text-[10px] text-mint-soft/80">Renews in 11 days</span><button class="px-space-xs py-1 rounded-full bg-status-success text-on-secondary text-[11px] font-semibold hover:opacity-90 transition-opacity" type="button">Upgrade</button></div></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-shell-bg"><header class="h-16 px-space-lg border-b border-border-subtle flex items-center justify-between gap-space-md bg-shell-bg sticky top-0 z-30"><div class="flex-1 max-w-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-muted-gray text-[20px]">search</span><input class="w-full pl-10 pr-12 py-2 text-body-sm rounded-xl border border-border-subtle bg-mint-tint/40 text-on-surface placeholder-muted-gray focus:bg-shell-bg focus:border-status-success focus:ring-2 focus:ring-mint-soft focus:outline-none transition-all" placeholder="Search leads, visitors, conversations..." type="text"/><div class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container border border-border-subtle text-[10px] font-medium text-muted-gray font-mono">⌘F</div></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mint-tint border border-border-subtle text-body-sm font-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-status-success"></span><span>northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span></div><div class="flex items-center gap-1"><button aria-label="Inbox notifications" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">mail</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-hot ring-2 ring-shell-bg"></span></button><button aria-label="Alerts" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-warm ring-2 ring-shell-bg"></span></button></div><div class="h-7 w-[1px] bg-border-subtle"></div><div class="flex items-center gap-space-xs pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-border-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKLyyv5oEThrEBK1kOu9d885WSHu5uMzQZFjJgLQyPXiuwk00YS1a4M9jxQFjd2-Ksr-reE136uCll9DfVL8cG0xBKycJoDKuGo0FJZUwlrdjPN61HSOywTH_n4y-5T9Q6VjSve9C_nLz2XTYQINf0qNoy_le1JK7kxVM4ZeMQR4UOI2C3ZCdFelpZGdbsgEzTLBKGui_o9DTRuE1oTClDxKTVXiLDglubfPzeWDXLM7eyAbv7gBT_"/><div class="hidden xl:flex flex-col text-left"><span class="text-body-sm font-semibold text-on-surface leading-tight">Maya Singh</span><span class="text-[11px] text-muted-gray leading-tight">Product Lead</span></div></div></div></header><main class="flex-1 p-space-lg bg-shell-bg"><div class="flex flex-col w-full">
+<!-- Breadcrumbs & Meta Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs text-body-sm font-label-md">
+<span class="text-muted-gray uppercase tracking-wider text-[11px] font-semibold">General</span>
+<span class="material-symbols-outlined text-muted-gray text-[16px]">chevron_right</span>
+<span class="text-muted-gray uppercase tracking-wider text-[11px] font-semibold">Settings</span>
+<span class="material-symbols-outlined text-muted-gray text-[16px]">chevron_right</span>
+<span class="text-primary font-semibold uppercase tracking-wider text-[11px] bg-mint-soft px-2 py-0.5 rounded-full">API Keys</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-mint-tint text-secondary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+        Vault Engine: TLS 1.3 Active
+      </span>
+<a class="inline-flex items-center gap-1 text-secondary hover:text-primary font-label-sm text-label-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">description</span>
+        Developer Docs
+      </a>
+</div>
+</div>
+<!-- Settings Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Sub-Navigation Rail (Settings Modules) -->
+<aside class="lg:col-span-3 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-1">
+<div class="px-space-xs py-1 text-[11px] font-bold uppercase tracking-wider text-muted-gray">
+          Configuration Categories
+        </div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors font-body-md text-body-md" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">domain</span>
+              Workspace
+            </span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors font-body-md text-body-md" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">alt_route</span>
+              Lead Pipeline
+            </span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors font-body-md text-body-md" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">sell</span>
+              Custom Fields &amp; Tags
+            </span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors font-body-md text-body-md" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">palette</span>
+              Branding
+            </span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors font-body-md text-body-md" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">schedule</span>
+              Business Hours
+            </span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors font-body-md text-body-md" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">lock</span>
+              Privacy &amp; Data
+            </span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors font-body-md text-body-md" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">shield</span>
+              Security
+            </span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-[10px] font-bold uppercase tracking-wide">2FA ON</span>
+</a>
+<!-- Active Tab: API Keys -->
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg bg-mint-soft text-primary font-semibold relative shadow-sm" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid" style="font-variation-settings: 'FILL' 1;">vpn_key</span>
+<span class="font-body-md text-body-md font-semibold text-primary">API Keys</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[11px] font-bold">3 Active</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors font-body-md text-body-md" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">receipt_long</span>
+              Audit Logs
+            </span>
+</a>
+</nav>
+</div>
+<!-- Infrastructure Status Badge -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm font-label-sm text-on-surface-variant">
+<span class="text-[11px] uppercase tracking-wider font-semibold text-muted-gray">Platform Telemetry</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-status-success font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+            Live
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+          Cluster Zone: <span class="font-mono text-primary font-semibold">ap-south-1</span>
+</p>
+<div class="flex items-center gap-1.5 text-[11px] text-muted-gray">
+<span class="material-symbols-outlined text-[14px] text-status-success">verified_user</span>
+<span>Healthy Sync • 99.98% uptime SLA</span>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="lg:col-span-9 flex flex-col gap-space-lg">
+<!-- Top Title + Action Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-xl">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">API Keys &amp; Access Tokens</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Create and manage scoped API credentials to authenticate programmatic access to NovaLead qualification pipelines, webhooks, and lead records.
+          </p>
+</div>
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md shadow-md transition-all whitespace-nowrap" id="btn-create-key" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+          + Generate New API Key
+        </button>
+</div>
+<!-- High-Impact One-Time Secret Alert Banner / Modal -->
+<div class="bg-primary text-on-primary rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-44 h-44 bg-secondary/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-status-warm/20 flex items-center justify-center flex-shrink-0 text-status-warm">
+<span class="material-symbols-outlined text-[24px]">key</span>
+</div>
+<div class="flex flex-col">
+<div class="inline-flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-mint-soft tracking-tight">New Production Credential Generated</span>
+<span class="px-2 py-0.5 rounded-full bg-status-warm text-primary font-label-sm text-[10px] uppercase font-bold tracking-wider">Store Safely</span>
+</div>
+<p class="font-body-sm text-body-sm text-mint-soft/80 mt-1 max-w-2xl leading-relaxed">
+                  Keep your secret key safe: This token will never be displayed again. If you lose this credential, you must immediately revoke it and provision a replacement.
+                </p>
+</div>
+</div>
+<button aria-label="Dismiss key alert" class="text-mint-soft/60 hover:text-mint-soft transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Token Reveal Container -->
+<div class="bg-primary-container/80 rounded-xl p-space-sm flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 w-full md:w-auto flex-1 min-w-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">vpn_key</span>
+<span class="font-mono text-body-sm text-surface font-semibold truncate select-all" id="generated-key-text">
+                nvl_live_9f83a8b49204c8e712a88390b144
+              </span>
+</div>
+<div class="flex items-center gap-2 w-full md:w-auto justify-end">
+<button class="w-full md:w-auto inline-flex items-center justify-center gap-1.5 px-space-md py-2 rounded-lg bg-emerald-vivid hover:bg-secondary text-on-secondary font-label-md text-label-md transition-all shadow-sm" id="btn-copy-secret" type="button">
+<span class="material-symbols-outlined text-[16px]" id="copy-icon">content_copy</span>
+<span id="copy-label">Copy Key</span>
+</button>
+</div>
+</div>
+<!-- Attached Scopes Tags -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="text-[11px] font-semibold uppercase tracking-wider text-mint-soft/70">Permitted Scopes:</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-secondary-fixed font-mono text-[11px] font-medium">leads:read</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-secondary-fixed font-mono text-[11px] font-medium">leads:write</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-secondary-fixed font-mono text-[11px] font-medium">qualifications:read</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-secondary-fixed font-mono text-[11px] font-medium">webhooks:manage</span>
+</div>
+</div>
+</div>
+<!-- Telemetry & Quota Card (Inline Row) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Metric 1: Rate Limit Capacity -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-body-sm font-label-sm text-on-surface-variant">
+<span>24h Request Volume</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">query_stats</span>
+</div>
+<div class="mt-2">
+<div class="flex items-baseline gap-2">
+<span class="font-kpi-metric text-kpi-metric text-primary">3,240</span>
+<span class="font-body-sm text-body-sm text-muted-gray">/ 10,000 req</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-emerald-vivid rounded-full" style="width: 32.4%;"></div>
+</div>
+<div class="flex items-center justify-between mt-1 text-[11px] text-muted-gray">
+<span>32.4% consumed</span>
+<span class="text-status-success font-semibold">Healthy</span>
+</div>
+</div>
+</div>
+<!-- Metric 2: Rate Limit Policy -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-body-sm font-label-sm text-on-surface-variant">
+<span>Rate Limiting Policy</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">speed</span>
+</div>
+<div class="mt-2 flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm text-primary">120 req / min</span>
+<span class="text-body-sm font-body-sm text-muted-gray leading-snug">Burst allowance: up to 200 req/min per scoped key identifier.</span>
+<span class="text-[11px] text-secondary font-semibold mt-1">Status 429 Retry-After Header: ON</span>
+</div>
+</div>
+<!-- Metric 3: Active Authentication Security -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-body-sm font-label-sm text-on-surface-variant">
+<span>Key Authentication</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">lock_clock</span>
+</div>
+<div class="mt-2 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-emerald-vivid text-[20px]">encrypted</span>
+              AES-256 GCM
+            </div>
+<p class="text-body-sm font-body-sm text-muted-gray">Hashed at rest with SHA-512 signatures and strict IP allowlisting enabled.</p>
+<a class="text-[11px] text-secondary hover:text-primary font-semibold mt-1 inline-flex items-center gap-1" href="#">
+              Configure CIDR Whitelist
+              <span class="material-symbols-outlined text-[12px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Scoped API Keys Management Section -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header & Filter Bar -->
+<div class="p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-primary">Active Scoped API Keys</h2>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-secondary font-label-sm text-[11px] font-bold">3 Active</span>
+</div>
+<div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+<!-- Search field inside table -->
+<div class="relative flex items-center flex-1 md:w-64">
+<span class="material-symbols-outlined absolute left-2.5 text-muted-gray text-[16px]">filter_list</span>
+<input class="w-full pl-8 pr-3 py-1.5 text-body-sm rounded-lg bg-surface-container-low text-on-surface placeholder-muted-gray focus:bg-surface-container-lowest focus:outline-none transition-all" placeholder="Filter by name or key..." type="text"/>
+</div>
+<!-- Segmented Filter -->
+<div class="inline-flex rounded-lg bg-surface-container-low p-0.5">
+<button class="px-3 py-1 rounded-md bg-surface-container-lowest text-primary font-label-sm text-[11px] font-bold shadow-sm" type="button">All</button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-primary font-label-sm text-[11px] font-semibold" type="button">Active (3)</button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-primary font-label-sm text-[11px] font-semibold" type="button">Revoked (1)</button>
+</div>
+</div>
+</div>
+<!-- Table View -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left text-body-sm">
+<thead class="bg-surface-container-low text-muted-gray font-label-sm text-[11px] uppercase tracking-wider">
+<tr>
+<th class="px-space-md py-3" scope="col">Key Name &amp; Identifier</th>
+<th class="px-space-md py-3" scope="col">Scopes / Permissions</th>
+<th class="px-space-md py-3" scope="col">Created &amp; Owner</th>
+<th class="px-space-md py-3" scope="col">Last Activity</th>
+<th class="px-space-md py-3" scope="col">Status</th>
+<th class="px-space-md py-3 text-right" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1: Production Inbound Webhook Agent -->
+<tr class="hover:bg-mint-tint/30 transition-colors">
+<td class="px-space-md py-space-md align-top">
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-body-md font-semibold text-primary">Production Inbound Webhook Agent</span>
+<div class="flex items-center gap-1.5 font-mono text-[12px] text-on-surface-variant">
+<span class="bg-surface-container-low px-1.5 py-0.5 rounded text-primary font-semibold">nvl_live_...9f83</span>
+<button aria-label="Copy key snippet" class="text-muted-gray hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+<button aria-label="Toggle token preview" class="text-muted-gray hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">visibility</span>
+</button>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[10px] font-semibold">leads:write</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[10px] font-semibold">qualifications:read</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[10px] font-semibold">events:push</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex flex-col text-[12px]">
+<span class="font-medium text-on-surface">Oct 14, 2024</span>
+<span class="text-muted-gray">by Maya Singh</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex flex-col text-[12px]">
+<span class="font-medium text-status-success">2 minutes ago</span>
+<span class="text-muted-gray font-mono text-[11px]">from 103.24.88.192</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-mint-soft text-emerald-vivid text-[11px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-vivid"></span>
+                    Active
+                  </span>
+</td>
+<td class="px-space-md py-space-md align-top text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-2">
+<button class="text-body-sm font-label-sm text-secondary hover:text-primary transition-colors" type="button">Edit Scopes</button>
+<span class="text-surface-container-highest">•</span>
+<button class="text-body-sm font-label-sm text-secondary hover:text-primary transition-colors" type="button">Rotate</button>
+<span class="text-surface-container-highest">•</span>
+<button class="text-body-sm font-label-sm text-status-hot hover:opacity-80 transition-opacity font-semibold" onclick="document.getElementById('revoke-modal').classList.remove('hidden')" type="button">Revoke</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Zapier & Make Connector -->
+<tr class="hover:bg-mint-tint/30 transition-colors bg-surface-container-low/20">
+<td class="px-space-md py-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-body-md font-semibold text-primary">Zapier &amp; Make Automation Connector</span>
+</div>
+<div class="flex items-center gap-1.5 font-mono text-[12px] text-on-surface-variant">
+<span class="bg-surface-container-low px-1.5 py-0.5 rounded text-primary font-semibold">nvl_live_...41cb</span>
+<button aria-label="Copy key snippet" class="text-muted-gray hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+<button aria-label="Toggle token preview" class="text-muted-gray hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">visibility</span>
+</button>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[10px] font-semibold">leads:read</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[10px] font-semibold">leads:write</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[10px] font-semibold">tags:manage</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex flex-col text-[12px]">
+<span class="font-medium text-on-surface">Sep 28, 2024</span>
+<span class="text-muted-gray">by Arjun Mehta</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex flex-col text-[12px]">
+<span class="font-medium text-on-surface">1 hour ago</span>
+<span class="text-muted-gray font-mono text-[11px]">Zapier Cluster IP</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-mint-soft text-emerald-vivid text-[11px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-vivid"></span>
+                    Active
+                  </span>
+</td>
+<td class="px-space-md py-space-md align-top text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-2">
+<button class="text-body-sm font-label-sm text-secondary hover:text-primary transition-colors" type="button">Edit Scopes</button>
+<span class="text-surface-container-highest">•</span>
+<button class="text-body-sm font-label-sm text-secondary hover:text-primary transition-colors" type="button">Rotate</button>
+<span class="text-surface-container-highest">•</span>
+<button class="text-body-sm font-label-sm text-status-hot hover:opacity-80 transition-opacity font-semibold" onclick="document.getElementById('revoke-modal').classList.remove('hidden')" type="button">Revoke</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Internal BI Data Pipeline -->
+<tr class="hover:bg-mint-tint/30 transition-colors">
+<td class="px-space-md py-space-md align-top">
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-body-md font-semibold text-primary">Internal BI Data Pipeline (Read-Only)</span>
+<div class="flex items-center gap-1.5 font-mono text-[12px] text-on-surface-variant">
+<span class="bg-surface-container-low px-1.5 py-0.5 rounded text-primary font-semibold">nvl_live_...e018</span>
+<button aria-label="Copy key snippet" class="text-muted-gray hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+<button aria-label="Toggle token preview" class="text-muted-gray hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">visibility</span>
+</button>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[10px] font-semibold">leads:read</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[10px] font-semibold">analytics:read</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[10px] font-semibold">export:stream</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex flex-col text-[12px]">
+<span class="font-medium text-on-surface">Aug 19, 2024</span>
+<span class="text-muted-gray">by Maya Singh</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex flex-col text-[12px]">
+<span class="font-medium text-on-surface">Yesterday at 11:30 PM</span>
+<span class="text-muted-gray font-mono text-[11px]">ETL Scheduler</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-mint-soft text-emerald-vivid text-[11px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-vivid"></span>
+                    Active
+                  </span>
+</td>
+<td class="px-space-md py-space-md align-top text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-2">
+<button class="text-body-sm font-label-sm text-secondary hover:text-primary transition-colors" type="button">Edit Scopes</button>
+<span class="text-surface-container-highest">•</span>
+<button class="text-body-sm font-label-sm text-secondary hover:text-primary transition-colors" type="button">Rotate</button>
+<span class="text-surface-container-highest">•</span>
+<button class="text-body-sm font-label-sm text-status-hot hover:opacity-80 transition-opacity font-semibold" onclick="document.getElementById('revoke-modal').classList.remove('hidden')" type="button">Revoke</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Revoked Example -->
+<tr class="hover:bg-mint-tint/30 transition-colors opacity-70 bg-surface-container-low/10">
+<td class="px-space-md py-space-md align-top">
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-body-md font-medium text-muted-gray line-through">Legacy Staging Webhook Key</span>
+<div class="flex items-center gap-1.5 font-mono text-[12px] text-muted-gray">
+<span class="bg-surface-container-low px-1.5 py-0.5 rounded text-muted-gray line-through">nvl_test_...00aa</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-muted-gray font-mono text-[10px]">all:test</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex flex-col text-[12px]">
+<span class="text-muted-gray">Jul 10, 2024</span>
+<span class="text-muted-gray">by Arjun Mehta</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex flex-col text-[12px]">
+<span class="text-muted-gray">Revoked on Sep 15, 2024</span>
+<span class="text-muted-gray text-[11px]">Deactivated</span>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-surface-container text-muted-gray text-[11px] font-bold">
+                    Revoked
+                  </span>
+</td>
+<td class="px-space-md py-space-md align-top text-right whitespace-nowrap">
+<button class="text-body-sm font-label-sm text-muted-gray hover:text-status-hot transition-colors" type="button">Delete Permanently</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Helper Info -->
+<div class="p-space-md bg-surface-container-low/40 flex flex-col md:flex-row items-center justify-between gap-space-sm text-body-sm text-muted-gray">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>All API calls require HTTP Authorization header: <code class="font-mono text-primary font-semibold">Bearer nvl_live_...</code></span>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="text-secondary hover:text-primary font-label-sm text-label-sm" href="#">Endpoint Reference</a>
+<span>•</span>
+<a class="text-secondary hover:text-primary font-label-sm text-label-sm" href="#">Webhook Signature Verification</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Docked Revoke Confirmation Modal (Visible for Prompt Demonstration) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-primary/40 backdrop-blur-sm transition-opacity" id="revoke-modal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-lg shadow-2xl relative flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-status-hot/10 text-status-hot flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+</div>
+<button aria-label="Close dialog" class="w-8 h-8 rounded-lg text-muted-gray hover:text-on-surface hover:bg-surface-container transition-colors flex items-center justify-center" onclick="document.getElementById('revoke-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-md text-headline-md text-primary">Revoke API Key: Zapier &amp; Make Automation Connector?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          This action is irreversible. Any external service, middleware, or automated agent script currently authenticating with <code class="font-mono font-semibold text-status-hot bg-error-container/40 px-1.5 py-0.5 rounded">nvl_live_...41cb</code> will immediately receive <span class="font-mono font-semibold text-primary">HTTP 401 Unauthorized</span> errors.
+        </p>
+</div>
+<!-- Impact warning callout -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-status-hot font-label-sm text-[11px] uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[16px]">crisis_alert</span>
+          Impact Analysis
+        </div>
+<p class="text-body-sm font-body-sm text-body-charcoal">
+          Approx. <strong class="text-primary font-semibold">140 background lead transformations</strong> executed in the last 24 hours under this key. Active webhook dispatchers will fail immediately.
+        </p>
+</div>
+<!-- Confirmation Checkbox -->
+<label class="flex items-start gap-3 select-none cursor-pointer">
+<input class="mt-1 w-4 h-4 text-status-hot rounded focus:ring-0 cursor-pointer" id="confirm-revoke-check" type="checkbox"/>
+<span class="text-body-sm font-body-sm text-on-surface">
+          I understand this will permanently terminate active background integrations and cannot be undone.
+        </span>
+</label>
+<!-- Action Buttons -->
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-space-md py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" onclick="document.getElementById('revoke-modal').classList.add('hidden')" type="button">
+          Cancel
+        </button>
+<button class="px-space-md py-2 rounded-xl bg-status-hot text-on-error font-label-md text-label-md hover:opacity-90 transition-all shadow-md flex items-center gap-1.5" id="btn-execute-revoke" type="button">
+<span class="material-symbols-outlined text-[18px]">delete_forever</span>
+          Revoke Key Immediately
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Behavior -->
+<script>
+    // Copy key to clipboard micro-interaction
+    const copyBtn = document.getElementById('btn-copy-secret');
+    const copyLabel = document.getElementById('copy-label');
+    const copyIcon = document.getElementById('copy-icon');
+    const keyText = document.getElementById('generated-key-text');
+
+    if (copyBtn && keyText) {
+      copyBtn.addEventListener('click', () => {
+        const textToCopy = keyText.textContent.trim();
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          copyLabel.textContent = 'Copied to Clipboard!';
+          copyIcon.textContent = 'done';
+          copyBtn.classList.add('bg-status-success');
+          
+          setTimeout(() => {
+            copyLabel.textContent = 'Copy Key';
+            copyIcon.textContent = 'content_copy';
+            copyBtn.classList.remove('bg-status-success');
+          }, 2400);
+        });
+      });
+    }
+
+    // Modal action handlers
+    const revokeBtn = document.getElementById('btn-execute-revoke');
+    const confirmCheck = document.getElementById('confirm-revoke-check');
+    const revokeModal = document.getElementById('revoke-modal');
+
+    if (revokeBtn && confirmCheck && revokeModal) {
+      revokeBtn.addEventListener('click', () => {
+        if (!confirmCheck.checked) {
+          confirmCheck.parentElement.classList.add('animate-pulse');
+          setTimeout(() => confirmCheck.parentElement.classList.remove('animate-pulse'), 1000);
+          return;
+        }
+        revokeModal.classList.add('hidden');
+      });
+    }
+  </script>
+</div></main></div></div></div></body></html>

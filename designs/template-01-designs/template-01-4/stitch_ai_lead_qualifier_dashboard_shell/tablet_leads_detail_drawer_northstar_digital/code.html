@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary":"#ffffff","inverse-on-surface":"#edf0fd","on-error":"#ffffff","on-tertiary-fixed-variant":"#00513a","inverse-surface":"#2c303a","primary":"#0034dc","on-secondary-container":"#636262","outline-variant":"#c4c5d9","primary-fixed-dim":"#bac3ff","background":"#f9f9ff","on-surface-variant":"#444656","surface-dim":"#d6dae7","secondary-fixed":"#e5e2e1","secondary":"#5f5e5e","on-secondary-fixed":"#1c1b1b","tertiary-fixed":"#77fac7","on-primary":"#ffffff","on-tertiary-container":"#79fbc8","surface-container":"#eaedfb","on-error-container":"#93000a","on-surface":"#171c25","on-secondary":"#ffffff","inverse-primary":"#bac3ff","on-primary-fixed":"#00105b","error":"#ba1a1a","surface-container-high":"#e5e8f5","surface-variant":"#dfe2ef","primary-fixed":"#dee0ff","error-container":"#ffdad6","surface":"#f9f9ff","on-tertiary-fixed":"#002115","on-primary-container":"#e1e3ff","secondary-container":"#e2dfde","tertiary-fixed-dim":"#58ddac","secondary-fixed-dim":"#c8c6c5","surface-container-low":"#f1f3ff","on-background":"#171c25","surface-bright":"#f9f9ff","primary-container":"#3152f4","tertiary-container":"#007454","surface-container-lowest":"#ffffff","outline":"#747687","tertiary":"#005940","on-primary-fixed-variant":"#002fc9","surface-container-highest":"#dfe2ef","surface-tint":"#2649ec","on-secondary-fixed-variant":"#474646"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"card-padding":"1.5rem","space-2xl":"2rem","shell-padding":"1.75rem","space-sm":"0.75rem","space-xs":"0.5rem","space-xl":"1.5rem","space-3xl":"2.5rem","space-lg":"1.25rem","gutter-grid":"1.25rem","space-2xs":"0.25rem","space-md":"1rem"},"fontFamily":{"display-kpi-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-kpi":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"metric-mono":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"display-kpi-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"display-kpi":["38px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"metric-mono":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["26px",{"lineHeight":"34px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface-container-low min-h-screen text-on-surface font-body-md text-body-md antialiased p-space-md md:p-space-lg"><div class="max-w-[1180px] mx-auto min-h-[calc(100vh-2.5rem)] bg-surface-container-lowest rounded-[30px] shadow-[0_10px_30px_rgba(20,25,40,0.04),0_2px_6px_rgba(20,25,40,0.02)] relative flex overflow-hidden"><aside class="w-20 fixed top-space-md md:top-space-lg bottom-space-md md:bottom-space-lg z-30 bg-surface-container-lowest flex flex-col items-center py-space-md"><div class="mb-space-md flex flex-col items-center"><a class="flex items-center justify-center p-space-2xs rounded-xl hover:bg-surface-container-low transition-colors" data-path="dashboard" href="#" title="Northstar Revenue Intelligence"><img alt="Modern minimalist AI Lead Qualifier logo mark, glowing cobalt-blue geometric spark and faceted crystal emblem representing calm intelligent lead scoring. Brand logo. - Primary color: #3152f4
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/></a></div><nav class="w-full flex-1 flex flex-col items-center gap-space-xs overflow-y-auto px-space-2xs" data-active-classes="bg-primary-container text-on-primary shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a class="relative group flex items-center justify-center w-11 h-11 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Dashboard</span></a><a class="relative group flex items-center justify-center w-11 h-11 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="inbox" href="#"><span class="material-symbols-outlined text-[20px]">inbox</span><span class="absolute top-1 right-1 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] leading-none font-bold">5</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Inbox (5)</span></a><a aria-current="page" class="relative group flex items-center justify-center w-11 h-11 rounded-full transition-all duration-150 bg-primary-container text-on-primary shadow-[0_4px_12px_rgba(49,82,244,0.3)]" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Leads</span></a><a class="relative group flex items-center justify-center w-11 h-11 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Follow-ups</span></a><a class="relative group flex items-center justify-center w-11 h-11 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">AI Agent</span></a><a class="relative group flex items-center justify-center w-11 h-11 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Qualification</span></a><a class="relative group flex items-center justify-center w-11 h-11 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Knowledge Base</span></a><a class="relative group flex items-center justify-center w-11 h-11 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Websites &amp; Widget</span></a><a class="relative group flex items-center justify-center w-11 h-11 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Analytics</span></a><a class="relative group flex items-center justify-center w-11 h-11 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Integrations</span></a></nav><div class="w-full pt-space-xs flex flex-col items-center gap-space-xs"><a class="relative group flex items-center justify-center w-10 h-10 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="team" href="#"><span class="material-symbols-outlined text-[19px]">badge</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Team</span></a><a class="relative group flex items-center justify-center w-10 h-10 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined text-[19px]">notifications</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Notifications</span></a><a class="relative group flex items-center justify-center w-10 h-10 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="billing" href="#"><span class="material-symbols-outlined text-[19px]">credit_card</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Billing</span></a><a class="relative group flex items-center justify-center w-10 h-10 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[19px]">settings</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Settings</span></a><a class="relative group flex items-center justify-center w-10 h-10 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-[19px]">help_outline</span><span class="pointer-events-none absolute left-full ml-3 px-space-xs py-space-2xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 shadow-md">Help</span></a></div></aside><div class="flex-1 pl-20 flex flex-col min-w-0"><header class="h-16 w-full px-space-shell-padding flex items-center justify-between gap-space-md z-20 bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">language</span><span class="font-semibold">northstardigital.com</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div><div class="flex-1 max-w-xs mx-auto"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-space-sm rounded-full bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Search leads, insights..." type="text"/></div></div><div class="flex items-center gap-space-sm"><button class="relative p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-container ring-2 ring-surface-container-lowest"></span></div><div class="hidden sm:flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold leading-none">Maya Singh</span><span class="font-label-sm text-label-sm text-outline leading-tight mt-0.5">Revenue Lead</span></div></div></div></header><main class="flex-1 pt-16 px-space-shell-padding pb-space-shell-padding bg-surface-container-lowest overflow-y-auto"><div class="flex flex-col w-full">
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const leadsNav = document.querySelector('aside nav a[data-path="leads"]');
+      const allNavs = document.querySelectorAll('aside nav a');
+      if (leadsNav && allNavs) {
+        allNavs.forEach(nav => {
+          nav.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-[0_4px_12px_rgba(49,82,244,0.3)]');
+          nav.classList.add('text-on-surface-variant');
+        });
+        leadsNav.classList.remove('text-on-surface-variant');
+        leadsNav.classList.add('bg-primary-container', 'text-on-primary', 'shadow-[0_4px_12px_rgba(49,82,244,0.3)]');
+      }
+    });
+
+    function toggleDrawer(open = true) {
+      const drawer = document.getElementById('lead-detail-drawer');
+      const overlay = document.getElementById('drawer-backdrop');
+      if (open) {
+        drawer.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      } else {
+        drawer.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      }
+    }
+
+    function selectRow(element, leadName, company, score, temp, stage, owner, email, phone, budget, timeline, service, summary) {
+      document.querySelectorAll('.lead-table-row').forEach(row => {
+        row.classList.remove('bg-primary-fixed/40', 'shadow-sm');
+      });
+      element.classList.add('bg-primary-fixed/40', 'shadow-sm');
+
+      document.getElementById('drawer-lead-name').textContent = leadName;
+      document.getElementById('drawer-lead-title').textContent = company;
+      document.getElementById('drawer-score-badge').textContent = score + ' • ' + temp;
+      document.getElementById('drawer-email').textContent = email;
+      document.getElementById('drawer-phone').textContent = phone;
+      document.getElementById('drawer-budget').textContent = budget;
+      document.getElementById('drawer-timeline').textContent = timeline;
+      document.getElementById('drawer-service').textContent = service;
+      document.getElementById('drawer-summary').textContent = summary;
+
+      toggleDrawer(true);
+    }
+  </script>
+<!-- Page Header Area -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<!-- Top Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Leads</h1>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+          1,248 total
+        </span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          3 active
+        </span>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-xs sm:gap-space-sm">
+<div class="relative min-w-[200px] sm:min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full h-11 pl-9 pr-space-sm rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search leads, companies..." type="text"/>
+</div>
+<button class="h-11 px-space-sm sm:px-space-md rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container flex items-center gap-space-xs transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">filter_list</span>
+<span class="hidden sm:inline">Filters</span>
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">3</span>
+</button>
+<button class="h-11 px-space-md rounded-xl bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-lg text-label-lg font-semibold flex items-center gap-space-xs shadow-[0_8px_20px_rgba(49,82,244,0.28)] hover:opacity-95 active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Add Lead</span>
+</button>
+</div>
+</div>
+<!-- Swipeable / Touch KPI Filter Strip -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar select-none">
+<button class="flex-shrink-0 h-10 px-space-md rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-[0_4px_12px_rgba(49,82,244,0.25)] flex items-center gap-1.5 transition-transform active:scale-95">
+<span>All</span>
+<span class="opacity-80 font-normal">1,248</span>
+</button>
+<button class="flex-shrink-0 h-10 px-space-md rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container flex items-center gap-1.5 transition-colors active:scale-95">
+<span class="flex items-center text-error">🔥</span>
+<span class="font-semibold">Hot</span>
+<span class="text-on-surface-variant font-normal">74</span>
+</button>
+<button class="flex-shrink-0 h-10 px-space-md rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container flex items-center gap-1.5 transition-colors active:scale-95">
+<span class="w-2 h-2 rounded-full bg-[#f5a524]"></span>
+<span>Warm</span>
+<span class="text-on-surface-variant font-normal">193</span>
+</button>
+<button class="flex-shrink-0 h-10 px-space-md rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container flex items-center gap-1.5 transition-colors active:scale-95">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span>Cold</span>
+<span class="text-on-surface-variant font-normal">161</span>
+</button>
+<button class="flex-shrink-0 h-10 px-space-md rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container flex items-center gap-1.5 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">alarm</span>
+<span>Follow-up Due</span>
+<span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px] font-bold">12</span>
+</button>
+<div class="h-5 w-px bg-surface-container-high mx-space-2xs flex-shrink-0"></div>
+<button class="flex-shrink-0 h-10 px-space-sm rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Sort: Score High-Low</span>
+</button>
+</div>
+</div>
+<!-- Tablet Responsive Lead Table Container -->
+<div class="relative w-full bg-surface-container-lowest rounded-2xl shadow-[0_10px_30px_rgba(20,25,40,0.04),0_2px_6px_rgba(20,25,40,0.02)] overflow-hidden">
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse min-w-[720px]">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 w-12 text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-3 px-4 font-semibold">Lead &amp; Company</th>
+<th class="py-3 px-4 font-semibold">Score &amp; Temp</th>
+<th class="py-3 px-4 font-semibold">Stage</th>
+<th class="py-3 px-4 font-semibold">Assigned Owner</th>
+<th class="py-3 px-4 font-semibold text-right">Next Follow-up</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y-0">
+<!-- Row 1: Olivia Martin (Selected State) -->
+<tr class="lead-table-row bg-primary-fixed/40 transition-colors cursor-pointer hover:bg-primary-fixed/50" onclick="selectRow(this, 'Olivia Martin', 'VP Marketing at Apex Dynamics', '86', 'HOT LEAD', 'Qualified', 'Maya Singh', 'olivia.martin@apexdynamics.io', '+1 (415) 890-2341', '€8,000 – €12,000', '&lt; 30 Days (Q3 kickoff)', 'AI Automation &amp; Inbound CRM', 'High-intent agency buyer seeking autonomous multi-site pre-qualification.')">
+<td class="py-4 px-4 text-center" onclick="event.stopPropagation()">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Close up professional portrait of Olivia Martin, VP Marketing with stylish short bob haircut in bright modern office setting, crisp executive attire, confident warm expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs1oYikEZj89oadaQihU5YKw4xdtsljHkxIkOvAbEAJO4F0L8JiYK7KbjkljwxtAWlrF_3KoL3ryQsemvJUctO76XPXzPc3-n7it9I9QusrJXTeooaEgJEPgGG-KOk54NMkDe0EBzY_Onl6bjEIVThQJKI43PdjRMv_PIJ3cSemqvYsz_WERf3CzVb5DZbOqC47HCudVPzpnT4fGeUM0M34Em_8k54d3bCXbsVXDEyNOcYqsVfV3o"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Olivia Martin</span>
+<span class="w-2 h-2 rounded-full bg-tertiary-container" title="Online now"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Apex Dynamics</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-[#FDF2F3] text-[#F04452] font-label-md text-label-md font-bold">
+<span>🔥</span>
+<span>86</span>
+<span class="text-[11px] font-medium tracking-wide uppercase">Hot</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-space-xs py-1 rounded-full bg-[#E8F8F3] text-[#20B486] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#20B486]"></span>
+                Qualified
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<img alt="Maya Singh" class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/>
+<span class="font-label-md text-label-md text-on-surface font-medium">Maya Singh</span>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center justify-end gap-2 text-right">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-error font-semibold">Today 2:30 PM</span>
+<span class="font-body-sm text-[11px] text-outline">Discovery Demo</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</td>
+</tr>
+<!-- Row 2: Marcus Vance -->
+<tr class="lead-table-row transition-colors cursor-pointer hover:bg-surface-container-low" onclick="selectRow(this, 'Marcus Vance', 'Head of Revenue at CloudScale', '82', 'HOT LEAD', 'Meeting Scheduled', 'Arjun Mehta', 'm.vance@cloudscale.net', '+44 20 7946 0912', '€15,000 – €20,000', '&lt; 14 Days', 'Full Pipeline Automation', 'Enterprise sales pipeline transformation, currently evaluating Northstar vs manual SDR routing.')">
+<td class="py-4 px-4 text-center" onclick="event.stopPropagation()">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center flex-shrink-0">
+                  MV
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Marcus Vance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">CloudScale Systems</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-[#FDF2F3] text-[#F04452] font-label-md text-label-md font-bold">
+<span>🔥</span>
+<span>82</span>
+<span class="text-[11px] font-medium tracking-wide uppercase">Hot</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-space-xs py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Meeting Scheduled
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px] flex items-center justify-center font-bold">AM</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Arjun Mehta</span>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center justify-end gap-2 text-right">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tomorrow 10:00 AM</span>
+<span class="font-body-sm text-[11px] text-outline">Executive Briefing</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</td>
+</tr>
+<!-- Row 3: Elena Rostova -->
+<tr class="lead-table-row transition-colors cursor-pointer hover:bg-surface-container-low" onclick="selectRow(this, 'Elena Rostova', 'Chief Growth Officer at FinLeap Tech', '64', 'WARM LEAD', 'Proposal Sent', 'Riya Sen', 'elena@finleaptech.de', '+49 30 5678 2311', '€6,000 – €9,000', '30–60 Days', 'Inbound AI Qualification', 'Financial SaaS looking to filter compliance-grade inquiries automatically before SDR handoff.')">
+<td class="py-4 px-4 text-center" onclick="event.stopPropagation()">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Editorial portrait of European tech founder Elena Rostova, high-key ambient studio lighting, soft navy blazer, natural smile, modern minimalist studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPVp6IowW3tlbFodLVeLsumwceoeJR9BaYzCB063sAUtwfXoRiRzI90FxAPfrDMwMGDurTo5Z2dplPMT_Fv7LYVRkrMA40L6kHKekm35SiCrst-eg1TNpAjmW5RJsIGgfdxrYKdZPQT0PyhFALkIe-FT18yTIOtKk6a2_j6HAmNmhxTWqloHT26KcgM67p6TmA0C5gzsILBMQimoL2K8Hrr4B-vtXH_sgVwE_vt67R1eXQNWrCK0c"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Elena Rostova</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">FinLeap Tech</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-[#FEF8EC] text-[#F5A524] font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-[#F5A524]"></span>
+<span>64</span>
+<span class="text-[11px] font-medium tracking-wide uppercase">Warm</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-space-xs py-1 rounded-full bg-secondary-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Proposal Sent
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] flex items-center justify-center font-bold">RS</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Riya Sen</span>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center justify-end gap-2 text-right">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Jun 14, 4:00 PM</span>
+<span class="font-body-sm text-[11px] text-outline">Pricing Review</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</td>
+</tr>
+<!-- Row 4: Daniel Wu -->
+<tr class="lead-table-row transition-colors cursor-pointer hover:bg-surface-container-low" onclick="selectRow(this, 'Daniel Wu', 'Operations Director at Nexus Media', '42', 'COLD LEAD', 'Contacted', 'Maya Singh', 'dan.wu@nexusmedia.co', '+1 (650) 412-8874', '€3,000 – €5,000', '90+ Days', 'Widget Concierge', 'Self-service inquiry regarding standalone chat widget embedding.')">
+<td class="py-4 px-4 text-center" onclick="event.stopPropagation()">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm font-bold flex items-center justify-center flex-shrink-0">
+                  DW
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Daniel Wu</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Nexus Media Global</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-[#F1F5F8] text-[#7190A8] font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-[#7190A8]"></span>
+<span>42</span>
+<span class="text-[11px] font-medium tracking-wide uppercase">Cold</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-space-xs py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                Contacted
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<img alt="Maya Singh" class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/>
+<span class="font-label-md text-label-md text-on-surface font-medium">Maya Singh</span>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center justify-end gap-2 text-right">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-outline font-semibold">Jun 18, 11:00 AM</span>
+<span class="font-body-sm text-[11px] text-outline">Nurture Email #2</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</td>
+</tr>
+<!-- Row 5: Sarah Jenkins -->
+<tr class="lead-table-row transition-colors cursor-pointer hover:bg-surface-container-low" onclick="selectRow(this, 'Sarah Jenkins', 'VP Ops at Lumina Logistics', '91', 'HOT LEAD', 'Qualified', 'Arjun Mehta', 's.jenkins@luminalogistics.com', '+1 (312) 555-0199', '€22,000 – €30,000', 'Immediate (&lt; 7 Days)', 'Multi-tenant CRM Agent', 'Urgent replacement of traditional chat agent. High inbound volume from tier-1 freight partners.')">
+<td class="py-4 px-4 text-center" onclick="event.stopPropagation()">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Editorial headshot of corporate VP Sarah Jenkins in contemporary architecturally lit studio, charcoal blazer, elegant subtle pearl jewelry, warm approachable expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPyOM0MnhLf4TfJOiPt7_6Ie7IIxvXxDLTlOBqiwCQCevhIYwxfTXo6YiYu2h8-anbAPq7ZYGPjUycFBZQn3qP4laQuMflpzEzxQFc1SWmABLC51PPLcKSQ1l4JAKoTQrmU16ew1cpaiwKTmAzCvOQ0sfRGNW8Jm_0u5b_jiR_z4aOSLSal1Thj5BCuvlIQJ1DPLiTNDRkomyQhKA49G5YacMpjBHCW5g6AvTslCBWRFZWpTqDCLs"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Sarah Jenkins</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Lumina Logistics</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-[#FDF2F3] text-[#F04452] font-label-md text-label-md font-bold">
+<span>🔥</span>
+<span>91</span>
+<span class="text-[11px] font-medium tracking-wide uppercase">Hot</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-space-xs py-1 rounded-full bg-[#E8F8F3] text-[#20B486] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#20B486]"></span>
+                Qualified
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px] flex items-center justify-center font-bold">AM</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Arjun Mehta</span>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center justify-end gap-2 text-right">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-error font-semibold">Today 4:00 PM</span>
+<span class="font-body-sm text-[11px] text-outline">Procurement Call</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Quick Summary -->
+<div class="py-3 px-4 bg-surface-container-low/40 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Showing 1-5 of 1,248 leads</span>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container transition-colors disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-semibold shadow-xs">1</span>
+<span class="px-2 py-1 text-on-surface-variant">2</span>
+<span class="px-2 py-1 text-on-surface-variant">...</span>
+<span class="px-2 py-1 text-on-surface-variant">84</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Ambient Backdrop Overlay for Tablet Drawer -->
+<div class="fixed inset-0 bg-inverse-surface/30 backdrop-blur-xs z-40 transition-opacity duration-200" id="drawer-backdrop" onclick="toggleDrawer(false)"></div>
+<!-- Right-Hand Slide-out Row Detail Drawer (Optimized for Tablet Touch Viewport) -->
+<aside class="fixed top-space-md md:top-space-lg bottom-space-md md:bottom-space-lg right-space-md md:right-space-lg w-full max-w-[420px] bg-surface-container-lowest rounded-3xl shadow-[0_24px_48px_-8px_rgba(18,24,40,0.18)] z-50 flex flex-col overflow-hidden transition-transform duration-300 ease-out translate-x-0" id="lead-detail-drawer">
+<!-- Drawer Header -->
+<div class="p-space-card-padding pb-space-sm flex items-center justify-between bg-surface-container-lowest z-10">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Lead Details</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#FDF2F3] text-[#F04452] font-label-sm text-label-sm font-bold" id="drawer-score-badge">
+          86 • HOT LEAD
+        </span>
+</div>
+<button aria-label="Close lead details" class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="toggleDrawer(false)" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Scrollable Content -->
+<div class="flex-1 overflow-y-auto px-space-card-padding py-space-xs space-y-space-md no-scrollbar">
+<!-- Identity Hero Card (Dark Contrast Anchor) -->
+<div class="p-space-md rounded-2xl bg-gradient-to-br from-[#242424] to-[#121212] text-on-primary shadow-md relative overflow-hidden">
+<div class="flex items-start gap-space-sm relative z-10">
+<img class="w-14 h-14 rounded-2xl object-cover shadow-sm ring-2 ring-white/10" data-alt="Close up executive portrait of Olivia Martin with clean studio lighting, high resolution, confident and calm demeanor, wearing tailored dark charcoal blazer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnj9Zcwzv4f_bGsBudlZqCuybJrOTyi8k26DLh_X7ifibeoyHS4VYZdL9aV_kdPeY4VRBol5lP3kmN1-mz2cP0DRH1cPEuyIX_3DXgnFSR9MdP_mJku3I9Usp5MEfMzezEK5tbn70_mUzgXD84DCJCQMkCdhR0eOgq0L121tXk_T75PtqrC6wCV3qPVRzRklbd9-L9sXKUVgcdNltW-ITEw3TO4HI6xQrCs4JHfU5PLT7mqEUEtYU"/>
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline-md text-headline-md text-on-primary font-bold tracking-tight truncate" id="drawer-lead-name">Olivia Martin</h2>
+<p class="font-body-sm text-body-sm text-surface-variant truncate" id="drawer-lead-title">VP Marketing at Apex Dynamics</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-white/10 text-white font-label-sm text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+                HubSpot Connected
+              </span>
+</div>
+</div>
+</div>
+<!-- Contact Links Strip -->
+<div class="mt-4 pt-3 border-t border-white/10 flex flex-col gap-1.5 text-[12px] text-surface-variant font-body-sm">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">mail</span>
+<span class="truncate text-white" id="drawer-email">olivia.martin@apexdynamics.io</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">call</span>
+<span class="text-white" id="drawer-phone">+1 (415) 890-2341</span>
+</div>
+</div>
+</div>
+<!-- Nova AI Intent Intelligence Card -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Nova AI Intent Summary</span>
+</div>
+<span class="text-[11px] font-metric-mono font-semibold px-2 py-0.5 rounded bg-surface-container-lowest text-primary">98% Match</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="drawer-summary">
+          High-intent agency buyer seeking autonomous multi-site pre-qualification. Visited /pricing three times and submitted requirements for 12 sub-brand websites.
+        </p>
+</div>
+<!-- Secondary Structured Lead Parameters -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">Service Requested</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1 truncate" id="drawer-service">
+            AI Automation &amp; CRM
+          </span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">Estimated Budget</span>
+<span class="font-label-md text-label-md text-primary font-bold mt-1" id="drawer-budget">
+            €8,000 – €12,000
+          </span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">Timeline</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1" id="drawer-timeline">
+            &lt; 30 Days (Q3)
+          </span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">Inbound Source</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">chat</span>
+            Chatbot (/pricing)
+          </span>
+</div>
+</div>
+<!-- Lead Assignee & Velocity -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img alt="Maya Singh" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] text-outline">Lead Owner</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Maya Singh</span>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container transition-colors">
+          Reassign
+        </button>
+</div>
+<!-- Activity Timeline Micro-preview -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Qualification Logs</span>
+<span class="text-outline text-[11px] font-label-sm">Updated 14m ago</span>
+</div>
+<div class="flex items-start gap-2.5 text-body-sm text-on-surface-variant font-body-sm">
+<div class="w-2 h-2 rounded-full bg-primary mt-1.5 flex-shrink-0"></div>
+<p class="text-[12px] leading-snug">Autonomous AI Agent qualified budget and confirmed calendar invite for Maya Singh.</p>
+</div>
+</div>
+</div>
+<!-- Action Footer in Drawer -->
+<div class="p-space-card-padding pt-space-xs bg-surface-container-lowest flex flex-col gap-space-xs shadow-[0_-8px_20px_rgba(20,25,40,0.03)] z-10">
+<button class="w-full h-12 rounded-xl bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-[0_8px_20px_rgba(49,82,244,0.32)] active:scale-[0.99] transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span>Schedule Meeting</span>
+</button>
+<button class="w-full h-11 rounded-xl bg-surface-container-low text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-container flex items-center justify-center gap-2 transition-colors active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Contact Lead</span>
+</button>
+</div>
+</aside>
+</div></main></div></div></body></html>

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-03T00:00:00+05:30",
+  "title": "Design System: AILQS Signal Command",
+  "extensions": {
+    "colorMeta": {
+      "command-navy": { "role": "neutral", "displayName": "Command Navy", "tonalRamp": ["#050910", "#0b1220", "#172033", "#334155", "#64748b", "#94a3b8", "#cbd5e1", "#f1f5f9"] },
+      "raised-navy": { "role": "neutral", "displayName": "Raised Navy", "tonalRamp": ["#070d17", "#111c2f", "#233047", "#475569", "#718096", "#a0aec0", "#d5dce6", "#f5f7fa"] },
+      "analytical-canvas": { "role": "neutral", "displayName": "Analytical Canvas", "tonalRamp": ["#172033", "#334155", "#64748b", "#94a3b8", "#cbd5e1", "#e2e8f0", "#f6f8fb", "#ffffff"] },
+      "white-surface": { "role": "neutral", "displayName": "White Surface", "tonalRamp": ["#1f2937", "#374151", "#6b7280", "#9ca3af", "#d1d5db", "#e5e7eb", "#f9fafb", "#ffffff"] },
+      "midnight-ink": { "role": "neutral", "displayName": "Midnight Ink", "tonalRamp": ["#080c14", "#172033", "#334155", "#64748b", "#94a3b8", "#cbd5e1", "#e2e8f0", "#f8fafc"] },
+      "operational-slate": { "role": "neutral", "displayName": "Operational Slate", "tonalRamp": ["#111827", "#1e293b", "#334155", "#64748b", "#94a3b8", "#cbd5e1", "#e2e8f0", "#f8fafc"] },
+      "hairline-slate": { "role": "neutral", "displayName": "Hairline Slate", "tonalRamp": ["#1e293b", "#334155", "#64748b", "#94a3b8", "#cbd5e1", "#e2e8f0", "#f1f5f9", "#f8fafc"] },
+      "signal-indigo": { "role": "primary", "displayName": "Signal Indigo", "tonalRamp": ["#1e1b4b", "#312e81", "#3730a3", "#4338ca", "#4f46e5", "#818cf8", "#c7d2fe", "#eef2ff"] },
+      "evidence-cyan": { "role": "secondary", "displayName": "Evidence Cyan", "tonalRamp": ["#083344", "#164e63", "#155e75", "#0e7490", "#0891b2", "#22d3ee", "#a5f3fc", "#ecfeff"] },
+      "hot-rose": { "role": "tertiary", "displayName": "Hot Rose", "tonalRamp": ["#4c0519", "#881337", "#9f1239", "#be123c", "#e11d48", "#fb7185", "#fecdd3", "#fff1f2"] },
+      "warm-amber": { "role": "tertiary", "displayName": "Warm Amber", "tonalRamp": ["#451a03", "#78350f", "#92400e", "#b45309", "#d97706", "#fbbf24", "#fde68a", "#fffbeb"] },
+      "cold-blue": { "role": "tertiary", "displayName": "Cold Blue", "tonalRamp": ["#172554", "#1e3a8a", "#1e40af", "#1d4ed8", "#2563eb", "#60a5fa", "#bfdbfe", "#eff6ff"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Gallery Display", "purpose": "Large gallery introduction only." },
+      "headline": { "displayName": "Page Headline", "purpose": "Primary operating-screen title." },
+      "title": { "displayName": "Panel Title", "purpose": "Drawer, dialog, and section titles." },
+      "body": { "displayName": "Body", "purpose": "Default prose and explanatory content." },
+      "label": { "displayName": "Operational Label", "purpose": "Table headers, metadata, and compact evidence labels." }
+    },
+    "shadows": [
+      { "name": "signal-lift", "value": "0 8px 25px rgba(15,23,42,.12)", "purpose": "Dark signal queue." },
+      { "name": "floating-panel", "value": "0 20px 50px rgba(15,23,42,.16)", "purpose": "Notification panel." },
+      { "name": "evidence-drawer", "value": "-22px 0 55px rgba(15,23,42,.17)", "purpose": "Right-side lead drawer." },
+      { "name": "modal-authority", "value": "0 28px 80px rgba(15,23,42,.25)", "purpose": "State dialog." }
+    ],
+    "motion": [
+      { "name": "drawer-enter", "value": "220ms cubic-bezier(.16,1,.3,1)", "purpose": "Right-side evidence drawer entrance." },
+      { "name": "panel-pop", "value": "170ms ease-out", "purpose": "Notification panel entrance." },
+      { "name": "fade", "value": "180ms ease-out", "purpose": "Overlay scrim entrance." },
+      { "name": "press", "value": "translateY(1px)", "purpose": "Global pressed feedback." }
+    ],
+    "breakpoints": [
+      { "name": "wide-collapse", "value": "1100px" },
+      { "name": "mobile-shell", "value": "820px" },
+      { "name": "mobile-content", "value": "620px" },
+      { "name": "narrow", "value": "420px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Compact primary action in Signal Indigo.",
+      "html": "<button class=\"ds-btn-primary\">Add lead</button>",
+      "css": ".ds-btn-primary{height:36px;padding:0 12px;display:inline-flex;align-items:center;justify-content:center;color:#fff;background:#4f46e5;border:1px solid #4f46e5;border-radius:9px;font:700 12px 'Avenir Next',Avenir,'Segoe UI',sans-serif;cursor:pointer}.ds-btn-primary:hover{background:#4338ca}.ds-btn-primary:focus-visible{outline:3px solid #818cf8;outline-offset:2px}.ds-btn-primary:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet bordered action for supporting operations.",
+      "html": "<button class=\"ds-btn-secondary\">Export</button>",
+      "css": ".ds-btn-secondary{height:36px;padding:0 12px;color:#465367;background:#fff;border:1px solid #dbe2ea;border-radius:9px;font:700 12px 'Avenir Next',Avenir,'Segoe UI',sans-serif;cursor:pointer}.ds-btn-secondary:hover{background:#f8fafc}.ds-btn-secondary:focus-visible{outline:3px solid #818cf8;outline-offset:2px}.ds-btn-secondary:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Compact cool-white field with a hairline boundary.",
+      "html": "<label class=\"ds-search\"><span>⌕</span><input placeholder=\"Search leads\" /></label>",
+      "css": ".ds-search{width:280px;height:36px;padding:0 11px;display:flex;align-items:center;gap:8px;color:#94a3b8;background:#f8fafc;border:1px solid #e2e8f0;border-radius:9px}.ds-search input{min-width:0;flex:1;color:#334155;background:transparent;border:0;outline:0;font:400 12px 'Avenir Next',Avenir,'Segoe UI',sans-serif}.ds-search:focus-within{outline:3px solid #818cf8;outline-offset:2px}"
+    },
+    {
+      "name": "Classification Chip",
+      "kind": "chip",
+      "description": "Semantic classification with both text and a shape cue.",
+      "html": "<span class=\"ds-class-hot\"><i></i>Hot</span>",
+      "css": ".ds-class-hot{width:max-content;padding:4px 7px;display:inline-flex;align-items:center;gap:4px;color:#be123c;background:#fff1f2;border-radius:999px;font:800 10px 'Avenir Next',Avenir,'Segoe UI',sans-serif}.ds-class-hot i{width:5px;height:5px;border:1.5px solid currentColor;border-radius:50%}"
+    },
+    {
+      "name": "Metric Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Flat analytical surface with compact label and dominant value.",
+      "html": "<article class=\"ds-metric\"><div>Qualified leads <span>↗</span></div><strong>62</strong><p><b>+12%</b> from last period</p></article>",
+      "css": ".ds-metric{width:220px;min-height:126px;padding:15px 16px;color:#172033;background:#fff;border:1px solid #e2e8f0;border-radius:12px;font-family:'Avenir Next',Avenir,'Segoe UI',sans-serif}.ds-metric div{display:flex;justify-content:space-between;color:#6b778a;font-size:12px;font-weight:700}.ds-metric strong{display:block;margin-top:14px;font-size:27px;line-height:1;letter-spacing:-.04em}.ds-metric p{margin:8px 0 0;color:#8a96a7;font-size:11px}.ds-metric p b{color:#15803d}"
+    },
+    {
+      "name": "Signal Queue Item",
+      "kind": "custom",
+      "description": "Signature dark actionable signal with explicit urgency and timing.",
+      "html": "<button class=\"ds-signal\"><span class=\"ds-signal-icon\">!</span><span><b>Priya Sharma is ready to buy</b><small>92 score · Waiting 4 minutes</small></span><em>→</em></button>",
+      "css": ".ds-signal{width:360px;padding:12px 13px;display:flex;align-items:center;gap:9px;color:#dce5f0;background:#0f1828;border:0;border-left:1px solid #222e42;text-align:left;font-family:'Avenir Next',Avenir,'Segoe UI',sans-serif;cursor:pointer}.ds-signal:hover{background:#162137}.ds-signal:focus-visible{outline:3px solid #818cf8;outline-offset:2px}.ds-signal-icon{flex:none;width:27px;height:27px;display:grid;place-items:center;color:#fb7185;background:#321927;border-radius:8px}.ds-signal span:nth-child(2){min-width:0;flex:1}.ds-signal b,.ds-signal small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ds-signal b{font-size:12px}.ds-signal small{margin-top:3px;color:#8290a3;font-size:11px}.ds-signal em{color:#586981;font-style:normal}"
+    },
+    {
+      "name": "Sidebar Navigation Item",
+      "kind": "nav",
+      "description": "Active command-rail destination with a leading indigo marker.",
+      "html": "<button class=\"ds-nav-active\"><span>⌂</span><b>Dashboard</b></button>",
+      "css": ".ds-nav-active{position:relative;width:220px;height:39px;padding:0 10px;display:flex;align-items:center;gap:10px;color:#fff;background:#1b2850;border:0;border-radius:9px;text-align:left;font:400 12px 'Avenir Next',Avenir,'Segoe UI',sans-serif}.ds-nav-active:before{content:'';position:absolute;left:-10px;width:3px;height:22px;background:#818cf8;border-radius:0 4px 4px 0}.ds-nav-active:hover{background:#22315f}.ds-nav-active:focus-visible{outline:3px solid #818cf8;outline-offset:2px}.ds-nav-active b{font-weight:700}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Calm Sales Operations Room",
+    "overview": "Signal Command makes each new lead legible as an urgent, evidence-backed sales decision rather than another dashboard row. It is a dense but calm operating environment: persistent dark navigation frames a bright analytical canvas, while restrained indigo and cyan signals guide attention without turning the interface into an alarm panel.\n\nThe visual story moves from signal queue to performance evidence, lead detail, score rationale, next action, and delivery health. The first viewport prioritizes the queue, KPIs, qualification trend, and recent leads; promotional material and infrastructure detail stay out of that decision path.",
+    "keyCharacteristics": ["Fixed dark command shell around a wide, light operational canvas.", "Compact, explicit status language supported by icons, labels, and color.", "Indigo for action and qualification; cyan for secondary evidence.", "Dense ledgers and analytical cards with quiet borders and limited elevation.", "Right-side drawers preserve context while exposing evidence and next actions."],
+    "rules": [
+      { "name": "The Semantic Signal Rule", "body": "Rose, amber, blue, green, and red are status vocabulary, not decoration. Pair every status color with an icon or label, and do not reuse it for unrelated emphasis.", "section": "colors" },
+      { "name": "The Scan Before Read Rule", "body": "A user should understand the lead, its class, score, urgency, and next action from the typographic hierarchy before reading supporting prose.", "section": "typography" },
+      { "name": "The Flat-at-Rest Rule", "body": "Routine cards and controls use tonal contrast and a hairline border. Shadows belong to queues, overlays, drawers, dialogs, and transient feedback.", "section": "elevation" }
+    ],
+    "dos": ["Do lead operational screens with the signal queue and the most decision-relevant evidence.", "Do keep routine surfaces white, bordered, compact, and flat.", "Do pair every status hue with words, icons, shape, or position.", "Do preserve the 244px command rail, wide analytical canvas, and contextual right drawer pattern where the workflow requires them.", "Do replace dense desktop tables with purpose-built mobile cards at 620px."],
+    "donts": ["Don't turn Indigo or semantic status colors into broad decorative backgrounds.", "Don't add promotional, celebratory, or infrastructure noise ahead of the lead decision path.", "Don't float every card; reserve elevation for hierarchy and overlays.", "Don't use pills as a general container shape; reserve them for compact statuses and counts.", "Don't hide score rationale or next-action context behind a separate disconnected screen when a drawer can preserve the operating view."]
+  }
+}

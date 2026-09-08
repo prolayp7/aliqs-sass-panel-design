@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#171d1a","status-success":"#15945F","mint-tint":"#F0FAF5","on-secondary-fixed":"#002112","on-secondary":"#ffffff","canvas-bg":"#F2F4F3","status-cold":"#6F8E9E","surface-container":"#e9efea","tertiary-container":"#003c25","tertiary-fixed":"#8ef7c0","surface":"#f5fbf5","on-secondary-fixed-variant":"#005233","surface-container-low":"#eff5f0","on-tertiary-container":"#43af7d","inverse-surface":"#2c322e","shell-bg":"#FFFFFF","surface-dim":"#d5dcd6","primary-fixed":"#bdedd4","on-primary-fixed-variant":"#224f3d","secondary-fixed":"#99f6c2","status-hot":"#E55252","surface-tint":"#3b6753","secondary-container":"#99f6c2","on-primary-container":"#78a68f","on-primary-fixed":"#002115","mint-soft":"#DCF4E8","on-secondary-container":"#02734a","muted-gray":"#8A938E","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#005234","surface-container-highest":"#dee4df","on-error":"#ffffff","on-background":"#171d1a","on-tertiary":"#ffffff","status-warm":"#E9A23B","secondary-fixed-dim":"#7dd9a7","background":"#f5fbf5","border-subtle":"#DDE2DF","inverse-primary":"#a2d1b9","surface-bright":"#f5fbf5","outline":"#717973","secondary":"#006c45","tertiary":"#002415","on-surface-variant":"#414944","tertiary-fixed-dim":"#71dba5","inverse-on-surface":"#ecf2ed","surface-container-high":"#e4eae4","error-container":"#ffdad6","surface-variant":"#dee4df","primary-container":"#0b3b2a","on-error-container":"#93000a","error":"#ba1a1a","on-tertiary-fixed":"#002112","outline-variant":"#c0c8c2","on-primary":"#ffffff","body-charcoal":"#3E4742","primary-fixed-dim":"#a2d1b9","emerald-vivid":"#15945F","primary":"#002417"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.5rem","space-2xl":"2.5rem","space-3xl":"3rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","shell-padding":"2rem","gutter-tablet":"1rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-2xs":"0.25rem","space-xl":"2rem"},"fontFamily":{"label-md":["Inter"],"kpi-metric":["Manrope"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Manrope"],"headline-sm":["Manrope"],"body-sm":["Inter"],"body-md":["Inter"],"display-lg":["Manrope"],"headline-md":["Manrope"]},"fontSize":{"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"kpi-metric":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased min-h-screen"><div class="p-gutter-mobile lg:p-gutter-desktop min-h-screen flex"><div class="w-full rounded-[24px] bg-shell-bg shadow-[0_8px_32px_-4px_rgba(11,59,42,0.05),0_2px_8px_-2px_rgba(17,23,20,0.03)] border border-border-subtle flex relative overflow-hidden"><aside class="w-64 flex-shrink-0 bg-shell-bg border-r border-border-subtle flex flex-col justify-between h-auto py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="NovaLead Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U_RVWV9ukk3tUR50J2SFd0itvU9dlX7o1A9fwm0wprNWdIyFnoq8sezQTdb0HgP2Po9iKsE0S8zozl9C4DV8nv1tDCSvX5wPShj2kRgGMqL2y0hvOejE1VMoBLbEzsYpUXESUaK3Ui0rtTEpTl40fhJC5zX3970t55eATUaLoUb6Nuj33LwyUbrCGKZNqYaz8z3ryi3zcO9grKYQPTngsFy4DvIJ2ICTC6f4mtC2OOH6kAs48xwjt6Tlw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">NovaLead</span></div><button class="flex items-center justify-between px-space-xs py-space-2xs rounded-lg bg-surface-container-low text-body-sm font-label-sm text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="flex items-center gap-1.5 truncate"><span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>Northstar Digital</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">Menu</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="dashboard" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">grid_view</span><span class="font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="inbox" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">chat</span><span class="font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Inbox</span></div><span class="px-1.5 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[10px] font-bold">12+</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs rounded-lg transition-all bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full" data-path="leads" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-emerald-vivid">group</span><span class="font-body-md text-on-surface font-semibold">Leads</span></div></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">schedule_send</span><span class="font-body-md">Follow-ups</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">smart_toy</span><span class="font-body-md">AI Agent</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">rule</span><span class="font-body-md">Qualification</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">menu_book</span><span class="font-body-md">Knowledge Base</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">widgets</span><span class="font-body-md">Websites &amp; Widget</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="automations" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">account_tree</span><span class="font-body-md">Automations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">bar_chart</span><span class="font-body-md">Analytics</span></a></nav></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">General</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">hub</span><span class="font-body-md">Integrations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="team" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">badge</span><span class="font-body-md">Team</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">notifications</span><span class="font-body-md">Notifications</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">receipt_long</span><span class="font-body-md">Billing &amp; Usage</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">settings</span><span class="font-body-md">Settings</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="help" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">help</span><span class="font-body-md">Help</span></a></nav></div></div><div class="px-space-md pt-space-xs"><div class="rounded-xl bg-gradient-to-br from-primary-container to-primary p-space-sm text-on-primary flex flex-col gap-space-xs shadow-[0_6px_20px_-2px_rgba(11,59,42,0.18)]"><div class="flex items-center justify-between"><span class="text-[11px] font-semibold text-mint-soft tracking-wide">Starter Plan</span><span class="text-[11px] text-muted-gray">74%</span></div><div class="text-body-sm font-label-md text-on-primary font-medium">742 / 1,000 Conv.</div><div class="w-full h-1.5 bg-tertiary-container rounded-full overflow-hidden"><div class="h-full bg-status-success rounded-full w-[74%]"></div></div><div class="pt-1 flex items-center justify-between"><span class="text-[10px] text-mint-soft/80">Renews in 11 days</span><button class="px-space-xs py-1 rounded-full bg-status-success text-on-secondary text-[11px] font-semibold hover:opacity-90 transition-opacity" type="button">Upgrade</button></div></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-shell-bg"><header class="h-16 px-space-lg border-b border-border-subtle flex items-center justify-between gap-space-md bg-shell-bg sticky top-0 z-30"><div class="flex-1 max-w-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-muted-gray text-[20px]">search</span><input class="w-full pl-10 pr-12 py-2 text-body-sm rounded-xl border border-border-subtle bg-mint-tint/40 text-on-surface placeholder-muted-gray focus:bg-shell-bg focus:border-status-success focus:ring-2 focus:ring-mint-soft focus:outline-none transition-all" placeholder="Search leads, visitors, conversations..." type="text"/><div class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container border border-border-subtle text-[10px] font-medium text-muted-gray font-mono">⌘F</div></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mint-tint border border-border-subtle text-body-sm font-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-status-success"></span><span>northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span></div><div class="flex items-center gap-1"><button aria-label="Inbox notifications" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">mail</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-hot ring-2 ring-shell-bg"></span></button><button aria-label="Alerts" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-warm ring-2 ring-shell-bg"></span></button></div><div class="h-7 w-[1px] bg-border-subtle"></div><div class="flex items-center gap-space-xs pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-border-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKLyyv5oEThrEBK1kOu9d885WSHu5uMzQZFjJgLQyPXiuwk00YS1a4M9jxQFjd2-Ksr-reE136uCll9DfVL8cG0xBKycJoDKuGo0FJZUwlrdjPN61HSOywTH_n4y-5T9Q6VjSve9C_nLz2XTYQINf0qNoy_le1JK7kxVM4ZeMQR4UOI2C3ZCdFelpZGdbsgEzTLBKGui_o9DTRuE1oTClDxKTVXiLDglubfPzeWDXLM7eyAbv7gBT_"/><div class="hidden xl:flex flex-col text-left"><span class="text-body-sm font-semibold text-on-surface leading-tight">Maya Singh</span><span class="text-[11px] text-muted-gray leading-tight">Product Lead</span></div></div></div></header><main class="flex-1 p-space-lg bg-shell-bg"><div class="flex flex-col w-full gap-space-md">
+<!-- Top Navigation & Breadcrumbs Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<a class="inline-flex items-center gap-1 text-emerald-vivid font-semibold hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Leads</span>
+</a>
+<span class="text-muted-gray">/</span>
+<span class="text-muted-gray">Leads</span>
+<span class="text-muted-gray">/</span>
+<span class="text-on-surface font-semibold">Olivia Martin (Apex Global)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-body-sm text-body-charcoal">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+        Active Session: Bengaluru, India (02:45 PM IST)
+      </span>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" title="Export Lead Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" title="Quick Menu" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Hero Profile Header Card -->
+<section class="rounded-xl bg-shell-bg p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Left: Identity & Badges -->
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-20 h-20 rounded-2xl object-cover shadow-sm" data-alt="Professional candid corporate portrait of Olivia Martin, VP of Growth, in her late 30s with confident warm expression, slate blazer, bright modern executive office background with soft bokeh and organic emerald ambient tint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMt_-ZJ0hBqakiVVygdjXAddon8NvPZtCFGkc9GO_Xb0ZB0_MmFhVcCRIvsMhS4iAJ2CK9J_r-e3u8_lgoZs8x-imkfnEIdlToBcNosNdhQH7L7igjc4wwXNphGEIMWKHMrV4i5ns3gyToFUXr-SB85HicBTqtP545lW3EyWD0yXQxD4nJxktGriQy7znAqyFXPsItNs-qqNxF5J2OiNNfmfiZBsShSuTUeqt3D58Jmao9h0xhkPBS"/>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-emerald-vivid text-on-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight truncate">Olivia Martin</h1>
+<span class="material-symbols-outlined text-[20px] text-emerald-vivid" title="Identity Verified by NovaLead">verified</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#FDE8E8] text-status-hot font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-hot"></span>
+              Hot Lead
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-mint-soft text-on-secondary-container font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-emerald-vivid">auto_awesome</span>
+              AI Score: 86 / 100
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-mint-tint text-secondary font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+              Stage: Qualified
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+            VP of Growth at <span class="font-semibold text-on-surface">Apex Global</span> • Bengaluru, Karnataka, India
+          </p>
+<!-- Attribution & Owner Info Line -->
+<div class="flex flex-wrap items-center gap-y-1 gap-x-4 mt-2 text-body-sm text-muted-gray">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">ads_click</span>
+              Source: <strong class="text-body-charcoal font-medium">Google Organic → /pricing-enterprise</strong>
+</span>
+<span class="text-border-subtle">•</span>
+<div class="inline-flex items-center gap-1.5">
+<img alt="Maya Singh" class="w-5 h-5 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WTvVJ_E71TJv3zf4XEoC_ykMCKiOwj9jsdK0lMkuWcogMO9cTTj_6zjaKGMwjdVcXxrVtCZ8okNM1TSYbZo61htWI-bZEs4BlD3DBGvYthMwDr60Ekkwy-QrJMde5WexcOUHObUKJxMZuDrIV2BNEYLjoUxmX-2RW7-2k2m5GBhHfXmWI8JFFjWqhAQ2gfKIW5eDIyaGvxBh3j_tBE1sAcWHWRumYv7Qjrspku-dNyOikVvDUbwP-TgQ"/>
+<span>Owner: <strong class="text-body-charcoal font-medium">Maya Singh</strong> (Product Lead)</span>
+</div>
+<span class="text-border-subtle">•</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+              First seen 48 mins ago
+            </span>
+</div>
+</div>
+</div>
+<!-- Right: Action CTA Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs self-start lg:self-center">
+<div class="relative">
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-body-charcoal text-body-md font-semibold inline-flex items-center gap-1.5 transition-colors" type="button">
+<span>Change Stage: <strong>Qualified</strong></span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</div>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface text-body-md font-semibold inline-flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>Contact Lead</span>
+</button>
+<button class="px-4 py-2 rounded-xl bg-status-success hover:bg-secondary text-on-primary text-body-md font-semibold inline-flex items-center gap-2 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Schedule Meeting</span>
+</button>
+</div>
+</div>
+<!-- Navigation Tabs Bar -->
+<div class="flex items-center gap-space-md overflow-x-auto pt-2 border-b-0">
+<button class="pb-2.5 text-body-md font-semibold text-emerald-vivid relative whitespace-nowrap after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-emerald-vivid after:rounded-full" type="button">
+        Overview
+      </button>
+<button class="pb-2.5 text-body-md font-medium text-muted-gray hover:text-on-surface transition-colors whitespace-nowrap flex items-center gap-1" type="button">
+<span>Conversations</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-muted-gray text-label-sm font-label-sm">4</span>
+</button>
+<button class="pb-2.5 text-body-md font-medium text-muted-gray hover:text-on-surface transition-colors whitespace-nowrap" type="button">
+        Activity Timeline
+      </button>
+<button class="pb-2.5 text-body-md font-medium text-muted-gray hover:text-on-surface transition-colors whitespace-nowrap flex items-center gap-1" type="button">
+<span>Qualification (BANT)</span>
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+</button>
+<button class="pb-2.5 text-body-md font-medium text-muted-gray hover:text-on-surface transition-colors whitespace-nowrap flex items-center gap-1" type="button">
+<span>Notes</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-muted-gray text-label-sm font-label-sm">3</span>
+</button>
+<button class="pb-2.5 text-body-md font-medium text-muted-gray hover:text-on-surface transition-colors whitespace-nowrap flex items-center gap-1" type="button">
+<span>Follow-ups</span>
+<span class="px-1.5 py-0.2 rounded-full bg-[#FDE8E8] text-status-hot text-label-sm font-label-sm font-semibold">1 Due</span>
+</button>
+<button class="pb-2.5 text-body-md font-medium text-muted-gray hover:text-on-surface transition-colors whitespace-nowrap" type="button">
+        Integrations &amp; CRM
+      </button>
+</div>
+</section>
+<!-- Modular Two-Column Layout (68% / 32%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- Left Column: Core Intelligence & Qualification Stream (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- 1. Executive AI Summary Card -->
+<div class="rounded-xl bg-mint-tint p-space-md flex flex-col gap-space-sm shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px] text-emerald-vivid animate-pulse">neurology</span>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Nova Executive Intelligence Summary</h2>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-muted-gray font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-emerald-vivid">timer</span>
+            Generated 14m ago
+          </span>
+</div>
+<p class="font-body-md text-body-md text-body-charcoal leading-relaxed">
+          High-intent B2B decision-maker actively seeking to replace manual SDR lead triage at <strong class="text-on-surface">Apex Global</strong>. Evaluated enterprise pricing tier for <strong>40,000 monthly unique visitors</strong>. Confirmed an initial deployment budget of <strong>₹2,00,000 – ₹5,00,000 (~$3k–$6k)</strong> with an immediate Q1 launch target (before mid-February) to prevent customer drop-off on high-value enterprise SaaS demo pages.
+        </p>
+<!-- Key Takeaway Chips -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="px-3 py-1 rounded-lg bg-surface-container-lowest text-emerald-vivid font-label-sm text-label-sm inline-flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">payments</span>
+            Budget Confirmed: ₹2–5L
+          </span>
+<span class="px-3 py-1 rounded-lg bg-surface-container-lowest text-status-hot font-label-sm text-label-sm inline-flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+            High Urgency (Q1 Go-Live)
+          </span>
+<span class="px-3 py-1 rounded-lg bg-surface-container-lowest text-secondary font-label-sm text-label-sm inline-flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">psychology_alt</span>
+            Pain: 4h SDR Response Delay
+          </span>
+<span class="px-3 py-1 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm inline-flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+            Authority: VP Growth + CTO Signoff
+          </span>
+</div>
+</div>
+<!-- 2. Score Breakdown & Factor Contribution Bars -->
+<div class="rounded-xl bg-shell-bg p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Lead Score Analysis &amp; Factors</h3>
+<p class="font-body-sm text-body-sm text-muted-gray">Calculated in real-time based on natural language interaction, behavioral cues, and firmographics.</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-mint-soft text-on-secondary-container font-label-sm text-label-sm font-semibold">
+            Top 5% Tier
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<!-- Gauge Radial dial -->
+<div class="md:col-span-4 flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-low">
+<div class="relative w-36 h-24 flex items-end justify-center overflow-hidden">
+<!-- Semicircular SVG dial -->
+<svg class="w-36 h-20" viewbox="0 0 160 90">
+<path d="M 15 80 A 65 65 0 0 1 145 80" fill="none" stroke="#DDE2DF" stroke-linecap="round" stroke-width="14"></path>
+<path d="M 15 80 A 65 65 0 0 1 145 80" fill="none" stroke="#15945F" stroke-dasharray="204" stroke-dashoffset="28" stroke-linecap="round" stroke-width="14"></path>
+</svg>
+<div class="absolute bottom-1 flex flex-col items-center">
+<span class="font-kpi-metric text-kpi-metric text-primary leading-none">86</span>
+<span class="font-label-sm text-label-sm text-muted-gray mt-0.5">/ 100</span>
+</div>
+</div>
+<span class="text-body-sm font-semibold text-emerald-vivid mt-2">Hot Commercial Intent</span>
+<span class="text-[11px] text-muted-gray text-center mt-0.5">+14 pts jump after BANT audit</span>
+</div>
+<!-- 4 Factor Progress Bars -->
+<div class="md:col-span-8 flex flex-col gap-space-sm">
+<!-- Factor 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="font-medium text-on-surface">Budget Match (₹2–5 lakh allocated)</span>
+<span class="font-semibold text-primary">94%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 94%"></div>
+</div>
+</div>
+<!-- Factor 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="font-medium text-on-surface">Decision Authority (VP of Growth, Growth Team Lead)</span>
+<span class="font-semibold text-emerald-vivid">98%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-emerald-vivid rounded-full" style="width: 98%"></div>
+</div>
+</div>
+<!-- Factor 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="font-medium text-on-surface">Pain Point Urgency (Manual SDR overload, 40k traffic)</span>
+<span class="font-semibold text-secondary">88%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-status-success rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<!-- Factor 4 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="font-medium text-on-surface">Implementation Timeline (&lt;30 days target)</span>
+<span class="font-semibold text-primary">82%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 82%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Project Requirements & Qualification Answers (BANT Grid) -->
+<div class="rounded-xl bg-shell-bg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-emerald-vivid">rule</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">BANT Qualification Framework</h3>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-mint-soft text-on-secondary-container font-label-sm text-label-sm font-semibold">
+            4 of 4 Verified
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-1">
+<!-- Card 1: Budget -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1.5 transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray">Budget Tier</span>
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">check_circle</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">₹2L – ₹5L / yr</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Targeting ~$3,000–$6,000 initial pilot setup with room to scale to enterprise suite upon success.
+            </p>
+<span class="text-[11px] text-muted-gray mt-1 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-vivid"></span> Confirmed directly via AI Conversation
+            </span>
+</div>
+<!-- Card 2: Authority -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1.5 transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray">Decision Authority</span>
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">check_circle</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">VP of Growth</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Sole commercial decision-maker for inbound automation; technical signoff coordinated with CTO Ethan Brooks.
+            </p>
+<span class="text-[11px] text-muted-gray mt-1 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-vivid"></span> Verified via LinkedIn &amp; Clearbit
+            </span>
+</div>
+<!-- Card 3: Need -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1.5 transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray">Need &amp; Pain Point</span>
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">check_circle</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">Automate 40k Visitors</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              SDR team response lag averages 4.2 hours. Needs automated qualification to reduce response time to &lt;30 seconds.
+            </p>
+<span class="text-[11px] text-muted-gray mt-1 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-vivid"></span> Explicit urgency: High Q1 target
+            </span>
+</div>
+<!-- Card 4: Timeline -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1.5 transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray">Implementation Timeline</span>
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">check_circle</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">&lt; 30 Days (Feb 15)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Urgent go-live to capture inbound wave from upcoming product showcase webinar scheduled for mid-February.
+            </p>
+<span class="text-[11px] text-muted-gray mt-1 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-vivid"></span> Fast-track architecture track requested
+            </span>
+</div>
+</div>
+</div>
+<!-- 4. Recent Conversation Highlight & Live Chat Snippet -->
+<div class="rounded-xl bg-shell-bg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">forum</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Recent Conversation Snippet</h3>
+</div>
+<span class="text-body-sm text-muted-gray">Session #NV-8291 • 12 total messages</span>
+</div>
+<!-- Chat Stream Card Mock -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<!-- Visitor Message -->
+<div class="flex items-start gap-space-xs max-w-[85%] self-start">
+<img class="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-0.5" data-alt="Small thumbnail avatar of Olivia Martin with slate blazer in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtI_I26pqOH720sraYUVrS5IRR_FBzlbSoSQxW4P2z_qz4cq0FCjZKjbjETp562nyQ4pf1sbWCqu2Yr36GB0-Tb76Jw3hKOP4MtRyCJU-5aLNpY0w6nUsxRIyjrNAU3JeQYs84BsWf0vK4UInvDuDl3WxJN08UEGYQKcTJPnSqpPc9jLDmbaNnC7KuQRHT-1E75QvpoihW-Mc6Kbj6Iv9xsLnd-jCHvDNdrKjbBTpQIS3LlBXKcjsQ"/>
+<div class="p-3 rounded-2xl rounded-tl-none bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between gap-4">
+<span class="text-body-sm font-semibold text-on-surface">Olivia Martin</span>
+<span class="text-[11px] text-muted-gray">2:11 PM</span>
+</div>
+<p class="text-body-md text-body-charcoal">
+                “Yes, our budget is roughly ₹2–5 lakh and we need this live within 30 days to support our Q1 pipeline push. Can your AI sync with HubSpot deals?”
+              </p>
+</div>
+</div>
+<!-- Nova AI Agent Message -->
+<div class="flex items-start gap-space-xs max-w-[85%] self-end flex-row-reverse">
+<div class="w-7 h-7 rounded-full bg-primary-container text-mint-soft flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[15px]">smart_toy</span>
+</div>
+<div class="p-3 rounded-2xl rounded-tr-none bg-mint-soft text-body-charcoal shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between gap-4">
+<span class="text-body-sm font-semibold text-primary">Nova AI Agent</span>
+<span class="text-[11px] text-muted-gray">2:12 PM</span>
+</div>
+<p class="text-body-md text-on-surface">
+                “Perfect Olivia! I’ve noted your 40k monthly visitor volume, HubSpot integration need, and Feb 15 timeline. Maya Singh (Product Lead) can host a tailored 20-min architectural demo with live integration testing.”
+              </p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<a class="inline-flex items-center gap-1.5 text-body-md font-semibold text-emerald-vivid hover:text-primary transition-colors" href="#">
+<span>Open Full Conversation in Inbox (12 messages)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="text-body-sm text-muted-gray">Average agent latency: <strong>1.4s</strong></span>
+</div>
+</div>
+<!-- 5. Activity & Audit Timeline -->
+<div class="rounded-xl bg-shell-bg p-space-md shadow-sm flex flex-col gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Audit &amp; Journey Timeline</h3>
+<div class="relative pl-6 flex flex-col gap-space-md mt-2 before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container">
+<!-- Timeline Item 1 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-mint-soft flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-body-sm font-semibold text-on-surface">Stage changed to “Qualified”</span>
+<span class="text-[11px] text-muted-gray">Today 2:16 PM</span>
+</div>
+<p class="text-body-sm text-on-surface-variant">Automated rule executed: Lead Score &gt; 80 + BANT Complete.</p>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-mint-soft flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-body-sm font-semibold text-on-surface">BANT Qualification Completed</span>
+<span class="text-[11px] text-muted-gray">Today 2:14 PM</span>
+</div>
+<p class="text-body-sm text-on-surface-variant">Lead Score recalibrated from 72 → 86 based on verified timeline and budget declaration.</p>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-muted-gray"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-body-sm font-semibold text-on-surface">Initial Website Visit → Enterprise Pricing</span>
+<span class="text-[11px] text-muted-gray">Today 2:08 PM</span>
+</div>
+<p class="text-body-sm text-on-surface-variant">Arrived from Google Organic Search on landing page <code class="text-body-sm bg-surface-container-low px-1.5 py-0.5 rounded text-primary">/pricing-enterprise</code>.</p>
+</div>
+<!-- Timeline Item 4 -->
+<div class="relative flex flex-col gap-0.5">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-muted-gray"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-body-sm font-semibold text-on-surface">Widget Chat Session Started</span>
+<span class="text-[11px] text-muted-gray">Today 2:00 PM</span>
+</div>
+<p class="text-body-sm text-on-surface-variant">Widget triggered autonomously by high-intent dwell time (35s on enterprise plan table).</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Actions, Metadata, CRM Integrations & Telemetry (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- 1. Dark Forest Recommended Next Action Card -->
+<div class="rounded-xl bg-primary-container text-on-primary p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-mint-soft font-semibold text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">bolt</span>
+<span>Recommended Next Action</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-mint-soft text-[10px] font-bold tracking-wider uppercase">
+            High Priority
+          </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-primary">Book Discovery &amp; Architecture Walkthrough</h4>
+<p class="text-body-sm text-mint-soft/90 leading-relaxed">
+          Olivia has open buying availability today. Book before competitor window closes.
+        </p>
+<!-- SLA Countdown Ribbon -->
+<div class="p-2 rounded-lg bg-tertiary-container/80 flex items-center justify-between text-body-sm">
+<span class="text-muted-gray flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">hourglass_top</span>
+            Response SLA
+          </span>
+<span class="font-semibold text-status-warm">1h 48m remaining</span>
+</div>
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="w-full py-2.5 px-4 rounded-xl bg-status-success hover:bg-secondary text-on-primary font-semibold text-body-md inline-flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>Book 20-min Discovery Call</span>
+</button>
+<button class="w-full py-2 px-3 rounded-xl bg-transparent hover:bg-tertiary-container text-mint-soft text-body-sm font-medium inline-flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">article</span>
+<span>Generate Executive Battlecard</span>
+</button>
+</div>
+</div>
+<!-- 2. Contact & Company Metadata Card -->
+<div class="rounded-xl bg-shell-bg p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Direct Contact Details -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h4 class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray">Direct Details</h4>
+<span class="text-emerald-vivid text-body-sm font-semibold cursor-pointer hover:underline">Edit</span>
+</div>
+<div class="flex flex-col gap-2.5 pt-1">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">mail</span>
+<span class="text-body-sm text-on-surface truncate font-medium">o.martin@apexglobal.io</span>
+</div>
+<button class="text-muted-gray hover:text-emerald-vivid p-1 transition-colors" title="Copy email" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">call</span>
+<span class="text-body-sm text-on-surface truncate font-medium">+91 98201 44829</span>
+</div>
+<button class="text-muted-gray hover:text-emerald-vivid p-1 transition-colors" title="Call lead" type="button">
+<span class="material-symbols-outlined text-[16px]">phone_forwarded</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">link</span>
+<a class="text-body-sm text-secondary truncate font-medium hover:underline" href="#">linkedin.com/in/oliviamartin-growth</a>
+</div>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">open_in_new</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">location_on</span>
+<span class="text-body-sm text-on-surface font-medium">Bengaluru, Karnataka, India</span>
+</div>
+</div>
+</div>
+<div class="h-0.5 bg-surface-container"></div>
+<!-- Firmographic Profile -->
+<div class="flex flex-col gap-space-xs">
+<h4 class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray">Company Profile</h4>
+<div class="flex items-center gap-3 p-2 rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold text-headline-sm">
+              AG
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="text-body-sm font-semibold text-on-surface truncate">Apex Global Inc.</span>
+<span class="text-[11px] text-muted-gray">B2B SaaS / Cloud Infrastructure</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1 text-body-sm">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="text-[11px] text-muted-gray">Company Size</span>
+<span class="font-semibold text-on-surface">120–250 FTE</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="text-[11px] text-muted-gray">Annual Revenue</span>
+<span class="font-semibold text-on-surface">$18M ARR</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-1">
+<span class="text-[11px] text-muted-gray">Detected Tech Stack</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal text-[11px] font-medium">HubSpot CRM</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal text-[11px] font-medium">Segment</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal text-[11px] font-medium">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-body-charcoal text-[11px] font-medium">Stripe</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. CRM & Integrations Sync Status -->
+<div class="rounded-xl bg-shell-bg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">sync</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">HubSpot CRM Sync</h4>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-on-secondary-container font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-vivid"></span>
+            Synced
+          </span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-muted-gray">Deal Created</span>
+<span class="font-semibold text-on-surface font-mono">#DEAL-9482</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-muted-gray">Pipeline Value</span>
+<span class="font-semibold text-status-success">$36,000 / yr ARR</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-muted-gray">Last Sync</span>
+<span class="text-body-charcoal">12 minutes ago</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-mint-tint flex items-center gap-2 text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">send</span>
+<span>Slack Alert fired to <strong>#sales-hot-leads</strong></span>
+</div>
+</div>
+<!-- 4. Attribution & Privacy Compliance -->
+<div class="rounded-xl bg-shell-bg p-space-md shadow-sm flex flex-col gap-space-xs">
+<h4 class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray">Attribution &amp; Compliance</h4>
+<div class="flex flex-col gap-1.5 pt-1 text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-muted-gray">First Touch URL</span>
+<span class="text-on-surface font-mono text-[11px]">/pricing-enterprise</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-muted-gray">Referrer Domain</span>
+<span class="text-on-surface">google.com (Organic)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-muted-gray">IP Network</span>
+<span class="text-on-surface font-mono text-[11px]">103.21.144.12 (Masked)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-muted-gray">Privacy &amp; GDPR</span>
+<span class="text-status-success font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span> Explicit Opt-in
+            </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></div></div></body></html>

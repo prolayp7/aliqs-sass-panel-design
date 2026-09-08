@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#99f6c2", "status-success": "#15945F", "surface-variant": "#dee4df", "secondary-fixed": "#99f6c2", "on-secondary": "#ffffff", "primary-container": "#0b3b2a", "on-surface": "#171d1a", "on-primary-fixed-variant": "#224f3d", "on-error-container": "#93000a", "tertiary": "#002415", "on-secondary-fixed-variant": "#005233", "tertiary-container": "#003c25", "inverse-surface": "#2c322e", "primary": "#002417", "on-tertiary-fixed": "#002112", "tertiary-fixed": "#8ef7c0", "surface-container-highest": "#dee4df", "error": "#ba1a1a", "on-primary-fixed": "#002115", "outline-variant": "#c0c8c2", "tertiary-fixed-dim": "#71dba5", "muted-gray": "#8A938E", "on-secondary-fixed": "#002112", "surface-container-high": "#e4eae4", "surface": "#f5fbf5", "outline": "#717973", "canvas-bg": "#F2F4F3", "background": "#f5fbf5", "status-hot": "#E55252", "status-cold": "#6F8E9E", "inverse-primary": "#a2d1b9", "on-primary": "#ffffff", "shell-bg": "#FFFFFF", "emerald-vivid": "#15945F", "on-background": "#171d1a", "surface-dim": "#d5dcd6", "inverse-on-surface": "#ecf2ed", "mint-tint": "#F0FAF5", "secondary-fixed-dim": "#7dd9a7", "surface-container-low": "#eff5f0", "surface-container-lowest": "#ffffff", "primary-fixed": "#bdedd4", "status-warm": "#E9A23B", "primary-fixed-dim": "#a2d1b9", "body-charcoal": "#3E4742", "on-error": "#ffffff", "border-subtle": "#DDE2DF", "on-surface-variant": "#414944", "mint-soft": "#DCF4E8", "on-tertiary-container": "#43af7d", "surface-container": "#e9efea", "on-tertiary-fixed-variant": "#005234", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "secondary": "#006c45", "on-primary-container": "#78a68f", "surface-tint": "#3b6753", "on-secondary-container": "#02734a", "surface-bright": "#f5fbf5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "gutter-tablet": "1rem", "space-2xs": "0.25rem", "space-2xl": "2.5rem", "space-xl": "2rem", "space-xs": "0.5rem", "space-sm": "0.75rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "space-md": "1rem", "space-3xl": "3rem", "shell-padding": "2rem" }, "fontFamily": { "kpi-metric": ["Manrope"], "body-sm": ["Inter"], "headline-md": ["Manrope"], "label-md": ["Inter"], "display-lg": ["Manrope"], "headline-lg": ["Manrope"], "body-lg": ["Inter"], "headline-sm": ["Manrope"], "label-sm": ["Inter"], "body-md": ["Inter"] }, "fontSize": { "kpi-metric": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } }</script></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 h-full min-h-screen w-72 bg-shell-bg shadow-[0_8px_32px_-4px_rgba(11,59,42,0.05),0_2px_8px_-2px_rgba(17,23,20,0.03)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between border-b border-border-subtle"><div class="flex items-center gap-space-xs"><img alt="Brand logo. - Primary color: #0b3b2a
+- Font: manrope
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XSeJxWafV9QgukTMuZCPm8ufA4KMhnVEmWuGwg1oQapU6iiIFcjhx11bOX87yzyXFUI-5_T4ew0ISTWERMM-R69hzjT5QXorXGJ9OV07sbVZMJZPdnACzX9sWeW9rwA3zmfjhjuh0YAvrlxg9BinnLC-ynHqsZErOLqBLLBCl2-AWk8DvSP1IW2F9DGLpW2l6zmWKekbj7uK5aw_Txe_ZG-ZeD0PjlTVXHifff8j7EKNhJXfLoog09jUQ"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">NovaLead</span><span class="px-space-xs py-0.5 rounded-full bg-mint-soft text-status-success font-label-sm text-label-sm">AI OS</span></div></div><div class="py-space-sm px-space-xs"><div class="px-space-sm pb-space-2xs pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray">Intelligence</span></div><nav class="space-y-0.5" data-active-classes="bg-mint-tint text-on-surface font-label-md relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-1 before:bg-emerald-vivid before:rounded-r"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="inbox" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">inbox</span><span>Inbox</span></div><span class="px-space-xs py-0.5 rounded-full bg-mint-soft text-status-success font-label-sm text-label-sm">12</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="leads" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span>Leads</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="follow-ups" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span>Follow-ups</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="ai-agent" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span>AI Agent</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="qualification" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">verified_user</span><span>Qualification</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="knowledge-base" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Knowledge Base</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="websites-and-widget" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">widgets</span><span>Websites &amp; Widget</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="automations" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">account_tree</span><span>Automations</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs rounded-lg transition-all bg-mint-tint text-on-surface font-label-md relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-1 before:bg-emerald-vivid before:rounded-r" data-path="analytics" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">query_stats</span><span>Analytics</span></div></a></nav><div class="px-space-sm pb-space-2xs pt-space-md"><span class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray">General</span></div><nav class="space-y-0.5" data-active-classes="bg-mint-tint text-on-surface font-label-md relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-1 before:bg-emerald-vivid before:rounded-r"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="integrations" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">hub</span><span>Integrations</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="team" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">badge</span><span>Team</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="notifications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span>Notifications</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="billing-and-usage" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">credit_card</span><span>Billing &amp; Usage</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="help" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">help</span><span>Help</span></div></a></nav></div></div><div class="mt-auto p-space-sm m-space-xs rounded-xl bg-surface-container-low border border-border-subtle"><div class="flex items-center justify-between mb-space-2xs"><span class="font-label-md text-label-md text-on-surface">Starter Plan</span><span class="font-label-sm text-label-sm text-emerald-vivid font-semibold">74%</span></div><div class="w-full bg-surface-variant rounded-full h-1.5 mb-space-xs overflow-hidden"><div class="bg-emerald-vivid h-full rounded-full w-[74%]"></div></div><div class="flex items-center justify-between"><span class="font-body-sm text-body-sm text-muted-gray">742 / 1,000 Conv.</span><a class="font-label-sm text-label-sm text-primary hover:text-secondary font-semibold transition-colors" href="#">Upgrade</a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-shell-bg shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md border-b border-border-subtle"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative flex-1"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-muted-gray text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-space-xs bg-surface-container-low border border-border-subtle rounded-xl font-body-md text-body-md text-on-surface placeholder:text-muted-gray focus:outline-none focus:border-secondary focus:ring-2 focus:ring-mint-soft transition-all" placeholder="Search analytics, metrics, reports... ⌘F" type="text"/></div><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-low border border-border-subtle cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-secondary text-[18px]">language</span><span class="font-label-md text-label-md text-on-surface">northstardigital.com</span><span class="material-symbols-outlined text-muted-gray text-[18px]">keyboard_arrow_down</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded-full border border-border-subtle flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">chat_bubble_outline</span></button><button class="relative w-9 h-9 rounded-full border border-border-subtle flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-status-hot"></span></button></div><div class="h-6 w-px bg-border-subtle"></div><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VdNzQtFHNwiQhaStCBSFbDLIdQGNq5PueHh_2C_rg8VE34-P4-ZTIjHFvEvHtCK6OmS3Z5Ba8YxJqAXF5Nrdzuo__h7sWXOjQmF2cCCOyIEni_So1FGwooqaSeeqD0a6O2W-NoLPXo2uwwRbPV5Ipve_llFbiWBCmFmvmqrdE0u4ciQovDkoggzJDoY7KmDCgJD3yYUqYkD09Itg8DddgNOrgA_FFWLtM0_dTQcPBCGGR4RsRd-U7g2g"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Maya Singh</span><span class="font-body-sm text-body-sm text-muted-gray leading-tight">Product Lead</span></div><span class="material-symbols-outlined text-muted-gray text-[18px]">unfold_more</span></div></div></header><main class="relative pt-16 min-h-screen bg-canvas-bg w-full"><div class="flex flex-col w-full">
+<div class="p-space-lg lg:p-space-xl space-y-space-xl max-w-[1600px] mx-auto w-full">
+<!-- 1. BREADCRUMB & HEADER SECTION -->
+<div class="flex flex-col gap-space-md">
+<!-- Breadcrumb -->
+<div class="flex items-center gap-space-xs text-muted-gray">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">neurology</span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-muted-gray">Intelligence Engine</span>
+<span class="font-label-sm text-label-sm text-outline-variant">/</span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-semibold">Analytics &amp; Reporting</span>
+</div>
+<!-- Main Header Row -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg">
+<div class="space-y-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight font-bold">Analytics &amp; Intelligence</h1>
+<span class="px-space-sm py-0.5 rounded-full bg-mint-soft text-status-success font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-vivid animate-pulse"></span>
+              Live Pipeline Sync
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+            Deep-dive attribution, AI conversation resolution, qualification velocity, and team conversion metrics across your sales funnel.
+          </p>
+</div>
+<!-- Action Controls Strip -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-space-md py-space-xs rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-all font-label-md text-label-md flex items-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-muted-gray">calendar_today</span>
+<span>Last 30 Days (Oct 1 – Oct 30, 2025)</span>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span>
+</button>
+<button class="px-space-md py-space-xs rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-all font-label-md text-label-md flex items-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">language</span>
+<span>northstardigital.com</span>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span>
+</button>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="w-4 h-4 rounded-full bg-emerald-vivid flex items-center justify-center text-on-primary text-[10px]">✓</span>
+<span class="text-on-surface">Compare: Previous Period</span>
+</div>
+<button class="w-10 h-10 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center transition-all shadow-sm" title="Schedule Report" type="button">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</button>
+<button class="w-10 h-10 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center transition-all shadow-sm" title="Share View" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button class="px-space-lg py-space-xs rounded-full bg-primary-container text-on-primary hover:bg-secondary font-label-md text-label-md flex items-center gap-space-xs shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export CSV / PDF</span>
+</button>
+</div>
+</div>
+<!-- 2. ANALYTICS NAVIGATION TABS -->
+<div class="flex items-center justify-between border-b border-border-subtle pt-space-xs overflow-x-auto">
+<div class="flex items-center gap-space-lg min-w-max">
+<button class="relative pb-space-sm font-label-md text-label-md text-primary font-bold flex items-center gap-space-xs" type="button">
+<span>Overview</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary text-on-primary font-label-sm text-[10px]">Live</span>
+<span class="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary rounded-t"></span>
+</button>
+<button class="pb-space-sm font-label-md text-label-md text-muted-gray hover:text-on-surface transition-colors flex items-center gap-space-xs" type="button">
+<span>Leads &amp; Pipeline</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-muted-gray font-label-sm text-[10px]">267</span>
+</button>
+<button class="pb-space-sm font-label-md text-label-md text-muted-gray hover:text-on-surface transition-colors" type="button">
+            AI Conversations
+          </button>
+<button class="pb-space-sm font-label-md text-label-md text-muted-gray hover:text-on-surface transition-colors" type="button">
+            Attribution &amp; Sources
+          </button>
+<button class="pb-space-sm font-label-md text-label-md text-muted-gray hover:text-on-surface transition-colors" type="button">
+            Team &amp; Sales Velocity
+          </button>
+</div>
+<div class="hidden md:flex items-center gap-space-xs text-muted-gray pb-space-sm font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Updated 2 minutes ago</span>
+</div>
+</div>
+</div>
+<!-- 3. KPI SUMMARY CARDS ROW -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 (Emerald Focus Card) -->
+<div class="p-space-lg rounded-2xl bg-gradient-to-br from-[#187C53] to-[#15945F] text-on-primary shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-mint-soft/90 font-semibold">Qualified Leads</span>
+<div class="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center text-on-primary group-hover:bg-white group-hover:text-secondary transition-all">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="font-kpi-metric text-[42px] leading-tight font-bold tracking-tight">267</div>
+<div class="font-body-sm text-body-sm text-mint-soft/90 mt-1">11.1% conversion rate from chats</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-white/20">
+<span class="px-2 py-0.5 rounded-full bg-white/20 font-label-sm text-label-sm flex items-center gap-1 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+            +18.4% vs prev 30d
+          </span>
+<span class="font-body-sm text-body-sm text-mint-soft/80">Target: 250</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest text-on-surface shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-muted-gray font-semibold">AI Conversations</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-muted-gray group-hover:bg-mint-soft group-hover:text-status-success transition-all">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="font-kpi-metric text-[42px] leading-tight font-bold tracking-tight text-primary">3,842</div>
+<div class="font-body-sm text-body-sm text-muted-gray mt-1">91.8% autonomous resolution rate</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-border-subtle">
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-status-success font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+            +12.3%
+          </span>
+<span class="font-body-sm text-body-sm text-muted-gray">742 / 1,000 on plan</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest text-on-surface shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-muted-gray font-semibold">Hot Leads Identified</span>
+<div class="w-8 h-8 rounded-full bg-[#FDE8E8] flex items-center justify-center text-status-hot group-hover:scale-105 transition-all">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="font-kpi-metric text-[42px] leading-tight font-bold tracking-tight text-primary">74</div>
+<div class="font-body-sm text-body-sm text-muted-gray mt-1">Avg. qualification score 84/100</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-border-subtle">
+<span class="px-2 py-0.5 rounded-full bg-[#FDE8E8] text-status-hot font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+            +24.1%
+          </span>
+<span class="font-body-sm text-body-sm text-muted-gray">27.7% of total leads</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest text-on-surface shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-muted-gray font-semibold">Estimated Pipeline Value</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-muted-gray group-hover:bg-mint-soft group-hover:text-status-success transition-all">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="font-kpi-metric text-[42px] leading-tight font-bold tracking-tight text-primary">₹1.48 Cr</div>
+<div class="font-body-sm text-body-sm text-muted-gray mt-1">₹55.4K avg. qualified deal size</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-border-subtle">
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-status-success font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+            +22.8%
+          </span>
+<span class="font-body-sm text-body-sm text-muted-gray">USD Equiv: ~$185k</span>
+</div>
+</div>
+</div>
+<!-- 4. MAIN ANALYTICS GRID (Dominant Trend Chart + Temperature) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Dominant Trend Chart (8 cols) -->
+<div class="lg:col-span-8 p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<!-- Panel Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md border-b border-border-subtle">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-semibold">Lead Qualification &amp; Conversation Volume</h2>
+<p class="font-body-sm text-body-sm text-muted-gray">Comparing inbound engagement velocity against verified sales conversions</p>
+</div>
+<!-- Granularity & Metric Pill Switcher -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-xl">
+<button class="px-space-sm py-1 rounded-lg text-muted-gray hover:text-on-surface font-label-sm text-label-sm transition-all" type="button">Daily</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm" type="button">Weekly</button>
+<button class="px-space-sm py-1 rounded-lg text-muted-gray hover:text-on-surface font-label-sm text-label-sm transition-all" type="button">Monthly</button>
+</div>
+</div>
+<!-- Chart Controls & Legend -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm py-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Qualified Leads</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded bg-mint-soft border border-emerald-vivid/40 relative overflow-hidden">
+<svg class="absolute inset-0 w-full h-full opacity-60" viewbox="0 0 10 10">
+<line stroke="#006c45" stroke-width="2" x1="0" x2="10" y1="10" y2="0"></line>
+</svg>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Inbound Chats (/10)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-5 h-0.5 bg-emerald-vivid rounded-full"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Velocity Trend</span>
+</div>
+</div>
+<div class="px-space-sm py-1 rounded-full bg-mint-tint text-status-success font-label-sm text-label-sm flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>Peak: 68 leads in Week 3</span>
+</div>
+</div>
+<!-- Custom SVG Bar & Trend Chart -->
+<div class="w-full mt-space-md h-72 relative flex items-end">
+<!-- SVG Chart -->
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 700 240">
+<defs>
+<!-- Pattern for Inbound Chats (Striped Mint) -->
+<pattern height="8" id="diagonalHatch" patterntransform="rotate(45 0 0)" patternunits="userSpaceOnUse" width="8">
+<line stroke="#71dba5" stroke-width="3" x1="0" x2="0" y1="0" y2="8"></line>
+<line stroke="#DCF4E8" stroke-width="8" x1="0" x2="0" y1="0" y2="8"></line>
+</pattern>
+<lineargradient id="trendGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#15945F" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#15945F" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Horizontal Lines -->
+<line stroke="#DDE2DF" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="30" y2="30"></line>
+<text class="fill-muted-gray text-[10px] font-mono" x="10" y="34">80</text>
+<line stroke="#DDE2DF" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="80" y2="80"></line>
+<text class="fill-muted-gray text-[10px] font-mono" x="10" y="84">60</text>
+<line stroke="#DDE2DF" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="130" y2="130"></line>
+<text class="fill-muted-gray text-[10px] font-mono" x="10" y="134">40</text>
+<line stroke="#DDE2DF" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="180" y2="180"></line>
+<text class="fill-muted-gray text-[10px] font-mono" x="10" y="184">20</text>
+<line stroke="#DDE2DF" stroke-width="1.5" x1="40" x2="680" y1="220" y2="220"></line>
+<text class="fill-muted-gray text-[10px] font-mono" x="15" y="223">0</text>
+<!-- W1 Bars (X=90) -->
+<!-- Striped chat bar: val 520 (scaled /10 = 52, y=90) -->
+<rect fill="url(#diagonalHatch)" height="130" rx="4" width="28" x="90" y="90"></rect>
+<!-- Solid Qualified: val 41, y=117.5 -->
+<rect fill="#0b3b2a" height="102.5" rx="4" width="28" x="122" y="117.5"></rect>
+<!-- W2 Bars (X=210) -->
+<!-- Striped chat bar: val 680 (scaled 68, y=50) -->
+<rect fill="url(#diagonalHatch)" height="170" rx="4" width="28" x="210" y="50"></rect>
+<!-- Solid Qualified: val 53, y=87.5 -->
+<rect fill="#0b3b2a" height="132.5" rx="4" width="28" x="242" y="87.5"></rect>
+<!-- W3 Bars (X=330 - PEAK) -->
+<!-- Striped chat bar: val 840 (scaled 84, y=20) -->
+<rect fill="url(#diagonalHatch)" height="200" rx="4" width="28" x="330" y="20"></rect>
+<!-- Solid Qualified: val 68, y=50 -->
+<rect fill="#15945F" height="170" rx="4" width="28" x="362" y="50"></rect>
+<!-- W4 Bars (X=450) -->
+<!-- Striped chat bar: val 710 (scaled 71, y=42.5) -->
+<rect fill="url(#diagonalHatch)" height="177.5" rx="4" width="28" x="450" y="42.5"></rect>
+<!-- Solid Qualified: val 56, y=80 -->
+<rect fill="#0b3b2a" height="140" rx="4" width="28" x="482" y="80"></rect>
+<!-- W5 Bars (X=570) -->
+<!-- Striped chat bar: val 620 (scaled 62, y=65) -->
+<rect fill="url(#diagonalHatch)" height="155" rx="4" width="28" x="570" y="65"></rect>
+<!-- Solid Qualified: val 49, y=97.5 -->
+<rect fill="#0b3b2a" height="122.5" rx="4" width="28" x="602" y="97.5"></rect>
+<!-- Trendline Overlay Area -->
+<path d="M 136 117.5 Q 256 87.5 376 50 T 496 80 T 616 97.5 L 616 220 L 136 220 Z" fill="url(#trendGradient)"></path>
+<path d="M 136 117.5 Q 256 87.5 376 50 T 496 80 T 616 97.5" fill="none" stroke="#15945F" stroke-linecap="round" stroke-width="3"></path>
+<!-- Data Node Markers -->
+<circle cx="136" cy="117.5" fill="#FFFFFF" r="4" stroke="#15945F" stroke-width="2.5"></circle>
+<circle cx="256" cy="87.5" fill="#FFFFFF" r="4" stroke="#15945F" stroke-width="2.5"></circle>
+<circle cx="376" cy="50" fill="#15945F" r="5" stroke="#FFFFFF" stroke-width="2"></circle>
+<circle cx="496" cy="80" fill="#FFFFFF" r="4" stroke="#15945F" stroke-width="2.5"></circle>
+<circle cx="616" cy="97.5" fill="#FFFFFF" r="4" stroke="#15945F" stroke-width="2.5"></circle>
+<!-- Peak Callout Tag in SVG -->
+<g transform="translate(330, 2)">
+<rect fill="#002417" height="20" rx="10" width="92" x="0" y="0"></rect>
+<text class="fill-white font-mono text-[9px] font-bold" text-anchor="middle" x="46" y="14">W3 PEAK: 68 LEADS</text>
+</g>
+<!-- X-Axis Labels -->
+<text class="fill-body-charcoal font-label-sm text-[11px]" text-anchor="middle" x="120" y="238">Week 1 (Oct 1-7)</text>
+<text class="fill-body-charcoal font-label-sm text-[11px]" text-anchor="middle" x="240" y="238">Week 2 (Oct 8-14)</text>
+<text class="fill-primary font-label-sm text-[11px] font-bold" text-anchor="middle" x="360" y="238">Week 3 (Oct 15-21)</text>
+<text class="fill-body-charcoal font-label-sm text-[11px]" text-anchor="middle" x="480" y="238">Week 4 (Oct 22-28)</text>
+<text class="fill-body-charcoal font-label-sm text-[11px]" text-anchor="middle" x="600" y="238">Week 5 (Oct 29-31)</text>
+</svg>
+</div>
+</div>
+<!-- Summary Footer Metrics Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-lg mt-space-lg border-t border-border-subtle">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-mint-tint text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">1m 48s</div>
+<div class="font-body-sm text-body-sm text-muted-gray">Avg. Qualification Time</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">4.2%</div>
+<div class="font-body-sm text-body-sm text-muted-gray">Fallback to Human Rep</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-mint-tint text-status-success flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">78.6%</div>
+<div class="font-body-sm text-body-sm text-muted-gray">Lead Capture Completion</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Panel: Lead Temperature Distribution (4 cols) -->
+<div class="lg:col-span-4 p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-border-subtle">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-semibold">Lead Temperature</h2>
+<p class="font-body-sm text-body-sm text-muted-gray">Scored on intent, budget &amp; fit</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface font-semibold">
+              267 Evaluated
+            </span>
+</div>
+<!-- Donut Gauge Chart -->
+<div class="flex flex-col items-center justify-center my-space-lg relative">
+<div class="relative w-48 h-48">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background Circle -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#eff5f0" stroke-width="12"></circle>
+<!-- Cold Leads (19.1% -> 45.6 dash) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#6F8E9E" stroke-dasharray="45.6 238.7" stroke-dashoffset="0" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Warm Leads (53.2% -> 127 dash) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#E9A23B" stroke-dasharray="127 238.7" stroke-dashoffset="-45.6" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Hot Leads (27.7% -> 66.1 dash) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#E55252" stroke-dasharray="66.1 238.7" stroke-dashoffset="-172.6" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<!-- Center Metric -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-kpi-metric text-kpi-metric text-primary font-bold leading-none">267</span>
+<span class="font-label-sm text-label-sm text-muted-gray uppercase tracking-wider mt-1">Total Leads</span>
+</div>
+</div>
+</div>
+<!-- Breakdown List with One-Click Filters -->
+<div class="space-y-space-xs">
+<!-- Hot -->
+<div class="flex items-center justify-between p-space-xs rounded-xl hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-status-hot"></span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Hot Leads (Score 70-100)</span>
+<p class="font-body-sm text-[11px] text-muted-gray">Immediate sales follow-up</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-label-md text-status-hot font-bold">74</span>
+<span class="font-body-sm text-body-sm text-muted-gray ml-1">(27.7%)</span>
+</div>
+</div>
+<!-- Warm -->
+<div class="flex items-center justify-between p-space-xs rounded-xl hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-status-warm"></span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Warm Leads (Score 40-69)</span>
+<p class="font-body-sm text-[11px] text-muted-gray">Automated sequence running</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-label-md text-status-warm font-bold">142</span>
+<span class="font-body-sm text-body-sm text-muted-gray ml-1">(53.2%)</span>
+</div>
+</div>
+<!-- Cold -->
+<div class="flex items-center justify-between p-space-xs rounded-xl hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-status-cold"></span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Cold / Nurture (Score 0-39)</span>
+<p class="font-body-sm text-[11px] text-muted-gray">Bi-weekly content drip</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-label-md text-status-cold font-bold">51</span>
+<span class="font-body-sm text-body-sm text-muted-gray ml-1">(19.1%)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Dark Forest Insight Card -->
+<div class="mt-space-lg p-space-md rounded-xl bg-primary-container text-on-primary relative overflow-hidden">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary-container mt-0.5">bolt</span>
+<div class="space-y-1">
+<div class="font-label-md text-label-md font-semibold text-secondary-container">Nova Intelligence Insight</div>
+<p class="font-body-sm text-body-sm text-mint-soft/90 leading-relaxed">
+                Hot leads contacted within <span class="font-bold text-white">15 minutes</span> convert at a <span class="font-bold text-white">3.4x higher rate</span>. Consider routing webhook directly into Slack #sales-wins.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. SECONDARY GRID (Conversion Funnel, Intents, Resolution Gauge) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Panel 1: Conversion Funnel & Drop-off -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-border-subtle">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Conversion Funnel</h3>
+<p class="font-body-sm text-body-sm text-muted-gray">Step-by-step visitor progression</p>
+</div>
+<span class="material-symbols-outlined text-muted-gray text-[20px]">filter_alt</span>
+</div>
+<!-- Stepped Bars with Drop-off Indicators -->
+<div class="space-y-space-md mt-space-lg">
+<!-- Step 1 -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">1. Total Website Visitors</span>
+<span class="text-primary font-bold">12,480 <span class="text-muted-gray font-normal">(100%)</span></span>
+</div>
+<div class="w-full bg-surface-container h-3 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-full"></div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">2. Widget Engaged / Opened</span>
+<span class="text-primary font-bold">3,842 <span class="text-status-success font-normal">30.8%</span></span>
+</div>
+<div class="w-full bg-surface-container h-3 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[30.8%]"></div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">3. Qualification Flow Started</span>
+<span class="text-primary font-bold">1,920 <span class="text-status-success font-normal">50.0% of chats</span></span>
+</div>
+<div class="w-full bg-surface-container h-3 rounded-full overflow-hidden">
+<div class="bg-emerald-vivid h-full rounded-full w-[15.4%]"></div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">4. Contact Info Verified</span>
+<span class="text-primary font-bold">486 <span class="text-status-success font-normal">25.3%</span></span>
+</div>
+<div class="w-full bg-surface-container h-3 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full w-[3.9%]"></div>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">5. Qualified Leads Generated</span>
+<span class="text-primary font-bold">267 <span class="text-status-success font-normal">54.9%</span></span>
+</div>
+<div class="w-full bg-surface-container h-3 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[2.14%]"></div>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">6. Handoff to Sales Reps</span>
+<span class="text-primary font-bold">184 <span class="text-status-success font-normal">68.9%</span></span>
+</div>
+<div class="w-full bg-surface-container h-3 rounded-full overflow-hidden">
+<div class="bg-status-success h-full rounded-full w-[1.47%]"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-space-xs rounded-xl bg-surface-container-low flex items-center justify-between text-muted-gray">
+<span class="font-body-sm text-body-sm">Overall Funnel Conversion:</span>
+<span class="font-label-md text-label-md text-primary font-bold">2.14% (Top-to-Lead)</span>
+</div>
+</div>
+<!-- Panel 2: Top Visitor Intents & Inquiries -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-border-subtle">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Top Visitor Intents</h3>
+<p class="font-body-sm text-body-sm text-muted-gray">Semantic clusters classified by AI</p>
+</div>
+<span class="material-symbols-outlined text-muted-gray text-[20px]">psychology</span>
+</div>
+<div class="space-y-space-md mt-space-lg">
+<!-- Intent 1 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md font-semibold truncate max-w-[210px]">Enterprise Pricing &amp; Custom SLA</span>
+<span class="px-1.5 py-0.5 rounded bg-[#FDE8E8] text-status-hot font-label-sm text-[10px] font-bold">64% Hot</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[38%]"></div>
+</div>
+<div class="flex justify-between font-body-sm text-[11px] text-muted-gray">
+<span>1,460 conversations</span>
+<span class="font-medium text-on-surface-variant">38% volume</span>
+</div>
+</div>
+<!-- Intent 2 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md font-semibold truncate max-w-[210px]">AI Automation &amp; Workflow Integration</span>
+<span class="px-1.5 py-0.5 rounded bg-[#FDE8E8] text-status-hot font-label-sm text-[10px] font-bold">58% Hot</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[29%]"></div>
+</div>
+<div class="flex justify-between font-body-sm text-[11px] text-muted-gray">
+<span>1,114 conversations</span>
+<span class="font-medium text-on-surface-variant">29% volume</span>
+</div>
+</div>
+<!-- Intent 3 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md font-semibold truncate max-w-[210px]">Web Development &amp; CMS Migration</span>
+<span class="px-1.5 py-0.5 rounded bg-[#FEF3E6] text-status-warm font-label-sm text-[10px] font-bold">35% Hot</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[18%]"></div>
+</div>
+<div class="flex justify-between font-body-sm text-[11px] text-muted-gray">
+<span>691 conversations</span>
+<span class="font-medium text-on-surface-variant">18% volume</span>
+</div>
+</div>
+<!-- Intent 4 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md font-semibold truncate max-w-[210px]">E-commerce Scaling &amp; Checkout</span>
+<span class="px-1.5 py-0.5 rounded bg-[#FEF3E6] text-status-warm font-label-sm text-[10px] font-bold">41% Hot</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[11%]"></div>
+</div>
+<div class="flex justify-between font-body-sm text-[11px] text-muted-gray">
+<span>422 conversations</span>
+<span class="font-medium text-on-surface-variant">11% volume</span>
+</div>
+</div>
+<!-- Intent 5 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md font-semibold truncate max-w-[210px]">General Support / Partnership</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-muted-gray font-label-sm text-[10px] font-bold">12% Hot</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[4%]"></div>
+</div>
+<div class="flex justify-between font-body-sm text-[11px] text-muted-gray">
+<span>155 conversations</span>
+<span class="font-medium text-on-surface-variant">4% volume</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-body-sm text-secondary font-semibold cursor-pointer hover:underline">
+<span>View all 14 classified intent categories</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Panel 3: AI Agent Resolution & Accuracy -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-border-subtle">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">AI Resolution &amp; Accuracy</h3>
+<p class="font-body-sm text-body-sm text-muted-gray">Autonomous resolution confidence</p>
+</div>
+<span class="material-symbols-outlined text-status-success text-[20px]">verified</span>
+</div>
+<!-- Semicircular Gauge Metric -->
+<div class="flex flex-col items-center justify-center my-space-md pt-2">
+<div class="relative w-48 h-28 overflow-hidden flex items-end justify-center">
+<svg class="w-48 h-48 -mb-2" viewbox="0 0 100 100">
+<!-- Background Arc -->
+<path d="M 15 50 A 35 35 0 0 1 85 50" fill="none" stroke="#eff5f0" stroke-linecap="round" stroke-width="12"></path>
+<!-- Dynamic Emerald Arc (91.8% of 180 deg) -->
+<path d="M 15 50 A 35 35 0 0 1 85 50" fill="none" stroke="#15945F" stroke-dasharray="109.9 109.9" stroke-dashoffset="9" stroke-linecap="round" stroke-width="12"></path>
+</svg>
+<div class="absolute bottom-1 flex flex-col items-center">
+<span class="font-kpi-metric text-kpi-metric text-primary font-bold">91.8%</span>
+<span class="font-label-sm text-label-sm text-muted-gray uppercase tracking-wider">Autonomous</span>
+</div>
+</div>
+</div>
+<!-- Key Metrics List -->
+<div class="space-y-space-xs pt-space-xs border-t border-border-subtle">
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-vivid"></span>
+<span class="font-body-md text-body-md text-on-surface">Autonomous End-to-End</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-primary font-bold">3,527</span>
+<span class="font-body-sm text-body-sm text-muted-gray ml-1">(91.8%)</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-status-warm"></span>
+<span class="font-body-md text-body-md text-on-surface">Human Sales Takeover</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-status-warm font-bold">214</span>
+<span class="font-body-sm text-body-sm text-muted-gray ml-1">(5.6%)</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-muted-gray"></span>
+<span class="font-body-md text-body-md text-on-surface">Unanswered / Low Confidence</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-muted-gray font-bold">101</span>
+<span class="font-body-sm text-body-sm text-muted-gray ml-1">(2.6%)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Metric Badges Row -->
+<div class="mt-space-md pt-space-sm border-t border-border-subtle grid grid-cols-2 gap-space-xs text-center">
+<div class="p-space-xs rounded-xl bg-surface-container-low">
+<div class="font-headline-sm text-headline-sm text-status-success font-bold">0.4%</div>
+<div class="font-body-sm text-[11px] text-muted-gray">Hallucination Fallback</div>
+</div>
+<div class="p-space-xs rounded-xl bg-surface-container-low">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">0.94 / 1.0</div>
+<div class="font-body-sm text-[11px] text-muted-gray">Avg. Confidence Score</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 6. BOTTOM DATA TABLE: Source & Channel Attribution Performance -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm space-y-space-md">
+<!-- Table Controls Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold">Lead Sources &amp; Campaign Performance</h3>
+<p class="font-body-sm text-body-sm text-muted-gray">Multi-touch attribution mapped through first-click to bot engagement</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-muted-gray text-[18px]">search</span>
+<input class="pl-9 pr-space-md py-1.5 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-muted-gray focus:outline-none" placeholder="Filter channel or UTM..." type="text"/>
+</div>
+<button class="px-space-md py-1.5 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-space-xs" type="button">
+<span>All Channels</span>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span>
+</button>
+<button class="px-space-md py-1.5 rounded-xl bg-mint-soft text-secondary font-label-md text-label-md flex items-center gap-space-xs hover:bg-mint-tint transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Table</span>
+</button>
+</div>
+</div>
+<!-- High-Fidelity Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-border-subtle text-muted-gray font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md font-semibold">Source / Campaign</th>
+<th class="py-space-sm px-space-md font-semibold text-right">Visitors</th>
+<th class="py-space-sm px-space-md font-semibold text-right">AI Chats</th>
+<th class="py-space-sm px-space-md font-semibold text-right">Eng. Rate</th>
+<th class="py-space-sm px-space-md font-semibold text-right">Qualified Leads</th>
+<th class="py-space-sm px-space-md font-semibold text-right">Hot Leads</th>
+<th class="py-space-sm px-space-md font-semibold text-right">Conv. %</th>
+<th class="py-space-sm px-space-md font-semibold text-right">Pipeline Value</th>
+<th class="py-space-sm px-space-md font-semibold text-center">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-subtle font-body-md text-body-md text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-mint-soft text-status-success flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">Google Search / Organic</div>
+<div class="font-body-sm text-[11px] text-muted-gray">Direct high intent SEO keywords</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium">5,840</td>
+<td class="py-space-md px-space-md text-right font-medium">1,620</td>
+<td class="py-space-md px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm font-semibold text-primary">27.7%</span>
+</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">114</td>
+<td class="py-space-md px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-[#FDE8E8] text-status-hot font-label-sm text-label-sm font-bold">34 Hot</span>
+</td>
+<td class="py-space-md px-space-md text-right font-semibold text-status-success">7.0%</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">₹62.8 L</td>
+<td class="py-space-md px-space-md text-center">
+<button class="px-space-sm py-1 rounded-lg hover:bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold transition-all" type="button">
+                  View Details
+                </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-[#FEF3E6] text-status-warm flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">ads_click</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">Google Ads (Inbound High-Intent)</div>
+<div class="font-body-sm text-[11px] text-muted-gray">B2B SaaS PPC Campaign #Q4</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium">3,120</td>
+<td class="py-space-md px-space-md text-right font-medium">1,180</td>
+<td class="py-space-md px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm font-semibold text-primary">37.8%</span>
+</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">86</td>
+<td class="py-space-md px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-[#FDE8E8] text-status-hot font-label-sm text-label-sm font-bold">28 Hot</span>
+</td>
+<td class="py-space-md px-space-md text-right font-semibold text-status-success">7.3%</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">₹51.2 L</td>
+<td class="py-space-md px-space-md text-center">
+<button class="px-space-sm py-1 rounded-lg hover:bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold transition-all" type="button">
+                  View Details
+                </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high text-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">LinkedIn Sponsored Content</div>
+<div class="font-body-sm text-[11px] text-muted-gray">Executive Decision Makers ICP</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium">1,450</td>
+<td class="py-space-md px-space-md text-right font-medium">482</td>
+<td class="py-space-md px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm font-semibold text-primary">33.2%</span>
+</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">39</td>
+<td class="py-space-md px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-[#FDE8E8] text-status-hot font-label-sm text-label-sm font-bold">8 Hot</span>
+</td>
+<td class="py-space-md px-space-md text-right font-semibold text-status-success">8.1%</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">₹22.5 L</td>
+<td class="py-space-md px-space-md text-center">
+<button class="px-space-sm py-1 rounded-lg hover:bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold transition-all" type="button">
+                  View Details
+                </button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container-low text-muted-gray flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">Direct / Brand Traffic</div>
+<div class="font-body-sm text-[11px] text-muted-gray">URL entries &amp; browser bookmarks</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium">1,280</td>
+<td class="py-space-md px-space-md text-right font-medium">360</td>
+<td class="py-space-md px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm font-semibold text-primary">28.1%</span>
+</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">21</td>
+<td class="py-space-md px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-[#FDE8E8] text-status-hot font-label-sm text-label-sm font-bold">3 Hot</span>
+</td>
+<td class="py-space-md px-space-md text-right font-semibold text-status-success">5.8%</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">₹8.4 L</td>
+<td class="py-space-md px-space-md text-center">
+<button class="px-space-sm py-1 rounded-lg hover:bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold transition-all" type="button">
+                  View Details
+                </button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-mint-soft text-secondary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">Partner Referrals (Agency Hub)</div>
+<div class="font-body-sm text-[11px] text-muted-gray">Co-marketing and marketplace</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium">790</td>
+<td class="py-space-md px-space-md text-right font-medium">200</td>
+<td class="py-space-md px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm font-semibold text-primary">25.3%</span>
+</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">7</td>
+<td class="py-space-md px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-[#FEF3E6] text-status-warm font-label-sm text-label-sm font-bold">1 Hot</span>
+</td>
+<td class="py-space-md px-space-md text-right font-semibold text-status-success">3.5%</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">₹3.1 L</td>
+<td class="py-space-md px-space-md text-center">
+<button class="px-space-sm py-1 rounded-lg hover:bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold transition-all" type="button">
+                  View Details
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-md border-t border-border-subtle font-body-sm text-body-sm text-muted-gray">
+<div>
+          Showing <span class="font-semibold text-primary">1 to 5</span> of <span class="font-semibold text-primary">12</span> attribution channels
+        </div>
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-muted-gray transition-all" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-bold flex items-center justify-center shadow-sm" type="button">1</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-low text-on-surface font-label-sm text-label-sm flex items-center justify-center transition-all" type="button">2</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-low text-on-surface font-label-sm text-label-sm flex items-center justify-center transition-all" type="button">3</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Ensure the App Shell navigation link for 'analytics' displays active state as required
+  document.addEventListener('DOMContentLoaded', () => {
+    const analyticsLink = document.querySelector('nav a[data-path="analytics"]');
+    if (analyticsLink) {
+      analyticsLink.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-low');
+      analyticsLink.classList.add(
+        'bg-mint-tint',
+        'text-on-surface',
+        'font-label-md',
+        'relative',
+        'before:content-[\'\']',
+        'before:absolute',
+        'before:left-0',
+        'before:top-1.5',
+        'before:bottom-1.5',
+        'before:w-1',
+        'before:bg-emerald-vivid',
+        'before:rounded-r'
+      );
+      const icon = analyticsLink.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.classList.add('text-secondary');
+      }
+    }
+  });
+</script></main></div></body></html>

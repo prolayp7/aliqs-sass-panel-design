@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#e1e3ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#79fbc8", "on-background": "#171c25", "surface-container-high": "#e5e8f5", "secondary": "#5f5e5e", "on-primary": "#ffffff", "tertiary": "#005940", "outline-variant": "#c4c5d9", "tertiary-fixed": "#77fac7", "primary-fixed-dim": "#bac3ff", "on-secondary-fixed-variant": "#474646", "primary": "#0034dc", "on-primary-fixed": "#00105b", "on-surface-variant": "#444656", "secondary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#00513a", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002115", "surface-dim": "#d6dae7", "inverse-surface": "#2c303a", "outline": "#747687", "inverse-primary": "#bac3ff", "background": "#f9f9ff", "on-secondary-fixed": "#1c1b1b", "primary-container": "#3152f4", "secondary-fixed": "#e5e2e1", "surface-container-highest": "#dfe2ef", "error": "#ba1a1a", "inverse-on-surface": "#edf0fd", "secondary-container": "#e2dfde", "on-secondary-container": "#636262", "on-surface": "#171c25", "surface-container": "#eaedfb", "surface": "#f9f9ff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#002fc9", "tertiary-container": "#007454", "surface-tint": "#2649ec", "surface-variant": "#dfe2ef", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-container-low": "#f1f3ff", "tertiary-fixed-dim": "#58ddac", "on-error": "#ffffff", "primary-fixed": "#dee0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "2.5rem", "space-xl": "1.5rem", "space-sm": "0.75rem", "space-2xl": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "card-padding": "1.5rem", "space-2xs": "0.25rem", "shell-padding": "1.75rem", "gutter-grid": "1.25rem", "space-lg": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-kpi": ["Plus Jakarta Sans"], "display-kpi-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "metric-mono": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-kpi": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-kpi-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "metric-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-low font-body-md text-on-surface antialiased min-h-screen"><div class="min-h-screen p-0 md:p-6 lg:p-8 flex justify-center items-start"><div class="w-full max-w-[1440px] bg-surface-container-lowest rounded-none md:rounded-[28px] shadow-[0_16px_40px_rgba(23,28,37,0.06)] overflow-hidden flex relative min-h-[calc(100vh-4rem)]"><aside class="w-60 shrink-0 bg-surface-container-low flex flex-col justify-between p-4 overflow-y-auto"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-2 py-1"><img alt="Nova AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between cursor-pointer group"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nova AI</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-on-surface transition-colors">unfold_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Northstar Digital</span></div></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Workspace</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-xl transition-colors bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inbox" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-lg text-label-lg">Inbox</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Leads</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-label-lg text-label-lg">Follow-ups</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Agent</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-lg text-label-lg">Qualification</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-lg text-label-lg">Knowledge Base</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-label-lg text-label-lg">Websites &amp; Widget</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-lg text-label-lg">Analytics</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-lg text-label-lg">Integrations</span></a></nav></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Administration</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Team</span></a><a class="flex items-center justify-between px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-label-lg text-label-lg">Billing &amp; Usage</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div></div><div class="flex flex-col gap-3 mt-6 pt-4"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-label-lg text-label-lg">Help &amp; Support</span></a><div class="p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(20,25,40,0.03)] flex flex-col gap-2.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Starter Plan</span><span class="font-label-sm text-label-sm text-tertiary font-bold">Active</span></div><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">742 / 1,000</span><span class="font-label-sm text-label-sm">74%</span></div><div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">Monthly AI conversations</span></div><a class="mt-1 w-full py-1.5 px-3 bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md rounded-lg text-center transition-colors" data-path="billing-and-usage" href="#">Upgrade Plan</a></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest"><header class="h-16 px-6 lg:px-8 bg-surface-container-lowest flex items-center justify-between shrink-0 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-10"><div class="flex items-center gap-4 flex-1"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full cursor-pointer"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-tertiary/20"></span><span class="font-label-md text-label-md text-on-surface">northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="relative max-w-md w-full hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search leads, chats, workflows..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-4"><button class="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_4px_12px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Create</span></button><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Maya Singh</span><span class="font-body-sm text-body-sm text-on-surface-variant">Product Lead</span></div></div></div></header><main class="flex-1 p-6 lg:p-shell-padding overflow-y-auto bg-surface-container-lowest"><div class="flex flex-col w-full">
+<!-- Breadcrumbs & Global Page Header -->
+<div class="flex flex-col gap-4 mb-6">
+<nav class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="hover:text-on-surface transition-colors cursor-pointer">Workspace</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">Administration</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">Settings</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Lead Pipeline</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Lead Pipeline</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Standard B2B Pipeline (Active)
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Configure stage milestones, win probabilities, automated conversion triggers, and operational hygiene rules for inbound sales.
+        </p>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button class="px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-all shadow-sm" type="button">
+          Discard
+        </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container hover:opacity-95 text-on-primary font-label-lg text-label-lg shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Pipeline Changes</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Layout Grid: Sub-navigation + Operational Canvas -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6 items-start">
+<!-- LEFT SETTINGS SUB-NAVIGATION (~260px span) -->
+<aside class="xl:col-span-3 flex flex-col gap-4">
+<div class="bg-surface-container-lowest rounded-2xl p-3 shadow-sm flex flex-col gap-1">
+<a class="flex items-center justify-between px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px]">domain</span>
+<span class="font-label-lg text-label-lg">Workspace</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-container-low text-primary font-semibold shadow-[0_2px_8px_rgba(49,82,244,0.06)]" href="#">
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-lg text-label-lg">Lead Pipeline</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">9 Stages</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px]">sell</span>
+<span class="font-label-lg text-label-lg">Custom Fields &amp; Tags</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+<span class="font-label-lg text-label-lg">Branding</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span class="font-label-lg text-label-lg">Business Hours</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+<span class="font-label-lg text-label-lg">Privacy &amp; Data</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">GDPR</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span class="font-label-lg text-label-lg">Security</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span class="font-label-lg text-label-lg">API Keys</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">open_in_new</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span class="font-label-lg text-label-lg">Audit Logs</span>
+</div>
+</a>
+</div>
+<!-- Instance Telemetry Box -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cluster Instance</span>
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-mono">PROD-NW-882</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">London-01 Cluster • 99.98% uptime</span>
+</div>
+</div>
+</aside>
+<!-- RIGHT 9-COL CANVAS: Split into Interactive Stages & Slide-over Edit Drawer -->
+<section class="xl:col-span-9 flex flex-col gap-6">
+<!-- Top Row: Pipeline Stages List (7 cols) + Edit Stage Right Drawer (5 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- Draggable Stages Table / List -->
+<div class="lg:col-span-7 flex flex-col gap-4 bg-surface-container-lowest rounded-2xl p-5 shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Pipeline Stages &amp; Progression</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Drag to reorder stages. Configure deal probability and automated progression triggers.
+              </p>
+</div>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md shrink-0 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add Stage</span>
+</button>
+</div>
+<!-- Stages List with distinctive architectural state colors -->
+<div class="flex flex-col gap-2" id="pipeline-stages-list">
+<!-- Stage 1 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors group cursor-grab">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-on-surface">drag_indicator</span>
+<span class="w-3 h-3 rounded-full bg-slate-500 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">New</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Initial Inbound</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Stale after 3 days • 10% Win Rate</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-metric-mono text-metric-mono text-on-surface">10%</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors group cursor-grab">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-on-surface">drag_indicator</span>
+<span class="w-3 h-3 rounded-full bg-sky-600 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Qualified</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">AI Verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Stale after 5 days • 25% Win Rate</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-metric-mono text-metric-mono text-on-surface">25%</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Stage 3 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors group cursor-grab">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-on-surface">drag_indicator</span>
+<span class="w-3 h-3 rounded-full bg-teal-600 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Contacted</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Sales Outreach</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Stale after 4 days • 40% Win Rate</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-metric-mono text-metric-mono text-on-surface">40%</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Stage 4 (Active in Drawer) -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container shadow-sm group cursor-grab">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">drag_indicator</span>
+<span class="w-3 h-3 rounded-full bg-indigo-600 shrink-0 shadow-[0_0_8px_rgba(79,70,229,0.5)]"></span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-primary font-bold truncate">Meeting Scheduled</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">Calendar Booked</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Stale after 7 days • 60% Win Rate</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-metric-mono text-metric-mono text-primary font-bold">60%</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 rounded-lg bg-surface-container-lowest text-primary shadow-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Stage 5 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors group cursor-grab">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-on-surface">drag_indicator</span>
+<span class="w-3 h-3 rounded-full bg-purple-600 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Proposal Sent</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Commercial Quote</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Stale after 10 days • 75% Win Rate</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-metric-mono text-metric-mono text-on-surface">75%</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Stage 6 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors group cursor-grab">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-on-surface">drag_indicator</span>
+<span class="w-3 h-3 rounded-full bg-amber-600 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Negotiation</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Legal / Security</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Stale after 7 days • 85% Win Rate</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-metric-mono text-metric-mono text-on-surface">85%</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Stage 7 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors group cursor-grab">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-on-surface">drag_indicator</span>
+<span class="w-3 h-3 rounded-full bg-emerald-600 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Won</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Closed Won</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Closed milestone • 100% Win Rate</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-metric-mono text-metric-mono text-tertiary font-bold">100%</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Stage 8 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors group cursor-grab">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-on-surface">drag_indicator</span>
+<span class="w-3 h-3 rounded-full bg-slate-400 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Lost</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Closed Lost</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Closed milestone • 0% Win Rate</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-metric-mono text-metric-mono text-on-surface-variant">0%</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Stage 9 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors group cursor-grab">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-on-surface">drag_indicator</span>
+<span class="w-3 h-3 rounded-full bg-zinc-500 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Disqualified</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Closed Disqualified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Closed milestone • 0% Win Rate</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-metric-mono text-metric-mono text-on-surface-variant">0%</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: EDIT STAGE DRAWER / SPLIT PANEL (Stage 4) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col gap-5">
+<!-- Drawer Header -->
+<div class="flex items-center justify-between pb-3 border-b border-surface-container">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Edit Stage</h3>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">Stage #4 • Open</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Meeting Scheduled</span>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Form Fields -->
+<div class="flex flex-col gap-4">
+<!-- Field 1: Stage Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Stage Name</label>
+<input class="h-10 px-3 rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" type="text" value="Meeting Scheduled"/>
+</div>
+<!-- Field 2: Pipeline Category -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Pipeline Category</label>
+<div class="relative">
+<select class="w-full h-10 px-3 pr-8 rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:bg-surface-container-lowest">
+<option>Demonstration &amp; Discovery</option>
+<option>Prospecting &amp; Inbound</option>
+<option>Sales Qualified</option>
+<option>Proposal &amp; Closing</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Field 3: Win Probability -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Win Probability (%)</label>
+<span class="font-metric-mono text-metric-mono text-primary font-bold">60%</span>
+</div>
+<input class="w-full accent-primary cursor-pointer" max="100" min="0" type="range" value="60"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Used for weighted pipeline forecasting (<span class="font-semibold text-on-surface">$344k</span> current pipeline).
+              </span>
+</div>
+<!-- Field 4: Stage Description -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Stage Description</label>
+<textarea class="p-3 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all resize-none" rows="2">Lead has booked an introductory or discovery call via Nova calendar widget or Calendly integration.</textarea>
+</div>
+<!-- Field 5: Color Token Swatches (Explicitly distinguished from temperature) -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface">Stage Color Milestone</label>
+<div class="flex items-center gap-2.5">
+<button class="w-6 h-6 rounded-full bg-slate-500 hover:scale-110 transition-transform" type="button"></button>
+<button class="w-6 h-6 rounded-full bg-sky-600 hover:scale-110 transition-transform" type="button"></button>
+<button class="w-6 h-6 rounded-full bg-teal-600 hover:scale-110 transition-transform" type="button"></button>
+<button class="w-6 h-6 rounded-full bg-indigo-600 ring-2 ring-primary ring-offset-2 ring-offset-surface-container-lowest scale-110 shadow-sm" type="button"></button>
+<button class="w-6 h-6 rounded-full bg-purple-600 hover:scale-110 transition-transform" type="button"></button>
+<button class="w-6 h-6 rounded-full bg-cyan-600 hover:scale-110 transition-transform" type="button"></button>
+<button class="w-6 h-6 rounded-full bg-emerald-700 hover:scale-110 transition-transform" type="button"></button>
+<button class="w-6 h-6 rounded-full bg-fuchsia-700 hover:scale-110 transition-transform" type="button"></button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Stage colors indicate sales process state and do not conflict with Hot / Warm / Cold qualification temperatures.
+              </p>
+</div>
+<!-- Field 6: Automation & Trigger Rules -->
+<div class="flex flex-col gap-2.5 pt-2">
+<span class="font-label-md text-label-md text-on-surface">Automation Behaviors &amp; Triggers</span>
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="mt-0.5 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Auto-advance stage when visitor books a calendar slot in AI chat</span>
+</label>
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="mt-0.5 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Create high-priority Follow-up task 2 hours before scheduled meeting</span>
+</label>
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input class="mt-0.5 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Require deal value before moving past this stage</span>
+</label>
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="mt-0.5 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Send Slack alert to <span class="font-mono text-primary">#leads-slack</span> when deal reaches this stage</span>
+</label>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="flex items-center justify-end gap-3 pt-3 border-t border-surface-container">
+<button class="px-3.5 py-1.5 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+              Cancel
+            </button>
+<button class="px-4 py-1.5 rounded-xl bg-primary-container hover:opacity-95 text-on-primary font-label-md text-label-md shadow-sm transition-all" type="button">
+              Update Stage
+            </button>
+</div>
+</div>
+</div>
+<!-- OPERATIONAL HYGIENE & GOVERNANCE SECTIONS -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card A: Loss Reasons -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">thumb_down</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Loss Reasons</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">5 Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Predefined reasons required when marking a deal as Closed Lost.
+            </p>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer">
+<span>Price / Budget Constraint</span>
+<span class="text-on-surface-variant font-metric-mono text-body-sm">(42)</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer">
+<span>Competitor Chosen</span>
+<span class="text-on-surface-variant font-metric-mono text-body-sm">(28)</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer">
+<span>Ghosted / Unresponsive</span>
+<span class="text-on-surface-variant font-metric-mono text-body-sm">(19)</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer">
+<span>Timing / Postponed</span>
+<span class="text-on-surface-variant font-metric-mono text-body-sm">(15)</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer">
+<span>Missing Feature / Integration</span>
+<span class="text-on-surface-variant font-metric-mono text-body-sm">(11)</span>
+</span>
+<button class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add Reason</span>
+</button>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Require mandatory Loss Reason note</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- Card B: Disqualification Reasons -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">filter_alt_off</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Disqualification Reasons</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">5 Criteria</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Criteria for filtering out spam, job seekers, or mismatched inbound queries.
+            </p>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer">
+                Student / Academic Inquiry
+              </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer">
+                Job Seeker / Vendor Pitch
+              </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer">
+                Outside Service Area / Geography
+              </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer">
+                Budget under threshold (&lt;€2,500)
+              </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer">
+                Spam / Invalid Contact Info
+              </span>
+<button class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add Disqualification Reason</span>
+</button>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Exclude disqualified leads from conversion analytics</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- Card C: Duplicate Matching & Merging Rules -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">content_copy</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Duplicate Matching &amp; Merging Rules</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Automated</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Define how Nova AI handles returning visitors and duplicate CRM contacts.
+            </p>
+<div class="flex flex-col gap-3 pt-1">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">mark_email_read</span>
+<span class="font-label-md text-label-md text-on-surface">Match by Normalized Email Address</span>
+</div>
+<div class="relative min-w-[200px]">
+<select class="w-full text-left py-1 px-2.5 pr-6 rounded-lg bg-surface-container font-body-sm text-body-sm text-on-surface appearance-none focus:outline-none">
+<option>Merge logs &amp; keep highest score</option>
+<option>Always create secondary lead</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">phone</span>
+<span class="font-label-md text-label-md text-on-surface">Match by Phone / WhatsApp number</span>
+</div>
+<div class="relative min-w-[200px]">
+<select class="w-full text-left py-1 px-2.5 pr-6 rounded-lg bg-surface-container font-body-sm text-body-sm text-on-surface appearance-none focus:outline-none">
+<option>Link to existing lead profile</option>
+<option>Prompt human sales rep</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">domain</span>
+<span class="font-label-md text-label-md text-on-surface">Match by Company Domain</span>
+</div>
+<div class="relative min-w-[200px]">
+<select class="w-full text-left py-1 px-2.5 pr-6 rounded-lg bg-surface-container font-body-sm text-body-sm text-on-surface appearance-none focus:outline-none">
+<option>Associate as secondary contact</option>
+<option>Do not auto-link</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Notify lead owner when a duplicate interaction is detected</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- Card D: Default Lead Assignment & Routing -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">alt_route</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Default Lead Assignment &amp; Routing</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">Active Pool</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Assign unrouted or freshly qualified pipeline leads.
+            </p>
+<!-- Segmented Pill Selector -->
+<div class="p-1 rounded-xl bg-surface-container-low flex items-center gap-1">
+<button class="flex-1 py-1.5 px-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md text-center shadow-xs" type="button">
+                Round Robin
+              </button>
+<button class="flex-1 py-1.5 px-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md text-center transition-colors" type="button">
+                Weighted Capacity
+              </button>
+<button class="flex-1 py-1.5 px-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md text-center transition-colors" type="button">
+                Territory Rules
+              </button>
+</div>
+<!-- Pool Summary -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Distribution Pool</span>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" href="#">
+                  Manage in Team Settings
+                  <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+                  Maya Singh (40%)
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+                  Arjun Mehta (30%)
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+                  Riya Sen (30%)
+                </span>
+</div>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fallback Lead Owner</span>
+<div class="flex items-center gap-2">
+<img alt="Maya Singh" class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/>
+<span class="font-label-md text-label-md text-on-surface">Maya Singh (Product Lead)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div></main></div></div></div></body></html>

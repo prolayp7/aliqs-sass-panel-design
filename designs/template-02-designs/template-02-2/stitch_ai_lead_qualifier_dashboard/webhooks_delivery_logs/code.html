@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#171d1a","status-success":"#15945F","mint-tint":"#F0FAF5","on-secondary-fixed":"#002112","on-secondary":"#ffffff","canvas-bg":"#F2F4F3","status-cold":"#6F8E9E","surface-container":"#e9efea","tertiary-container":"#003c25","tertiary-fixed":"#8ef7c0","surface":"#f5fbf5","on-secondary-fixed-variant":"#005233","surface-container-low":"#eff5f0","on-tertiary-container":"#43af7d","inverse-surface":"#2c322e","shell-bg":"#FFFFFF","surface-dim":"#d5dcd6","primary-fixed":"#bdedd4","on-primary-fixed-variant":"#224f3d","secondary-fixed":"#99f6c2","status-hot":"#E55252","surface-tint":"#3b6753","secondary-container":"#99f6c2","on-primary-container":"#78a68f","on-primary-fixed":"#002115","mint-soft":"#DCF4E8","on-secondary-container":"#02734a","muted-gray":"#8A938E","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#005234","surface-container-highest":"#dee4df","on-error":"#ffffff","on-background":"#171d1a","on-tertiary":"#ffffff","status-warm":"#E9A23B","secondary-fixed-dim":"#7dd9a7","background":"#f5fbf5","border-subtle":"#DDE2DF","inverse-primary":"#a2d1b9","surface-bright":"#f5fbf5","outline":"#717973","secondary":"#006c45","tertiary":"#002415","on-surface-variant":"#414944","tertiary-fixed-dim":"#71dba5","inverse-on-surface":"#ecf2ed","surface-container-high":"#e4eae4","error-container":"#ffdad6","surface-variant":"#dee4df","primary-container":"#0b3b2a","on-error-container":"#93000a","error":"#ba1a1a","on-tertiary-fixed":"#002112","outline-variant":"#c0c8c2","on-primary":"#ffffff","body-charcoal":"#3E4742","primary-fixed-dim":"#a2d1b9","emerald-vivid":"#15945F","primary":"#002417"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.5rem","space-2xl":"2.5rem","space-3xl":"3rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","shell-padding":"2rem","gutter-tablet":"1rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-2xs":"0.25rem","space-xl":"2rem"},"fontFamily":{"label-md":["Inter"],"kpi-metric":["Manrope"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Manrope"],"headline-sm":["Manrope"],"body-sm":["Inter"],"body-md":["Inter"],"display-lg":["Manrope"],"headline-md":["Manrope"]},"fontSize":{"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"kpi-metric":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased min-h-screen"><div class="p-gutter-mobile lg:p-gutter-desktop min-h-screen flex"><div class="w-full rounded-[24px] bg-shell-bg shadow-[0_8px_32px_-4px_rgba(11,59,42,0.05),0_2px_8px_-2px_rgba(17,23,20,0.03)] border border-border-subtle flex relative overflow-hidden"><aside class="w-64 flex-shrink-0 bg-shell-bg border-r border-border-subtle flex flex-col justify-between h-auto py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="NovaLead Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U_RVWV9ukk3tUR50J2SFd0itvU9dlX7o1A9fwm0wprNWdIyFnoq8sezQTdb0HgP2Po9iKsE0S8zozl9C4DV8nv1tDCSvX5wPShj2kRgGMqL2y0hvOejE1VMoBLbEzsYpUXESUaK3Ui0rtTEpTl40fhJC5zX3970t55eATUaLoUb6Nuj33LwyUbrCGKZNqYaz8z3ryi3zcO9grKYQPTngsFy4DvIJ2ICTC6f4mtC2OOH6kAs48xwjt6Tlw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">NovaLead</span></div><button class="flex items-center justify-between px-space-xs py-space-2xs rounded-lg bg-surface-container-low text-body-sm font-label-sm text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="flex items-center gap-1.5 truncate"><span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>Northstar Digital</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">Menu</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs rounded-lg transition-all bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full" data-path="dashboard" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-emerald-vivid">grid_view</span><span class="font-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="inbox" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">chat</span><span class="font-body-md">Inbox</span></div><span class="px-1.5 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[10px] font-bold">12+</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md">Leads</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-body-md">Follow-ups</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-body-md">AI Agent</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-body-md">Qualification</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-md">Knowledge Base</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-body-md">Websites &amp; Widget</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="automations" href="#"><span class="material-symbols-outlined text-[20px]">account_tree</span><span class="font-body-md">Automations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span class="font-body-md">Analytics</span></a></nav></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">General</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-body-md">Integrations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md">Team</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-body-md">Notifications</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md">Billing &amp; Usage</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md">Settings</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-body-md">Help</span></a></nav></div></div><div class="px-space-md pt-space-xs"><div class="rounded-xl bg-gradient-to-br from-primary-container to-primary p-space-sm text-on-primary flex flex-col gap-space-xs shadow-[0_6px_20px_-2px_rgba(11,59,42,0.18)]"><div class="flex items-center justify-between"><span class="text-[11px] font-semibold text-mint-soft tracking-wide">Starter Plan</span><span class="text-[11px] text-muted-gray">74%</span></div><div class="text-body-sm font-label-md text-on-primary font-medium">742 / 1,000 Conv.</div><div class="w-full h-1.5 bg-tertiary-container rounded-full overflow-hidden"><div class="h-full bg-status-success rounded-full w-[74%]"></div></div><div class="pt-1 flex items-center justify-between"><span class="text-[10px] text-mint-soft/80">Renews in 11 days</span><button class="px-space-xs py-1 rounded-full bg-status-success text-on-secondary text-[11px] font-semibold hover:opacity-90 transition-opacity" type="button">Upgrade</button></div></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-shell-bg"><header class="h-16 px-space-lg border-b border-border-subtle flex items-center justify-between gap-space-md bg-shell-bg sticky top-0 z-30"><div class="flex-1 max-w-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-muted-gray text-[20px]">search</span><input class="w-full pl-10 pr-12 py-2 text-body-sm rounded-xl border border-border-subtle bg-mint-tint/40 text-on-surface placeholder-muted-gray focus:bg-shell-bg focus:border-status-success focus:ring-2 focus:ring-mint-soft focus:outline-none transition-all" placeholder="Search leads, visitors, conversations..." type="text"/><div class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container border border-border-subtle text-[10px] font-medium text-muted-gray font-mono">⌘F</div></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mint-tint border border-border-subtle text-body-sm font-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-status-success"></span><span>northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span></div><div class="flex items-center gap-1"><button aria-label="Inbox notifications" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">mail</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-hot ring-2 ring-shell-bg"></span></button><button aria-label="Alerts" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-warm ring-2 ring-shell-bg"></span></button></div><div class="h-7 w-[1px] bg-border-subtle"></div><div class="flex items-center gap-space-xs pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-border-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKLyyv5oEThrEBK1kOu9d885WSHu5uMzQZFjJgLQyPXiuwk00YS1a4M9jxQFjd2-Ksr-reE136uCll9DfVL8cG0xBKycJoDKuGo0FJZUwlrdjPN61HSOywTH_n4y-5T9Q6VjSve9C_nLz2XTYQINf0qNoy_le1JK7kxVM4ZeMQR4UOI2C3ZCdFelpZGdbsgEzTLBKGui_o9DTRuE1oTClDxKTVXiLDglubfPzeWDXLM7eyAbv7gBT_"/><div class="hidden xl:flex flex-col text-left"><span class="text-body-sm font-semibold text-on-surface leading-tight">Maya Singh</span><span class="text-[11px] text-muted-gray leading-tight">Product Lead</span></div></div></div></header><main class="flex-1 p-space-lg bg-shell-bg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Dynamic JavaScript for App Shell Sidebar Synchronization (Activate Integrations Tab) -->
+<script>
+    (function () {
+      const navLinks = document.querySelectorAll('aside nav a');
+      const activeClasses = [
+        'bg-mint-tint',
+        'text-on-surface',
+        'font-semibold',
+        'relative',
+        "before:content-['']",
+        'before:absolute',
+        'before:left-0',
+        'before:top-1.5',
+        'before:bottom-1.5',
+        'before:w-[3px]',
+        'before:bg-emerald-vivid',
+        'before:rounded-r-full'
+      ];
+
+      navLinks.forEach((link) => {
+        link.classList.remove(...activeClasses);
+        const icon = link.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.classList.remove('text-emerald-vivid');
+          icon.classList.add('text-on-surface-variant');
+        }
+        if (link.getAttribute('data-path') === 'integrations') {
+          link.classList.add(...activeClasses);
+          if (icon) {
+            icon.classList.remove('text-on-surface-variant');
+            icon.classList.add('text-emerald-vivid');
+          }
+        }
+      });
+    })();
+  </script>
+<!-- Page Breadcrumb & Header Hero Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-2 text-label-sm font-label-sm uppercase tracking-wider text-muted-gray">
+<span>General</span>
+<span>/</span>
+<span class="hover:text-secondary cursor-pointer">Integrations</span>
+<span>/</span>
+<span class="text-emerald-vivid font-semibold">Webhooks &amp; API</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+        Webhooks &amp; Real-time Delivery Logs
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Configure HTTP endpoints to receive real-time webhook payloads for qualified leads, score updates, and visitor handoffs with cryptographically signed payloads.
+      </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<a class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors shadow-sm" href="#">
+<span>View Webhook Docs</span>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">open_in_new</span>
+</a>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors shadow-md hover:shadow-lg" onclick="toggleModal('modal-add-endpoint')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Endpoint</span>
+</button>
+</div>
+</div>
+<!-- Top KPI & Health Metrics Row (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Emerald Focus Card -->
+<div class="relative rounded-xl bg-gradient-to-br from-primary-container via-primary to-primary-container p-space-md text-on-primary flex flex-col justify-between shadow-md overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-mint-soft tracking-wider uppercase">Active Endpoints</span>
+<div class="font-kpi-metric text-kpi-metric text-on-primary leading-none mt-1">3 Configured</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-mint-tint/10 flex items-center justify-center text-mint-soft group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+</div>
+<div class="pt-space-md relative z-10 flex items-center justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary text-on-secondary text-[11px] font-semibold w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+            All Healthy 100%
+          </span>
+<span class="text-body-sm font-body-sm text-mint-soft/80 mt-1">2 Production • 1 Staging Sandbox</span>
+</div>
+<button aria-label="View Endpoints" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-on-primary flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Deliveries Today -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-muted-gray uppercase">Deliveries Today</span>
+<div class="font-kpi-metric text-kpi-metric text-on-surface leading-none mt-1">3,842</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-mint-tint text-status-success text-[11px] font-semibold">
+          +18% vs yday
+        </span>
+</div>
+<div class="pt-space-md flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">speed</span>
+<span>Avg latency 148ms</span>
+</div>
+<div class="flex items-end gap-1 h-5 w-16">
+<div class="w-2.5 bg-mint-soft rounded-t h-[40%]"></div>
+<div class="w-2.5 bg-mint-soft rounded-t h-[65%]"></div>
+<div class="w-2.5 bg-mint-soft rounded-t h-[50%]"></div>
+<div class="w-2.5 bg-emerald-vivid rounded-t h-[90%]"></div>
+</div>
+</div>
+</div>
+<!-- Card 3: Success Rate -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-muted-gray uppercase">Delivery Success Rate</span>
+<div class="font-kpi-metric text-kpi-metric text-on-surface leading-none mt-1">99.8%</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-mint-tint text-status-success text-[11px] font-semibold">
+          Healthy
+        </span>
+</div>
+<div class="pt-space-md flex flex-col gap-1.5">
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-status-success rounded-full w-[99.8%]"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span>3,835 Succeeded</span>
+<span class="text-status-warm font-medium">7 Retried</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Failed / Dead Letters -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-muted-gray uppercase">Failed / Dropped</span>
+<div class="font-kpi-metric text-kpi-metric text-on-surface leading-none mt-1">0 Dead Letters</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-muted-gray text-[11px] font-semibold">
+          Zero queue
+        </span>
+</div>
+<div class="pt-space-md flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">verified_user</span>
+<span>Auto-exponential backoff active</span>
+</div>
+<span class="font-mono text-[11px] bg-surface-container-low px-1.5 py-0.5 rounded">max 5 retry</span>
+</div>
+</div>
+</div>
+<!-- Endpoint Configuration & Security Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Top Bar with selector & metadata -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-sm bg-surface-container-lowest">
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Production Lead Ingestion — Zapier &amp; Internal CRM</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-mint-tint text-status-success text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-pulse"></span>
+            Active • Live Traffic
+          </span>
+</div>
+<div class="flex flex-wrap items-center gap-3 text-body-sm font-body-sm text-muted-gray mt-0.5">
+<span>Created: <strong>Oct 12, 2025</strong> by Maya Singh</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[15px] text-emerald-vivid">lock</span>
+            TLS 1.3 Enforced
+          </span>
+<span>•</span>
+<span>HTTP POST JSON</span>
+</div>
+</div>
+<!-- Quick Switcher for Multiple Endpoints -->
+<div class="flex items-center gap-2">
+<span class="text-body-sm font-body-sm text-muted-gray hidden sm:inline">Endpoint:</span>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md py-2 pl-3 pr-8 rounded-lg focus:outline-none transition-colors cursor-pointer">
+<option>Endpoint 1: Production CRM (Live)</option>
+<option>Endpoint 2: Slack Alert Dispatcher</option>
+<option>Endpoint 3: Staging Sandbox Target</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-muted-gray absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- URL Box & Events List -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<div class="lg:col-span-7 flex flex-col gap-2">
+<label class="text-label-sm font-label-sm text-muted-gray uppercase tracking-wider">Target Endpoint URL</label>
+<div class="flex items-center rounded-lg bg-surface-container-low px-space-sm py-2.5 text-body-md font-mono text-on-surface gap-space-xs overflow-hidden">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid flex-shrink-0">cloud_upload</span>
+<span class="truncate flex-1" id="endpoint-url-text">https://api.northstardigital.com/v1/webhooks/novalead-events</span>
+<button class="flex items-center justify-center p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant transition-colors flex-shrink-0" id="url-copy-btn" onclick="copyToClipboard('endpoint-url-text', 'url-copy-btn')" title="Copy URL" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="px-2 py-1 rounded bg-surface-container text-body-sm font-label-sm text-secondary hover:bg-mint-tint transition-colors flex-shrink-0" type="button">
+            Edit
+          </button>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="text-label-sm font-label-sm text-muted-gray uppercase tracking-wider">Subscribed Events (4)</label>
+<button class="text-label-sm font-label-sm text-secondary hover:underline" type="button">+ Manage Events</button>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-mint-tint text-secondary text-[12px] font-mono font-medium">lead.qualified</span>
+<span class="px-2.5 py-1 rounded-full bg-mint-tint text-secondary text-[12px] font-mono font-medium">lead.score_updated</span>
+<span class="px-2.5 py-1 rounded-full bg-mint-tint text-secondary text-[12px] font-mono font-medium">visitor.handoff_requested</span>
+<span class="px-2.5 py-1 rounded-full bg-mint-tint text-secondary text-[12px] font-mono font-medium">conversation.completed</span>
+</div>
+</div>
+</div>
+<!-- Security & Signing Secret Box -->
+<div class="rounded-xl bg-mint-tint p-space-md flex flex-col gap-space-sm mt-1">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">enhanced_encryption</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Webhook Signing Secret (HMAC-SHA256)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-emerald-vivid text-[10px] font-bold uppercase tracking-wider">Active</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Incoming webhook payloads are signed via <code class="font-mono text-[11px] bg-surface-container-lowest px-1 py-0.5 rounded text-primary">X-NovaLead-Signature</code> using this private key.
+          </p>
+</div>
+<!-- Secret Display with Reveal/Copy -->
+<div class="flex items-center gap-1.5 bg-surface-container-lowest rounded-lg px-3 py-1.5 shadow-sm">
+<span class="font-mono text-body-sm text-body-charcoal select-all" id="signing-secret-masked">whsec_98f4a8b7c2e1••••••••••••••••••••3d9e</span>
+<button class="p-1 rounded hover:bg-surface-container text-muted-gray hover:text-on-surface transition-colors" id="secret-visibility-btn" onclick="toggleSecretVisibility()" title="Reveal secret" type="button">
+<span class="material-symbols-outlined text-[18px]" id="secret-visibility-icon">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-muted-gray hover:text-on-surface transition-colors" id="secret-copy-btn" onclick="copySecretValue()" title="Copy Secret" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Action Row inside Security Box -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-body-charcoal font-label-sm text-label-sm hover:bg-surface-container transition-colors shadow-sm" onclick="confirmRotateSecret()" type="button">
+<span class="material-symbols-outlined text-[16px] text-muted-gray">published_with_changes</span>
+<span>Rotate Secret</span>
+<span class="text-[10px] text-muted-gray ml-1" title="Zero-downtime dual-secret rollover active">(Zero-downtime)</span>
+</button>
+<!-- Send Test Payload Button with Select -->
+<div class="inline-flex items-center rounded-lg bg-surface-container-lowest shadow-sm p-0.5">
+<select class="bg-transparent text-body-sm font-label-sm text-on-surface py-1 px-2.5 rounded focus:outline-none cursor-pointer" id="test-payload-event">
+<option value="lead.qualified">Event: lead.qualified (Olivia Martin)</option>
+<option value="conversation.completed">Event: conversation.completed</option>
+<option value="visitor.handoff">Event: visitor.handoff_requested</option>
+</select>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-md bg-secondary text-on-secondary font-label-sm text-label-sm hover:bg-primary transition-colors" id="test-payload-btn" onclick="triggerTestPayload()" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Send Test</span>
+</button>
+</div>
+</div>
+<!-- Signature Verification Toggle -->
+<label class="inline-flex items-center gap-2 cursor-pointer select-none">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-secondary relative after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:after:translate-x-full"></div>
+<span class="text-body-sm font-label-md text-on-surface">Signature Verification Enforced</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Webhook Delivery Log Section -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Log Section Header & Filter Toolbar -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recent Delivery Log &amp; Telemetry</h2>
+<span class="px-2 py-0.5 rounded-full bg-mint-tint text-emerald-vivid text-[11px] font-bold">Live Stream</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-body-sm font-label-sm text-on-surface transition-colors" onclick="exportLogCSV()" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Export Log CSV</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-body-sm font-label-sm text-muted-gray hover:text-status-hot transition-colors" onclick="clearLogsUI()" type="button">
+<span class="material-symbols-outlined text-[16px]">clear_all</span>
+<span>Clear Filtered</span>
+</button>
+</div>
+</div>
+<!-- Filters & Status Tabs -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm pt-1">
+<!-- Search bar inside logs -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-muted-gray text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface-container-low text-body-sm text-on-surface placeholder-muted-gray focus:bg-surface-container-lowest focus:outline-none transition-colors" id="log-search-input" oninput="filterLogsTable()" placeholder="Filter by Event ID (evt_...), URL, or Status..." type="text"/>
+</div>
+<!-- Filter Pills & Time Window -->
+<div class="flex flex-wrap items-center gap-2">
+<div class="flex items-center rounded-lg bg-surface-container-low p-1 text-label-sm font-label-sm">
+<button class="status-pill-btn px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface shadow-xs font-semibold" onclick="setStatusFilter('all', this)" type="button">
+              All (3,842)
+            </button>
+<button class="status-pill-btn px-2.5 py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="setStatusFilter('2xx', this)" type="button">
+              Success (3,834)
+            </button>
+<button class="status-pill-btn px-2.5 py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="setStatusFilter('retrying', this)" type="button">
+              Retrying (5)
+            </button>
+<button class="status-pill-btn px-2.5 py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="setStatusFilter('failed', this)" type="button">
+              Failed (3)
+            </button>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-body-sm font-label-sm text-on-surface py-1.5 pl-3 pr-7 rounded-lg focus:outline-none cursor-pointer">
+<option>Last 24 Hours</option>
+<option>Last 7 Days</option>
+<option>Last 30 Days</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-muted-gray absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Table Component with subtle row tints -->
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left border-collapse min-w-[840px]">
+<thead>
+<tr class="bg-surface-container-low text-label-sm font-label-sm text-muted-gray uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l-lg">Status</th>
+<th class="py-2.5 px-3">Event Type</th>
+<th class="py-2.5 px-3">Target Endpoint</th>
+<th class="py-2.5 px-3">Latency</th>
+<th class="py-2.5 px-3">Attempts</th>
+<th class="py-2.5 px-3">Timestamp</th>
+<th class="py-2.5 px-3 text-right rounded-r-lg">Actions</th>
+</tr>
+</thead>
+<tbody class="text-body-sm font-body-sm" id="log-table-body">
+<!-- Row 1 (Success) -->
+<tr class="log-row hover:bg-mint-tint/50 transition-colors cursor-pointer group" data-event="evt_9024a1 lead.qualified" data-status="2xx" onclick="selectEvent('evt_9024a1')">
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-mint-tint text-status-success text-[11px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                200 OK
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-mono text-[13px] font-semibold text-on-surface">lead.qualified</span>
+<span class="font-mono text-[11px] text-muted-gray">evt_9024a1</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono text-[12px] text-body-charcoal truncate max-w-[220px] block" title="https://api.northstardigital.com/v1/webhooks/novalead-events">
+                https://api.northstardigital.com/.../novalead-events
+              </span>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-emerald-vivid font-medium">132ms</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-[11px] font-mono font-medium">1/5</span>
+</td>
+<td class="py-3 px-3 text-muted-gray whitespace-nowrap">Just now (10:48:12)</td>
+<td class="py-3 px-3 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-mint-tint text-secondary font-label-sm text-[11px] transition-colors" onclick="event.stopPropagation(); selectEvent('evt_9024a1')" type="button">
+                  View Payload
+                </button>
+<button class="w-7 h-7 rounded-md bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" onclick="event.stopPropagation(); replayWebhook('evt_9024a1', this)" title="Replay Webhook" type="button">
+<span class="material-symbols-outlined text-[15px]">replay</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 (Success - Slack) -->
+<tr class="log-row hover:bg-mint-tint/50 transition-colors cursor-pointer group" data-event="evt_9023f8 conversation.completed" data-status="2xx" onclick="selectEvent('evt_9023f8')">
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-mint-tint text-status-success text-[11px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                201 Created
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-mono text-[13px] font-semibold text-on-surface">conversation.completed</span>
+<span class="font-mono text-[11px] text-muted-gray">evt_9023f8</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono text-[12px] text-body-charcoal truncate max-w-[220px] block" title="https://hooks.slack.com/services/T00/B00/XXXX">
+                https://hooks.slack.com/services/...
+              </span>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-on-surface-variant">215ms</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-[11px] font-mono font-medium">1/5</span>
+</td>
+<td class="py-3 px-3 text-muted-gray whitespace-nowrap">2m ago</td>
+<td class="py-3 px-3 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-mint-tint text-secondary font-label-sm text-[11px] transition-colors" onclick="event.stopPropagation(); selectEvent('evt_9023f8')" type="button">
+                  View Payload
+                </button>
+<button class="w-7 h-7 rounded-md bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" onclick="event.stopPropagation(); replayWebhook('evt_9023f8', this)" title="Replay Webhook" type="button">
+<span class="material-symbols-outlined text-[15px]">replay</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 (Retrying - Rate limited) -->
+<tr class="log-row hover:bg-surface-container-low transition-colors cursor-pointer group" data-event="evt_9022b4 lead.score_updated" data-status="retrying" onclick="selectEvent('evt_9022b4')">
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-status-warm/15 text-status-warm text-[11px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warm animate-ping"></span>
+                429 Rate Limited
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-mono text-[13px] font-semibold text-on-surface">lead.score_updated</span>
+<span class="font-mono text-[11px] text-muted-gray">evt_9022b4</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono text-[12px] text-body-charcoal truncate max-w-[220px] block" title="https://api.northstardigital.com/v1/webhooks/novalead-events">
+                https://api.northstardigital.com/...
+              </span>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-status-warm font-medium">89ms</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-status-warm/20 text-status-warm text-[11px] font-mono font-bold">2/5 (Next 45s)</span>
+</td>
+<td class="py-3 px-3 text-muted-gray whitespace-nowrap">4m ago</td>
+<td class="py-3 px-3 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-[11px] transition-colors" onclick="event.stopPropagation(); selectEvent('evt_9022b4')" type="button">
+                  View Payload
+                </button>
+<button class="px-2 py-1 rounded bg-status-warm/15 hover:bg-status-warm/25 text-status-warm font-label-sm text-[11px] font-semibold transition-colors inline-flex items-center gap-1" onclick="event.stopPropagation(); replayWebhook('evt_9022b4', this)" title="Replay Now" type="button">
+<span class="material-symbols-outlined text-[13px]">replay</span>
+<span>Replay Now</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 (Success - Handoff) -->
+<tr class="log-row hover:bg-mint-tint/50 transition-colors cursor-pointer group" data-event="evt_9021c9 visitor.handoff_requested" data-status="2xx" onclick="selectEvent('evt_9021c9')">
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-mint-tint text-status-success text-[11px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                200 OK
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-mono text-[13px] font-semibold text-on-surface">visitor.handoff_requested</span>
+<span class="font-mono text-[11px] text-muted-gray">evt_9021c9</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono text-[12px] text-body-charcoal truncate max-w-[220px] block" title="https://api.northstardigital.com/v1/webhooks/novalead-events">
+                https://api.northstardigital.com/...
+              </span>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-on-surface-variant">145ms</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-[11px] font-mono font-medium">1/5</span>
+</td>
+<td class="py-3 px-3 text-muted-gray whitespace-nowrap">11m ago</td>
+<td class="py-3 px-3 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-mint-tint text-secondary font-label-sm text-[11px] transition-colors" onclick="event.stopPropagation(); selectEvent('evt_9021c9')" type="button">
+                  View Payload
+                </button>
+<button class="w-7 h-7 rounded-md bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" onclick="event.stopPropagation(); replayWebhook('evt_9021c9', this)" title="Replay Webhook" type="button">
+<span class="material-symbols-outlined text-[15px]">replay</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 (Failed - 502 Bad Gateway) -->
+<tr class="log-row hover:bg-error-container/20 transition-colors cursor-pointer group" data-event="evt_9019d2 lead.qualified" data-status="failed" onclick="selectEvent('evt_9019d2')">
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-error-container text-error text-[11px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                502 Bad Gateway
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-mono text-[13px] font-semibold text-on-surface">lead.qualified</span>
+<span class="font-mono text-[11px] text-muted-gray">evt_9019d2</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono text-[12px] text-body-charcoal truncate max-w-[220px] block" title="https://staging.northstardigital.com/webhooks">
+                https://staging.northstardigital.com/webhooks
+              </span>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-error font-medium">1,240ms</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-error-container text-error text-[11px] font-mono font-bold">5/5 (Exhausted)</span>
+</td>
+<td class="py-3 px-3 text-muted-gray whitespace-nowrap">38m ago</td>
+<td class="py-3 px-3 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1 rounded bg-error-container text-error font-label-sm text-[11px] font-semibold hover:opacity-90 transition-opacity" onclick="event.stopPropagation(); selectEvent('evt_9019d2')" type="button">
+                  View Error
+                </button>
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-[11px] transition-colors inline-flex items-center gap-1" onclick="event.stopPropagation(); replayWebhook('evt_9019d2', this)" title="Manual Replay" type="button">
+<span class="material-symbols-outlined text-[13px]">replay</span>
+<span>Manual</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6 (Success) -->
+<tr class="log-row hover:bg-mint-tint/50 transition-colors cursor-pointer group" data-event="evt_9018e7 lead.qualified" data-status="2xx" onclick="selectEvent('evt_9018e7')">
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-mint-tint text-status-success text-[11px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                200 OK
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-mono text-[13px] font-semibold text-on-surface">lead.qualified</span>
+<span class="font-mono text-[11px] text-muted-gray">evt_9018e7</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono text-[12px] text-body-charcoal truncate max-w-[220px] block" title="https://api.northstardigital.com/v1/webhooks/novalead-events">
+                https://api.northstardigital.com/...
+              </span>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-on-surface-variant">118ms</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-[11px] font-mono font-medium">1/5</span>
+</td>
+<td class="py-3 px-3 text-muted-gray whitespace-nowrap">1h ago</td>
+<td class="py-3 px-3 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-mint-tint text-secondary font-label-sm text-[11px] transition-colors" onclick="event.stopPropagation(); selectEvent('evt_9018e7')" type="button">
+                  View Payload
+                </button>
+<button class="w-7 h-7 rounded-md bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" onclick="event.stopPropagation(); replayWebhook('evt_9018e7', this)" title="Replay Webhook" type="button">
+<span class="material-symbols-outlined text-[15px]">replay</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Detailed Payload & Headers Inspector Drawer Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-md flex flex-col gap-space-md" id="inspector-card">
+<!-- Inspector Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-mint-tint flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[22px]">code</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Event Telemetry Inspector</span>
+<span class="font-mono text-label-sm font-semibold bg-surface-container-low px-2 py-0.5 rounded text-secondary" id="inspect-event-id">evt_9024a1</span>
+<span class="px-2 py-0.5 rounded-full bg-status-hot/10 text-status-hot text-[11px] font-semibold">Hot Lead (Score 86)</span>
+</div>
+<span class="text-body-sm font-body-sm text-muted-gray">Delivered to Production Lead Ingestion endpoint with SHA-256 validation</span>
+</div>
+</div>
+<!-- Action buttons -->
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-body-sm font-label-md text-on-surface transition-colors" id="copy-payload-btn" onclick="copyPayloadJSON()" type="button">
+<span class="material-symbols-outlined text-[16px]">copy_all</span>
+<span>Copy Payload JSON</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" id="resend-inspector-btn" onclick="resendInspectedWebhook()" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Resend Webhook</span>
+</button>
+</div>
+</div>
+<!-- Inspector Split: Left Headers / Right Payload -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Headers Panel -->
+<div class="lg:col-span-4 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-muted-gray uppercase tracking-wider">HTTP Request Headers</span>
+<span class="text-[11px] font-mono text-muted-gray">TLS 1.3</span>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-sm font-mono text-[11px] flex flex-col gap-2 leading-relaxed text-on-surface overflow-x-auto">
+<div>
+<span class="text-muted-gray">POST</span> /v1/webhooks/novalead-events
+          </div>
+<div>
+<span class="text-secondary font-semibold">Host:</span> api.northstardigital.com
+          </div>
+<div>
+<span class="text-secondary font-semibold">Content-Type:</span> application/json
+          </div>
+<div>
+<span class="text-secondary font-semibold">User-Agent:</span> NovaLead-Webhooks/2.4.0
+          </div>
+<div>
+<span class="text-secondary font-semibold">X-NovaLead-Event:</span> <span class="bg-surface-container px-1 py-0.5 rounded text-emerald-vivid font-bold">lead.qualified</span>
+</div>
+<div>
+<span class="text-secondary font-semibold">X-NovaLead-Delivery:</span> dlv_849201994a
+          </div>
+<div>
+<span class="text-secondary font-semibold">X-NovaLead-Timestamp:</span> 1740912492
+          </div>
+<div class="break-all pt-1">
+<span class="text-secondary font-semibold">X-NovaLead-Signature:</span><br/>
+<span class="text-muted-gray text-[10px]">sha256=a87f08c39e23bc1149e984fa5...</span>
+</div>
+</div>
+<!-- Target Response Snapshot -->
+<div class="rounded-xl bg-mint-tint p-space-sm flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Response Snapshot</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-status-success font-mono text-[10px] font-bold">HTTP 200 OK (132ms)</span>
+</div>
+<pre class="font-mono text-[11px] text-body-charcoal bg-surface-container-lowest p-2 rounded-lg mt-1 overflow-x-auto">{"received": true, "lead_id": "crm_9941", "status": "enqueued"}</pre>
+</div>
+</div>
+<!-- JSON Body Editor / Viewer -->
+<div class="lg:col-span-8 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-muted-gray uppercase tracking-wider">JSON Request Body</span>
+<span class="text-[11px] font-mono text-muted-gray">842 bytes</span>
+</div>
+<div class="relative rounded-xl bg-primary text-mint-soft p-space-md font-mono text-[12px] leading-relaxed overflow-x-auto shadow-inner">
+<pre class="whitespace-pre" id="json-preview-block"><code>{
+  <span class="text-mint-soft font-semibold">"event_id"</span>: <span class="text-tertiary-fixed">"evt_9024a1"</span>,
+  <span class="text-mint-soft font-semibold">"event"</span>: <span class="text-tertiary-fixed">"lead.qualified"</span>,
+  <span class="text-mint-soft font-semibold">"created_at"</span>: <span class="text-secondary-fixed">1740912492</span>,
+  <span class="text-mint-soft font-semibold">"workspace"</span>: <span class="text-tertiary-fixed">"northstar_digital"</span>,
+  <span class="text-mint-soft font-semibold">"data"</span>: {
+    <span class="text-mint-soft font-semibold">"lead"</span>: {
+      <span class="text-mint-soft font-semibold">"id"</span>: <span class="text-tertiary-fixed">"lead_894"</span>,
+      <span class="text-mint-soft font-semibold">"name"</span>: <span class="text-tertiary-fixed">"Olivia Martin"</span>,
+      <span class="text-mint-soft font-semibold">"email"</span>: <span class="text-tertiary-fixed">"olivia@apextech.io"</span>,
+      <span class="text-mint-soft font-semibold">"phone"</span>: <span class="text-tertiary-fixed">"+91 98450 12894"</span>,
+      <span class="text-mint-soft font-semibold">"company"</span>: <span class="text-tertiary-fixed">"ApexTech Solutions"</span>,
+      <span class="text-mint-soft font-semibold">"score"</span>: <span class="text-secondary-fixed">86</span>,
+      <span class="text-mint-soft font-semibold">"qualification_status"</span>: <span class="text-tertiary-fixed">"hot"</span>,
+      <span class="text-mint-soft font-semibold">"interest"</span>: <span class="text-tertiary-fixed">"AI Automation &amp; Multi-channel SDR"</span>,
+      <span class="text-mint-soft font-semibold">"budget"</span>: <span class="text-tertiary-fixed">"₹5,00,000 - ₹15,00,000"</span>,
+      <span class="text-mint-soft font-semibold">"timeline"</span>: <span class="text-tertiary-fixed">"Immediate (within 14 days)"</span>,
+      <span class="text-mint-soft font-semibold">"assigned_rep"</span>: <span class="text-tertiary-fixed">"Maya Singh"</span>
+    },
+    <span class="text-mint-soft font-semibold">"session"</span>: {
+      <span class="text-mint-soft font-semibold">"visitor_id"</span>: <span class="text-tertiary-fixed">"vis_38910"</span>,
+      <span class="text-mint-soft font-semibold">"referrer"</span>: <span class="text-tertiary-fixed">"https://www.google.com/search?q=enterprise+ai+lead+gen"</span>,
+      <span class="text-mint-soft font-semibold">"duration_seconds"</span>: <span class="text-secondary-fixed">384</span>,
+      <span class="text-mint-soft font-semibold">"conversation_turn_count"</span>: <span class="text-secondary-fixed">8</span>
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<!-- Add Endpoint Modal (Hidden by Default) -->
+<div class="hidden fixed inset-0 z-50 bg-black/40 backdrop-blur-xs flex items-center justify-center p-4" id="modal-add-endpoint">
+<div class="w-full max-w-xl rounded-2xl bg-surface-container-lowest p-space-lg shadow-xl flex flex-col gap-space-md animate-in fade-in zoom-in duration-150">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-mint-tint flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[20px]">add_link</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Add Webhook Endpoint</h3>
+</div>
+<button class="p-1.5 rounded-lg text-muted-gray hover:bg-surface-container-low transition-colors" onclick="toggleModal('modal-add-endpoint')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm text-body-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Endpoint Description</label>
+<input class="px-3 py-2 rounded-lg bg-surface-container-low focus:bg-surface-container-lowest focus:outline-none text-on-surface" placeholder="e.g. Production Data Warehouse sync" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Payload Target URL</label>
+<input class="px-3 py-2 rounded-lg bg-surface-container-low focus:bg-surface-container-lowest focus:outline-none text-on-surface font-mono text-[13px]" placeholder="https://api.yourdomain.com/webhooks/novalead" type="url"/>
+</div>
+<div class="flex flex-col gap-1.5 pt-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Select Events to Subscribe</label>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="accent-secondary" type="checkbox"/>
+<span class="font-mono text-[11px] font-semibold">lead.qualified</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="accent-secondary" type="checkbox"/>
+<span class="font-mono text-[11px] font-semibold">lead.score_updated</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input class="accent-secondary" type="checkbox"/>
+<span class="font-mono text-[11px] font-semibold">visitor.handoff_requested</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input class="accent-secondary" type="checkbox"/>
+<span class="font-mono text-[11px] font-semibold">conversation.completed</span>
+</label>
+</div>
+</div>
+<div class="rounded-lg bg-mint-tint p-3 text-body-sm text-secondary flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] flex-shrink-0 mt-0.5">verified_user</span>
+<span>A dedicated HMAC SHA-256 secret key will be generated for cryptographic integrity verification.</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-colors" onclick="toggleModal('modal-add-endpoint')" type="button">
+          Cancel
+        </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors shadow-sm" onclick="toggleModal('modal-add-endpoint'); alert('Webhook endpoint registered successfully!');" type="button">
+          Register Endpoint
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<div class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-on-primary shadow-xl font-label-md text-label-md">
+<span class="material-symbols-outlined text-status-success text-[18px]" id="toast-icon">check_circle</span>
+<span id="toast-message">Notification message</span>
+</div>
+</div>
+<!-- Vanilla JavaScript for Interactive State Management -->
+<script>
+    let secretVisible = false;
+    const rawSecret = "whsec_98f4a8b7c2e1f40d3bb6291a0c4f828a11029c4d8e7a9b3d9e";
+    const maskedSecret = "whsec_98f4a8b7c2e1••••••••••••••••••••3d9e";
+
+    function showToast(msg, isError = false) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      const toastIcon = document.getElementById('toast-icon');
+
+      toastMsg.innerText = msg;
+      toastIcon.innerText = isError ? 'error' : 'check_circle';
+      toastIcon.className = isError
+        ? 'material-symbols-outlined text-status-hot text-[18px]'
+        : 'material-symbols-outlined text-status-success text-[18px]';
+
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2600);
+    }
+
+    function toggleSecretVisibility() {
+      secretVisible = !secretVisible;
+      const el = document.getElementById('signing-secret-masked');
+      const icon = document.getElementById('secret-visibility-icon');
+      if (secretVisible) {
+        el.innerText = rawSecret;
+        icon.innerText = 'visibility_off';
+      } else {
+        el.innerText = maskedSecret;
+        icon.innerText = 'visibility';
+      }
+    }
+
+    function copySecretValue() {
+      navigator.clipboard.writeText(rawSecret).then(() => {
+        showToast('Webhook secret copied to clipboard!');
+      });
+    }
+
+    function copyToClipboard(elementId, btnId) {
+      const text = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('Copied URL to clipboard!');
+      });
+    }
+
+    function confirmRotateSecret() {
+      if (confirm("Rotate this webhook signing secret? Existing integrations have 24 hours of dual-secret rollover before expiration.")) {
+        showToast("New dual-signing secret issued! Rollover active.");
+      }
+    }
+
+    function triggerTestPayload() {
+      const btn = document.getElementById('test-payload-btn');
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>Sending...</span>`;
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.innerHTML = originalHtml;
+        btn.disabled = false;
+        showToast('Test payload dispatched (200 OK, 128ms)');
+      }, 700);
+    }
+
+    function setStatusFilter(status, btnElement) {
+      document.querySelectorAll('.status-pill-btn').forEach(btn => {
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-xs', 'font-semibold');
+        btn.classList.add('text-on-surface-variant');
+      });
+      btnElement.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-xs', 'font-semibold');
+      btnElement.classList.remove('text-on-surface-variant');
+
+      const rows = document.querySelectorAll('.log-row');
+      rows.forEach(row => {
+        const rowStatus = row.getAttribute('data-status');
+        if (status === 'all' || rowStatus === status) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function filterLogsTable() {
+      const q = document.getElementById('log-search-input').value.toLowerCase();
+      const rows = document.querySelectorAll('.log-row');
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(q) ? '' : 'none';
+      });
+    }
+
+    function replayWebhook(eventId, buttonElement) {
+      const icon = buttonElement.querySelector('.material-symbols-outlined');
+      if (icon) icon.classList.add('animate-spin');
+      setTimeout(() => {
+        if (icon) icon.classList.remove('animate-spin');
+        showToast(`Webhook for ${eventId} re-queued and sent! (200 OK)`);
+      }, 600);
+    }
+
+    function selectEvent(eventId) {
+      document.getElementById('inspect-event-id').innerText = eventId;
+      document.getElementById('inspector-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      showToast(`Loaded details for ${eventId}`);
+    }
+
+    function copyPayloadJSON() {
+      const json = document.getElementById('json-preview-block').innerText;
+      navigator.clipboard.writeText(json).then(() => {
+        showToast('JSON payload copied to clipboard!');
+      });
+    }
+
+    function resendInspectedWebhook() {
+      const btn = document.getElementById('resend-inspector-btn');
+      const original = btn.innerHTML;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>Resending...</span>`;
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.innerHTML = original;
+        btn.disabled = false;
+        showToast('Payload resent successfully (HTTP 200 OK)');
+      }, 650);
+    }
+
+    function toggleModal(modalId) {
+      const modal = document.getElementById(modalId);
+      modal.classList.toggle('hidden');
+    }
+
+    function exportLogCSV() {
+      showToast('Exporting delivery logs as CSV...');
+    }
+
+    function clearLogsUI() {
+      if (confirm('Clear telemetry view filters?')) {
+        document.getElementById('log-search-input').value = '';
+        filterLogsTable();
+        showToast('Log view reset');
+      }
+    }
+  </script>
+</div></main></div></div></div></body></html>

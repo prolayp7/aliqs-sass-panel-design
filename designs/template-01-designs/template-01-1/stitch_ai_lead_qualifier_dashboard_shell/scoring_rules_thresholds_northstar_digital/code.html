@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#e1e3ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#79fbc8", "on-background": "#171c25", "surface-container-high": "#e5e8f5", "secondary": "#5f5e5e", "on-primary": "#ffffff", "tertiary": "#005940", "outline-variant": "#c4c5d9", "tertiary-fixed": "#77fac7", "primary-fixed-dim": "#bac3ff", "on-secondary-fixed-variant": "#474646", "primary": "#0034dc", "on-primary-fixed": "#00105b", "on-surface-variant": "#444656", "secondary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#00513a", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002115", "surface-dim": "#d6dae7", "inverse-surface": "#2c303a", "outline": "#747687", "inverse-primary": "#bac3ff", "background": "#f9f9ff", "on-secondary-fixed": "#1c1b1b", "primary-container": "#3152f4", "secondary-fixed": "#e5e2e1", "surface-container-highest": "#dfe2ef", "error": "#ba1a1a", "inverse-on-surface": "#edf0fd", "secondary-container": "#e2dfde", "on-secondary-container": "#636262", "on-surface": "#171c25", "surface-container": "#eaedfb", "surface": "#f9f9ff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#002fc9", "tertiary-container": "#007454", "surface-tint": "#2649ec", "surface-variant": "#dfe2ef", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-container-low": "#f1f3ff", "tertiary-fixed-dim": "#58ddac", "on-error": "#ffffff", "primary-fixed": "#dee0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "2.5rem", "space-xl": "1.5rem", "space-sm": "0.75rem", "space-2xl": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "card-padding": "1.5rem", "space-2xs": "0.25rem", "shell-padding": "1.75rem", "gutter-grid": "1.25rem", "space-lg": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-kpi": ["Plus Jakarta Sans"], "display-kpi-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "metric-mono": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-kpi": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-kpi-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "metric-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-low font-body-md text-on-surface antialiased min-h-screen"><div class="min-h-screen p-0 md:p-6 lg:p-8 flex justify-center items-start"><div class="w-full max-w-[1440px] bg-surface-container-lowest rounded-none md:rounded-[28px] shadow-[0_16px_40px_rgba(23,28,37,0.06)] overflow-hidden flex relative min-h-[calc(100vh-4rem)]"><aside class="w-60 shrink-0 bg-surface-container-low flex flex-col justify-between p-4 overflow-y-auto"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-2 py-1"><img alt="Nova AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between cursor-pointer group"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nova AI</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-on-surface transition-colors">unfold_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Northstar Digital</span></div></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Workspace</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-xl transition-colors bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inbox" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-lg text-label-lg">Inbox</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Leads</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-label-lg text-label-lg">Follow-ups</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Agent</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-lg text-label-lg">Qualification</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-lg text-label-lg">Knowledge Base</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-label-lg text-label-lg">Websites &amp; Widget</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-lg text-label-lg">Analytics</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-lg text-label-lg">Integrations</span></a></nav></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Administration</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Team</span></a><a class="flex items-center justify-between px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-label-lg text-label-lg">Billing &amp; Usage</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div></div><div class="flex flex-col gap-3 mt-6 pt-4"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-label-lg text-label-lg">Help &amp; Support</span></a><div class="p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(20,25,40,0.03)] flex flex-col gap-2.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Starter Plan</span><span class="font-label-sm text-label-sm text-tertiary font-bold">Active</span></div><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">742 / 1,000</span><span class="font-label-sm text-label-sm">74%</span></div><div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">Monthly AI conversations</span></div><a class="mt-1 w-full py-1.5 px-3 bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md rounded-lg text-center transition-colors" data-path="billing-and-usage" href="#">Upgrade Plan</a></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest"><header class="h-16 px-6 lg:px-8 bg-surface-container-lowest flex items-center justify-between shrink-0 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-10"><div class="flex items-center gap-4 flex-1"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full cursor-pointer"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-tertiary/20"></span><span class="font-label-md text-label-md text-on-surface">northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="relative max-w-md w-full hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search leads, chats, workflows..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-4"><button class="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_4px_12px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Create</span></button><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Maya Singh</span><span class="font-body-sm text-body-sm text-on-surface-variant">Product Lead</span></div></div></div></header><main class="flex-1 p-6 lg:p-shell-padding overflow-y-auto bg-surface-container-lowest"><div class="flex flex-col w-full">
+<!-- JavaScript for Client-Side Sidebar Active State Correction -->
+<script>
+    (function syncSidebarActiveState() {
+      const qualificationLinks = document.querySelectorAll('aside nav a[data-path="qualification"]');
+      const allNavLinks = document.querySelectorAll('aside nav a');
+      
+      allNavLinks.forEach(link => {
+        link.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold', 'shadow-[0_4px_12px_rgba(49,82,244,0.3)]');
+        link.classList.add('text-on-surface-variant');
+      });
+      
+      qualificationLinks.forEach(link => {
+        link.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high', 'hover:text-on-surface');
+        link.classList.add('bg-primary-container', 'text-on-primary', 'font-bold', 'shadow-[0_4px_12px_rgba(49,82,244,0.3)]');
+      });
+    })();
+  </script>
+<!-- Section Header & Breadcrumb -->
+<div class="flex flex-col gap-5 pb-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary font-bold tracking-wide uppercase">AI Evaluation Engine</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">v3.4 Production</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Northstar Digital</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">Qualification &amp; Scoring</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Configure automated lead scoring models, intent weightings, temperature thresholds, and real-time sales alert triggers.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-2.5 flex-wrap shrink-0">
+<button class="flex items-center gap-1.5 px-3 py-2 bg-surface-container-lowest text-on-surface rounded-xl font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Audit Log</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 bg-surface-container-lowest text-on-surface rounded-xl font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+<span>Reorder Priority</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_8px_20px_rgba(49,82,244,0.28)] hover:opacity-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Scoring Rule</span>
+</button>
+</div>
+</div>
+<!-- KPI Summary Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- KPI 1 -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl shadow-[0_4px_16px_rgba(20,25,40,0.03)] flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Scoring Rules</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">14 Live</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">100% operational</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">9 positive • 2 penalty • 3 routing triggers</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">rule</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl shadow-[0_4px_16px_rgba(20,25,40,0.03)] flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Average Lead Score</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">62.4 <span class="text-headline-sm font-normal text-on-surface-variant">/ 100</span></span>
+<span class="inline-flex items-center text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +4.8 pts
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Benchmark baseline 57.6 across 1,024 records</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">query_stats</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl shadow-[0_4px_16px_rgba(20,25,40,0.03)] flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">High Intent (Hot) Ratio</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-error font-bold">28.5%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Threshold ≥ 70</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auto-routed directly to SDR calendar sync</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">local_fire_department</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Segmented Sub-Navigation Tabs -->
+<div class="flex items-center justify-between pb-6">
+<div class="inline-flex items-center p-1 bg-surface-container-low rounded-full">
+<button class="px-4 py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5" type="button">
+<span>Questions</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">8</span>
+</button>
+<button class="px-5 py-1.5 rounded-full font-label-lg text-label-lg bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)] flex items-center gap-2" type="button">
+<span>Scoring Rules</span>
+<span class="px-1.5 py-0.2 rounded-full bg-on-primary/20 text-on-primary font-label-sm text-label-sm">14</span>
+</button>
+<button class="px-4 py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span>Classification Thresholds</span>
+</button>
+<button class="px-4 py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">science</span>
+<span>Test Score Sandbox</span>
+</button>
+</div>
+<!-- Active Engine Status Pill -->
+<div class="hidden xl:flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>Rules engine syncing live with Widget v2.1</span>
+</div>
+</div>
+<!-- Main 2-Column Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- LEFT COLUMN: Scoring Rules List (approx 65% / 8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-4">
+<!-- Filter & Search Toolbar -->
+<div class="p-3 bg-surface-container-lowest rounded-2xl shadow-[0_2px_8px_rgba(20,25,40,0.02)] flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[200px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span>
+<input class="w-full h-9 pl-9 pr-4 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search rules by attribute, condition, or tag..." type="text"/>
+</div>
+<!-- Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0">
+<select class="h-9 px-3 bg-surface-container-low rounded-xl font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option>All Categories (14)</option>
+<option>Financial &amp; Budget (4)</option>
+<option>Urgency &amp; Timeline (3)</option>
+<option>Service Fit (3)</option>
+<option>Demographics &amp; Location (2)</option>
+<option>Negative Signals (2)</option>
+</select>
+<select class="h-9 px-3 bg-surface-container-low rounded-xl font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option>Status: Active (12)</option>
+<option>Status: Paused (2)</option>
+<option>All Statuses</option>
+</select>
+<button class="h-9 px-3 bg-surface-container-low text-on-surface-variant hover:text-on-surface rounded-xl font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">sort</span>
+<span>Priority</span>
+</button>
+</div>
+</div>
+<!-- Rules List Container -->
+<div class="flex flex-col gap-3">
+<!-- RULE 1 -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl shadow-[0_6px_20px_rgba(20,25,40,0.03)] flex flex-col gap-3 hover:shadow-[0_8px_24px_rgba(20,25,40,0.06)] transition-shadow">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-outline-variant cursor-grab hover:text-on-surface">drag_indicator</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase font-bold">Priority #1</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Financial &amp; Urgency</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-container/10 text-tertiary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+                High Velocity (+25 pts)
+              </span>
+<!-- Toggle switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 text-outline hover:text-on-surface rounded-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Human-readable IF / THEN logic statement -->
+<div class="p-3 bg-surface-container-low rounded-xl flex flex-wrap items-center gap-2 font-body-md text-body-md text-on-surface">
+<span class="px-2 py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm rounded font-bold">IF</span>
+<div class="px-2.5 py-1 bg-surface-container-lowest rounded-lg font-metric-mono text-metric-mono text-on-surface font-semibold shadow-2xs">
+              Budget ≥ ₹2,00,000
+            </div>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded font-bold">AND</span>
+<div class="px-2.5 py-1 bg-surface-container-lowest rounded-lg font-metric-mono text-metric-mono text-on-surface font-semibold shadow-2xs">
+              Timeline is within 30 days
+            </div>
+<span class="px-2 py-0.5 bg-tertiary-container text-on-tertiary font-label-sm text-label-sm rounded font-bold">THEN</span>
+<div class="px-2.5 py-1 bg-tertiary-container/15 text-tertiary rounded-lg font-metric-mono text-metric-mono font-bold">
+              Add +25 points
+            </div>
+</div>
+<!-- Card Metadata Bar -->
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-medium text-on-surface">318 leads matched</span> (74.2% capture)
+              </span>
+<span>•</span>
+<span>Evaluated 4m ago</span>
+<span>•</span>
+<span class="text-tertiary font-medium">99.2% precision</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm" type="button">Edit</button>
+<span>•</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Duplicate</button>
+</div>
+</div>
+</div>
+<!-- RULE 2 -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl shadow-[0_6px_20px_rgba(20,25,40,0.03)] flex flex-col gap-3 hover:shadow-[0_8px_24px_rgba(20,25,40,0.06)] transition-shadow">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-outline-variant cursor-grab hover:text-on-surface">drag_indicator</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase font-bold">Priority #2</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Service Fit</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+                Core Offering Match (+18 pts)
+              </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 text-outline hover:text-on-surface rounded-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Human-readable IF / THEN logic statement -->
+<div class="p-3 bg-surface-container-low rounded-xl flex flex-wrap items-center gap-2 font-body-md text-body-md text-on-surface">
+<span class="px-2 py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm rounded font-bold">IF</span>
+<div class="px-2.5 py-1 bg-surface-container-lowest rounded-lg font-metric-mono text-metric-mono text-on-surface font-semibold shadow-2xs">
+              Service Interest is "AI Automation &amp; CRM"
+            </div>
+<span class="px-2 py-0.5 bg-tertiary-container text-on-tertiary font-label-sm text-label-sm rounded font-bold">THEN</span>
+<div class="px-2.5 py-1 bg-tertiary-container/15 text-tertiary rounded-lg font-metric-mono text-metric-mono font-bold">
+              Add +18 points
+            </div>
+</div>
+<!-- Card Metadata Bar -->
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-medium text-on-surface">482 leads matched</span>
+</span>
+<span>•</span>
+<span>Evaluated 12m ago</span>
+<span>•</span>
+<span class="text-tertiary font-medium">98.9% precision</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm" type="button">Edit</button>
+<span>•</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Duplicate</button>
+</div>
+</div>
+</div>
+<!-- RULE 3 (High Intent + Slack Trigger) -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl shadow-[0_6px_20px_rgba(20,25,40,0.03)] flex flex-col gap-3 hover:shadow-[0_8px_24px_rgba(20,25,40,0.06)] transition-shadow">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-outline-variant cursor-grab hover:text-on-surface">drag_indicator</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase font-bold">Priority #3</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container/40 text-on-error-container font-label-sm text-label-sm">Intent &amp; Routing</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">notifications_active</span>
+                Direct Hot Handover (+22 pts + Instant Alert)
+              </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 text-outline hover:text-on-surface rounded-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Human-readable IF / THEN logic statement -->
+<div class="p-3 bg-surface-container-low rounded-xl flex flex-wrap items-center gap-2 font-body-md text-body-md text-on-surface">
+<span class="px-2 py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm rounded font-bold">IF</span>
+<div class="px-2.5 py-1 bg-surface-container-lowest rounded-lg font-metric-mono text-metric-mono text-on-surface font-semibold shadow-2xs">
+              Buying Intent is "High (Immediate Need)"
+            </div>
+<span class="px-2 py-0.5 bg-tertiary-container text-on-tertiary font-label-sm text-label-sm rounded font-bold">THEN</span>
+<div class="px-2.5 py-1 bg-tertiary-container/15 text-tertiary rounded-lg font-metric-mono text-metric-mono font-bold">
+              Add +22 points
+            </div>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded font-bold">AND</span>
+<div class="px-2.5 py-1 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface font-medium shadow-2xs flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-error">campaign</span>
+              Trigger Slack alert to <span class="font-bold text-primary">#enterprise-sales</span> &amp; assign round-robin
+            </div>
+</div>
+<!-- Card Metadata Bar -->
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-medium text-on-surface">142 leads matched</span>
+</span>
+<span>•</span>
+<span>Evaluated 1m ago</span>
+<span>•</span>
+<span class="text-tertiary font-medium">99.7% precision</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm" type="button">Edit</button>
+<span>•</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Duplicate</button>
+</div>
+</div>
+</div>
+<!-- RULE 4 (Negative Signal / Penalty) -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl shadow-[0_6px_20px_rgba(20,25,40,0.03)] flex flex-col gap-3 hover:shadow-[0_8px_24px_rgba(20,25,40,0.06)] transition-shadow">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-outline-variant cursor-grab hover:text-on-surface">drag_indicator</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase font-bold">Priority #4</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-variant font-label-sm text-label-sm">Demographics</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container/50 text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">remove_circle_outline</span>
+                Penalty (-20 pts)
+              </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 text-outline hover:text-on-surface rounded-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Human-readable IF / THEN logic statement -->
+<div class="p-3 bg-surface-container-low rounded-xl flex flex-wrap items-center gap-2 font-body-md text-body-md text-on-surface">
+<span class="px-2 py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm rounded font-bold">IF</span>
+<div class="px-2.5 py-1 bg-surface-container-lowest rounded-lg font-metric-mono text-metric-mono text-on-surface font-semibold shadow-2xs">
+              Location is "Outside Tier-1 / Unserviced Geography"
+            </div>
+<span class="px-2 py-0.5 bg-error-container text-on-error-container font-label-sm text-label-sm rounded font-bold">THEN</span>
+<div class="px-2.5 py-1 bg-error-container/30 text-error rounded-lg font-metric-mono text-metric-mono font-bold">
+              Subtract -20 points
+            </div>
+</div>
+<!-- Card Metadata Bar -->
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span class="font-medium text-on-surface">64 leads matched</span>
+</span>
+<span>•</span>
+<span>Evaluated 42m ago</span>
+<span>•</span>
+<span class="text-tertiary font-medium">96.5% precision</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm" type="button">Edit</button>
+<span>•</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Duplicate</button>
+</div>
+</div>
+</div>
+<!-- RULE 5 (Authority Role) -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl shadow-[0_6px_20px_rgba(20,25,40,0.03)] flex flex-col gap-3 hover:shadow-[0_8px_24px_rgba(20,25,40,0.06)] transition-shadow">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-outline-variant cursor-grab hover:text-on-surface">drag_indicator</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase font-bold">Priority #5</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Authority</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-container/10 text-tertiary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+                Authority Boost (+15 pts)
+              </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 text-outline hover:text-on-surface rounded-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Human-readable IF / THEN logic statement -->
+<div class="p-3 bg-surface-container-low rounded-xl flex flex-wrap items-center gap-2 font-body-md text-body-md text-on-surface">
+<span class="px-2 py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm rounded font-bold">IF</span>
+<div class="px-2.5 py-1 bg-surface-container-lowest rounded-lg font-metric-mono text-metric-mono text-on-surface font-semibold shadow-2xs">
+              Decision Maker Role is "C-Level / VP / Founder"
+            </div>
+<span class="px-2 py-0.5 bg-tertiary-container text-on-tertiary font-label-sm text-label-sm rounded font-bold">THEN</span>
+<div class="px-2.5 py-1 bg-tertiary-container/15 text-tertiary rounded-lg font-metric-mono text-metric-mono font-bold">
+              Add +15 points
+            </div>
+</div>
+<!-- Card Metadata Bar -->
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-medium text-on-surface">215 leads matched</span>
+</span>
+<span>•</span>
+<span>Evaluated 18m ago</span>
+<span>•</span>
+<span class="text-tertiary font-medium">99.1% precision</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm" type="button">Edit</button>
+<span>•</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Duplicate</button>
+</div>
+</div>
+</div>
+<!-- RULE 6 (Traffic Scale) -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl shadow-[0_6px_20px_rgba(20,25,40,0.03)] flex flex-col gap-3 hover:shadow-[0_8px_24px_rgba(20,25,40,0.06)] transition-shadow">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-outline-variant cursor-grab hover:text-on-surface">drag_indicator</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase font-bold">Priority #6</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Scale &amp; Volume</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-container/10 text-tertiary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">insights</span>
+                Scale Fit (+10 pts)
+              </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<button class="p-1 text-outline hover:text-on-surface rounded-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Human-readable IF / THEN logic statement -->
+<div class="p-3 bg-surface-container-low rounded-xl flex flex-wrap items-center gap-2 font-body-md text-body-md text-on-surface">
+<span class="px-2 py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm rounded font-bold">IF</span>
+<div class="px-2.5 py-1 bg-surface-container-lowest rounded-lg font-metric-mono text-metric-mono text-on-surface font-semibold shadow-2xs">
+              Monthly Website Traffic &gt; 50,000 visits
+            </div>
+<span class="px-2 py-0.5 bg-tertiary-container text-on-tertiary font-label-sm text-label-sm rounded font-bold">THEN</span>
+<div class="px-2.5 py-1 bg-tertiary-container/15 text-tertiary rounded-lg font-metric-mono text-metric-mono font-bold">
+              Add +10 points
+            </div>
+</div>
+<!-- Card Metadata Bar -->
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-medium text-on-surface">98 leads matched</span>
+</span>
+<span>•</span>
+<span>Evaluated 2h ago</span>
+<span>•</span>
+<span class="text-tertiary font-medium">97.8% precision</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm" type="button">Edit</button>
+<span>•</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Duplicate</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Add New Inline Rule Prompt -->
+<button class="w-full py-3.5 bg-surface-container-lowest hover:bg-surface-container-low rounded-2xl border-2 border-dashed border-outline-variant/50 text-on-surface-variant hover:text-primary flex items-center justify-center gap-2 font-label-lg text-label-lg transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Define another automated qualification rule</span>
+</button>
+</div>
+<!-- RIGHT COLUMN: Classification Thresholds & Interactive Test Simulator (approx 35% / 4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- CARD 1: Classification Thresholds Card -->
+<div class="p-5 bg-surface-container-lowest rounded-2xl shadow-[0_8px_28px_rgba(20,25,40,0.04)] flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">tune</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Lead Temperature Thresholds</span>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+<div class="flex items-center justify-between">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Determines automatic routing and tag assignment based on final cumulative score.
+          </p>
+<span class="px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm rounded-full whitespace-nowrap">Auto-recalculate</span>
+</div>
+<!-- 0-100 Interactive Multi-Segment Scale Visualizer -->
+<div class="flex flex-col gap-2 pt-2">
+<!-- Numerical Bar Track -->
+<div class="relative w-full h-7 bg-surface-container-high rounded-full overflow-hidden flex">
+<!-- Cold segment 0 - 39 (40%) -->
+<div class="h-full bg-secondary flex items-center justify-center text-white font-label-sm text-label-sm" style="width: 40%">
+              Cold (0-39)
+            </div>
+<!-- Warm segment 40 - 69 (30%) -->
+<div class="h-full bg-secondary-container flex items-center justify-center text-on-surface font-label-sm text-label-sm" style="width: 30%">
+              Warm (40-69)
+            </div>
+<!-- Hot segment 70 - 100 (30%) -->
+<div class="h-full bg-error flex items-center justify-center text-white font-label-sm text-label-sm font-bold" style="width: 30%">
+              Hot (70+)
+            </div>
+</div>
+<!-- Draggable Marker Points Reference -->
+<div class="relative w-full h-5 flex justify-between font-label-sm text-label-sm text-on-surface-variant px-1">
+<span>0</span>
+<span class="font-bold text-on-surface">40</span>
+<span class="font-bold text-error">70</span>
+<span>100</span>
+</div>
+</div>
+<!-- Tier Details Breakdown List -->
+<div class="flex flex-col gap-2.5 pt-1">
+<!-- Cold Tier -->
+<div class="p-2.5 bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Cold / Nurture Queue</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Score 0 – 39</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold">42%</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">of volume</span>
+</div>
+</div>
+<!-- Warm Tier -->
+<div class="p-2.5 bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Warm / SDR Sequence</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Score 40 – 69</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold">30%</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">of volume</span>
+</div>
+</div>
+<!-- Hot Tier -->
+<div class="p-2.5 bg-error-container/20 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Hot / Direct Booking</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Score 70 – 100</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-error font-bold">28%</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">of volume</span>
+</div>
+</div>
+</div>
+<!-- SLA Commitment Note -->
+<div class="p-3 bg-surface-container-low rounded-xl flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">timer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-semibold">SLA Commitment:</strong> Hot leads triggers automatic distribution requiring agent outreach within <span class="text-error font-bold">15 minutes</span>.
+          </span>
+</div>
+</div>
+<!-- CARD 2: Compact Test Score Panel (Live Lead Simulator) -->
+<div class="p-5 bg-surface-container-lowest rounded-2xl shadow-[0_8px_28px_rgba(20,25,40,0.04)] flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">play_circle</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Test Score Simulator</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Sample Acme Corp</span>
+</div>
+<!-- Preloaded Quick Inputs Summary -->
+<div class="p-3 bg-surface-container-low rounded-xl flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Candidate Inputs</span>
+<div class="grid grid-cols-2 gap-2 pt-1 font-body-sm text-body-sm">
+<div><span class="text-on-surface-variant">Budget:</span> <strong class="text-on-surface">₹5,00,000</strong></div>
+<div><span class="text-on-surface-variant">Timeline:</span> <strong class="text-on-surface">15 days</strong></div>
+<div><span class="text-on-surface-variant">Service:</span> <strong class="text-on-surface">AI Automation</strong></div>
+<div><span class="text-on-surface-variant">Intent:</span> <strong class="text-on-surface">High</strong></div>
+<div class="col-span-2"><span class="text-on-surface-variant">Authority:</span> <strong class="text-on-surface">Founder / CEO (Tier 1)</strong></div>
+</div>
+</div>
+<!-- Big Result Hero Display -->
+<div class="p-4 bg-gradient-to-br from-surface-container-low to-surface-container rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Simulated Score</span>
+<div class="flex items-baseline gap-1">
+<span class="font-display-kpi text-display-kpi text-on-surface font-black">86</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">/ 100</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1.5">
+<span class="px-3 py-1 bg-error-container text-on-error-container font-label-lg text-label-lg rounded-full font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] fill-current">local_fire_department</span>
+              HOT LEAD
+            </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> Auto-Route Qualified
+            </span>
+</div>
+</div>
+<!-- Transparent Waterfall Explainable Factor Breakdown -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Scoring Waterfall Breakdown</span>
+<div class="flex flex-col divide-y divide-surface-container-high font-body-sm text-body-sm">
+<div class="py-1.5 flex items-center justify-between text-on-surface-variant">
+<span>Base Initial Score</span>
+<span class="font-metric-mono font-medium">0 pts</span>
+</div>
+<div class="py-1.5 flex items-center justify-between">
+<span class="text-on-surface">Budget (≥ ₹2L) &amp; Timeline (≤ 30d)</span>
+<span class="font-metric-mono font-bold text-tertiary">+25 pts</span>
+</div>
+<div class="py-1.5 flex items-center justify-between">
+<span class="text-on-surface">Buying Intent Signal (High)</span>
+<span class="font-metric-mono font-bold text-tertiary">+22 pts</span>
+</div>
+<div class="py-1.5 flex items-center justify-between">
+<span class="text-on-surface">Service Fit (AI Automation &amp; CRM)</span>
+<span class="font-metric-mono font-bold text-tertiary">+18 pts</span>
+</div>
+<div class="py-1.5 flex items-center justify-between">
+<span class="text-on-surface">Decision Maker (Founder / CEO)</span>
+<span class="font-metric-mono font-bold text-tertiary">+15 pts</span>
+</div>
+<div class="py-1.5 flex items-center justify-between">
+<span class="text-on-surface">Geographic Fit (Tier-1 Bengaluru)</span>
+<span class="font-metric-mono font-bold text-tertiary">+6 pts</span>
+</div>
+<div class="py-2 flex items-center justify-between font-bold text-on-surface">
+<span>Total Calculated Score</span>
+<span class="font-metric-mono text-headline-sm text-primary">86 pts (Hot Tier)</span>
+</div>
+</div>
+</div>
+<!-- Simulator Actions -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full py-2 px-3 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-xl font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Test Another Lead Record</span>
+</button>
+<a class="text-center font-label-sm text-label-sm text-primary hover:underline" href="#">
+            Save Acme Corp as Golden Benchmark Test
+          </a>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></div></div></body></html>

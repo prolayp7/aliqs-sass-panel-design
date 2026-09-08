@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#e1e3ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#79fbc8", "on-background": "#171c25", "surface-container-high": "#e5e8f5", "secondary": "#5f5e5e", "on-primary": "#ffffff", "tertiary": "#005940", "outline-variant": "#c4c5d9", "tertiary-fixed": "#77fac7", "primary-fixed-dim": "#bac3ff", "on-secondary-fixed-variant": "#474646", "primary": "#0034dc", "on-primary-fixed": "#00105b", "on-surface-variant": "#444656", "secondary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#00513a", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002115", "surface-dim": "#d6dae7", "inverse-surface": "#2c303a", "outline": "#747687", "inverse-primary": "#bac3ff", "background": "#f9f9ff", "on-secondary-fixed": "#1c1b1b", "primary-container": "#3152f4", "secondary-fixed": "#e5e2e1", "surface-container-highest": "#dfe2ef", "error": "#ba1a1a", "inverse-on-surface": "#edf0fd", "secondary-container": "#e2dfde", "on-secondary-container": "#636262", "on-surface": "#171c25", "surface-container": "#eaedfb", "surface": "#f9f9ff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#002fc9", "tertiary-container": "#007454", "surface-tint": "#2649ec", "surface-variant": "#dfe2ef", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-container-low": "#f1f3ff", "tertiary-fixed-dim": "#58ddac", "on-error": "#ffffff", "primary-fixed": "#dee0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "2.5rem", "space-xl": "1.5rem", "space-sm": "0.75rem", "space-2xl": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "card-padding": "1.5rem", "space-2xs": "0.25rem", "shell-padding": "1.75rem", "gutter-grid": "1.25rem", "space-lg": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-kpi": ["Plus Jakarta Sans"], "display-kpi-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "metric-mono": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-kpi": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-kpi-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "metric-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-low font-body-md text-on-surface antialiased min-h-screen"><div class="min-h-screen p-0 md:p-6 lg:p-8 flex justify-center items-start"><div class="w-full max-w-[1440px] bg-surface-container-lowest rounded-none md:rounded-[28px] shadow-[0_16px_40px_rgba(23,28,37,0.06)] overflow-hidden flex relative min-h-[calc(100vh-4rem)]"><aside class="w-60 shrink-0 bg-surface-container-low flex flex-col justify-between p-4 overflow-y-auto"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-2 py-1"><img alt="Nova AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between cursor-pointer group"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nova AI</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-on-surface transition-colors">unfold_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Northstar Digital</span></div></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Workspace</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-xl transition-colors bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inbox" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-lg text-label-lg">Inbox</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Leads</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-label-lg text-label-lg">Follow-ups</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Agent</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-lg text-label-lg">Qualification</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-lg text-label-lg">Knowledge Base</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-label-lg text-label-lg">Websites &amp; Widget</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-lg text-label-lg">Analytics</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-lg text-label-lg">Integrations</span></a></nav></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Administration</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Team</span></a><a class="flex items-center justify-between px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-label-lg text-label-lg">Billing &amp; Usage</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div></div><div class="flex flex-col gap-3 mt-6 pt-4"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-label-lg text-label-lg">Help &amp; Support</span></a><div class="p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(20,25,40,0.03)] flex flex-col gap-2.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Starter Plan</span><span class="font-label-sm text-label-sm text-tertiary font-bold">Active</span></div><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">742 / 1,000</span><span class="font-label-sm text-label-sm">74%</span></div><div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">Monthly AI conversations</span></div><a class="mt-1 w-full py-1.5 px-3 bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md rounded-lg text-center transition-colors" data-path="billing-and-usage" href="#">Upgrade Plan</a></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest"><header class="h-16 px-6 lg:px-8 bg-surface-container-lowest flex items-center justify-between shrink-0 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-10"><div class="flex items-center gap-4 flex-1"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full cursor-pointer"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-tertiary/20"></span><span class="font-label-md text-label-md text-on-surface">northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="relative max-w-md w-full hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search leads, chats, workflows..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-4"><button class="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_4px_12px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Create</span></button><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Maya Singh</span><span class="font-body-sm text-body-sm text-on-surface-variant">Product Lead</span></div></div></div></header><main class="flex-1 p-6 lg:p-shell-padding overflow-y-auto bg-surface-container-lowest"><div class="flex flex-col w-full">
+<div class="flex flex-col lg:flex-row gap-8 items-start">
+<!-- Sub-navigation Rail -->
+<div class="w-full lg:w-64 shrink-0 flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-3">Administration Settings</span>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-metric-mono text-metric-mono text-on-surface">PROD-NW-882</span>
+<span class="text-outline-variant font-normal">| London-01</span>
+</div>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[19px]">domain</span>
+<span class="font-label-lg text-label-lg">Workspace</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[19px]">filter_alt</span>
+<span class="font-label-lg text-label-lg">Lead Pipeline</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[19px]">label</span>
+<span class="font-label-lg text-label-lg">Custom Fields &amp; Tags</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[19px]">palette</span>
+<span class="font-label-lg text-label-lg">Branding</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[19px]">schedule</span>
+<span class="font-label-lg text-label-lg">Business Hours</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[19px]">shield_person</span>
+<span class="font-label-lg text-label-lg">Privacy &amp; Data</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[19px]">lock</span>
+<span class="font-label-lg text-label-lg">Security</span>
+</div>
+</a>
+<!-- Active Link -->
+<a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-primary-container text-on-primary font-bold shadow-[0_4px_14px_rgba(49,82,244,0.3)]" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[19px]">key</span>
+<span class="font-label-lg text-label-lg">API Keys</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[19px]">history</span>
+<span class="font-label-lg text-label-lg">Audit Logs</span>
+</div>
+</a>
+</nav>
+<!-- Developer Documentation Callout Card -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-center gap-2 text-primary-container">
+<span class="material-symbols-outlined text-[20px]">code</span>
+<span class="font-label-md text-label-md font-bold">API v2.4 Reference</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Access OpenAPI specs, SDKs for Node/Python, and sandbox webhook delivery monitors.</p>
+<a class="flex items-center gap-1 font-label-md text-label-md text-primary hover:underline mt-1" href="#">
+          Explore documentation
+          <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Main Workspace Content -->
+<div class="flex-1 min-w-0 flex flex-col gap-8">
+<!-- Breadcrumbs & Header -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>Workspace</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Administration</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Settings</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">API Keys</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex flex-col gap-1 max-w-2xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">API Keys &amp; Access Tokens</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Create and manage programmatic secret keys for custom CRM syncs, webhook dispatch, and automated lead ingestion.</p>
+</div>
+<button class="shrink-0 flex items-center justify-center gap-2 px-4 py-2.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_8px_20px_rgba(49,82,244,0.28)] hover:opacity-95 transition-all" id="openModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Create New Key</span>
+</button>
+</div>
+</div>
+<!-- KPI Overview Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+<!-- Metric 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Active Secret Keys</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">key</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-kpi text-display-kpi text-on-surface">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">/ 10 max allocated</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Monthly Invocations</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">data_thresholding</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-kpi text-display-kpi text-on-surface font-metric-mono">48,290</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>12.4%
+            </span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Success Rate</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-kpi text-display-kpi text-on-surface font-metric-mono">99.98%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">0.02% fail</span>
+</div>
+</div>
+<!-- Metric 4 (Rate Limits) -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Plan Rate Limit</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Starter Plan</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-on-surface font-metric-mono">60</span>
+<span class="font-label-md text-label-md text-on-surface-variant">req / min</span>
+</div>
+<a class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-primary font-label-sm text-label-sm transition-colors w-fit" href="#">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Upgrade for 300 req/min</span>
+</a>
+</div>
+</div>
+</div>
+<!-- API Keys Table Container -->
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.04)] overflow-hidden">
+<!-- Table Control Toolbar -->
+<div class="p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-surface-container-lowest">
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<div class="relative w-full sm:w-72">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span>
+<input class="w-full h-9 pl-9 pr-4 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.02)]" placeholder="Filter secret keys..." type="text"/>
+</div>
+<div class="flex items-center gap-1.5 p-1 bg-surface-container-low rounded-xl">
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-sm" type="button">All</button>
+<button class="px-3 py-1 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" type="button">Live</button>
+<button class="px-3 py-1 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" type="button">Staging</button>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Showing 4 of 4 credentials</span>
+</div>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-5 font-semibold">Name &amp; Environment</th>
+<th class="py-3 px-5 font-semibold">Scopes</th>
+<th class="py-3 px-5 font-semibold">Masked Secret Key</th>
+<th class="py-3 px-5 font-semibold">Created Date</th>
+<th class="py-3 px-5 font-semibold">Last Used</th>
+<th class="py-3 px-5 font-semibold">Status</th>
+<th class="py-3 px-5 font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-5 align-middle">
+<div class="flex flex-col gap-1">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Production Zapier Sync</span>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                        Live
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automated lead routing</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-metric-mono text-body-sm text-on-surface">leads:read</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-metric-mono text-body-sm text-on-surface">leads:write</span>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<div class="flex items-center gap-2">
+<span class="font-metric-mono text-metric-mono text-on-surface bg-surface-container-low px-2.5 py-1 rounded-lg">nova_live_9f8a••••••••••••4d2e</span>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" title="Copy token" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="font-metric-mono text-body-sm text-on-surface">12 Jan 2026</span>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="font-body-sm text-body-sm text-on-surface">4 mins ago</span>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed-dim/30 text-tertiary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Active
+                  </span>
+</td>
+<td class="py-4 px-5 align-middle text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="px-2.5 py-1 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Edit</button>
+<button class="px-2.5 py-1 rounded-lg hover:bg-error-container text-error font-label-md text-label-md transition-colors" type="button">Revoke</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-5 align-middle">
+<div class="flex flex-col gap-1">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">HubSpot Custom Ingestion</span>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                        Live
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bi-directional CRM sync</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-metric-mono text-body-sm text-on-surface">leads:write</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-metric-mono text-body-sm text-on-surface">qualification:read</span>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<div class="flex items-center gap-2">
+<span class="font-metric-mono text-metric-mono text-on-surface bg-surface-container-low px-2.5 py-1 rounded-lg">nova_live_3c7b••••••••••••89f1</span>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" title="Copy token" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="font-metric-mono text-body-sm text-on-surface">03 Feb 2026</span>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="font-body-sm text-body-sm text-on-surface">1 hour ago</span>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed-dim/30 text-tertiary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Active
+                  </span>
+</td>
+<td class="py-4 px-5 align-middle text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="px-2.5 py-1 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Edit</button>
+<button class="px-2.5 py-1 rounded-lg hover:bg-error-container text-error font-label-md text-label-md transition-colors" type="button">Revoke</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-5 align-middle">
+<div class="flex flex-col gap-1">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Staging Test Webhook</span>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                        Staging
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sandbox validation</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-metric-mono text-body-sm text-on-surface">all:test</span>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<div class="flex items-center gap-2">
+<span class="font-metric-mono text-metric-mono text-on-surface bg-surface-container-low px-2.5 py-1 rounded-lg">nova_test_11aa••••••••••••99bb</span>
+<button class="p-1.5 hover:bg-surface-container-high rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" title="Copy token" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="font-metric-mono text-body-sm text-on-surface">18 Feb 2026</span>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="font-body-sm text-body-sm text-on-surface">14 days ago</span>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed-dim/30 text-tertiary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Active
+                  </span>
+</td>
+<td class="py-4 px-5 align-middle text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="px-2.5 py-1 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Edit</button>
+<button class="px-2.5 py-1 rounded-lg hover:bg-error-container text-error font-label-md text-label-md transition-colors" type="button">Revoke</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 (Revoked) -->
+<tr class="opacity-60 bg-surface-container-low/20 hover:opacity-90 transition-opacity">
+<td class="py-4 px-5 align-middle">
+<div class="flex flex-col gap-1">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold line-through">Legacy Make.com Script</span>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">Deprecated</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Archived 01 Jan 2026</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-metric-mono text-body-sm text-on-surface-variant">leads:read</span>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<div class="flex items-center gap-2">
+<span class="font-metric-mono text-metric-mono text-on-surface-variant bg-surface-container-low px-2.5 py-1 rounded-lg">nova_live_00ee••••••••••••11ff</span>
+</div>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="font-metric-mono text-body-sm text-on-surface-variant">14 Nov 2025</span>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="font-body-sm text-body-sm text-on-surface-variant">45 days ago</span>
+</td>
+<td class="py-4 px-5 align-middle">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Revoked
+                  </span>
+</td>
+<td class="py-4 px-5 align-middle text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="px-2.5 py-1 rounded-lg hover:bg-error-container text-error font-label-md text-label-md transition-colors" type="button">Delete</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer -->
+<div class="p-4 bg-surface-container-low/40 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>All active keys communicate through TLS 1.3 encryption with HMAC-SHA256 signature verification.</span>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline font-semibold" href="#">Security policy &amp; key rotation rules</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive "Create API Key" Modal / Overlay -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/40 backdrop-blur-sm transition-opacity duration-200" id="createKeyModal">
+<div class="w-full max-w-xl bg-surface-container-lowest rounded-2xl shadow-[0_24px_48px_-8px_rgba(18,24,40,0.18)] overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-150">
+<!-- Modal Header -->
+<div class="p-6 pb-4 flex items-center justify-between bg-surface-container-lowest">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">vpn_key</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Create New Secret API Key</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Issue a secret access token for external integrations</span>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" id="closeModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- High-Priority Warning Banner -->
+<div class="mx-6 p-3.5 rounded-xl bg-secondary-container/40 flex items-start gap-3">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed-variant shrink-0 mt-0.5">security_update_warning</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">Secret Key Visibility Warning</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your secret API key will only be shown <strong class="text-on-surface font-semibold">ONCE</strong> upon generation. Store it securely in a password manager or server environment file immediately.</p>
+</div>
+</div>
+<!-- Form Content -->
+<div class="p-6 flex flex-col gap-5">
+<!-- Key Name Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Key Description / Name</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">e.g. Service or workflow identifier</span>
+</label>
+<input class="h-11 px-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary-container/40 transition-all" type="text" value="Website Lead Router (Production)"/>
+</div>
+<!-- Environment Toggle -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Target Environment</label>
+<div class="grid grid-cols-2 gap-2 p-1 bg-surface-container-low rounded-xl">
+<button class="py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-2" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Production (Live)</span>
+</button>
+<button class="py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 transition-colors" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Staging (Test)</span>
+</button>
+</div>
+</div>
+<!-- Expiration Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Expiration Duration</label>
+<div class="relative">
+<select class="w-full h-11 px-3.5 appearance-none rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary-container/40 transition-all cursor-pointer">
+<option selected="">90 Days (Recommended)</option>
+<option>30 Days</option>
+<option>180 Days</option>
+<option>1 Year</option>
+<option>Never (Not recommended for production)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-[20px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Scopes & Permissions Checkboxes -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Scopes &amp; API Permissions</label>
+<span class="font-label-sm text-label-sm text-primary cursor-pointer hover:underline">Select Recommended</span>
+</div>
+<div class="flex flex-col gap-2 p-3 bg-surface-container-low rounded-xl">
+<!-- Checkbox 1 (Checked) -->
+<label class="flex items-start gap-3 p-2 rounded-lg hover:bg-surface-container-lowest/80 transition-colors cursor-pointer">
+<input checked="" class="mt-0.5 rounded text-primary-container focus:ring-primary h-4 w-4" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-metric-mono text-body-sm text-on-surface font-semibold">leads:read</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Read lead attributes, conversation states, and qualification scores</span>
+</div>
+</label>
+<!-- Checkbox 2 (Checked) -->
+<label class="flex items-start gap-3 p-2 rounded-lg hover:bg-surface-container-lowest/80 transition-colors cursor-pointer">
+<input checked="" class="mt-0.5 rounded text-primary-container focus:ring-primary h-4 w-4" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-metric-mono text-body-sm text-on-surface font-semibold">leads:write</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Create or update inbound contacts and push status updates via API</span>
+</div>
+</label>
+<!-- Checkbox 3 -->
+<label class="flex items-start gap-3 p-2 rounded-lg hover:bg-surface-container-lowest/80 transition-colors cursor-pointer">
+<input class="mt-0.5 rounded text-primary-container focus:ring-primary h-4 w-4" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-metric-mono text-body-sm text-on-surface font-semibold">conversations:read</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Access full customer-facing AI agent chat transcripts &amp; audits</span>
+</div>
+</label>
+<!-- Checkbox 4 -->
+<label class="flex items-start gap-3 p-2 rounded-lg hover:bg-surface-container-lowest/80 transition-colors cursor-pointer">
+<input class="mt-0.5 rounded text-primary-container focus:ring-primary h-4 w-4" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-metric-mono text-body-sm text-on-surface font-semibold">workspace:admin</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Modify workspace configurations, routing logic, and webhook listeners</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-6 pt-2 bg-surface-container-lowest flex items-center justify-end gap-3">
+<button class="px-4 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low transition-colors" id="cancelModalBtn" type="button">
+          Cancel
+        </button>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_8px_20px_rgba(49,82,244,0.28)] hover:opacity-95 transition-all" id="generateKeyBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Generate Key</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      const modal = document.getElementById('createKeyModal');
+      const openBtn = document.getElementById('openModalBtn');
+      const closeBtn = document.getElementById('closeModalBtn');
+      const cancelBtn = document.getElementById('cancelModalBtn');
+      const generateBtn = document.getElementById('generateKeyBtn');
+
+      function closeModal() {
+        modal.classList.add('hidden');
+      }
+
+      function openModal() {
+        modal.classList.remove('hidden');
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+      if (generateBtn) {
+        generateBtn.addEventListener('click', function() {
+          const originalText = generateBtn.innerHTML;
+          generateBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">sync</span><span>Generating...</span>';
+          setTimeout(() => {
+            generateBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Created!</span>';
+            setTimeout(() => {
+              closeModal();
+              generateBtn.innerHTML = originalText;
+            }, 800);
+          }, 600);
+        });
+      }
+    })();
+  </script>
+</div></main></div></div></div></body></html>

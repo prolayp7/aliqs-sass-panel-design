@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{width:5px;height:5px;}::-webkit-scrollbar-track{background:transparent;}::-webkit-scrollbar-thumb{background:#DDE2DF;border-radius:10px;}::-webkit-scrollbar-thumb:hover{background:#c0c8c2;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#171d1a","status-success":"#15945F","mint-tint":"#F0FAF5","on-secondary-fixed":"#002112","on-secondary":"#ffffff","canvas-bg":"#F2F4F3","status-cold":"#6F8E9E","surface-container":"#e9efea","tertiary-container":"#003c25","tertiary-fixed":"#8ef7c0","surface":"#f5fbf5","on-secondary-fixed-variant":"#005233","surface-container-low":"#eff5f0","on-tertiary-container":"#43af7d","inverse-surface":"#2c322e","shell-bg":"#FFFFFF","surface-dim":"#d5dcd6","primary-fixed":"#bdedd4","on-primary-fixed-variant":"#224f3d","secondary-fixed":"#99f6c2","status-hot":"#E55252","surface-tint":"#3b6753","secondary-container":"#99f6c2","on-primary-container":"#78a68f","on-primary-fixed":"#002115","mint-soft":"#DCF4E8","muted-gray":"#8A938E","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#005234","surface-container-highest":"#dee4df","on-error":"#ffffff","on-background":"#171d1a","on-tertiary":"#ffffff","status-warm":"#E9A23B","secondary-fixed-dim":"#7dd9a7","background":"#f5fbf5","border-subtle":"#DDE2DF","inverse-primary":"#a2d1b9","surface-bright":"#f5fbf5","outline":"#717973","secondary":"#006c45","tertiary":"#002415","on-surface-variant":"#414944","tertiary-fixed-dim":"#71dba5","inverse-on-surface":"#ecf2ed","surface-container-high":"#e4eae4","error-container":"#ffdad6","surface-variant":"#dee4df","primary-container":"#0b3b2a","on-error-container":"#93000a","error":"#ba1a1a","on-tertiary-fixed":"#002112","outline-variant":"#c0c8c2","on-primary":"#ffffff","body-charcoal":"#3E4742","primary-fixed-dim":"#a2d1b9","emerald-vivid":"#15945F","primary":"#002417"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","2xl":"1rem","3xl":"1.25rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.5rem","space-2xl":"2.5rem","space-3xl":"3rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","shell-padding":"2rem","gutter-tablet":"1rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-2xs":"0.25rem","space-xl":"2rem"},"fontFamily":{"label-md":["Inter","sans-serif"],"kpi-metric":["Manrope","sans-serif"],"label-sm":["Inter","sans-serif"],"body-lg":["Inter","sans-serif"],"headline-lg":["Manrope","sans-serif"],"headline-sm":["Manrope","sans-serif"],"body-sm":["Inter","sans-serif"],"body-md":["Inter","sans-serif"],"display-lg":["Manrope","sans-serif"],"headline-md":["Manrope","sans-serif"]}}}};</script></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased min-h-screen"><div class="p-2 sm:p-3 lg:p-4 min-h-screen flex"><div class="w-full rounded-[24px] bg-shell-bg shadow-[0_8px_32px_-4px_rgba(11,59,42,0.06),0_2px_8px_-2px_rgba(17,23,20,0.04)] border border-border-subtle flex relative overflow-hidden">
+<!-- SIDEBAR -->
+<aside class="w-64 flex-shrink-0 bg-shell-bg border-r border-border-subtle flex flex-col justify-between h-auto py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="NovaLead Logo" class="h-8 w-8 rounded-lg object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U_RVWV9ukk3tUR50J2SFd0itvU9dlX7o1A9fwm0wprNWdIyFnoq8sezQTdb0HgP2Po9iKsE0S8zozl9C4DV8nv1tDCSvX5wPShj2kRgGMqL2y0hvOejE1VMoBLbEzsYpUXESUaK3Ui0rtTEpTl40fhJC5zX3970t55eATUaLoUb6Nuj33LwyUbrCGKZNqYaz8z3ryi3zcO9grKYQPTngsFy4DvIJ2ICTC6f4mtC2OOH6kAs48xwjt6Tlw"/><span class="font-headline-sm text-[19px] font-bold text-primary tracking-tight font-headline-md">NovaLead</span></div><button class="flex items-center justify-between px-space-xs py-1.5 rounded-lg bg-surface-container-low text-body-sm font-medium text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="flex items-center gap-1.5 truncate text-[12px]"><span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>Northstar Digital</span><span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span></button></div><div class="flex flex-col gap-1 px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray mb-1">Menu</div><nav class="flex flex-col gap-0.5"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="dashboard" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-muted-gray">grid_view</span><span>Dashboard</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs rounded-xl transition-all bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-2 before:bottom-2 before:w-[3.5px] before:bg-emerald-vivid before:rounded-r-full" data-path="inbox" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-emerald-vivid">chat</span><span class="text-on-surface font-semibold">Inbox</span></div><span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[11px] font-bold">12+</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">group</span><span>Leads</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">schedule_send</span><span>Follow-ups</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">smart_toy</span><span>AI Agent</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">rule</span><span>Qualification</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">menu_book</span><span>Knowledge Base</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">widgets</span><span>Websites &amp; Widget</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="automations" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">account_tree</span><span>Automations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">bar_chart</span><span>Analytics</span></a></nav></div><div class="flex flex-col gap-1 px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray mb-1">General</div><nav class="flex flex-col gap-0.5"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">hub</span><span>Integrations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="team" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">badge</span><span>Team</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">notifications</span><span>Notifications</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">receipt_long</span><span>Billing &amp; Usage</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">settings</span><span>Settings</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl text-body-sm text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray">help</span><span>Help</span></a></nav></div></div><div class="px-space-md pt-space-xs"><div class="rounded-2xl bg-gradient-to-br from-primary-container via-[#0E4330] to-primary p-3.5 text-on-primary flex flex-col gap-2 shadow-[0_6px_20px_-2px_rgba(11,59,42,0.22)]"><div class="flex items-center justify-between"><span class="text-[11px] font-semibold text-mint-soft tracking-wide">Starter Plan</span><span class="text-[11px] font-bold text-mint-soft">74%</span></div><div class="text-[13px] text-on-primary font-semibold font-headline-md">742 / 1,000 Conv.</div><div class="w-full h-1.5 bg-black/30 rounded-full overflow-hidden"><div class="h-full bg-emerald-vivid rounded-full w-[74%]"></div></div><div class="pt-0.5 flex items-center justify-between"><span class="text-[10px] text-mint-soft/80">Renews in 11 days</span><button class="px-2.5 py-1 rounded-full bg-emerald-vivid text-white text-[11px] font-semibold hover:bg-secondary transition-colors shadow-sm" type="button">Upgrade</button></div></div></div></aside>
+<!-- MAIN CONTENT AREA -->
+<div class="flex-1 flex flex-col min-w-0 bg-[#FAFCFA]"><header class="h-16 px-space-lg border-b border-border-subtle flex items-center justify-between gap-space-md bg-shell-bg sticky top-0 z-30"><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-muted-gray text-[19px]">search</span><input class="w-full pl-9 pr-12 py-2 text-body-sm rounded-xl border border-border-subtle bg-canvas-bg text-on-surface placeholder-muted-gray focus:bg-shell-bg focus:border-emerald-vivid focus:ring-2 focus:ring-mint-soft focus:outline-none transition-all" placeholder="Search leads, visitors, conversations..." type="text"/><div class="absolute right-2.5 px-1.5 py-0.5 rounded bg-shell-bg border border-border-subtle text-[10px] font-medium text-muted-gray font-mono">⌘F</div></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mint-tint border border-[#DCF4E8] text-body-sm font-semibold text-secondary"><span class="w-2 h-2 rounded-full bg-emerald-vivid"></span><span>northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span></div><div class="flex items-center gap-1"><button aria-label="Inbox notifications" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">mail</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-hot ring-2 ring-shell-bg"></span></button><button aria-label="Alerts" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-warm ring-2 ring-shell-bg"></span></button></div><div class="h-6 w-[1px] bg-border-subtle"></div><div class="flex items-center gap-space-xs pl-1"><img alt="Maya Singh" class="w-9 h-9 rounded-full object-cover ring-2 ring-emerald-vivid/20" src="https://lh3.googleusercontent.com/aida/AEtjO1WTvVJ_E71TJv3zf4XEoC_ykMCKiOwj9jsdK0lMkuWcogMO9cTTj_6zjaKGMwjdVcXxrVtCZ8okNM1TSYbZo61htWI-bZEs4BlD3DBGvYthMwDr60Ekkwy-QrJMde5WexcOUHObUKJxMZuDrIV2BNEYLjoUxmX-2RW7-2k2m5GBhHfXmWI8JFFjWqhAQ2gfKIW5eDIyaGvxBh3j_tBE1sAcWHWRumYv7Qjrspku-dNyOikVvDUbwP-TgQ"/><div class="hidden xl:flex flex-col text-left"><span class="text-[13px] font-semibold text-on-surface leading-tight font-headline-md">Maya Singh</span><span class="text-[11px] text-muted-gray leading-tight">Product Lead</span></div></div></div></header>
+<main class="flex-1 p-4 lg:p-5 flex flex-col gap-4 overflow-x-hidden">
+<!-- TOP PAGE HEADER: Title, Subtitle, Segments & Action Controls -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 bg-shell-bg p-4 rounded-2xl border border-border-subtle shadow-sm">
+<div>
+<div class="flex items-center gap-2">
+<h1 class="font-headline-md text-2xl font-bold text-primary tracking-tight">Team Inbox</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[11px] font-bold">
+<span class="w-2 h-2 rounded-full bg-emerald-vivid animate-pulse"></span>
+          Live Stream
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Manage AI conversations, real-time qualification telemetry, and seamless human agent handoffs.</p>
+</div>
+<div class="flex items-center gap-2 flex-wrap">
+<!-- Segmented View Toggle -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl border border-border-subtle/70">
+<button class="px-3 py-1.5 rounded-lg bg-shell-bg shadow-sm text-[12px] text-primary font-semibold transition-all" type="button">All Queue <span class="text-muted-gray font-normal">(28)</span></button>
+<button class="px-3 py-1.5 rounded-lg text-[12px] text-on-surface-variant hover:text-primary transition-all flex items-center gap-1.5 font-medium" type="button">
+<span>Assigned to me</span>
+<span class="px-1.5 py-0.2 rounded-full bg-[#FDE8E8] text-status-hot font-bold text-[10px]">5</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-[12px] text-on-surface-variant hover:text-primary transition-all font-medium" type="button">AI Qualified <span class="text-muted-gray font-normal">(14)</span></button>
+</div>
+<!-- Filters Button -->
+<button class="h-9 px-3 rounded-xl bg-shell-bg hover:bg-surface-container-low border border-border-subtle text-body-sm font-semibold text-on-surface-variant flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Filters</span>
+</button>
+<!-- Primary Action -->
+<button class="h-9 px-4 rounded-xl bg-emerald-vivid hover:bg-[#128152] text-white text-body-sm font-semibold flex items-center gap-1.5 shadow-[0_4px_12px_rgba(21,148,95,0.25)] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Take Over Chat</span>
+</button>
+</div>
+</div>
+<!-- THREE-COLUMN WORK AREA -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start min-h-0 flex-1">
+<!-- COLUMN 1: Conversation List / Directory (~320px / 3 cols) -->
+<div class="lg:col-span-4 xl:col-span-3 flex flex-col gap-3 bg-shell-bg p-3.5 rounded-2xl border border-border-subtle shadow-sm">
+<!-- Search & Filter Bar -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-muted-gray text-[18px]">search</span>
+<input class="w-full pl-8 pr-10 py-1.5 text-[13px] rounded-xl border border-border-subtle bg-surface-container-low focus:bg-shell-bg focus:border-emerald-vivid focus:outline-none transition-all" placeholder="Search conversations..." type="text"/>
+<span class="absolute right-2 px-1.5 py-0.5 rounded bg-shell-bg border border-border-subtle text-[10px] font-mono text-muted-gray">⌘K</span>
+</div>
+<!-- Quick Filter Pills -->
+<div class="flex items-center gap-1 overflow-x-auto pb-0.5 text-[11px] font-semibold">
+<button class="px-2.5 py-1 rounded-full bg-primary text-white flex-shrink-0" type="button">All</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-low hover:bg-mint-tint text-on-surface-variant hover:text-primary flex-shrink-0" type="button">Hot Leads</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-low hover:bg-mint-tint text-on-surface-variant hover:text-primary flex-shrink-0" type="button">Handoff Req.</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-low hover:bg-mint-tint text-on-surface-variant hover:text-primary flex-shrink-0" type="button">Needs Review</button>
+</div>
+<!-- Conversations Stack -->
+<div class="flex flex-col gap-2 overflow-y-auto max-h-[670px] pr-0.5">
+<!-- Selected Active Item: Olivia Martin -->
+<div class="p-3 rounded-xl bg-[#F0FAF5] border border-emerald-vivid/30 border-l-4 border-l-emerald-vivid shadow-sm cursor-pointer transition-all">
+<div class="flex items-start justify-between gap-2 mb-1.5">
+<div class="flex items-center gap-2.5">
+<div class="relative">
+<img alt="Olivia Martin" class="w-9 h-9 rounded-full object-cover ring-1 ring-emerald-vivid/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDlUg4ivTvLr5bxaT7_n7UTywtqOh33-5zN9XDKD_uovScCgtdUsWrs3Emm3DXxqkCtHmR9Zmbwk-btncONVl7VSB3oou-tvXgMFz9ShthGkpyqAg0Uk6vjEwLBXhVlXE8VIaAgRPCT39h_U-hcK528DGsajWDPWR1gj_5XWQgrJLK29_jGQHxdfHX_L-FQvf9wRWGjUxZ0TteCPfH2p_aFzWPrLGEs9knBWEvesOIkOHhY5xh3hB3"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-vivid ring-2 ring-shell-bg"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[13.5px] font-bold text-primary leading-tight">Olivia Martin</span>
+<span class="text-[11px] text-muted-gray">Apex Global</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[11px] font-medium text-muted-gray">2m ago</span>
+<span class="mt-1 px-1.5 py-0.5 rounded bg-[#FDE8E8] text-status-hot font-bold text-[10px] tracking-tight">86 Hot</span>
+</div>
+</div>
+<p class="text-[12.5px] text-on-surface line-clamp-2 mb-2 font-medium">
+            "Yes, our budget is roughly ₹2–5 lakh and we need this live within 30 days..."
+          </p>
+<div class="flex items-center justify-between pt-1.5 border-t border-emerald-vivid/20 text-[10px]">
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-bold uppercase tracking-wider">AI HANDOFF REQUIRED</span>
+<div class="flex items-center gap-1 text-muted-gray">
+<span class="material-symbols-outlined text-[14px] text-emerald-vivid">chat_bubble</span>
+<span class="text-[11px] font-semibold text-secondary">Maya S.</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Ethan Brooks -->
+<div class="p-3 rounded-xl bg-shell-bg hover:bg-surface-container-low border border-border-subtle/80 transition-all shadow-sm cursor-pointer">
+<div class="flex items-start justify-between gap-2 mb-1">
+<div class="flex items-center gap-2.5">
+<div class="relative">
+<img alt="Ethan Brooks" class="w-9 h-9 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfVs4e4nw8DXnlPV66mdXu-FbWXvaFIv-LEkyy4ctE-4364AfXKaBg4cWZv94p5s-ZEDN1EgOkL9wd-3jwq7SdEaYGj1fg264tvLcGlgHC7SHlIWQlM1jhutakTOyoBBtUZao6o2ZA8muzBM9xR-kzthVqVq60toT_nYGaZm3l_68M9msxwPrFU7HUWb_3i9w2Zd7dQhWCeKLM266BSF1NAFLnWWIYFJDAupAdf6hlGRDA67TN8aGq"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-vivid ring-2 ring-shell-bg"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[13.5px] font-semibold text-on-surface leading-tight">Ethan Brooks</span>
+<span class="text-[11px] text-muted-gray">Vortex Tech</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[11px] text-muted-gray">14m ago</span>
+<span class="mt-1 px-1.5 py-0.5 rounded bg-[#FDE8E8] text-status-hot font-bold text-[10px]">92 Hot</span>
+</div>
+</div>
+<p class="text-[12px] text-on-surface-variant line-clamp-2 mb-2">
+            "Looking to replace Intercom with custom AI qualifier agent directly hooked into Postgres..."
+          </p>
+<div class="flex items-center justify-between text-[11px]">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant text-[10px] font-medium">AI Talking</span>
+<span class="text-muted-gray flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[13px] text-emerald-vivid">smart_toy</span> Nova Bot
+            </span>
+</div>
+</div>
+<!-- Item 3: Sophia Chen -->
+<div class="p-3 rounded-xl bg-shell-bg hover:bg-surface-container-low border border-border-subtle/80 transition-all shadow-sm cursor-pointer">
+<div class="flex items-start justify-between gap-2 mb-1">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center font-bold text-body-sm">SC</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[13.5px] font-semibold text-on-surface leading-tight">Sophia Chen</span>
+<span class="text-[11px] text-muted-gray">SaaSiFy Labs</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[11px] text-muted-gray">42m ago</span>
+<span class="mt-1 px-1.5 py-0.5 rounded bg-[#FDE8E8] text-status-hot font-bold text-[10px]">89 Hot</span>
+</div>
+</div>
+<p class="text-[12px] text-on-surface-variant line-clamp-2 mb-2">
+            "Can we integrate with HubSpot Deals pipeline and sync visitor session recording links?"
+          </p>
+<div class="flex items-center justify-between text-[11px]">
+<span class="px-2 py-0.5 rounded-md bg-[#FEF3E6] text-status-warm text-[10px] font-semibold">Waiting (Human)</span>
+<span class="text-muted-gray text-[10.5px]">HubSpot Deal</span>
+</div>
+</div>
+<!-- Item 4: Liam Wilson -->
+<div class="p-3 rounded-xl bg-shell-bg hover:bg-surface-container-low border border-border-subtle/80 transition-all shadow-sm cursor-pointer">
+<div class="flex items-start justify-between gap-2 mb-1">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container text-body-charcoal flex items-center justify-center font-bold text-body-sm">LW</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[13.5px] font-semibold text-on-surface leading-tight">Liam Wilson</span>
+<span class="text-[11px] text-muted-gray">Cloudscale Co</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[11px] text-muted-gray">1h ago</span>
+<span class="mt-1 px-1.5 py-0.5 rounded bg-[#FEF3E6] text-status-warm font-bold text-[10px]">78 Warm</span>
+</div>
+</div>
+<p class="text-[12px] text-on-surface-variant line-clamp-2 mb-2">
+            "What is the exact pricing tier for 10,000 active monthly visitors with custom training?"
+          </p>
+<div class="flex items-center justify-between text-[11px]">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant text-[10px]">Direct Visit</span>
+<span class="text-muted-gray text-[10.5px]">Warm Lead</span>
+</div>
+</div>
+<!-- Item 5: Elena Rostova -->
+<div class="p-3 rounded-xl bg-shell-bg hover:bg-surface-container-low border border-border-subtle/80 transition-all shadow-sm cursor-pointer">
+<div class="flex items-start justify-between gap-2 mb-1">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-[#E5ECE9] text-primary flex items-center justify-center font-bold text-body-sm">ER</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[13.5px] font-semibold text-on-surface leading-tight">Elena Rostova</span>
+<span class="text-[11px] text-muted-gray">Starlight AI</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[11px] text-muted-gray">2h ago</span>
+<span class="mt-1 px-1.5 py-0.5 rounded bg-[#FEF3E6] text-status-warm font-bold text-[10px]">84 Warm</span>
+</div>
+</div>
+<p class="text-[12px] text-on-surface-variant line-clamp-2 mb-2">
+            "We need enterprise SSO and custom BANT scoring rules for EMEA vs NA region leads."
+          </p>
+<div class="flex items-center justify-between text-[11px]">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant text-[10px]">Organic LinkedIn</span>
+<span class="text-muted-gray text-[10.5px]">In Queue</span>
+</div>
+</div>
+<!-- Item 6: Marcus Vance -->
+<div class="p-3 rounded-xl bg-shell-bg hover:bg-surface-container-low border border-border-subtle/80 transition-all shadow-sm cursor-pointer">
+<div class="flex items-start justify-between gap-2 mb-1">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-[#D7EAE1] text-secondary flex items-center justify-center font-bold text-body-sm">MV</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[13.5px] font-semibold text-on-surface leading-tight">Marcus Vance</span>
+<span class="text-[11px] text-muted-gray">HyperFlow</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[11px] text-muted-gray">3h ago</span>
+<span class="mt-1 px-1.5 py-0.5 rounded bg-[#FDE8E8] text-status-hot font-bold text-[10px]">91 Hot</span>
+</div>
+</div>
+<p class="text-[12px] text-on-surface-variant line-clamp-2 mb-2">
+            "Can we schedule an automated contract review demo for our engineering director?"
+          </p>
+<div class="flex items-center justify-between text-[11px]">
+<span class="px-2 py-0.5 rounded-md bg-mint-soft text-emerald-vivid text-[10px] font-bold">Demo Scheduled</span>
+<span class="text-muted-gray text-[10.5px]">Google Ads</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 2: Active Conversation & Composer (Central Workspace - ~5-6 cols) -->
+<div class="lg:col-span-8 xl:col-span-6 flex flex-col bg-shell-bg rounded-2xl border border-border-subtle shadow-sm overflow-hidden min-w-0">
+<!-- Conversation Header Bar -->
+<div class="p-4 bg-shell-bg border-b border-border-subtle flex flex-col gap-2.5">
+<div class="flex items-center justify-between gap-2 flex-wrap">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative flex-shrink-0">
+<img alt="Olivia Martin" class="w-11 h-11 rounded-full object-cover ring-2 ring-emerald-vivid/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDvzBua8O8sFyFonc8dwOWXxDI7P86w3tk65exRlKy5f6PYCZ1M3fQ67KYjn8t692bWpA3Fn-f8U7Zkm6VacrhfPveENQX8SE58O53AN5jcwEaB12TflTEVzAdM7jL_sxBiRO_mEP7bQXehCnKEEBuTRCwMaV-n-8SgMYov4m4jfjAaxp3H7vUosEy6jTGg062pvcUxvg0EBrs4D9xKe7GV2r3aLk-Jm3xi9Ni_dnIQ1Sp5bAJLBPp"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-vivid ring-2 ring-shell-bg"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-base font-bold text-primary truncate">Olivia Martin</h2>
+<span class="px-2 py-0.5 rounded-full bg-[#FDE8E8] text-status-hot font-bold text-[11px]">HOT LEAD</span>
+</div>
+<div class="flex items-center gap-2 text-[12px] text-muted-gray flex-wrap">
+<span class="font-medium text-body-charcoal">VP of Growth, Apex Global</span>
+<span>•</span>
+<span class="flex items-center gap-0.5 text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Bengaluru, IN
+                </span>
+<span>•</span>
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">laptop_mac</span> macOS · Chrome
+                </span>
+</div>
+</div>
+</div>
+<!-- Header Quick Actions -->
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<div class="hidden sm:flex items-center gap-1.5 bg-mint-tint border border-emerald-vivid/20 px-2.5 py-1 rounded-xl">
+<img alt="Maya Singh" class="w-5 h-5 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WTvVJ_E71TJv3zf4XEoC_ykMCKiOwj9jsdK0lMkuWcogMO9cTTj_6zjaKGMwjdVcXxrVtCZ8okNM1TSYbZo61htWI-bZEs4BlD3DBGvYthMwDr60Ekkwy-QrJMde5WexcOUHObUKJxMZuDrIV2BNEYLjoUxmX-2RW7-2k2m5GBhHfXmWI8JFFjWqhAQ2gfKIW5eDIyaGvxBh3j_tBE1sAcWHWRumYv7Qjrspku-dNyOikVvDUbwP-TgQ"/>
+<span class="text-[12px] text-primary font-semibold">Maya Singh</span>
+</div>
+<button class="px-3 py-1.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-[12px] font-semibold text-on-surface-variant flex items-center gap-1 transition-colors border border-border-subtle" type="button">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">check_circle</span>
+<span>Resolve</span>
+</button>
+<button aria-label="More options" class="w-8 h-8 flex items-center justify-center rounded-xl hover:bg-surface-container text-muted-gray transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Session Strip -->
+<div class="px-3 py-1.5 bg-mint-tint rounded-xl flex items-center justify-between text-[11px] text-body-charcoal border border-[#DCF4E8]">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-status-hot animate-pulse"></span>
+<span>Source: <strong class="font-semibold text-primary">Google Organic Search → /pricing-enterprise</strong></span>
+</div>
+<div class="flex items-center gap-3 text-muted-gray">
+<span>Session: <strong class="text-body-charcoal">6m 42s</strong></span>
+<span>Pages viewed: <strong class="text-body-charcoal">4</strong></span>
+</div>
+</div>
+</div>
+<!-- Message History Stream -->
+<div class="p-4 flex flex-col gap-3.5 max-h-[460px] overflow-y-auto bg-shell-bg">
+<!-- System Banner -->
+<div class="flex items-center justify-center my-1">
+<div class="px-3 py-1 rounded-full bg-surface-container-low text-muted-gray text-[11.5px] flex items-center gap-1.5 border border-border-subtle">
+<span class="material-symbols-outlined text-[14px] text-secondary">open_in_browser</span>
+<span>Visitor initiated session via NovaLead Widget on <strong>/enterprise-solutions</strong></span>
+</div>
+</div>
+<div class="text-center">
+<span class="text-[11px] text-muted-gray font-medium tracking-wide">Today 2:14 PM</span>
+</div>
+<!-- 1. Visitor Message Bubble -->
+<div class="flex items-start gap-2.5 max-w-[85%]">
+<img alt="Olivia" class="w-7 h-7 rounded-full object-cover mt-1 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAw5427l7dfZrNMi-JJ4w47GgpgmJIAZdomnEXJHRHznZEpnmBDIaRL56WsdBHOMn3VBez2J7J7vH9_sHDJaJUis16Hn2g6bwyS4X4gUgGhGdYurtyjDaV56-kR1w-NK6-AKPRxVlxdWhd8X4sqA7XcA9IGeTvhnXU0MXElqCzyCzaSGF2_3aMf9STIrzdH6so8NuTg_wR0njQkpDeI51Oj7pAPP_MtrZ67ziSbGySTcJskzybslOH"/>
+<div class="flex flex-col gap-1">
+<div class="bg-surface-container-low text-on-surface px-3.5 py-2.5 rounded-2xl rounded-tl-sm text-[13px] border border-border-subtle shadow-sm leading-relaxed">
+              Hi there, we're currently evaluating automated lead qualification and conversational routing tools for our B2B SaaS platform.
+            </div>
+<span class="text-[10px] text-muted-gray pl-1">2:14 PM</span>
+</div>
+</div>
+<!-- 2. Nova AI Agent Bubble -->
+<div class="flex items-start gap-2.5 max-w-[85%] ml-auto flex-row-reverse">
+<div class="w-7 h-7 rounded-full bg-primary-container text-white flex items-center justify-center mt-1 flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-mint-soft">smart_toy</span>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="bg-mint-tint text-on-surface px-3.5 py-2.5 rounded-2xl rounded-tr-sm text-[13px] border border-[#DCF4E8] shadow-sm leading-relaxed">
+<div class="flex items-center gap-1 mb-1 text-[11px] font-bold text-secondary">
+<span class="material-symbols-outlined text-[13px]">auto_awesome</span> Nova AI Agent
+              </div>
+              Hello Olivia! Welcome to Northstar Digital. I'm Nova, your intelligence assistant. I'd be thrilled to help determine the best plan fit for Apex Global. Could you share your estimated monthly visitor volume and primary conversion goal?
+            </div>
+<span class="text-[10px] text-muted-gray pr-1">2:15 PM</span>
+</div>
+</div>
+<!-- 3. Visitor Message Bubble -->
+<div class="flex items-start gap-2.5 max-w-[85%]">
+<img alt="Olivia" class="w-7 h-7 rounded-full object-cover mt-1 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHnkvkjWG3DzrQw213xIjjF6BNLLfGH0zRGDY5cX_KOIsvbUu9VCn0gRs6O_pmbkgA7TS9gY65xD3-5dXS4SUgw8KnNWhDv1RCRyC5YBzds6CxHSWtnpT185DId6fV3qx98PsEEKqI9i4IwUgIGJa6oNblDrjUpTiIRiGNLL6TmnbDhCpDmNKatOZ2kxQSVc21CrU3Mu8vXkkWLDf37vDTFA1IhJ6smuJuM8KW8MsAb3ZdGleH5Nwf"/>
+<div class="flex flex-col gap-1">
+<div class="bg-surface-container-low text-on-surface px-3.5 py-2.5 rounded-2xl rounded-tl-sm text-[13px] border border-border-subtle shadow-sm leading-relaxed">
+              We get around 40k unique visitors a month. Our primary issue is our SDR team spending hours manually filtering unqualified tire-kickers instead of high-value prospects.
+            </div>
+<span class="text-[10px] text-muted-gray pl-1">2:16 PM</span>
+</div>
+</div>
+<!-- 4. Nova AI Agent Bubble -->
+<div class="flex items-start gap-2.5 max-w-[85%] ml-auto flex-row-reverse">
+<div class="w-7 h-7 rounded-full bg-primary-container text-white flex items-center justify-center mt-1 flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-mint-soft">smart_toy</span>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="bg-mint-tint text-on-surface px-3.5 py-2.5 rounded-2xl rounded-tr-sm text-[13px] border border-[#DCF4E8] shadow-sm leading-relaxed">
+<div class="flex items-center gap-1 mb-1 text-[11px] font-bold text-secondary">
+<span class="material-symbols-outlined text-[13px]">auto_awesome</span> Nova AI Agent
+              </div>
+              Got it. With 40k monthly visits, our enterprise tier with custom qualification logic would automate ~85% of triage. Are you looking to integrate directly with HubSpot or Salesforce, and what timeline are you aiming for?
+            </div>
+<span class="text-[10px] text-muted-gray pr-1">2:17 PM</span>
+</div>
+</div>
+<!-- 5. Visitor Message Bubble -->
+<div class="flex items-start gap-2.5 max-w-[85%]">
+<img alt="Olivia" class="w-7 h-7 rounded-full object-cover mt-1 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjglt_Pcb1tX-LROHeez2ekTNu7wcVckxWrEljH1bldyeWn_3xHQ5Ks6DfvRlgyKZjcnILo8DKfEhM332R6Gd__xoaDKdUfW9FT2q5zldRU2qdjQvGG5hcMxELDCYZJpD_KcAfbQZDO-jD5IcHKab3xrGN-on9EMsNZweuOxT03hkIrTrgBUnY1W-KfpY_N8VG45XgbP746odC9gjnRRapsS8q7Eh5ystnefFI3ItfQBrEQ1L-RwYx"/>
+<div class="flex flex-col gap-1">
+<div class="bg-surface-container-low text-on-surface px-3.5 py-2.5 rounded-2xl rounded-tl-sm text-[13px] border border-border-subtle shadow-sm leading-relaxed">
+              We need HubSpot integration and want this live within 30 days before Q1 ends. Budget is roughly ₹2–5 lakh ($3k–$6k).
+            </div>
+<span class="text-[10px] text-muted-gray pl-1">2:18 PM</span>
+</div>
+</div>
+<!-- 6. Internal AI Handoff Alert Card -->
+<div class="flex items-center justify-center my-1">
+<div class="px-4 py-1.5 rounded-full bg-mint-soft text-emerald-vivid font-bold text-[11.5px] flex items-center gap-2 border border-emerald-vivid/30 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>High intent detected · BANT 4/4 verified · Handoff requested to Maya Singh</span>
+</div>
+</div>
+</div>
+<!-- Rich Composer Area -->
+<div class="p-3.5 bg-surface-container-low/60 border-t border-border-subtle flex flex-col gap-2.5">
+<!-- Mode Switcher Tabs -->
+<div class="flex items-center justify-between pb-0.5">
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-xl border border-border-subtle">
+<button class="px-3 py-1 rounded-lg bg-shell-bg text-primary text-[12px] font-semibold shadow-sm transition-all flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>
+<span>Reply to Visitor</span>
+</button>
+<button class="px-3 py-1 rounded-lg text-muted-gray hover:text-on-surface text-[12px] font-medium transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Private Team Note</span>
+</button>
+</div>
+<button class="px-2.5 py-1 rounded-lg text-[12px] text-secondary hover:text-primary font-semibold flex items-center gap-1 hover:bg-mint-tint transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">auto_awesome</span>
+<span>✨ Suggest with Nova AI</span>
+</button>
+</div>
+<!-- Input Textarea Card -->
+<div class="rounded-xl bg-shell-bg border border-border-subtle p-2.5 focus-within:border-emerald-vivid focus-within:ring-2 focus-within:ring-mint-soft transition-all shadow-sm">
+<textarea class="w-full bg-transparent text-[13px] text-on-surface placeholder-muted-gray focus:outline-none resize-none p-1" placeholder="Type your reply to Olivia, or type '/' for Nova macros..." rows="3"></textarea>
+<!-- Formatting Toolbar & Send Button -->
+<div class="flex items-center justify-between pt-2 border-t border-border-subtle/50 mt-1">
+<div class="flex items-center gap-1 text-muted-gray">
+<button aria-label="Bold text" class="w-7 h-7 flex items-center justify-center rounded-lg hover:text-primary hover:bg-surface-container-low text-[13px] font-bold" type="button">B</button>
+<button aria-label="Italic text" class="w-7 h-7 flex items-center justify-center rounded-lg hover:text-primary hover:bg-surface-container-low text-[13px] italic font-serif" type="button">I</button>
+<button aria-label="Insert link" class="w-7 h-7 flex items-center justify-center rounded-lg hover:text-primary hover:bg-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[16px]">link</span>
+</button>
+<button aria-label="Insert code" class="w-7 h-7 flex items-center justify-center rounded-lg hover:text-primary hover:bg-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[16px]">code</span>
+</button>
+<button aria-label="Insert emoji" class="w-7 h-7 flex items-center justify-center rounded-lg hover:text-primary hover:bg-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[16px]">mood</span>
+</button>
+<button aria-label="Attach file" class="w-7 h-7 flex items-center justify-center rounded-lg hover:text-primary hover:bg-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[16px]">attach_file</span>
+</button>
+</div>
+<button class="px-4 py-1.5 rounded-xl bg-emerald-vivid hover:bg-[#128152] text-white font-semibold text-[13px] flex items-center gap-1.5 shadow-[0_2px_8px_rgba(21,148,95,0.25)] transition-all" type="button">
+<span>Send Reply</span>
+<span class="text-[11px] opacity-80 font-mono">↵</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 3: Lead Intelligence & Qualification Panel (~340px / 3 cols) -->
+<div class="lg:col-span-12 xl:col-span-3 flex flex-col gap-3.5">
+<!-- Card 1: Semicircular Qualification Gauge -->
+<div class="p-4 rounded-2xl bg-shell-bg border border-border-subtle shadow-sm flex flex-col items-center text-center relative overflow-hidden">
+<div class="w-full flex items-center justify-between pb-2 mb-2 border-b border-border-subtle/70">
+<span class="text-[11px] uppercase tracking-wider font-bold text-muted-gray">Lead Qualification</span>
+<span class="px-2 py-0.5 rounded-full bg-[#FDE8E8] text-status-hot text-[11px] font-bold">Top 5% Tier</span>
+</div>
+<!-- Clean Semicircular SVG Gauge -->
+<div class="relative w-48 h-28 flex flex-col items-center justify-end my-1">
+<svg class="w-48 h-28 overflow-visible" viewbox="0 0 160 90">
+<!-- Background Arc: 180 degrees semicircle (radius 60, center 80,80) -->
+<path d="M 20 80 A 60 60 0 0 1 140 80" fill="none" stroke="#E9EFEA" stroke-linecap="round" stroke-width="14"></path>
+<!-- Progress Arc: 86% of 180 deg = ~155 degrees -->
+<!-- Circumference of semicircle = PI * 60 = 188.5; stroke-dasharray = 188.5; stroke-dashoffset = 188.5 * (1 - 0.86) = 26.4 -->
+<path d="M 20 80 A 60 60 0 0 1 140 80" fill="none" stroke="#15945F" stroke-dasharray="188.5" stroke-dashoffset="26.4" stroke-linecap="round" stroke-width="14"></path>
+</svg>
+<div class="absolute bottom-1 flex flex-col items-center justify-center">
+<span class="font-headline-md text-3xl font-extrabold text-primary leading-none">86</span>
+<span class="text-[11px] font-bold text-emerald-vivid uppercase tracking-wider mt-1">HOT INTENT</span>
+</div>
+</div>
+<p class="text-[11.5px] text-on-surface-variant mt-2 text-center leading-snug">
+          Qualified against Apex Global's enterprise criteria.
+        </p>
+</div>
+<!-- Card 2: Nova AI Executive Summary -->
+<div class="p-3.5 rounded-2xl bg-mint-tint border border-[#DCF4E8] shadow-sm flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-secondary font-bold text-[12.5px] font-headline-md">
+<span class="material-symbols-outlined text-[17px] text-emerald-vivid">auto_awesome</span>
+<span>Nova Executive Summary</span>
+</div>
+<p class="text-[12px] text-body-charcoal leading-relaxed">
+          High-intent decision maker seeking automated B2B pipeline qualification to replace manual SDR rep triage. Immediate buying authority with confirmed Q1 budget allocation.
+        </p>
+</div>
+<!-- Card 3: BANT Assessment Grid -->
+<div class="p-4 rounded-2xl bg-shell-bg border border-border-subtle shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between mb-1">
+<span class="text-[11px] uppercase tracking-wider font-bold text-muted-gray">BANT Assessment</span>
+<span class="text-[12px] font-bold text-emerald-vivid flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">verified</span> 4 / 4 Verified
+          </span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Budget -->
+<div class="p-2.5 rounded-xl bg-surface-container-low border border-border-subtle/50 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-mint-soft flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[17px]">payments</span>
+</div>
+<div>
+<span class="block text-[10.5px] text-muted-gray uppercase font-semibold leading-tight">Budget</span>
+<span class="text-[12.5px] font-semibold text-primary">₹2–5 lakh ($3k–$6k)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-emerald-vivid text-[18px]">check_circle</span>
+</div>
+<!-- Authority -->
+<div class="p-2.5 rounded-xl bg-surface-container-low border border-border-subtle/50 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-mint-soft flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[17px]">verified_user</span>
+</div>
+<div>
+<span class="block text-[10.5px] text-muted-gray uppercase font-semibold leading-tight">Authority</span>
+<span class="text-[12.5px] font-semibold text-primary">VP of Growth (Decision Maker)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-emerald-vivid text-[18px]">check_circle</span>
+</div>
+<!-- Need -->
+<div class="p-2.5 rounded-xl bg-surface-container-low border border-border-subtle/50 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-mint-soft flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[17px]">troubleshoot</span>
+</div>
+<div>
+<span class="block text-[10.5px] text-muted-gray uppercase font-semibold leading-tight">Need</span>
+<span class="text-[12.5px] font-semibold text-primary">Automate 40k triage / SDR overload</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-emerald-vivid text-[18px]">check_circle</span>
+</div>
+<!-- Timeline -->
+<div class="p-2.5 rounded-xl bg-surface-container-low border border-border-subtle/50 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-mint-soft flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[17px]">schedule</span>
+</div>
+<div>
+<span class="block text-[10.5px] text-muted-gray uppercase font-semibold leading-tight">Timeline</span>
+<span class="text-[12.5px] font-semibold text-primary">Within 30 days (Q1)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-emerald-vivid text-[18px]">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Recommended Next Action (Deep Forest Green Card #0B3B2A) -->
+<div class="p-4 rounded-2xl bg-[#0B3B2A] text-white shadow-md flex flex-col gap-2 relative overflow-hidden">
+<div class="flex items-center gap-2 text-mint-soft">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+<span class="font-headline-md text-[13.5px] font-bold">Recommended Next Action</span>
+</div>
+<p class="text-[12px] text-mint-tint/90 leading-relaxed">
+          Book Discovery &amp; Architecture Walkthrough with Olivia before competitor outreach.
+        </p>
+<button class="w-full mt-1.5 py-2.5 px-3.5 rounded-xl bg-emerald-vivid hover:bg-[#128152] text-white text-[12.5px] font-semibold flex items-center justify-center gap-1.5 shadow-[0_4px_12px_rgba(21,148,95,0.3)] transition-all" type="button">
+<span>Schedule Call</span>
+<span class="text-[13px]">📅</span>
+</button>
+</div>
+<!-- Card 5: Lead Details & CRM Sync -->
+<div class="p-4 rounded-2xl bg-shell-bg border border-border-subtle shadow-sm flex flex-col gap-2 text-[12px]">
+<span class="text-[11px] uppercase tracking-wider font-bold text-muted-gray">Lead Details &amp; CRM Sync</span>
+<div class="flex items-center justify-between py-1.5 border-b border-border-subtle/60">
+<span class="text-muted-gray">Email</span>
+<span class="font-semibold text-primary select-all">o.martin@apexglobal.io</span>
+</div>
+<div class="flex items-center justify-between py-1.5 border-b border-border-subtle/60">
+<span class="text-muted-gray">Company</span>
+<span class="font-semibold text-primary">Apex Global · 120 emp</span>
+</div>
+<div class="flex items-center justify-between py-1.5 border-b border-border-subtle/60">
+<span class="text-muted-gray">HubSpot CRM</span>
+<span class="px-2 py-0.5 rounded-md bg-mint-soft text-emerald-vivid font-semibold text-[11px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">sync</span> Deal Created in Pipeline
+          </span>
+</div>
+<div class="flex items-center justify-between py-1.5">
+<span class="text-muted-gray">Lead Owner</span>
+<div class="flex items-center gap-1.5">
+<img alt="Maya Singh" class="w-5 h-5 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WTvVJ_E71TJv3zf4XEoC_ykMCKiOwj9jsdK0lMkuWcogMO9cTTj_6zjaKGMwjdVcXxrVtCZ8okNM1TSYbZo61htWI-bZEs4BlD3DBGvYthMwDr60Ekkwy-QrJMde5WexcOUHObUKJxMZuDrIV2BNEYLjoUxmX-2RW7-2k2m5GBhHfXmWI8JFFjWqhAQ2gfKIW5eDIyaGvxBh3j_tBE1sAcWHWRumYv7Qjrspku-dNyOikVvDUbwP-TgQ"/>
+<span class="font-semibold text-primary">Maya Singh</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body></html>

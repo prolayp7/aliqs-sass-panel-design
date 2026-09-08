@@ -1,0 +1,282 @@
+AI Website Lead Qualifier — Features List
+----------------------------------------------
+1.AI Lead Qualification
+2.AI-powered website chat widget 
+3.Automatically engages website visitors     
+4.Understands visitor questions and requirements 
+5.Asks predefined or AI-generated qualification questions 
+6.Identifies customer needs, budget,location, timeline and service requirements   
+7.Lead scoring based on configurable criteria   
+8.Automatically categorizes leads as Hot, Warm, or Cold
+9.Detects buying intent
+10.AI-generated lead summary 
+11.AI recommends the next sales action 
+12.Smart Chat
+13.Real-time AI conversations 
+14.Custom welcome messages    
+15.Industry-specific AI behavior 
+16.Custom chatbot personality and tone 
+17.FAQ handling
+18.Context-aware conversations 
+19.Multi-language support 
+20.Human agent handoff 
+21.Conversation history    
+22.Typing indicators 
+23.Mobile-friendly chat widget
+24.Lead Capture Name,Email Phone number,Company name,Location,Website ,Budget,Project/service requirements,Expected start date 
+25.Custom qualification questions 
+26.Consent/privacy checkbox 
+27.Automatic lead creation
+28.Lead Scoring
+
+    a.Custom scoring rules 
+    b.Budget-based scoring 
+    c.Location-based scoring   
+    d.Service-interest scoring
+    f.Company-size scoring
+    h.Purchase-intent detection 
+    i.Timeline scoring  
+29.Automatic Hot/Warm/Cold classification  
+30.ustom lead qualification criteria
+31.Sales Notifications
+32.New lead notifications 
+33.Hot-lead alerts 
+34.Email notifications 
+35.Browser notifications 
+36.Slack notifications 
+37.WhatsApp notifications  
+38.Instant sales-team alerts 
+39.Follow-up reminders 
+
+40.Lead Dashboard
+    All leads
+    Hot/Warm/Cold filters 
+    Lead search 
+    Lead status 
+    Lead source 
+    Conversation history 
+    
+AI summary 
+    
+Lead score 
+    
+Assigned salesperson 
+    
+Follow-up date 
+    
+Notes and internal comments 
+    
+Export leads to CSV 
+    
+
+Analytics
+Total visitors 
+    
+Engaged visitors 
+    
+Leads generated 
+    
+Qualified leads 
+    
+Conversion rate 
+    
+Hot-lead percentage 
+    
+Average qualification score 
+    
+Chat-to-lead conversion 
+    
+Lead source performance 
+    
+Sales-team response time 
+    
+AI conversation analytics 
+    
+
+ CRM & Integrations
+HubSpot integration 
+    
+Salesforce integration 
+    
+Zoho CRM integration 
+    
+Pipedrive integration 
+    
+Google Sheets 
+    
+Zapier 
+    
+Make 
+    
+Slack 
+    
+Email 
+    
+Webhooks 
+    
+REST API 
+    
+
+Appointment Booking
+AI appointment scheduling 
+    
+Calendar integration 
+    
+Available time-slot detection 
+    
+Google Calendar 
+    
+Microsoft Calendar 
+    
+Meeting confirmation 
+    
+Automatic reminders 
+    
+Salesperson assignment 
+    
+
+ AI Knowledge Base
+Website URL crawling 
+    
+PDF/document upload 
+    
+FAQ knowledge base 
+    
+Product/service information 
+    
+Pricing information 
+    
+Custom business instructions 
+    
+Automatic knowledge updates 
+    
+Source-based AI responses 
+    
+"Don't know" fallback to human agent 
+    
+
+ Team Management
+Admin dashboard 
+    
+Team members 
+    
+Roles & permissions 
+    
+Lead assignment 
+    
+Salesperson availability 
+    
+Team inbox 
+    
+Internal notes 
+    
+Agent performance reports 
+    
+
+ Website & Widget
+One-line JavaScript installation 
+    
+WordPress plugin 
+    
+Shopify integration 
+    
+Custom branding 
+    
+Logo upload 
+    
+Widget color customization 
+    
+Chat position settings 
+    
+Desktop/mobile layouts 
+    
+Custom domain 
+    
+Multiple websites per account 
+    
+
+ SaaS Billing
+Free trial 
+    
+Monthly subscriptions 
+    
+Annual subscriptions 
+    
+Usage-based pricing 
+    
+AI message limits 
+    
+Website limits 
+    
+Team-member limits 
+    
+Stripe payments 
+    
+Automatic invoices 
+    
+Subscription management 
+    
+Upgrade/downgrade 
+    
+Usage dashboard 
+    
+
+ Security
+Secure authentication 
+    
+Google login 
+    
+Two-factor authentication 
+    
+Role-based access 
+    
+Encryption 
+    
+GDPR consent tools 
+    
+Data export 
+    
+Account deletion 
+    
+Audit logs 
+    
+API key management 
+    
+
+ Advanced Features
+AI Sales Agent 
+    
+AI-powered objection handling 
+    
+AI product/service recommendations
+        
+Predictive lead scoring 
+    
+AI-generated follow-up emails 
+    
+Automatic lead nurturing 
+    
+Automated follow-up sequences 
+    
+Duplicate lead detection 
+    
+Spam/bot detection 
+    
+Visitor company identification 
+    
+Visitor intent detection 
+    
+Returning visitor recognition 
+    
+AI sales coaching 
+    
+Revenue attribution 
+    
+Lead-to-customer tracking 
+    
+
+Strong MVP Version
+For the first version,  Start with:
+Website Widget → AI Chat → Qualification Questions →
+Lead Capture → AI Lead Score → Hot/Warm/Cold → Dashboard →
+Email Notification → CRM/Webhook

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#e1e3ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#79fbc8", "on-background": "#171c25", "surface-container-high": "#e5e8f5", "secondary": "#5f5e5e", "on-primary": "#ffffff", "tertiary": "#005940", "outline-variant": "#c4c5d9", "tertiary-fixed": "#77fac7", "primary-fixed-dim": "#bac3ff", "on-secondary-fixed-variant": "#474646", "primary": "#0034dc", "on-primary-fixed": "#00105b", "on-surface-variant": "#444656", "secondary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#00513a", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002115", "surface-dim": "#d6dae7", "inverse-surface": "#2c303a", "outline": "#747687", "inverse-primary": "#bac3ff", "background": "#f9f9ff", "on-secondary-fixed": "#1c1b1b", "primary-container": "#3152f4", "secondary-fixed": "#e5e2e1", "surface-container-highest": "#dfe2ef", "error": "#ba1a1a", "inverse-on-surface": "#edf0fd", "secondary-container": "#e2dfde", "on-secondary-container": "#636262", "on-surface": "#171c25", "surface-container": "#eaedfb", "surface": "#f9f9ff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#002fc9", "tertiary-container": "#007454", "surface-tint": "#2649ec", "surface-variant": "#dfe2ef", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-container-low": "#f1f3ff", "tertiary-fixed-dim": "#58ddac", "on-error": "#ffffff", "primary-fixed": "#dee0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "2.5rem", "space-xl": "1.5rem", "space-sm": "0.75rem", "space-2xl": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "card-padding": "1.5rem", "space-2xs": "0.25rem", "shell-padding": "1.75rem", "gutter-grid": "1.25rem", "space-lg": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-kpi": ["Plus Jakarta Sans"], "display-kpi-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "metric-mono": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-kpi": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-kpi-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "metric-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-low font-body-md text-on-surface antialiased min-h-screen"><div class="min-h-screen p-0 md:p-6 lg:p-8 flex justify-center items-start"><div class="w-full max-w-[1440px] bg-surface-container-lowest rounded-none md:rounded-[28px] shadow-[0_16px_40px_rgba(23,28,37,0.06)] overflow-hidden flex relative min-h-[calc(100vh-4rem)]"><aside class="w-60 shrink-0 bg-surface-container-low flex flex-col justify-between p-4 overflow-y-auto"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-2 py-1"><img alt="Nova AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between cursor-pointer group"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nova AI</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-on-surface transition-colors">unfold_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Northstar Digital</span></div></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Workspace</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-xl transition-colors bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inbox" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-lg text-label-lg">Inbox</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Leads</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-label-lg text-label-lg">Follow-ups</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Agent</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-lg text-label-lg">Qualification</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-lg text-label-lg">Knowledge Base</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-label-lg text-label-lg">Websites &amp; Widget</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-lg text-label-lg">Analytics</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-lg text-label-lg">Integrations</span></a></nav></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Administration</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Team</span></a><a class="flex items-center justify-between px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-label-lg text-label-lg">Billing &amp; Usage</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div></div><div class="flex flex-col gap-3 mt-6 pt-4"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-label-lg text-label-lg">Help &amp; Support</span></a><div class="p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(20,25,40,0.03)] flex flex-col gap-2.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Starter Plan</span><span class="font-label-sm text-label-sm text-tertiary font-bold">Active</span></div><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">742 / 1,000</span><span class="font-label-sm text-label-sm">74%</span></div><div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">Monthly AI conversations</span></div><a class="mt-1 w-full py-1.5 px-3 bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md rounded-lg text-center transition-colors" data-path="billing-and-usage" href="#">Upgrade Plan</a></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest"><header class="h-16 px-6 lg:px-8 bg-surface-container-lowest flex items-center justify-between shrink-0 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-10"><div class="flex items-center gap-4 flex-1"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full cursor-pointer"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-tertiary/20"></span><span class="font-label-md text-label-md text-on-surface">northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="relative max-w-md w-full hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search leads, chats, workflows..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-4"><button class="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_4px_12px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Create</span></button><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Maya Singh</span><span class="font-body-sm text-body-sm text-on-surface-variant">Product Lead</span></div></div></div></header><main class="flex-1 p-6 lg:p-shell-padding overflow-y-auto bg-surface-container-lowest"><div class="flex flex-col w-full">
+<script>
+    /* Highlight the Billing & Usage item in the parent App Shell sidebar */
+    (function () {
+      const activeClasses = [
+        'bg-primary-container',
+        'text-on-primary',
+        'font-bold',
+        'shadow-[0_4px_12px_rgba(49,82,244,0.3)]'
+      ];
+      const inactiveClasses = [
+        'text-on-surface-variant',
+        'hover:bg-surface-container-high',
+        'hover:text-on-surface'
+      ];
+
+      const navLinks = document.querySelectorAll('aside nav a[data-path]');
+      navLinks.forEach((link) => {
+        if (link.getAttribute('data-path') === 'billing-and-usage') {
+          link.classList.remove(...inactiveClasses);
+          link.classList.add(...activeClasses);
+        } else {
+          link.classList.remove(...activeClasses);
+          link.classList.add(...inactiveClasses);
+        }
+      });
+    })();
+  </script>
+<!-- Breadcrumb & Top Page Header -->
+<div class="flex flex-col gap-5 pb-6">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-on-surface cursor-pointer transition-colors">Workspace</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-on-surface cursor-pointer transition-colors">Administration</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Billing &amp; Usage</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="flex flex-col gap-1 max-w-2xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Billing &amp; Usage</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Manage your subscription, track workspace consumption across AI quotas, and download tax invoices.
+        </p>
+</div>
+<div class="flex items-center gap-3 self-start lg:self-center shrink-0">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<span>Change Plan</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_8px_20px_rgba(49,82,244,0.28)] hover:opacity-95 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Upgrade to Premium</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Top Row: Plan & Payment Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-6">
+<!-- Primary Current Plan Card (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-[24px] p-6 lg:p-7 shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-primary-container/5 blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              Active Subscription
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-bold">Starter Tier</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2.5 py-1 rounded-lg">Auto-Renew On</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline gap-2">
+<span class="font-display-kpi text-display-kpi text-on-surface tracking-tight">₹4,999</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ month (billed monthly)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+            Next renewal scheduled on <strong class="text-on-surface font-semibold">28 September 2026</strong> via primary card ending in •••• 4242
+          </p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low/70 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Included in Starter</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+            Includes <strong class="font-semibold text-primary">1,000 AI chats/mo</strong>, 2 active websites, 3 team seats, 500 vector knowledge pages, and standard webhooks.
+          </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-5 mt-4">
+<button class="flex items-center gap-2 px-5 py-2.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_6px_16px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Upgrade Plan</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 bg-surface-container-lowest text-on-surface rounded-xl font-label-lg text-label-lg shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">credit_card</span>
+<span>Manage Payment</span>
+</button>
+</div>
+</div>
+<!-- Payment Method & Profile Card (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-[24px] p-6 lg:p-7 shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Payment Details</span>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md font-semibold transition-colors" type="button">Edit</button>
+</div>
+<!-- Card Mockup Tile -->
+<div class="p-4 rounded-xl bg-gradient-to-br from-surface-container to-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-3.5">
+<div class="w-11 h-8 rounded-lg bg-inverse-surface flex items-center justify-center text-inverse-on-surface font-label-sm text-label-sm font-bold tracking-wider">
+              MC
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm tracking-wide text-on-surface">•••• 4242</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm font-semibold">Default</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Expires 08/28 • Maya Singh</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-tertiary">check_circle</span>
+</div>
+<!-- Billing Entity & GST -->
+<div class="flex flex-col gap-1.5 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Billing Profile</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Northstar Digital Inc.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">GSTIN: <span class="font-metric-mono text-metric-mono font-semibold text-on-surface">27AADCN1234F1Z5</span></p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">billing@northstardigital.com</p>
+</div>
+</div>
+<div class="pt-4 mt-2">
+<button class="w-full flex items-center justify-center gap-2 py-2 px-3.5 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Download Latest Tax Receipt (Aug 2026)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Amber Insight Callout: Approaching Plan Limits -->
+<div class="mb-6 rounded-[22px] bg-[#FEF8EC] p-5 lg:p-6 shadow-[0_4px_16px_rgba(245,165,36,0.08)] flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-[#F5A524]/20 flex items-center justify-center shrink-0 text-[#B45309]">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-headline-sm text-headline-sm text-[#92400E]">Approaching Plan Limits — 2 Quotas Saturated</h3>
+<span class="px-2 py-0.5 rounded-full bg-[#FEF3C7] text-[#B45309] font-label-sm text-label-sm font-bold">Action Suggested</span>
+</div>
+<p class="font-body-md text-body-md text-[#78350F] max-w-4xl">
+          You have fully utilized your website quota (2/2) and team member seats (3/3). In addition, monthly AI conversations (74.2%) and indexed knowledge pages (97.2%) are nearing their tier ceilings. Upgrading to Premium will prevent live qualification disruptions and unlock unlimited knowledge pages and up to 10 team seats.
+        </p>
+</div>
+</div>
+<div class="flex sm:flex-col lg:flex-row items-center gap-2 shrink-0 self-start md:self-center">
+<a class="px-3.5 py-2 rounded-xl bg-[#F5A524] text-on-primary font-label-md text-label-md font-semibold hover:opacity-95 transition-opacity whitespace-nowrap" href="#">
+        Compare Premium Features →
+      </a>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-lowest/80 text-[#92400E] font-label-md text-label-md font-semibold hover:bg-surface-container-lowest transition-colors whitespace-nowrap" type="button">
+        Explore Add-on Seats
+      </button>
+</div>
+</div>
+<!-- Polished Usage & Quotas Grid -->
+<div class="flex flex-col gap-4 mb-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Current Billing Cycle Quota</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1 Sep 2026 – 28 Sep 2026 • 8 days remaining in billing window</p>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1 cursor-pointer hover:underline self-start sm:self-auto">
+<span>View detailed consumption logs</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4">
+<!-- 1. AI Conversations -->
+<div class="bg-surface-container-lowest rounded-[20px] p-5 shadow-[0_8px_24px_rgba(20,25,40,0.03)] flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-primary-container/10 text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">smart_toy</span>
+</span>
+<span class="font-label-lg text-label-lg text-on-surface">AI Chats</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">74.2%</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-baseline justify-between">
+<span class="font-display-kpi text-[26px] leading-8 text-on-surface">742</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 1,000</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">74% consumed • Healthy velocity (~24/day)</span>
+<span class="font-body-sm text-[11px] leading-4 text-on-surface-variant">Resets on 28 Sep 2026</span>
+</div>
+</div>
+<!-- 2. Websites -->
+<div class="bg-surface-container-lowest rounded-[20px] p-5 shadow-[0_8px_24px_rgba(20,25,40,0.03)] flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-[#FEF8EC] text-[#F5A524] flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">language</span>
+</span>
+<span class="font-label-lg text-label-lg text-on-surface">Websites</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-[#FEF8EC] text-[#F5A524] font-label-sm text-label-sm font-bold">Limit Reached</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-baseline justify-between">
+<span class="font-display-kpi text-[26px] leading-8 text-on-surface">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 2 domains</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-[#F5A524] rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface truncate">northstardigital.com</span>
+<span class="font-body-sm text-[11px] leading-4 text-on-surface-variant truncate">demo.northstardigital.com</span>
+</div>
+</div>
+<!-- 3. Team Members -->
+<div class="bg-surface-container-lowest rounded-[20px] p-5 shadow-[0_8px_24px_rgba(20,25,40,0.03)] flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-[#FEF8EC] text-[#F5A524] flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">group</span>
+</span>
+<span class="font-label-lg text-label-lg text-on-surface">Team Seats</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-[#FEF8EC] text-[#F5A524] font-label-sm text-label-sm font-bold">100%</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-baseline justify-between">
+<span class="font-display-kpi text-[26px] leading-8 text-on-surface">3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 3 seats</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-[#F5A524] rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface truncate">Maya S, Arjun M, Riya S</span>
+<span class="font-body-sm text-[11px] leading-4 text-on-surface-variant">Tier limit reached</span>
+</div>
+</div>
+<!-- 4. Knowledge Pages -->
+<div class="bg-surface-container-lowest rounded-[20px] p-5 shadow-[0_8px_24px_rgba(20,25,40,0.03)] flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-[#FDF2F3] text-[#F04452] flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+</span>
+<span class="font-label-lg text-label-lg text-on-surface">Vectors</span>
+</div>
+<span class="font-label-sm text-label-sm text-[#F04452] font-bold">97.2%</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-baseline justify-between">
+<span class="font-display-kpi text-[26px] leading-8 text-on-surface">486</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 500 pages</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-[#F04452] rounded-full" style="width: 97.2%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<span class="font-label-sm text-label-sm text-[#F04452]">14 pages remaining</span>
+<span class="font-body-sm text-[11px] leading-4 text-on-surface-variant truncate">Next crawl may pause</span>
+</div>
+</div>
+<!-- 5. API Requests -->
+<div class="bg-surface-container-lowest rounded-[20px] p-5 shadow-[0_8px_24px_rgba(20,25,40,0.03)] flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">api</span>
+</span>
+<span class="font-label-lg text-label-lg text-on-surface">API Calls</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">32.4%</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-baseline justify-between">
+<span class="font-display-kpi text-[26px] leading-8 text-on-surface">3,240</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 10,000</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 32.4%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Within normal threshold</span>
+<span class="font-body-sm text-[11px] leading-4 text-on-surface-variant">Webhooks &amp; REST sync</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Monthly Trend & KPI Analytics -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-6">
+<!-- Trend Chart Container (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-[24px] p-6 shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Historical Consumption (Past 6 Months)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">AI conversation volume against tier baseline (1,000 quota limit)</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Utilized</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-high"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Quota Ceiling</span>
+</div>
+</div>
+</div>
+<!-- Inline SVG Chart -->
+<div class="w-full h-56 relative flex items-end">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 600 180">
+<!-- Baseline Quota Line (1,000 limit) -->
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1.5" x1="0" x2="600" y1="20" y2="20"></line>
+<text class="fill-outline font-label-sm text-[10px]" text-anchor="end" x="595" y="16">1,000 Quota</text>
+<!-- Light grid horizontal lines -->
+<line class="text-surface-container-low" stroke="currentColor" stroke-width="1" x1="0" x2="600" y1="70" y2="70"></line>
+<line class="text-surface-container-low" stroke="currentColor" stroke-width="1" x1="0" x2="600" y1="120" y2="120"></line>
+<!-- Bars for 6 months -->
+<!-- Apr: 410 -->
+<rect class="fill-surface-container-high hover:fill-primary-fixed-dim transition-colors" height="74" rx="8" width="46" x="25" y="106"></rect>
+<!-- May: 520 -->
+<rect class="fill-surface-container-high hover:fill-primary-fixed-dim transition-colors" height="94" rx="8" width="46" x="125" y="86"></rect>
+<!-- Jun: 610 -->
+<rect class="fill-surface-container-high hover:fill-primary-fixed-dim transition-colors" height="110" rx="8" width="46" x="225" y="70"></rect>
+<!-- Jul: 690 -->
+<rect class="fill-surface-container-high hover:fill-primary-fixed-dim transition-colors" height="124" rx="8" width="46" x="325" y="56"></rect>
+<!-- Aug: 715 -->
+<rect class="fill-surface-container-high hover:fill-primary-fixed-dim transition-colors" height="129" rx="8" width="46" x="425" y="51"></rect>
+<!-- Sep: 742 (Active Month) -->
+<rect class="fill-primary-container shadow-md" height="134" rx="8" width="46" x="525" y="46"></rect>
+<!-- Projected Sep extension -->
+<rect class="fill-primary-container/20 stroke-primary-container" height="19" rx="4" stroke-dasharray="2 2" stroke-width="1" width="46" x="525" y="27"></rect>
+</svg>
+</div>
+<!-- Chart Labels -->
+<div class="grid grid-cols-6 text-center pt-3 text-on-surface-variant font-label-md text-label-md">
+<div>Apr <span class="block font-metric-mono text-metric-mono font-normal text-on-surface">410</span></div>
+<div>May <span class="block font-metric-mono text-metric-mono font-normal text-on-surface">520</span></div>
+<div>Jun <span class="block font-metric-mono text-metric-mono font-normal text-on-surface">610</span></div>
+<div>Jul <span class="block font-metric-mono text-metric-mono font-normal text-on-surface">690</span></div>
+<div>Aug <span class="block font-metric-mono text-metric-mono font-normal text-on-surface">715</span></div>
+<div class="font-bold text-primary">Sep (Active) <span class="block font-metric-mono text-metric-mono text-primary font-bold">742</span></div>
+</div>
+</div>
+<!-- Right KPI Summaries (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-4">
+<!-- Charcoal Focus KPI Tile -->
+<div class="bg-gradient-to-br from-[#242424] to-[#121212] rounded-[24px] p-6 text-on-primary shadow-[0_16px_36px_rgba(15,15,20,0.22)] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-variant">Efficiency KPI</span>
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">verified_user</span>
+</div>
+<div class="py-3">
+<div class="font-display-kpi text-[34px] leading-10 font-bold tracking-tight text-surface-bright">91%</div>
+<p class="font-label-lg text-label-lg text-surface-container font-medium">Autonomous Lead Resolution</p>
+<p class="font-body-sm text-body-sm text-outline-variant mt-1">91 of every 100 conversations qualified without human intervention.</p>
+</div>
+<div class="pt-2 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed">Live AI pipeline active</span>
+</div>
+</div>
+<!-- Light KPI Stack -->
+<div class="bg-surface-container-lowest rounded-[24px] p-6 shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Growth Velocity</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">+14.8% / mo</span>
+</div>
+<span class="w-9 h-9 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+</span>
+</div>
+<div class="h-px bg-surface-container"></div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Peak Traffic Spike</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Sep 12 • 48 chats</span>
+</div>
+<span class="w-9 h-9 rounded-xl bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">insights</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Invoices Table Section -->
+<div class="bg-surface-container-lowest rounded-[24px] p-6 lg:p-7 shadow-[0_10px_30px_rgba(20,25,40,0.04)] mb-8 flex flex-col gap-5">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Invoice History</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Download GST-compliant tax invoices and monitor billing history</p>
+</div>
+<div class="flex items-center gap-2.5">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">ios_share</span>
+<span>Export All (.CSV)</span>
+</button>
+</div>
+</div>
+<!-- Responsive Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[700px]">
+<thead>
+<tr class="bg-surface-container-low/60 rounded-xl">
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider rounded-l-xl">Invoice ID</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Date</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Billing Period</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Amount</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Status</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-right rounded-r-xl">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-4 font-metric-mono text-metric-mono font-semibold text-primary">INV-2026-009</td>
+<td class="py-4 px-4 text-on-surface">28 Aug 2026</td>
+<td class="py-4 px-4 text-on-surface-variant">28 Aug – 27 Sep 2026</td>
+<td class="py-4 px-4 font-metric-mono text-metric-mono font-semibold text-on-surface">₹4,999</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Paid
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download PDF</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-4 font-metric-mono text-metric-mono font-semibold text-primary">INV-2026-008</td>
+<td class="py-4 px-4 text-on-surface">28 Jul 2026</td>
+<td class="py-4 px-4 text-on-surface-variant">28 Jul – 27 Aug 2026</td>
+<td class="py-4 px-4 font-metric-mono text-metric-mono font-semibold text-on-surface">₹4,999</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Paid
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download PDF</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-4 font-metric-mono text-metric-mono font-semibold text-primary">INV-2026-007</td>
+<td class="py-4 px-4 text-on-surface">28 Jun 2026</td>
+<td class="py-4 px-4 text-on-surface-variant">28 Jun – 27 Jul 2026</td>
+<td class="py-4 px-4 font-metric-mono text-metric-mono font-semibold text-on-surface">₹4,999</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Paid
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download PDF</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-4 font-metric-mono text-metric-mono font-semibold text-primary">INV-2026-006</td>
+<td class="py-4 px-4 text-on-surface">28 May 2026</td>
+<td class="py-4 px-4 text-on-surface-variant">28 May – 27 Jun 2026</td>
+<td class="py-4 px-4 font-metric-mono text-metric-mono font-semibold text-on-surface">₹4,999</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Paid
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download PDF</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="flex items-center justify-between pt-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing 4 of 4 invoices</span>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container text-outline opacity-50 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-3 py-1 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">1</span>
+<button class="p-2 rounded-lg bg-surface-container text-outline opacity-50 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></div></div></body></html>

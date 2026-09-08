@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>NovaLead</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface": "#f5fbf5", "status-warm": "#E9A23B", "primary-fixed": "#bdedd4", "tertiary-fixed": "#8ef7c0", "surface-container-low": "#eff5f0", "surface-bright": "#f5fbf5", "shell-bg": "#FFFFFF", "status-cold": "#6F8E9E", "on-primary-fixed": "#002115", "on-surface": "#171d1a", "on-error": "#ffffff", "primary": "#002417", "tertiary": "#002415", "on-secondary-fixed": "#002112", "status-hot": "#E55252", "surface-container-highest": "#dee4df", "status-success": "#15945F", "emerald-vivid": "#15945F", "outline-variant": "#c0c8c2", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#ecf2ed", "tertiary-container": "#003c25", "on-tertiary-fixed-variant": "#005234", "on-surface-variant": "#414944", "on-primary-container": "#78a68f", "inverse-primary": "#a2d1b9", "error-container": "#ffdad6", "surface-variant": "#dee4df", "body-charcoal": "#3E4742", "primary-fixed-dim": "#a2d1b9", "surface-tint": "#3b6753", "canvas-bg": "#F2F4F3", "on-secondary": "#ffffff", "secondary": "#006c45", "surface-container-high": "#e4eae4", "mint-tint": "#F0FAF5", "muted-gray": "#8A938E", "error": "#ba1a1a", "primary-container": "#0b3b2a", "on-tertiary-fixed": "#002112", "inverse-surface": "#2c322e", "secondary-fixed-dim": "#7dd9a7", "tertiary-fixed-dim": "#71dba5", "surface-container": "#e9efea", "on-tertiary-container": "#43af7d", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#224f3d", "secondary-fixed": "#99f6c2", "mint-soft": "#DCF4E8", "background": "#f5fbf5", "on-secondary-container": "#02734a", "surface-dim": "#d5dcd6", "on-secondary-fixed-variant": "#005233", "secondary-container": "#99f6c2", "border-subtle": "#DDE2DF", "on-background": "#171d1a", "outline": "#717973", "on-primary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.5rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-3xl": "3rem", "space-2xl": "2.5rem", "space-sm": "0.75rem", "space-2xs": "0.25rem", "shell-padding": "2rem", "space-md": "1rem", "gutter-mobile": "0.75rem", "gutter-tablet": "1rem", "gutter-desktop": "1.5rem" }, fontFamily: { "headline-lg": ["Manrope"], "headline-md": ["Manrope"], "body-lg": ["Inter"], "headline-sm": ["Manrope"], "body-sm": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "display-lg": ["Manrope"], "kpi-metric": ["Manrope"], "label-md": ["Inter"] }, fontSize: { "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "kpi-metric": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-shell-bg/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,36,23,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0 flex-1"><img alt="Brand logo. - Primary color: #0b3b2a
+- Font: manrope
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XSeJxWafV9QgukTMuZCPm8ufA4KMhnVEmWuGwg1oQapU6iiIFcjhx11bOX87yzyXFUI-5_T4ew0ISTWERMM-R69hzjT5QXorXGJ9OV07sbVZMJZPdnACzX9sWeW9rwA3zmfjhjuh0YAvrlxg9BinnLC-ynHqsZErOLqBLLBCl2-AWk8DvSP1IW2F9DGLpW2l6zmWKekbj7uK5aw_Txe_ZG-ZeD0PjlTVXHifff8j7EKNhJXfLoog09jUQ"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary leading-tight truncate">NovaLead</span><button class="flex items-center gap-space-2xs text-left min-w-0 group"><span class="w-1.5 h-1.5 rounded-full bg-status-success animate-pulse flex-shrink-0"></span><span class="font-label-sm text-label-sm text-body-charcoal truncate max-w-[130px]">northstardigital.com</span><span class="material-symbols-outlined text-muted-gray text-body-sm group-hover:text-primary transition-colors flex-shrink-0">expand_more</span></button></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors relative"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-hot"></span></button><button aria-label="Maya Singh profile" class="w-11 h-11 flex items-center justify-center rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VdNzQtFHNwiQhaStCBSFbDLIdQGNq5PueHh_2C_rg8VE34-P4-ZTIjHFvEvHtCK6OmS3Z5Ba8YxJqAXF5Nrdzuo__h7sWXOjQmF2cCCOyIEni_So1FGwooqaSeeqD0a6O2W-NoLPXo2uwwRbPV5Ipve_llFbiWBCmFmvmqrdE0u4ciQovDkoggzJDoY7KmDCgJD3yYUqYkD09Itg8DddgNOrgA_FFWLtM0_dTQcPBCGGR4RsRd-U7g2g"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full relative">
+<!-- Content Wrapper within Shell bounds -->
+<div class="px-gutter-mobile py-space-sm flex flex-col gap-space-md">
+<!-- Top Page Title & Quick Action -->
+<div class="flex items-center justify-between gap-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs min-w-0">
+<h1 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">Leads</h1>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-body-charcoal font-label-sm text-label-sm font-semibold">
+          267 Total
+        </span>
+</div>
+<button class="h-10 px-space-md rounded-full bg-emerald-vivid text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm hover:opacity-95 active:scale-95 transition-all flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Lead</span>
+</button>
+</div>
+<!-- Search Bar -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-muted-gray">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-11 pl-10 pr-10 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-muted-gray shadow-sm focus:outline-none" placeholder="Search by name, company, email..." type="text" value="Shopify Storefront"/>
+<button class="absolute inset-y-0 right-0 pr-3 flex items-center text-muted-gray hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<!-- KPI Metric Pills Carousel (Horizontal Scroll) -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar -mx-gutter-mobile px-gutter-mobile">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low text-body-charcoal font-label-md text-label-md whitespace-nowrap shadow-sm">
+<span class="text-muted-gray">Total</span>
+<span class="font-bold text-on-surface">267</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-error-container text-on-error-container font-label-md text-label-md whitespace-nowrap shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-status-hot" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span>Hot:</span>
+<span class="font-bold">74</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-status-warm/15 text-status-warm font-label-md text-label-md whitespace-nowrap shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>Warm:</span>
+<span class="font-bold">112</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-status-cold/15 text-status-cold font-label-md text-label-md whitespace-nowrap shadow-sm">
+<span class="material-symbols-outlined text-[15px]">ac_unit</span>
+<span>Cold:</span>
+<span class="font-bold">81</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mint-soft text-secondary font-label-md text-label-md whitespace-nowrap shadow-sm">
+<span class="material-symbols-outlined text-[15px]">speed</span>
+<span>Avg Score:</span>
+<span class="font-bold">78.4</span>
+</div>
+</div>
+<!-- Temperature Tabs & Filter Controls -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs">
+<!-- Segmented Tab Bar -->
+<div class="flex items-center p-1 rounded-xl bg-surface-container-high max-w-[240px]">
+<button class="px-2.5 py-1 rounded-lg text-muted-gray font-label-sm text-label-sm font-medium">All (267)</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-hot"></span>
+            Hot (74)
+          </button>
+<button class="px-2.5 py-1 rounded-lg text-muted-gray font-label-sm text-label-sm font-medium">Warm</button>
+</div>
+<!-- Filter Trigger -->
+<button class="h-9 px-3 rounded-xl bg-mint-soft text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" id="openFilterBtn" type="button">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">tune</span>
+<span>Filters</span>
+<span class="w-4 h-4 rounded-full bg-emerald-vivid text-on-primary text-[10px] flex items-center justify-center font-bold">3</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray px-1">
+<span>Showing 74 prioritized high-intent leads</span>
+<button class="flex items-center gap-0.5 text-on-surface-variant font-label-sm text-label-sm hover:text-primary">
+<span>Score: High to Low</span>
+<span class="material-symbols-outlined text-[14px]">arrow_drop_down</span>
+</button>
+</div>
+</div>
+<!-- Lead Cards Stream -->
+<div class="flex flex-col gap-space-sm pb-12">
+<!-- Lead Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-status-hot"></div>
+<div class="flex items-start justify-between gap-2 pl-1">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="High quality professional headshot of Olivia Martin VP of Growth wearing subtle emerald blazer, warm studio rim light on clean neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7s4LwyslT0yyvBjdjUjukC6unjMqQDNYKVWAh24IlYW40cYggsfvfIWgeaOBShodTx7g0NoVt0C2JbARq3XS5qXLgdH7NNMXKfG8GfHJL2giLeQHOJNwy-nuyHGZqGTFm2XCDWMMEphvk8gSJpiNjZxW2HNAeXrssHI65C2ORFO6e469kLgdKghPPo3C0AIr0NkeMDC9Sh2TqdDiRVPfuXcHukyX20UarNlANoQ5yGNbHj8cBrOne"/>
+</div>
+<div class="min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold truncate">Olivia Martin</h2>
+<p class="font-body-sm text-body-sm text-body-charcoal truncate">VP of Growth • <span class="font-semibold text-primary">RetailPulse</span></p>
+</div>
+</div>
+<!-- Score Pill -->
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-status-hot font-label-sm text-label-sm font-bold shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+            86 HOT
+          </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pl-1">
+<span class="px-2 py-0.5 rounded-md bg-mint-soft text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event_available</span>
+            Meeting Scheduled
+          </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-body-charcoal font-label-sm text-label-sm">
+            Shopify Direct Widget
+          </span>
+</div>
+<!-- Telemetry Attributes -->
+<div class="grid grid-cols-2 gap-2 p-2.5 rounded-xl bg-surface-container-low pl-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-gray">Est. Deal Value</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$25,000<span class="text-body-sm font-normal text-muted-gray">/yr</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-gray">Target Horizon</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">&lt; 2 weeks</span>
+</div>
+</div>
+<!-- Lead Meta Footer & Actions -->
+<div class="flex items-center justify-between pt-1 pl-1">
+<div class="flex items-center gap-2 min-w-0">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Small round corporate avatar of Maya Singh, soft natural lighting smiling warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRTWi9zvUmtT5Z5oGajahThwLk9HBvSqzI93cOUz1EoQ8iUva_w6_DL_Z8vJKJD7QR2cK_ne44IL6V4804AKU0G9h0QzJeC7sKbW0skPCwMoI8O1sC5Od7V4pz55aR_HcJmmeT6oBKx_swTALP0XM7Nx48z3LKm8gIzlXQz6TSiICfKgB6SMhyd1WTMRbhGsxiVFWT4HFZou8HrwnDx37urnt9PQ3T2GNpQ0y4_FjYYysdsqqre9pz"/>
+<span class="font-label-sm text-label-sm text-muted-gray truncate">Owner: Maya S.</span>
+</div>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-mint-soft transition-colors" title="Direct Phone Call">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-mint-soft transition-colors" title="Sync to Hubspot">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+<button class="h-9 px-3 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Lead Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-status-hot"></div>
+<div class="flex items-start justify-between gap-2 pl-1">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of Ethan Brooks CTO NexaTech, crisp studio portrait modern glasses minimal green gradient background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf22ZXuf02rV5wO7zeut96LZUcAyATrEcvdjFYkw9Zyg8ImRuVYAogv4sU-db492P02VdLIrh6ctmAfLypC6C6fwapqIhcYICjcUsGvUowJBLin8wKyGngdcN-aCipjsiMxHu0doawqSsn9e-eUZnDhQuMb6qyrptOOgbxq4bulDkKz3Mrc-MuDjXIBm8f-GsSSH_Pp3P5sEZvczxa6WIEskR387k3Ad4-6Il3amSOGU4gwfhJI93c"/>
+</div>
+<div class="min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold truncate">Ethan Brooks</h2>
+<p class="font-body-sm text-body-sm text-body-charcoal truncate">CTO • <span class="font-semibold text-primary">NexaTech Systems</span></p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-status-hot font-label-sm text-label-sm font-bold shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+            79 HOT
+          </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pl-1">
+<span class="px-2 py-0.5 rounded-md bg-status-warm/15 text-status-warm font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">description</span>
+            Proposal Sent
+          </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-body-charcoal font-label-sm text-label-sm">
+            Pricing Page Organic
+          </span>
+</div>
+<div class="grid grid-cols-2 gap-2 p-2.5 rounded-xl bg-surface-container-low pl-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-gray">Budget Tier</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$42,000<span class="text-body-sm font-normal text-muted-gray">/yr</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-gray">Tech Ecosystem</span>
+<span class="font-label-md text-label-md text-body-charcoal font-semibold mt-1">HubSpot + Node.js</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 pl-1">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px] font-bold flex items-center justify-center">AM</div>
+<span class="font-label-sm text-label-sm text-muted-gray truncate">Owner: Arjun Mehta</span>
+</div>
+<div class="flex items-center gap-2 text-body-sm text-muted-gray">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>1h ago</span>
+</div>
+</div>
+</div>
+<!-- Lead Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-status-hot"></div>
+<div class="flex items-start justify-between gap-2 pl-1">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Confident headshot portrait of Sophia Chen Head of Ops CloudScale AI modern high-tech enterprise backdrop crisp lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwwhn30JN5Ar6mdehxIimKQgkeBG6rMuNpx35AVczlT9Y_Uem0cmFquFYayueyiSQAqOvisxHJrvY7D9Eu-_4v0nlw4g4iacAE96mG2QPa8ylj5khQfCgTSlfCrElMVVuaAczhuk2fPDbyuLw4nA0YQ0kB9evSOefQviGoMqNgFmfRTPR8Y23r70ofrissordyKf9JMl4ku6X1dm5sGiEYfpass9n17de6c1yxLk7cXgsZIUS30wlo"/>
+</div>
+<div class="min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold truncate">Sophia Chen</h2>
+<p class="font-body-sm text-body-sm text-body-charcoal truncate">Head of Ops • <span class="font-semibold text-primary">CloudScale AI</span></p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-status-hot font-label-sm text-label-sm font-bold shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+            74 HOT
+          </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pl-1">
+<span class="px-2 py-0.5 rounded-md bg-mint-soft text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+            AI Qualified
+          </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-body-charcoal font-label-sm text-label-sm">
+            LinkedIn Enterprise Ads
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1 pl-1">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] font-bold flex items-center justify-center">RS</div>
+<span class="font-label-sm text-label-sm text-muted-gray truncate">Owner: Riya Sen</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold">$18,000 / yr</span>
+</div>
+</div>
+<!-- Lead Card 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-status-warm"></div>
+<div class="flex items-start justify-between gap-2 pl-1">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot photo of Liam Wilson founder Apex Commerce casual tech entrepreneur natural sunlight warmly lit modern office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_vRcKld22HfDQFmbdl0N4KXIVjNPPN1xvXwRk5kiUrlCy_u-cb2AJ7RhFuzcYZ_AmW9hrzpHR2Qxih5FtsBTKppDshXWu8jTSKR7PbPnXknafHAZRvBl4NlEAKD2n4Iies7wZKEiZ4G_fxDjrsuMXSLJbL8tFw2theV0k2eAyVjfdetfKCSZ4nYdeDyudumdm-iaNn5Ehjw8xTpG1_gNvwB0N8Da6sW7ibTN1axSkhFhY3pA1fJCq"/>
+</div>
+<div class="min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold truncate">Liam Wilson</h2>
+<p class="font-body-sm text-body-sm text-body-charcoal truncate">Founder • <span class="font-semibold text-primary">Apex Commerce</span></p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-status-warm/15 text-status-warm font-label-sm text-label-sm font-bold shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+            68 WARM
+          </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pl-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-body-charcoal font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">mail</span>
+            Contacted
+          </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-body-charcoal font-label-sm text-label-sm">
+            Partner Referral
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1 pl-1">
+<div class="flex items-center gap-2 min-w-0">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Tiny avatar profile Maya Singh sharp emerald accent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQRwE73xII4r8cWT6VWIAPv6HgSFKSiWx-uA3_4R99WGRcLoDkuL_TBQX_hpIiiW62_S-ouVqpyp7HAP79cV0hMO2t6Z1ne4K_1mznyzRpx4RRi-38dtKcmrixzAkbZWs1TUiAj8u47Axm5pI0Dx6wOtSxJO1P5QyT85uI1BVshOi0JJDnE2JhXFf_k-Fs2VzxKthrytFtUE-JK0MiU4SdaARhe9twMALMu5Aj17m58eI-izDLfCyT"/>
+<span class="font-label-sm text-label-sm text-muted-gray truncate">Owner: Maya S.</span>
+</div>
+<button class="text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span>Details</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter Bottom Sheet (Visible / Interactive Modal Overlay as Prompted) -->
+<div class="fixed inset-0 z-50 flex flex-col justify-end bg-inverse-surface/40 backdrop-blur-xs transition-opacity duration-300" id="filterModal">
+<!-- Click backdrop to dismiss simulation -->
+<div class="flex-1 w-full" id="filterBackdrop"></div>
+<!-- Sheet Panel -->
+<div class="w-full max-h-[85vh] overflow-y-auto bg-surface-container-lowest rounded-t-[28px] shadow-2xl flex flex-col p-gutter-mobile gap-space-md pb-8 transform transition-transform duration-300">
+<!-- Drag Handle -->
+<div class="w-12 h-1.5 rounded-full bg-surface-variant self-center -mt-1 mb-1"></div>
+<!-- Sheet Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Filter Leads</h3>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-secondary font-label-sm text-label-sm font-bold">3 applied</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="font-label-sm text-label-sm text-muted-gray hover:text-primary font-semibold" type="button">Reset All</button>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" id="closeFilterBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Section 1: Lead Temperature -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary font-semibold">Lead Temperature</span>
+<div class="flex flex-wrap gap-2">
+<!-- Hot Checked -->
+<button class="px-3 py-2 rounded-xl bg-error-container text-status-hot font-label-sm text-label-sm font-bold flex items-center gap-1.5 shadow-xs">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Hot (≥ 70)</span>
+</button>
+<!-- Warm Checked -->
+<button class="px-3 py-2 rounded-xl bg-status-warm/15 text-status-warm font-label-sm text-label-sm font-bold flex items-center gap-1.5 shadow-xs">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Warm (40–69)</span>
+</button>
+<!-- Cold Unchecked -->
+<button class="px-3 py-2 rounded-xl bg-surface-container text-muted-gray font-label-sm text-label-sm font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Cold (0–39)</span>
+</button>
+</div>
+</div>
+<!-- Section 2: Score Range -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold">Qualification Score Range</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">60 - 100</span>
+</div>
+<div class="relative w-full h-6 flex items-center">
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-emerald-vivid rounded-full" style="margin-left: 40%; width: 60%;"></div>
+</div>
+<!-- Thumb left -->
+<div class="absolute left-[40%] -translate-x-1/2 w-5 h-5 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-vivid"></div>
+</div>
+<!-- Thumb right -->
+<div class="absolute right-0 w-5 h-5 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-vivid"></div>
+</div>
+</div>
+<div class="flex justify-between text-body-sm font-body-sm text-muted-gray px-0.5">
+<span>0 (Low)</span>
+<span>50</span>
+<span>100 (Instant Match)</span>
+</div>
+</div>
+<!-- Section 3: Pipeline Stage -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary font-semibold">Pipeline Stage</span>
+<div class="flex flex-wrap gap-1.5">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-muted-gray font-label-sm text-label-sm font-medium">All</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-muted-gray font-label-sm text-label-sm font-medium">New</button>
+<button class="px-3 py-1.5 rounded-lg bg-mint-soft text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px]">check</span> Qualified
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-mint-soft text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px]">check</span> Meeting Scheduled
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-muted-gray font-label-sm text-label-sm font-medium">Proposal Sent</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-muted-gray font-label-sm text-label-sm font-medium">Won</button>
+</div>
+</div>
+<!-- Section 4: Lead Owner -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary font-semibold">Lead Owner</span>
+<div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mint-soft text-secondary font-label-sm text-label-sm font-bold whitespace-nowrap shadow-xs">
+<img class="w-5 h-5 rounded-full object-cover" data-alt="Avatar of Maya Singh assigned lead owner rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUtK2iJ4InscxadyTdDXDbZeejlxR_Qpty79cXV5LO9tcNNK3djGbBBM6Y7KE8ibcWdYmzjRZpgY7cfjmpQDJJ9f_Su7DBQWPgwHKq2j8X31kD7CN3aTkU2LzDaBUOvPHmRbjijljD5ly0HPY8F8ww9axhi8iW9fWjpXEOwQvw8rJ0R8YjOC_0tLaq3Idbee5DDO8R3QQwTQbbzZ4CNDXU_bhWmlm5rdQOhZ-hfQknzDcyMRGSFILk"/>
+<span>Maya Singh</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-body-charcoal font-label-sm text-label-sm font-medium whitespace-nowrap">
+<div class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[9px] font-bold flex items-center justify-center">AM</div>
+<span>Arjun Mehta</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-body-charcoal font-label-sm text-label-sm font-medium whitespace-nowrap">
+<div class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-[9px] font-bold flex items-center justify-center">RS</div>
+<span>Riya Sen</span>
+</button>
+</div>
+</div>
+<!-- Section 5: Lead Source & Follow-up Trigger -->
+<div class="grid grid-cols-2 gap-2">
+<div class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-primary font-semibold">Source</span>
+<div class="relative">
+<select class="w-full h-10 px-3 rounded-xl bg-surface-container text-on-surface font-label-sm text-label-sm appearance-none focus:outline-none">
+<option selected="">Direct Widget (Live)</option>
+<option>Landing Page</option>
+<option>Google Organic</option>
+<option>LinkedIn Ads</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-muted-gray pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-primary font-semibold">Follow-Up</span>
+<div class="relative">
+<select class="w-full h-10 px-3 rounded-xl bg-surface-container text-on-surface font-label-sm text-label-sm appearance-none focus:outline-none">
+<option selected="">Due Today (4)</option>
+<option>Overdue (2)</option>
+<option>All Activities</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-muted-gray pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Sticky Sheet Footer -->
+<div class="pt-2 flex items-center gap-3">
+<button class="h-12 flex-1 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-variant transition-colors" id="cancelFilterBtn" type="button">
+          Cancel
+        </button>
+<button class="h-12 flex-[2] rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold shadow-md hover:opacity-95 active:scale-[0.98] transition-all flex items-center justify-center gap-1.5" id="applyFilterBtn" type="button">
+<span>Apply Filters</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-vivid text-on-primary text-[11px] font-bold">74 Leads</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      const modal = document.getElementById('filterModal');
+      const openBtn = document.getElementById('openFilterBtn');
+      const closeBtn = document.getElementById('closeFilterBtn');
+      const cancelBtn = document.getElementById('cancelFilterBtn');
+      const applyBtn = document.getElementById('applyFilterBtn');
+      const backdrop = document.getElementById('filterBackdrop');
+
+      function hideModal() {
+        if (modal) {
+          modal.classList.add('hidden');
+        }
+      }
+
+      function showModal() {
+        if (modal) {
+          modal.classList.remove('hidden');
+        }
+      }
+
+      if (openBtn) openBtn.addEventListener('click', showModal);
+      if (closeBtn) closeBtn.addEventListener('click', hideModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', hideModal);
+      if (applyBtn) applyBtn.addEventListener('click', hideModal);
+      if (backdrop) backdrop.addEventListener('click', hideModal);
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-shell-bg/90 backdrop-blur-xl shadow-[0_-2px_16px_rgba(0,36,23,0.05)]" data-active-classes="text-secondary"><div class="h-16 px-gutter-mobile flex items-center justify-around"><a class="relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-headline-sm">grid_view</span><span class="font-label-sm text-label-sm mt-space-2xs">Dashboard</span></a><a class="relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="inbox" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-headline-sm">inbox</span><span class="absolute -top-1 -right-3 px-1 py-0.5 min-w-[16px] h-3.5 flex items-center justify-center rounded-full bg-status-hot text-on-error font-label-sm text-[9px] leading-none font-bold">12+</span></div><span class="font-label-sm text-label-sm mt-space-2xs">Inbox</span></a><a aria-current="page" class="relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-2xs transition-colors text-secondary" data-path="leads" href="#"><span class="material-symbols-outlined text-headline-sm">group</span><span class="font-label-sm text-label-sm mt-space-2xs font-semibold">Leads</span><span class="w-1 h-1 rounded-full bg-emerald-vivid mt-0.5"></span></a><a class="relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-headline-sm">smart_toy</span><span class="font-label-sm text-label-sm mt-space-2xs">AI Agent</span></a><a class="relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="more" href="#"><span class="material-symbols-outlined text-headline-sm">more_horiz</span><span class="font-label-sm text-label-sm mt-space-2xs">More</span></a></div></nav></body></html>

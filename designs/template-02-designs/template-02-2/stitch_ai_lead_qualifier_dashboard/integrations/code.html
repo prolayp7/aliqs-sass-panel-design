@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"emerald-vivid":"#15945F","body-charcoal":"#3E4742","surface-container-highest":"#dee4df","secondary":"#006c45","on-surface":"#171d1a","status-hot":"#E55252","inverse-on-surface":"#ecf2ed","on-primary":"#ffffff","mint-soft":"#DCF4E8","on-surface-variant":"#414944","error":"#ba1a1a","on-primary-fixed-variant":"#224f3d","background":"#f5fbf5","outline":"#717973","muted-gray":"#8A938E","on-error-container":"#93000a","outline-variant":"#c0c8c2","surface-bright":"#f5fbf5","primary-fixed-dim":"#a2d1b9","on-primary-container":"#78a68f","secondary-fixed":"#99f6c2","on-background":"#171d1a","border-subtle":"#DDE2DF","on-tertiary-container":"#43af7d","on-tertiary-fixed":"#002112","shell-bg":"#FFFFFF","surface-container":"#e9efea","status-cold":"#6F8E9E","primary-fixed":"#bdedd4","on-secondary-fixed-variant":"#005233","secondary-fixed-dim":"#7dd9a7","on-error":"#ffffff","status-success":"#15945F","on-secondary":"#ffffff","surface-container-low":"#eff5f0","on-primary-fixed":"#002115","tertiary-fixed":"#8ef7c0","tertiary-fixed-dim":"#71dba5","mint-tint":"#F0FAF5","tertiary":"#002415","on-tertiary-fixed-variant":"#005234","secondary-container":"#99f6c2","status-warm":"#E9A23B","primary-container":"#0b3b2a","surface-container-high":"#e4eae4","on-secondary-fixed":"#002112","surface":"#f5fbf5","inverse-surface":"#2c322e","surface-tint":"#3b6753","tertiary-container":"#003c25","inverse-primary":"#a2d1b9","surface-dim":"#d5dcd6","on-secondary-container":"#02734a","primary":"#002417","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","surface-variant":"#dee4df","canvas-bg":"#F2F4F3","error-container":"#ffdad6"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","space-2xs":"0.25rem","space-xs":"0.5rem","space-sm":"0.75rem","space-3xl":"3rem","gutter-mobile":"0.75rem","space-md":"1rem","shell-padding":"2rem","space-lg":"1.5rem","space-2xl":"2.5rem","gutter-tablet":"1rem","space-xl":"2rem"},"fontFamily":{"body-lg":["Inter"],"headline-sm":["Manrope"],"label-sm":["Inter"],"kpi-metric":["Manrope"],"display-lg":["Manrope"],"body-sm":["Inter"],"body-md":["Inter"],"headline-md":["Manrope"],"headline-lg":["Manrope"],"label-md":["Inter"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"kpi-metric":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased"><div class="min-h-screen flex"><aside class="w-64 fixed inset-y-0 left-0 z-40 bg-shell-bg border-r border-border-subtle flex flex-col justify-between h-full py-space-md shadow-[0_8px_32px_-4px_rgba(11,59,42,0.05)]"><div class="flex flex-col gap-space-md overflow-y-auto px-space-xs"><div class="px-space-sm flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-xl bg-primary flex items-center justify-center text-secondary-fixed shadow-[0_4px_12px_-2px_rgba(21,148,95,0.35)]"><span class="material-symbols-outlined text-[20px] text-emerald-vivid">hub</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">NovaLead</span></div><button class="flex items-center justify-between px-space-xs py-space-2xs rounded-lg bg-surface-container-low text-body-sm font-label-sm text-on-surface-variant hover:bg-surface-container transition-colors mt-space-2xs" type="button"><span class="flex items-center gap-1.5 truncate"><span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>northstardigital.com</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><div class="flex flex-col gap-space-2xs"><div class="px-space-sm text-[10px] uppercase font-bold tracking-wider text-muted-gray">Intelligence</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="dashboard" href="#">Dashboard</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all flex items-center justify-between" data-path="inbox" href="#"><span>Inbox</span><span class="px-1.5 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[10px] font-bold">12+</span></a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="leads" href="#">Leads</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="follow-ups" href="#">Follow-ups</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="ai-agent" href="#">AI Agent</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="qualification" href="#">Qualification</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="knowledge-base" href="#">Knowledge Base</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="websites-and-widget" href="#">Websites &amp; Widget</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="automations" href="#">Automations</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="analytics" href="#">Analytics</a></nav></div><div class="flex flex-col gap-space-2xs"><div class="px-space-sm text-[10px] uppercase font-bold tracking-wider text-muted-gray">General</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a aria-current="page" class="px-space-sm py-space-xs rounded-lg transition-all bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full" data-path="integrations" href="#">Integrations</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="team" href="#">Team</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="notifications" href="#">Notifications</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="billing-and-usage" href="#">Billing &amp; Usage</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="settings" href="#">Settings</a><a class="px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="help" href="#">Help</a></nav></div></div><div class="px-space-sm pt-space-xs flex-shrink-0 flex flex-col gap-space-xs"><div class="rounded-xl bg-gradient-to-br from-primary-container to-primary p-space-sm text-on-primary flex flex-col gap-space-xs shadow-[0_6px_20px_-2px_rgba(11,59,42,0.18)]"><div class="flex items-center justify-between"><span class="text-[11px] font-semibold text-mint-soft tracking-wide font-label-sm">Starter Plan</span><span class="text-[11px] text-muted-gray font-label-sm">74%</span></div><div class="text-body-sm font-label-md text-on-primary font-medium">742 / 1,000 Conv.</div><div class="w-full h-1.5 bg-tertiary-container rounded-full overflow-hidden"><div class="h-full bg-status-success rounded-full w-[74%]"></div></div><div class="pt-1 flex items-center justify-between"><span class="text-[10px] text-mint-soft/80 font-label-sm">Renews in 11 days</span><button class="px-space-xs py-1 rounded-full bg-status-success text-on-secondary text-[11px] font-semibold hover:opacity-90 transition-opacity" type="button">Upgrade</button></div></div></div></aside><div class="flex-1 flex flex-col min-w-0 pl-64"><header class="h-16 fixed top-0 right-0 left-64 z-30 bg-shell-bg/95 backdrop-blur-md border-b border-border-subtle px-space-lg flex items-center justify-between gap-space-md"><div class="flex-1 max-w-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-muted-gray text-[20px]">search</span><input class="w-full pl-10 pr-12 py-2 text-body-sm rounded-xl border border-border-subtle bg-mint-tint/40 text-on-surface placeholder-muted-gray focus:bg-shell-bg focus:border-status-success focus:ring-2 focus:ring-mint-soft focus:outline-none transition-all" placeholder="Search leads, visitors, integrations..." type="text"/><div class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container border border-border-subtle text-[10px] font-medium text-muted-gray font-mono">⌘F</div></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mint-tint border border-border-subtle text-body-sm font-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-status-success"></span><span>northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span></div><div class="flex items-center gap-1"><button aria-label="Inbox notifications" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">mail</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-hot ring-2 ring-shell-bg"></span></button><button aria-label="Alerts" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-warm ring-2 ring-shell-bg"></span></button></div><div class="h-7 w-[1px] bg-border-subtle"></div><div class="flex items-center gap-space-xs pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-border-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKLyyv5oEThrEBK1kOu9d885WSHu5uMzQZFjJgLQyPXiuwk00YS1a4M9jxQFjd2-Ksr-reE136uCll9DfVL8cG0xBKycJoDKuGo0FJZUwlrdjPN61HSOywTH_n4y-5T9Q6VjSve9C_nLz2XTYQINf0qNoy_le1JK7kxVM4ZeMQR4UOI2C3ZCdFelpZGdbsgEzTLBKGui_o9DTRuE1oTClDxKTVXiLDglubfPzeWDXLM7eyAbv7gBT_"/><div class="hidden xl:flex flex-col text-left"><span class="text-body-sm font-semibold text-on-surface leading-tight font-label-md">Maya Singh</span><span class="text-[11px] text-muted-gray leading-tight font-label-sm">Product Lead</span></div></div></div></header><main class="flex-1 pt-16 p-space-lg min-h-screen bg-canvas-bg"><div class="flex flex-col w-full">
+<!-- Content Container with Ambient Shell -->
+<div class="flex flex-col gap-space-xl pb-space-3xl">
+<!-- Top Breadcrumb & Executive Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-muted-gray uppercase tracking-wider">
+<span>General</span>
+<span class="text-border-subtle">/</span>
+<span class="text-secondary font-bold">Integrations &amp; Apps</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">
+          Integrations &amp; App Marketplace
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Connect NovaLead with your CRM, communication tools, and workflow automation engines for real-time lead routing and two-way synchronization.
+        </p>
+</div>
+<!-- Action Controls -->
+<div class="flex items-center gap-space-xs shrink-0">
+<a class="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-shell-bg text-primary font-label-md text-label-md shadow-sm hover:bg-mint-tint transition-all" href="#docs">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>API Keys &amp; Webhook Docs</span>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">north_east</span>
+</a>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-full bg-emerald-vivid text-on-primary font-label-md text-label-md shadow-sm hover:bg-secondary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Request Integration</span>
+</button>
+</div>
+</div>
+<!-- Health & Throughput KPI Cards Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Emerald Focus Card -->
+<div class="relative overflow-hidden rounded-2xl bg-primary text-on-primary p-space-md shadow-sm flex flex-col justify-between min-h-[160px]">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-emerald-vivid/10 blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="text-label-sm font-label-sm text-mint-soft uppercase tracking-wider">Active Connections</span>
+<div class="flex items-baseline gap-2">
+<span class="font-kpi-metric text-kpi-metric font-bold text-on-primary">5</span>
+<span class="text-body-md font-body-md text-primary-fixed-dim font-medium">Connected</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary-container text-mint-soft flex items-center justify-center hover:bg-emerald-vivid hover:text-on-primary transition-all" title="View sync topologies" type="button">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 z-10 pt-2">
+<p class="text-body-sm font-body-sm text-mint-soft/90 line-clamp-1">Real-time sync active: 2 CRMs, 3 channels</p>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-pulse"></span>
+<span>All endpoints healthy</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Synced Leads Today -->
+<div class="rounded-2xl bg-shell-bg p-space-md shadow-sm flex flex-col justify-between min-h-[160px]">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="text-label-sm font-label-sm text-muted-gray uppercase tracking-wider">Synced Leads Today</span>
+<div class="flex items-baseline gap-2">
+<span class="font-kpi-metric text-kpi-metric font-bold text-on-surface">184</span>
+<span class="text-body-md font-body-md text-body-charcoal font-medium">Leads</span>
+</div>
+</div>
+<div class="flex items-center gap-1 px-2 py-1 rounded-full bg-mint-soft text-emerald-vivid text-label-sm font-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+28%</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-2">
+<span>Avg. sync latency</span>
+<span class="font-semibold text-primary font-mono">240ms</span>
+</div>
+</div>
+<!-- Card 3: Sync Reliability -->
+<div class="rounded-2xl bg-shell-bg p-space-md shadow-sm flex flex-col justify-between min-h-[160px]">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="text-label-sm font-label-sm text-muted-gray uppercase tracking-wider">Sync Reliability</span>
+<div class="flex items-baseline gap-2">
+<span class="font-kpi-metric text-kpi-metric font-bold text-on-surface">99.8%</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-xl bg-mint-tint flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 pt-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Payloads: 1,428 OK / 0 failed</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Auto-retry active</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-status-success rounded-full w-[99.8%]"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: Webhook Events -->
+<div class="rounded-2xl bg-shell-bg p-space-md shadow-sm flex flex-col justify-between min-h-[160px]">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="text-label-sm font-label-sm text-muted-gray uppercase tracking-wider">Webhook Events</span>
+<div class="flex items-baseline gap-2">
+<span class="font-kpi-metric text-kpi-metric font-bold text-on-surface">3,842</span>
+<span class="text-body-md font-body-md text-muted-gray">Events</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">webhook</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-2">
+<span>Standard webhooks</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-body-charcoal font-label-sm text-[11px] font-semibold">Starter Tier: Unlimited</span>
+</div>
+</div>
+</div>
+<!-- Category Filters, Search & View Controls -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-shell-bg p-space-sm rounded-2xl shadow-sm">
+<!-- Category Tabs (Interactive Pills) -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 lg:pb-0" id="filter-tabs">
+<button class="category-btn px-3.5 py-1.5 rounded-full text-label-md font-label-md bg-emerald-vivid text-on-primary transition-all" data-filter="all" type="button">
+          All Integrations <span class="ml-1 opacity-80">(12)</span>
+</button>
+<button class="category-btn px-3.5 py-1.5 rounded-full text-label-md font-label-md bg-surface-container-low text-body-charcoal hover:bg-mint-tint transition-all" data-filter="crm" type="button">
+          CRM <span class="ml-1 text-muted-gray">(4)</span>
+</button>
+<button class="category-btn px-3.5 py-1.5 rounded-full text-label-md font-label-md bg-surface-container-low text-body-charcoal hover:bg-mint-tint transition-all" data-filter="automation" type="button">
+          Automation <span class="ml-1 text-muted-gray">(2)</span>
+</button>
+<button class="category-btn px-3.5 py-1.5 rounded-full text-label-md font-label-md bg-surface-container-low text-body-charcoal hover:bg-mint-tint transition-all" data-filter="communication" type="button">
+          Communication <span class="ml-1 text-muted-gray">(2)</span>
+</button>
+<button class="category-btn px-3.5 py-1.5 rounded-full text-label-md font-label-md bg-surface-container-low text-body-charcoal hover:bg-mint-tint transition-all" data-filter="calendar" type="button">
+          Calendar <span class="ml-1 text-muted-gray">(2)</span>
+</button>
+<button class="category-btn px-3.5 py-1.5 rounded-full text-label-md font-label-md bg-surface-container-low text-body-charcoal hover:bg-mint-tint transition-all" data-filter="developer" type="button">
+          Developer &amp; Data <span class="ml-1 text-muted-gray">(2)</span>
+</button>
+</div>
+<!-- Search & Filters Right Group -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-xs">
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-muted-gray text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-1.5 text-body-sm font-body-sm rounded-xl bg-surface-container-low text-on-surface placeholder-muted-gray focus:bg-shell-bg focus:outline-none transition-all" id="search-input" placeholder="Filter apps... (⌘K)" type="text"/>
+</div>
+<div class="relative">
+<select class="appearance-none pl-3 pr-8 py-1.5 rounded-xl bg-surface-container-low text-body-sm font-label-md text-on-surface cursor-pointer focus:outline-none" id="status-filter">
+<option value="all">All Statuses</option>
+<option value="connected">Connected</option>
+<option value="available">Available</option>
+<option value="locked">Premium Plan</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-muted-gray text-[16px] pointer-events-none">expand_more</span>
+</div>
+<div class="relative hidden sm:block">
+<select class="appearance-none pl-3 pr-8 py-1.5 rounded-xl bg-surface-container-low text-body-sm font-label-md text-on-surface cursor-pointer focus:outline-none">
+<option>Popular First</option>
+<option>Alphabetical</option>
+<option>Recently Added</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-muted-gray text-[16px] pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Integration Cards Grid (12 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="cards-grid">
+<!-- Card A: HubSpot (Connected) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="crm" data-name="HubSpot" data-status="connected">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#FFF3EE] flex items-center justify-center text-[#FF7A59]">
+<span class="material-symbols-outlined text-[28px]">hub</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">HubSpot</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">CRM Sync</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-mint-soft text-emerald-vivid text-label-sm font-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+              Connected
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Two-way contact and deal synchronization. Automatically creates hot deals in HubSpot pipeline.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-mint-tint/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-emerald-vivid">schedule</span>
+<span>2m ago</span>
+</span>
+<span class="font-medium text-body-charcoal">142 synced today</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex-1 py-1.5 px-3 rounded-xl bg-shell-bg hover:bg-mint-tint text-primary font-label-md text-label-md shadow-sm transition-all text-center" type="button">
+              Configure
+            </button>
+<button class="w-9 h-9 rounded-xl bg-shell-bg hover:bg-surface-container flex items-center justify-center text-muted-gray shadow-sm transition-all" title="Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card B: Slack (Connected) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="communication" data-name="Slack" data-status="connected">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#F4EDE4] flex items-center justify-center text-[#4A154B]">
+<span class="material-symbols-outlined text-[28px]">tag</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Slack</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">Communication</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-mint-soft text-emerald-vivid text-label-sm font-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+              Connected
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Instant hot lead alerts with full qualification transcript to #sales-hot-leads and DM alerts.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-mint-tint/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span class="font-medium text-body-charcoal truncate max-w-[150px]">#sales-hot-leads</span>
+<span class="font-semibold text-emerald-vivid">74 alerts sent</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full py-1.5 px-3 rounded-xl bg-shell-bg hover:bg-mint-tint text-primary font-label-md text-label-md shadow-sm transition-all text-center" type="button">
+              Configure Channel
+            </button>
+</div>
+</div>
+</div>
+<!-- Card C: Webhooks (Connected) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="developer" data-name="Webhooks" data-status="connected">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">webhook</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Webhooks</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">Developer API</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-mint-soft text-emerald-vivid text-label-sm font-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+              Connected
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Real-time HTTPS POST payloads on lead qualified, conversation ended, or score updated.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-mint-tint/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span class="text-body-charcoal font-medium">1 endpoint active</span>
+<span class="font-mono text-emerald-vivid font-semibold">1.2ms latency</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full py-1.5 px-3 rounded-xl bg-shell-bg hover:bg-mint-tint text-primary font-label-md text-label-md shadow-sm transition-all text-center" type="button">
+              Manage (1 Active)
+            </button>
+</div>
+</div>
+</div>
+<!-- Card D: Email / SMTP (Connected) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="communication" data-name="Email SMTP" data-status="connected">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-mint-tint flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[28px]">alternate_email</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Email / SMTP</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">Communication</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-mint-soft text-emerald-vivid text-label-sm font-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+              Connected
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Transactional lead notifications and automated follow-up scheduling sent via your custom domain.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-mint-tint/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span class="font-mono text-body-charcoal truncate max-w-[170px]">northstardigital.com</span>
+<span class="text-emerald-vivid font-medium">DKIM OK</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full py-1.5 px-3 rounded-xl bg-shell-bg hover:bg-mint-tint text-primary font-label-md text-label-md shadow-sm transition-all text-center" type="button">
+              Settings
+            </button>
+</div>
+</div>
+</div>
+<!-- Card E: Google Sheets (Connected) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="developer" data-name="Google Sheets" data-status="connected">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#E8F8EE] flex items-center justify-center text-[#0F9D58]">
+<span class="material-symbols-outlined text-[28px]">table_chart</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Google Sheets</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">Developer &amp; Data</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-mint-soft text-emerald-vivid text-label-sm font-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+              Connected
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Appends qualified lead data, contact details, and intent breakdown to a live master spreadsheet.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-mint-tint/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span class="font-medium text-body-charcoal truncate max-w-[150px]">NovaLead Q4 Pipeline</span>
+<span class="font-mono text-emerald-vivid font-semibold">267 rows</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full flex items-center justify-center gap-1 py-1.5 px-3 rounded-xl bg-shell-bg hover:bg-mint-tint text-primary font-label-md text-label-md shadow-sm transition-all" type="button">
+<span>View Sheet</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card F: Zapier (Available) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="automation" data-name="Zapier" data-status="available">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#FFF2EB] flex items-center justify-center text-[#FF4A00]">
+<span class="material-symbols-outlined text-[28px]">electric_bolt</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Zapier</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">Automation</span>
+</div>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-body-charcoal text-label-sm font-label-sm font-semibold">
+              Available
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Connect NovaLead to 5,000+ apps. Trigger workflows when leads reach Hot or Warm thresholds.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span>Pre-built templates</span>
+<span class="text-primary font-medium">Instant trigger</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full py-1.5 px-3 rounded-full bg-emerald-vivid text-on-primary hover:bg-secondary font-label-md text-label-md shadow-sm transition-all text-center" type="button">
+              Connect
+            </button>
+</div>
+</div>
+</div>
+<!-- Card G: Make / Integromat (Available) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="automation" data-name="Make Integromat" data-status="available">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#F0E6FF] flex items-center justify-center text-[#6D28D9]">
+<span class="material-symbols-outlined text-[28px]">flowchart</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Make</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">Automation</span>
+</div>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-body-charcoal text-label-sm font-label-sm font-semibold">
+              Available
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Visual automated scenarios for complex multi-branch routing, data enrichment, and ERP updates.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span>Official app template</span>
+<span class="text-primary font-medium">Webhook based</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full py-1.5 px-3 rounded-full bg-emerald-vivid text-on-primary hover:bg-secondary font-label-md text-label-md shadow-sm transition-all text-center" type="button">
+              Connect
+            </button>
+</div>
+</div>
+</div>
+<!-- Card H: Google Calendar (Available) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="calendar" data-name="Google Calendar" data-status="available">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#E8F0FE] flex items-center justify-center text-[#1A73E8]">
+<span class="material-symbols-outlined text-[28px]">calendar_month</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Google Calendar</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">Calendar</span>
+</div>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-body-charcoal text-label-sm font-label-sm font-semibold">
+              Available
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Allow qualified leads to book discovery calls and demos directly within the NovaLead chat widget.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span>Round-robin scheduling</span>
+<span class="text-primary font-medium">Auto-detects rep</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full py-1.5 px-3 rounded-full bg-emerald-vivid text-on-primary hover:bg-secondary font-label-md text-label-md shadow-sm transition-all text-center" type="button">
+              Connect
+            </button>
+</div>
+</div>
+</div>
+<!-- Card I: Microsoft Calendar (Available) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="calendar" data-name="Microsoft Calendar Outlook" data-status="available">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#E6F2FA] flex items-center justify-center text-[#0078D4]">
+<span class="material-symbols-outlined text-[28px]">event</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Microsoft Calendar</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">Calendar</span>
+</div>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-body-charcoal text-label-sm font-label-sm font-semibold">
+              Available
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Synchronize Outlook and Microsoft 365 calendar bookings seamlessly for enterprise sales teams.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span>Outlook 365 &amp; Exchange</span>
+<span class="text-primary font-medium">Multi-tenant</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full py-1.5 px-3 rounded-full bg-emerald-vivid text-on-primary hover:bg-secondary font-label-md text-label-md shadow-sm transition-all text-center" type="button">
+              Connect
+            </button>
+</div>
+</div>
+</div>
+<!-- Card J: Salesforce (Premium Locked) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="crm" data-name="Salesforce CRM" data-status="locked">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#EAF5FE] flex items-center justify-center text-[#00A1E0]">
+<span class="material-symbols-outlined text-[28px]">cloud_sync</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Salesforce</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">Enterprise CRM</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary text-secondary-fixed text-label-sm font-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+              Premium Plan
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Enterprise bi-directional sync with Salesforce Lead, Contact, and Opportunity custom objects.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span>Requires Premium Plan</span>
+<span class="text-status-warm font-medium">Locked</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-full bg-mint-soft text-primary hover:bg-mint-tint font-label-md text-label-md font-semibold transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+<span>Upgrade to Unlock</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card K: Zoho CRM (Available) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="crm" data-name="Zoho CRM" data-status="available">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#FFF8E6] flex items-center justify-center text-[#E01E5A]">
+<span class="material-symbols-outlined text-[28px]">contacts</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Zoho CRM</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">CRM Sync</span>
+</div>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-body-charcoal text-label-sm font-label-sm font-semibold">
+              Available
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Sync lead records, deal stages, and custom qualification fields into Zoho Bigin or Zoho CRM.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span>REST API v2</span>
+<span class="text-primary font-medium">Bi-directional</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full py-1.5 px-3 rounded-full bg-emerald-vivid text-on-primary hover:bg-secondary font-label-md text-label-md shadow-sm transition-all text-center" type="button">
+              Connect
+            </button>
+</div>
+</div>
+</div>
+<!-- Card L: Pipedrive (Available) -->
+<div class="integration-card flex flex-col justify-between rounded-2xl bg-shell-bg p-space-md shadow-sm hover:shadow-md transition-all group" data-category="crm" data-name="Pipedrive" data-status="available">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#EDF9F0] flex items-center justify-center text-[#017737]">
+<span class="material-symbols-outlined text-[28px]">view_kanban</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Pipedrive</h2>
+<span class="inline-block text-[11px] font-label-sm uppercase tracking-wider text-muted-gray">Pipeline CRM</span>
+</div>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-body-charcoal text-label-sm font-label-sm font-semibold">
+              Available
+            </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+            Create visual pipeline deals and schedule automated sales activities when leads qualify.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-md rounded-b-2xl">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-muted-gray">
+<span>Activity creation</span>
+<span class="text-primary font-medium">Smart mapping</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-full py-1.5 px-3 rounded-full bg-emerald-vivid text-on-primary hover:bg-secondary font-label-md text-label-md shadow-sm transition-all text-center" type="button">
+              Connect
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Developer API Hero Banner -->
+<div class="relative overflow-hidden rounded-3xl bg-primary text-on-primary p-space-xl shadow-md">
+<!-- Decorative Backdrop Graphic -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-emerald-vivid/15 blur-3xl pointer-events-none"></div>
+<div class="absolute right-10 bottom-0 opacity-10 pointer-events-none hidden md:block">
+<svg fill="none" height="180" viewbox="0 0 240 180" width="240" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 90H80L110 30L140 150L170 90H220" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+</svg>
+</div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container text-secondary-fixed text-label-sm font-label-sm w-fit">
+<span class="material-symbols-outlined text-[14px]">code</span>
+<span>Developer Core &amp; Webhook Engine</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-primary font-bold">
+            Need a custom integration or internal ERP sync?
+          </h2>
+<p class="font-body-md text-body-md text-mint-soft/90">
+            Use our robust REST API and signed webhook endpoints to stream qualified lead events, transcripts, and qualification telemetry directly into your proprietary database.
+          </p>
+</div>
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-xs shrink-0">
+<button class="px-5 py-2.5 rounded-xl bg-shell-bg text-primary hover:bg-mint-tint font-label-md text-label-md font-semibold shadow-sm transition-all" type="button">
+            Generate API Key
+          </button>
+<a class="flex items-center gap-1 px-5 py-2.5 rounded-xl bg-primary-container hover:bg-emerald-vivid text-on-primary font-label-md text-label-md font-semibold transition-all" href="#docs">
+<span>Read Documentation</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Marketplace Footer Meta -->
+<div class="flex flex-col sm:flex-row items-center justify-between text-body-sm font-body-sm text-muted-gray pt-space-xs">
+<span id="showing-count">Showing 12 of 12 integrations</span>
+<span>NovaLead integrates natively with your existing sales &amp; marketing stack.</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('search-input');
+    const statusFilter = document.getElementById('status-filter');
+    const filterTabs = document.querySelectorAll('.category-btn');
+    const cards = document.querySelectorAll('.integration-card');
+    const showingCount = document.getElementById('showing-count');
+
+    let currentCategory = 'all';
+    let currentStatus = 'all';
+    let searchQuery = '';
+
+    function updateGrid() {
+      let visibleCount = 0;
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        const stat = card.getAttribute('data-status');
+        const name = card.getAttribute('data-name').toLowerCase();
+
+        const matchesCat = (currentCategory === 'all' || cat === currentCategory);
+        const matchesStatus = (currentStatus === 'all' || stat === currentStatus);
+        const matchesSearch = (!searchQuery || name.includes(searchQuery));
+
+        if (matchesCat && matchesStatus && matchesSearch) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (showingCount) {
+        showingCount.textContent = `Showing ${visibleCount} of 12 integrations`;
+      }
+    }
+
+    filterTabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterTabs.forEach(b => {
+          b.className = 'category-btn px-3.5 py-1.5 rounded-full text-label-md font-label-md bg-surface-container-low text-body-charcoal hover:bg-mint-tint transition-all';
+        });
+        btn.className = 'category-btn px-3.5 py-1.5 rounded-full text-label-md font-label-md bg-emerald-vivid text-on-primary transition-all';
+        currentCategory = btn.getAttribute('data-filter');
+        updateGrid();
+      });
+    });
+
+    if (statusFilter) {
+      statusFilter.addEventListener('change', (e) => {
+        currentStatus = e.target.value;
+        updateGrid();
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        updateGrid();
+      });
+
+      window.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          searchInput.focus();
+        }
+      });
+    }
+  })();
+</script></main></div></div></body></html>

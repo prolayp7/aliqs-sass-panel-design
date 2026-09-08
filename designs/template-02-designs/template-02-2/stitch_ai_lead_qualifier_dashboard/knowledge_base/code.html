@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#171d1a","status-success":"#15945F","mint-tint":"#F0FAF5","on-secondary-fixed":"#002112","on-secondary":"#ffffff","canvas-bg":"#F2F4F3","status-cold":"#6F8E9E","surface-container":"#e9efea","tertiary-container":"#003c25","tertiary-fixed":"#8ef7c0","surface":"#f5fbf5","on-secondary-fixed-variant":"#005233","surface-container-low":"#eff5f0","on-tertiary-container":"#43af7d","inverse-surface":"#2c322e","shell-bg":"#FFFFFF","surface-dim":"#d5dcd6","primary-fixed":"#bdedd4","on-primary-fixed-variant":"#224f3d","secondary-fixed":"#99f6c2","status-hot":"#E55252","surface-tint":"#3b6753","secondary-container":"#99f6c2","on-primary-container":"#78a68f","on-primary-fixed":"#002115","mint-soft":"#DCF4E8","on-secondary-container":"#02734a","muted-gray":"#8A938E","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#005234","surface-container-highest":"#dee4df","on-error":"#ffffff","on-background":"#171d1a","on-tertiary":"#ffffff","status-warm":"#E9A23B","secondary-fixed-dim":"#7dd9a7","background":"#f5fbf5","border-subtle":"#DDE2DF","inverse-primary":"#a2d1b9","surface-bright":"#f5fbf5","outline":"#717973","secondary":"#006c45","tertiary":"#002415","on-surface-variant":"#414944","tertiary-fixed-dim":"#71dba5","inverse-on-surface":"#ecf2ed","surface-container-high":"#e4eae4","error-container":"#ffdad6","surface-variant":"#dee4df","primary-container":"#0b3b2a","on-error-container":"#93000a","error":"#ba1a1a","on-tertiary-fixed":"#002112","outline-variant":"#c0c8c2","on-primary":"#ffffff","body-charcoal":"#3E4742","primary-fixed-dim":"#a2d1b9","emerald-vivid":"#15945F","primary":"#002417"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.5rem","space-2xl":"2.5rem","space-3xl":"3rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","shell-padding":"2rem","gutter-tablet":"1rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-2xs":"0.25rem","space-xl":"2rem"},"fontFamily":{"label-md":["Inter"],"kpi-metric":["Manrope"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Manrope"],"headline-sm":["Manrope"],"body-sm":["Inter"],"body-md":["Inter"],"display-lg":["Manrope"],"headline-md":["Manrope"]},"fontSize":{"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"kpi-metric":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased min-h-screen"><div class="p-gutter-mobile lg:p-gutter-desktop min-h-screen flex"><div class="w-full rounded-[24px] bg-shell-bg shadow-[0_8px_32px_-4px_rgba(11,59,42,0.05),0_2px_8px_-2px_rgba(17,23,20,0.03)] border border-border-subtle flex relative overflow-hidden"><aside class="w-64 flex-shrink-0 bg-shell-bg border-r border-border-subtle flex flex-col justify-between h-auto py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="NovaLead Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U_RVWV9ukk3tUR50J2SFd0itvU9dlX7o1A9fwm0wprNWdIyFnoq8sezQTdb0HgP2Po9iKsE0S8zozl9C4DV8nv1tDCSvX5wPShj2kRgGMqL2y0hvOejE1VMoBLbEzsYpUXESUaK3Ui0rtTEpTl40fhJC5zX3970t55eATUaLoUb6Nuj33LwyUbrCGKZNqYaz8z3ryi3zcO9grKYQPTngsFy4DvIJ2ICTC6f4mtC2OOH6kAs48xwjt6Tlw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">NovaLead</span></div><button class="flex items-center justify-between px-space-xs py-space-2xs rounded-lg bg-surface-container-low text-body-sm font-label-sm text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="flex items-center gap-1.5 truncate"><span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>Northstar Digital</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">Menu</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="dashboard" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="inbox" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">chat</span><span class="font-body-md">Inbox</span></div><span class="px-1.5 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[10px] font-bold">12+</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md">Leads</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-body-md">Follow-ups</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-body-md">AI Agent</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-body-md">Qualification</span></a><a aria-current="page" class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg transition-all bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px] text-emerald-vivid">menu_book</span><span class="font-body-md">Knowledge Base</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-body-md">Websites &amp; Widget</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="automations" href="#"><span class="material-symbols-outlined text-[20px]">account_tree</span><span class="font-body-md">Automations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span class="font-body-md">Analytics</span></a></nav></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">General</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-body-md">Integrations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md">Team</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-body-md">Notifications</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md">Billing &amp; Usage</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md">Settings</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-body-md">Help</span></a></nav></div></div><div class="px-space-md pt-space-xs"><div class="rounded-xl bg-gradient-to-br from-primary-container to-primary p-space-sm text-on-primary flex flex-col gap-space-xs shadow-[0_6px_20px_-2px_rgba(11,59,42,0.18)]"><div class="flex items-center justify-between"><span class="text-[11px] font-semibold text-mint-soft tracking-wide">Starter Plan</span><span class="text-[11px] text-muted-gray">74%</span></div><div class="text-body-sm font-label-md text-on-primary font-medium">742 / 1,000 Conv.</div><div class="w-full h-1.5 bg-tertiary-container rounded-full overflow-hidden"><div class="h-full bg-status-success rounded-full w-[74%]"></div></div><div class="pt-1 flex items-center justify-between"><span class="text-[10px] text-mint-soft/80">Renews in 11 days</span><button class="px-space-xs py-1 rounded-full bg-status-success text-on-secondary text-[11px] font-semibold hover:opacity-90 transition-opacity" type="button">Upgrade</button></div></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-shell-bg"><header class="h-16 px-space-lg border-b border-border-subtle flex items-center justify-between gap-space-md bg-shell-bg sticky top-0 z-30"><div class="flex-1 max-w-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-muted-gray text-[20px]">search</span><input class="w-full pl-10 pr-12 py-2 text-body-sm rounded-xl border border-border-subtle bg-mint-tint/40 text-on-surface placeholder-muted-gray focus:bg-shell-bg focus:border-status-success focus:ring-2 focus:ring-mint-soft focus:outline-none transition-all" placeholder="Search leads, visitors, conversations..." type="text"/><div class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container border border-border-subtle text-[10px] font-medium text-muted-gray font-mono">⌘F</div></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mint-tint border border-border-subtle text-body-sm font-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-status-success"></span><span>northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span></div><div class="flex items-center gap-1"><button aria-label="Inbox notifications" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">mail</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-hot ring-2 ring-shell-bg"></span></button><button aria-label="Alerts" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-warm ring-2 ring-shell-bg"></span></button></div><div class="h-7 w-[1px] bg-border-subtle"></div><div class="flex items-center gap-space-xs pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-border-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKLyyv5oEThrEBK1kOu9d885WSHu5uMzQZFjJgLQyPXiuwk00YS1a4M9jxQFjd2-Ksr-reE136uCll9DfVL8cG0xBKycJoDKuGo0FJZUwlrdjPN61HSOywTH_n4y-5T9Q6VjSve9C_nLz2XTYQINf0qNoy_le1JK7kxVM4ZeMQR4UOI2C3ZCdFelpZGdbsgEzTLBKGui_o9DTRuE1oTClDxKTVXiLDglubfPzeWDXLM7eyAbv7gBT_"/><div class="hidden xl:flex flex-col text-left"><span class="text-body-sm font-semibold text-on-surface leading-tight">Maya Singh</span><span class="text-[11px] text-muted-gray leading-tight">Product Lead</span></div></div></div></header><main class="flex-1 p-space-lg bg-shell-bg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Page Header & Global Knowledge Controls -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Knowledge Base</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-mint-tint text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-pulse"></span>
+          Vector Sync Active · 14 mins ago
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Manage indexed company assets, website sitemaps, documents, and product catalog to train AI Agent Nova.
+      </p>
+</div>
+<div class="flex items-center gap-space-xs sm:gap-space-sm flex-wrap">
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-all" id="btn-reindex-all" type="button">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-700" id="sync-icon">sync</span>
+<span>Re-index All Sources</span>
+</button>
+<div class="relative inline-block text-left" id="add-source-dropdown-wrapper">
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-full bg-emerald-vivid text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 transition-all" id="btn-add-source" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Add Knowledge Source</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<!-- Dropdown Menu (Hidden by default) -->
+<div class="hidden absolute right-0 mt-2 w-56 rounded-xl bg-surface-container-lowest shadow-xl z-40 py-1.5 focus:outline-none" id="add-source-menu">
+<button class="w-full text-left flex items-center gap-2.5 px-4 py-2.5 text-on-surface font-body-sm text-body-sm hover:bg-mint-tint transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">language</span>
+<span>Crawl Website URL</span>
+</button>
+<button class="w-full text-left flex items-center gap-2.5 px-4 py-2.5 text-on-surface font-body-sm text-body-sm hover:bg-mint-tint transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">upload_file</span>
+<span>Upload Documents (PDF, DOCX)</span>
+</button>
+<button class="w-full text-left flex items-center gap-2.5 px-4 py-2.5 text-on-surface font-body-sm text-body-sm hover:bg-mint-tint transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">question_answer</span>
+<span>Add Structured FAQ Pair</span>
+</button>
+<button class="w-full text-left flex items-center gap-2.5 px-4 py-2.5 text-on-surface font-body-sm text-body-sm hover:bg-mint-tint transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">inventory_2</span>
+<span>Sync Catalog API</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- KPI Row (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- 1. Knowledge Readiness (Emerald Focus Card) -->
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-container via-[#0e4431] to-primary p-space-lg text-on-primary shadow-sm flex flex-col justify-between">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-emerald-vivid/10 pointer-events-none blur-2xl"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase font-bold tracking-wider text-mint-soft">Readiness Benchmark</span>
+<span class="font-headline-sm text-headline-sm text-on-primary mt-0.5">Knowledge Readiness</span>
+</div>
+<button aria-label="Inspect Readiness Metrics" class="w-9 h-9 rounded-full bg-tertiary-container flex items-center justify-center text-mint-soft hover:bg-emerald-vivid hover:text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</button>
+</div>
+<div class="my-space-md flex items-baseline gap-space-sm">
+<span class="font-display-lg text-display-lg font-bold text-mint-soft tracking-tight">92%</span>
+<div class="flex items-center gap-1 text-[11px] font-semibold text-emerald-vivid bg-primary/40 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+4%</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-mint-soft/80">
+<span>From last crawl</span>
+<span class="font-semibold text-mint-soft">High Precision</span>
+</div>
+</div>
+<!-- 2. Connected Sources -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase font-bold tracking-wider text-muted-gray">Repository Scope</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Total Sources</span>
+</div>
+<button aria-label="View All Sources" class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-body-charcoal hover:bg-mint-soft hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</button>
+</div>
+<div class="my-space-md flex items-baseline gap-space-xs">
+<span class="font-kpi-metric text-kpi-metric text-primary">38</span>
+<span class="font-body-sm text-body-sm text-muted-gray">channels</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-body-sm text-on-surface-variant">
+<span>28 Web · 6 Docs · 3 FAQ</span>
+<span class="font-label-sm text-label-sm text-secondary">1 Catalog</span>
+</div>
+</div>
+<!-- 3. Indexed Pages & Chunks -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase font-bold tracking-wider text-muted-gray">Vector Density</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Indexed Pages</span>
+</div>
+<button aria-label="Inspect Embedding Breakdown" class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-body-charcoal hover:bg-mint-soft hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</button>
+</div>
+<div class="my-space-md flex items-baseline gap-space-xs">
+<span class="font-kpi-metric text-kpi-metric text-primary">486</span>
+<span class="font-body-sm text-body-sm text-muted-gray">pages</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-body-sm text-on-surface-variant">
+<span>3,412 Vector Embeddings</span>
+<span class="px-1.5 py-0.5 rounded bg-mint-tint font-label-sm text-label-sm text-status-success font-semibold">Active</span>
+</div>
+</div>
+<!-- 4. Needing Attention -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase font-bold tracking-wider text-muted-gray">Health Alerts</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Needs Attention</span>
+</div>
+<span class="w-9 h-9 rounded-full bg-error-container/40 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</span>
+</div>
+<div class="my-space-md flex items-baseline gap-space-xs">
+<span class="font-kpi-metric text-kpi-metric text-status-hot">3</span>
+<span class="font-body-sm text-body-sm text-muted-gray">issues detected</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-body-sm text-on-surface-variant">
+<span>2 Outdated links</span>
+<span class="px-2 py-0.5 rounded-full bg-[#FDE8E8] text-status-hot font-label-sm text-label-sm font-semibold">1 Failed</span>
+</div>
+</div>
+</div>
+<!-- Source Category Navigation Tabs & Filtering System -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center overflow-x-auto no-scrollbar gap-2 pb-1 border-b border-border-subtle">
+<button class="tab-pill px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary transition-all whitespace-nowrap" data-filter="all" type="button">
+        All Sources <span class="ml-1 opacity-80">(38)</span>
+</button>
+<button class="tab-pill px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all whitespace-nowrap" data-filter="website" type="button">
+        Website Crawl <span class="ml-1 text-muted-gray">(28)</span>
+</button>
+<button class="tab-pill px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all whitespace-nowrap" data-filter="document" type="button">
+        Documents &amp; Files <span class="ml-1 text-muted-gray">(6)</span>
+</button>
+<button class="tab-pill px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all whitespace-nowrap" data-filter="faq" type="button">
+        FAQs &amp; Q&amp;A <span class="ml-1 text-muted-gray">(3)</span>
+</button>
+<button class="tab-pill px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all whitespace-nowrap" data-filter="catalog" type="button">
+        Products &amp; Services <span class="ml-1 text-muted-gray">(1)</span>
+</button>
+</div>
+<!-- Search & Secondary Filter Bar -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-2.5 text-muted-gray text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-2 text-body-sm font-body-sm rounded-xl bg-surface-container-low text-on-surface placeholder-muted-gray focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-mint-soft transition-all" id="knowledge-search-input" placeholder="Filter sources by name, URL, or tag..." type="text"/>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2 rounded-xl bg-surface-container-low text-body-sm font-body-sm text-body-charcoal focus:outline-none cursor-pointer hover:bg-surface-container transition-colors" id="status-select">
+<option value="all">Status: All</option>
+<option value="ready">Ready</option>
+<option value="processing">Processing</option>
+<option value="failed">Failed / Attention</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 pointer-events-none text-muted-gray text-[18px]">expand_more</span>
+</div>
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2 rounded-xl bg-surface-container-low text-body-sm font-body-sm text-body-charcoal focus:outline-none cursor-pointer hover:bg-surface-container transition-colors" id="sort-select">
+<option value="synced">Sort by: Last Synced</option>
+<option value="queries">Sort by: Highest Queries</option>
+<option value="pages">Sort by: Page Count</option>
+<option value="alpha">Sort by: Source Name</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 pointer-events-none text-muted-gray text-[18px]">expand_more</span>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-mint-soft text-primary font-label-sm text-label-sm hover:bg-secondary-fixed transition-colors" id="bulk-crawl-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>Bulk Re-crawl</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Layout Grid: 8 Cols Left (Table), 4 Cols Right (Insights & Health) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Source Management Table (8 cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="sources-table">
+<thead>
+<tr class="bg-surface-container-low text-[11px] font-bold uppercase tracking-wider text-muted-gray border-b border-border-subtle">
+<th class="py-3 px-4">Source Name &amp; Type</th>
+<th class="py-3 px-4">URL / File Path</th>
+<th class="py-3 px-4">Status</th>
+<th class="py-3 px-4">Pages / Chunks</th>
+<th class="py-3 px-4">Last Synced</th>
+<th class="py-3 px-4 text-right">Queries</th>
+<th class="py-3 px-4 text-center">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-subtle text-body-sm font-body-sm text-on-surface" id="sources-tbody">
+<!-- Row 1: Northstar Main Marketing Site -->
+<tr class="source-row hover:bg-mint-tint/40 transition-colors" data-status="ready" data-type="website">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-mint-tint text-emerald-vivid flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">language</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary truncate">Northstar Main Site</span>
+<span class="text-[11px] text-muted-gray">Website Crawl</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono text-body-sm text-secondary truncate max-w-[170px]" title="https://northstardigital.com">
+                  https://northstardigital.com
+                </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                    Ready
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-body-charcoal">142 pgs</td>
+<td class="py-3.5 px-4 text-muted-gray whitespace-nowrap">14 mins ago</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">1,840</td>
+<td class="py-3.5 px-4 text-center">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-mint-soft hover:text-secondary transition-colors" title="Re-crawl Website" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-surface-container transition-colors" title="Settings" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Enterprise Solutions & Case Studies -->
+<tr class="source-row hover:bg-mint-tint/40 transition-colors" data-status="ready" data-type="website">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-mint-tint text-emerald-vivid flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">language</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary truncate">Enterprise Solutions</span>
+<span class="text-[11px] text-muted-gray">Website Crawl</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono text-body-sm text-secondary truncate max-w-[170px]" title="/solutions/enterprise">
+                  /solutions/enterprise
+                </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                    Ready
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-body-charcoal">68 pgs</td>
+<td class="py-3.5 px-4 text-muted-gray whitespace-nowrap">2 hours ago</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">920</td>
+<td class="py-3.5 px-4 text-center">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-mint-soft hover:text-secondary transition-colors" title="Re-crawl" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-surface-container transition-colors" title="Settings" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Pricing Matrix 2025 (Amber attention) -->
+<tr class="source-row hover:bg-mint-tint/40 transition-colors" data-status="failed" data-type="document">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-[#FEF3E6] text-status-warm flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary truncate">Northstar Pricing 2025</span>
+<span class="text-[11px] text-muted-gray">Document PDF</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono text-body-sm text-body-charcoal truncate max-w-[170px]" title="pricing-enterprise-v2.pdf">
+                  pricing-enterprise-v2.pdf
+                </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#FEF3E6] text-status-warm font-label-sm text-label-sm" title="Missing Tier 3 Custom SLA details">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warm"></span>
+                    Needs Attention
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-body-charcoal">18 pgs</td>
+<td class="py-3.5 px-4 text-muted-gray whitespace-nowrap">1 day ago</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">612</td>
+<td class="py-3.5 px-4 text-center">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-status-warm hover:bg-[#FEF3E6] transition-colors" title="Update Doc / Re-index" type="button">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+</button>
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-surface-container transition-colors" title="Settings" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Service Scope & Deliverables -->
+<tr class="source-row hover:bg-mint-tint/40 transition-colors" data-status="ready" data-type="document">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-mint-tint text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary truncate">Service Scope &amp; Deliverables</span>
+<span class="text-[11px] text-muted-gray">Document Deck</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono text-body-sm text-body-charcoal truncate max-w-[170px]" title="services-architecture-deck.pdf">
+                  services-arch-deck.pdf
+                </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                    Ready
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-body-charcoal">45 pgs</td>
+<td class="py-3.5 px-4 text-muted-gray whitespace-nowrap">3 days ago</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">440</td>
+<td class="py-3.5 px-4 text-center">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-mint-soft hover:text-secondary transition-colors" title="Re-index" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-surface-container transition-colors" title="Settings" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Objection Handling & BANT Playbook -->
+<tr class="source-row hover:bg-mint-tint/40 transition-colors" data-status="ready" data-type="faq">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-mint-tint text-emerald-vivid flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">question_answer</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary truncate">Objection &amp; BANT FAQ</span>
+<span class="text-[11px] text-muted-gray">FAQ Playbook</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-charcoal truncate max-w-[170px]" title="36 Q&amp;As configured">
+                  36 curated Q&amp;As
+                </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                    Ready
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-body-charcoal">36 chks</td>
+<td class="py-3.5 px-4 text-muted-gray whitespace-nowrap">4 days ago</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">1,120</td>
+<td class="py-3.5 px-4 text-center">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-mint-soft hover:text-secondary transition-colors" title="Edit FAQs" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-surface-container transition-colors" title="Settings" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Legacy Pilot Terms 2024 (Sync Failed) -->
+<tr class="source-row hover:bg-mint-tint/40 transition-colors" data-status="failed" data-type="website">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-[#FDE8E8] text-status-hot flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">link_off</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary truncate">Legacy Pilot Terms</span>
+<span class="text-[11px] text-muted-gray">Website Crawl</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono text-body-sm text-muted-gray truncate max-w-[170px]" title="/legal/pilot-agreement-v1">
+                  /legal/pilot-agreement-v1
+                </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#FDE8E8] text-status-hot font-label-sm text-label-sm" title="404 Not Found response">
+<span class="w-1.5 h-1.5 rounded-full bg-status-hot"></span>
+                    Sync Failed
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-muted-gray">0 pgs</td>
+<td class="py-3.5 px-4 text-muted-gray whitespace-nowrap">6 hrs ago</td>
+<td class="py-3.5 px-4 text-right font-semibold text-muted-gray">0</td>
+<td class="py-3.5 px-4 text-center">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-status-hot hover:bg-[#FDE8E8] transition-colors" title="Retry Crawl" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+</button>
+<button class="p-1.5 rounded-lg text-muted-gray hover:bg-[#FDE8E8] hover:text-status-hot transition-colors" title="Delete Source" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Product & Service Tier Catalog (Processing) -->
+<tr class="source-row hover:bg-mint-tint/40 transition-colors" data-status="processing" data-type="catalog">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-mint-tint text-emerald-vivid flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] animate-spin">autorenew</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary truncate">Product Catalog API</span>
+<span class="text-[11px] text-muted-gray">Catalog Integration</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono text-body-sm text-secondary truncate max-w-[170px]" title="catalog.northstardigital.com/api">
+                  catalog.northstardigital.com
+                </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-vivid animate-pulse"></span>
+                    Indexing 84/120
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-body-charcoal">77 pgs</td>
+<td class="py-3.5 px-4 text-emerald-vivid font-semibold whitespace-nowrap">Syncing now</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">210</td>
+<td class="py-3.5 px-4 text-center">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-surface-container transition-colors" title="Cancel or Pause" type="button">
+<span class="material-symbols-outlined text-[18px]">pause</span>
+</button>
+<button class="p-1.5 rounded-lg text-body-charcoal hover:bg-surface-container transition-colors" title="Settings" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-low border-t border-border-subtle">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+            Showing <span class="font-semibold text-on-surface">7</span> of <span class="font-semibold text-on-surface">38</span> sources
+          </div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-muted-gray flex items-center justify-center hover:bg-surface-container transition-colors" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center" type="button">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-body-charcoal font-label-sm text-label-sm flex items-center justify-center hover:bg-surface-container transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-body-charcoal font-label-sm text-label-sm flex items-center justify-center hover:bg-surface-container transition-colors" type="button">3</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-body-charcoal flex items-center justify-center hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Tips Bar -->
+<div class="flex items-center justify-between gap-space-sm p-space-md rounded-2xl bg-mint-tint border border-border-subtle text-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-emerald-vivid">tips_and_updates</span>
+<span>Automatic continuous crawl runs daily at 02:00 UTC for verified website domains.</span>
+</div>
+<button class="font-label-sm text-label-sm text-emerald-vivid font-semibold hover:underline whitespace-nowrap" type="button">Configure Schedule</button>
+</div>
+</div>
+<!-- Right Column: Insights, Gaps & Sync Health (4 cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- 1. Dark Forest Insight Card (Signature Card) -->
+<div class="relative overflow-hidden rounded-2xl p-space-lg text-on-primary shadow-lg flex flex-col justify-between" style="background: linear-gradient(145deg, #123E2C 0%, #062A1D 100%);">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary/80 font-label-sm text-label-sm text-mint-soft">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warm animate-ping"></span>
+              AI Knowledge Gap Detected
+            </span>
+<span class="material-symbols-outlined text-[20px] text-mint-soft/80">auto_fix_high</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-primary leading-tight mt-1">
+            Missing Enterprise Pricing &amp; Custom SLA Content
+          </h2>
+<p class="font-body-sm text-body-sm text-mint-soft/90 leading-relaxed">
+            Nova encountered <span class="font-semibold text-on-primary">48 visitor queries</span> this week asking about custom annual commitments and dedicated VPC deployment pricing that lack verified documentation. Adding this info could improve autonomous qualification resolution by <span class="text-emerald-vivid font-bold">~8.5%</span>.
+          </p>
+<div class="p-space-sm rounded-xl bg-primary-container/80 text-mint-soft flex flex-col gap-1 border border-primary-container">
+<span class="text-[10px] uppercase font-bold tracking-wider text-muted-gray">Sample Unanswered Lead Query:</span>
+<span class="italic font-body-sm text-body-sm text-on-primary">
+              “What is the starting price for 100k+ monthly visitors with SOC2 Type II SLA?”
+            </span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col gap-2">
+<button class="w-full py-2.5 px-space-md rounded-full bg-emerald-vivid text-on-primary font-label-md text-label-md font-semibold hover:opacity-95 shadow transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Add Pricing Documentation</span>
+</button>
+<button class="text-center font-label-sm text-label-sm text-mint-soft hover:underline py-1" type="button">
+            View 48 unhandled queries →
+          </button>
+</div>
+</div>
+<!-- 2. Knowledge Corpus Health Card -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase font-bold tracking-wider text-muted-gray">Model Telemetry</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Corpus Health</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-emerald-vivid">health_and_safety</span>
+</div>
+<!-- Semicircular SVG Gauge -->
+<div class="flex flex-col items-center justify-center relative pt-2">
+<div class="w-48 h-28 relative flex items-end justify-center">
+<svg class="w-48 h-28 overflow-visible" viewbox="0 0 100 55">
+<!-- Background Arc -->
+<path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#e9efea" stroke-linecap="round" stroke-width="8"></path>
+<!-- Active Arc: 92% of arc length (~116 total stroke length) -->
+<path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#15945F" stroke-dasharray="125.6" stroke-dashoffset="10.0" stroke-linecap="round" stroke-width="8"></path>
+</svg>
+<div class="absolute bottom-1 flex flex-col items-center">
+<span class="font-display-lg text-display-lg text-primary leading-none font-bold">92%</span>
+<span class="text-[10px] font-semibold text-muted-gray uppercase tracking-wider mt-1">Readiness</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Details List -->
+<div class="flex flex-col gap-2.5 pt-1 divide-y divide-border-subtle text-body-sm font-body-sm">
+<div class="flex items-center justify-between pt-2">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-muted-gray">memory</span>
+<span>Vector Provider</span>
+</span>
+<span class="font-mono text-[11px] font-semibold text-primary">text-emb-3 (1536d)</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-status-warm">help_outline</span>
+<span>Unanswered / Week</span>
+</span>
+<span class="font-semibold text-status-warm">14 queries (Low)</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">verified_user</span>
+<span>Hallucination Rate</span>
+</span>
+<span class="font-semibold text-status-success">&lt; 0.2%</span>
+</div>
+</div>
+</div>
+<!-- 3. Quick Add Source Drag & Drop Zone -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<span class="text-[10px] uppercase font-bold tracking-wider text-muted-gray">Direct Ingestion</span>
+<div class="rounded-xl border-2 border-dashed border-border-subtle hover:border-emerald-vivid bg-mint-tint/30 hover:bg-mint-tint/70 p-space-md flex flex-col items-center justify-center text-center cursor-pointer transition-all" id="drop-zone">
+<div class="w-12 h-12 rounded-full bg-mint-soft text-emerald-vivid flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<span class="font-label-md text-label-md text-primary">Drop PDF, CSV, DOCX or URL</span>
+<p class="font-body-sm text-body-sm text-muted-gray mt-1 max-w-xs">
+            Auto-chunked, embedded, and mapped to vector clusters in seconds.
+          </p>
+<input accept=".pdf,.doc,.docx,.csv,.txt" class="hidden" id="file-upload" multiple="" type="file"/>
+<button class="mt-3 px-4 py-1.5 rounded-full bg-surface-container-lowest border border-border-subtle font-label-sm text-label-sm text-primary hover:bg-mint-tint hover:border-status-success transition-all" id="browse-btn" type="button">
+            Browse Local Files
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tab Pill Switching
+  const tabPills = document.querySelectorAll('.tab-pill');
+  const rows = document.querySelectorAll('.source-row');
+
+  tabPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      tabPills.forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary');
+        p.classList.add('text-on-surface-variant', 'hover:bg-surface-container-low');
+      });
+      pill.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-low');
+      pill.classList.add('bg-primary', 'text-on-primary');
+
+      const filter = pill.getAttribute('data-filter');
+      rows.forEach(row => {
+        if (filter === 'all' || row.getAttribute('data-type') === filter) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Search Filter
+  const searchInput = document.getElementById('knowledge-search-input');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const val = e.target.value.toLowerCase().trim();
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        if (text.includes(val)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  }
+
+  // Status Filter
+  const statusSelect = document.getElementById('status-select');
+  if (statusSelect) {
+    statusSelect.addEventListener('change', (e) => {
+      const val = e.target.value;
+      rows.forEach(row => {
+        const rowStatus = row.getAttribute('data-status');
+        if (val === 'all' || rowStatus === val) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  }
+
+  // Add Source Dropdown Toggle
+  const addBtn = document.getElementById('btn-add-source');
+  const addMenu = document.getElementById('add-source-menu');
+  if (addBtn && addMenu) {
+    addBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      addMenu.classList.toggle('hidden');
+    });
+    document.addEventListener('click', () => {
+      if (!addMenu.classList.contains('hidden')) {
+        addMenu.classList.add('hidden');
+      }
+    });
+  }
+
+  // Re-index animation trigger
+  const reindexBtn = document.getElementById('btn-reindex-all');
+  const syncIcon = document.getElementById('sync-icon');
+  if (reindexBtn && syncIcon) {
+    reindexBtn.addEventListener('click', () => {
+      syncIcon.classList.add('rotate-180');
+      setTimeout(() => syncIcon.classList.remove('rotate-180'), 700);
+    });
+  }
+
+  // File Upload Drag & Drop Trigger
+  const browseBtn = document.getElementById('browse-btn');
+  const fileInput = document.getElementById('file-upload');
+  const dropZone = document.getElementById('drop-zone');
+  if (browseBtn && fileInput) {
+    browseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      fileInput.click();
+    });
+  }
+  if (dropZone && fileInput) {
+    dropZone.addEventListener('click', () => fileInput.click());
+  }
+</script></main></div></div></div></body></html>

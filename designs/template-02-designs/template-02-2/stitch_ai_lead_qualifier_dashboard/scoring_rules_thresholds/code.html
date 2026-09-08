@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#171d1a","status-success":"#15945F","mint-tint":"#F0FAF5","on-secondary-fixed":"#002112","on-secondary":"#ffffff","canvas-bg":"#F2F4F3","status-cold":"#6F8E9E","surface-container":"#e9efea","tertiary-container":"#003c25","tertiary-fixed":"#8ef7c0","surface":"#f5fbf5","on-secondary-fixed-variant":"#005233","surface-container-low":"#eff5f0","on-tertiary-container":"#43af7d","inverse-surface":"#2c322e","shell-bg":"#FFFFFF","surface-dim":"#d5dcd6","primary-fixed":"#bdedd4","on-primary-fixed-variant":"#224f3d","secondary-fixed":"#99f6c2","status-hot":"#E55252","surface-tint":"#3b6753","secondary-container":"#99f6c2","on-primary-container":"#78a68f","on-primary-fixed":"#002115","mint-soft":"#DCF4E8","on-secondary-container":"#02734a","muted-gray":"#8A938E","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#005234","surface-container-highest":"#dee4df","on-error":"#ffffff","on-background":"#171d1a","on-tertiary":"#ffffff","status-warm":"#E9A23B","secondary-fixed-dim":"#7dd9a7","background":"#f5fbf5","border-subtle":"#DDE2DF","inverse-primary":"#a2d1b9","surface-bright":"#f5fbf5","outline":"#717973","secondary":"#006c45","tertiary":"#002415","on-surface-variant":"#414944","tertiary-fixed-dim":"#71dba5","inverse-on-surface":"#ecf2ed","surface-container-high":"#e4eae4","error-container":"#ffdad6","surface-variant":"#dee4df","primary-container":"#0b3b2a","on-error-container":"#93000a","error":"#ba1a1a","on-tertiary-fixed":"#002112","outline-variant":"#c0c8c2","on-primary":"#ffffff","body-charcoal":"#3E4742","primary-fixed-dim":"#a2d1b9","emerald-vivid":"#15945F","primary":"#002417"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.5rem","space-2xl":"2.5rem","space-3xl":"3rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","shell-padding":"2rem","gutter-tablet":"1rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-2xs":"0.25rem","space-xl":"2rem"},"fontFamily":{"label-md":["Inter"],"kpi-metric":["Manrope"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Manrope"],"headline-sm":["Manrope"],"body-sm":["Inter"],"body-md":["Inter"],"display-lg":["Manrope"],"headline-md":["Manrope"]},"fontSize":{"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"kpi-metric":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased min-h-screen"><div class="p-gutter-mobile lg:p-gutter-desktop min-h-screen flex"><div class="w-full rounded-[24px] bg-shell-bg shadow-[0_8px_32px_-4px_rgba(11,59,42,0.05),0_2px_8px_-2px_rgba(17,23,20,0.03)] border border-border-subtle flex relative overflow-hidden"><aside class="w-64 flex-shrink-0 bg-shell-bg border-r border-border-subtle flex flex-col justify-between h-auto py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="NovaLead Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U_RVWV9ukk3tUR50J2SFd0itvU9dlX7o1A9fwm0wprNWdIyFnoq8sezQTdb0HgP2Po9iKsE0S8zozl9C4DV8nv1tDCSvX5wPShj2kRgGMqL2y0hvOejE1VMoBLbEzsYpUXESUaK3Ui0rtTEpTl40fhJC5zX3970t55eATUaLoUb6Nuj33LwyUbrCGKZNqYaz8z3ryi3zcO9grKYQPTngsFy4DvIJ2ICTC6f4mtC2OOH6kAs48xwjt6Tlw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">NovaLead</span></div><button class="flex items-center justify-between px-space-xs py-space-2xs rounded-lg bg-surface-container-low text-body-sm font-label-sm text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="flex items-center gap-1.5 truncate"><span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>Northstar Digital</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">Menu</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="dashboard" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="inbox" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">chat</span><span class="font-body-md">Inbox</span></div><span class="px-1.5 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[10px] font-bold">12+</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md">Leads</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-body-md">Follow-ups</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-body-md">AI Agent</span></a><a aria-current="page" class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg transition-all bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px] text-emerald-vivid">rule</span><span class="font-body-md">Qualification</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-md">Knowledge Base</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-body-md">Websites &amp; Widget</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="automations" href="#"><span class="material-symbols-outlined text-[20px]">account_tree</span><span class="font-body-md">Automations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span class="font-body-md">Analytics</span></a></nav></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">General</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-body-md">Integrations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md">Team</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-body-md">Notifications</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md">Billing &amp; Usage</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md">Settings</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-body-md">Help</span></a></nav></div></div><div class="px-space-md pt-space-xs"><div class="rounded-xl bg-gradient-to-br from-primary-container to-primary p-space-sm text-on-primary flex flex-col gap-space-xs shadow-[0_6px_20px_-2px_rgba(11,59,42,0.18)]"><div class="flex items-center justify-between"><span class="text-[11px] font-semibold text-mint-soft tracking-wide">Starter Plan</span><span class="text-[11px] text-muted-gray">74%</span></div><div class="text-body-sm font-label-md text-on-primary font-medium">742 / 1,000 Conv.</div><div class="w-full h-1.5 bg-tertiary-container rounded-full overflow-hidden"><div class="h-full bg-status-success rounded-full w-[74%]"></div></div><div class="pt-1 flex items-center justify-between"><span class="text-[10px] text-mint-soft/80">Renews in 11 days</span><button class="px-space-xs py-1 rounded-full bg-status-success text-on-secondary text-[11px] font-semibold hover:opacity-90 transition-opacity" type="button">Upgrade</button></div></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-shell-bg"><header class="h-16 px-space-lg border-b border-border-subtle flex items-center justify-between gap-space-md bg-shell-bg sticky top-0 z-30"><div class="flex-1 max-w-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-muted-gray text-[20px]">search</span><input class="w-full pl-10 pr-12 py-2 text-body-sm rounded-xl border border-border-subtle bg-mint-tint/40 text-on-surface placeholder-muted-gray focus:bg-shell-bg focus:border-status-success focus:ring-2 focus:ring-mint-soft focus:outline-none transition-all" placeholder="Search leads, visitors, conversations..." type="text"/><div class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container border border-border-subtle text-[10px] font-medium text-muted-gray font-mono">⌘F</div></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mint-tint border border-border-subtle text-body-sm font-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-status-success"></span><span>northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span></div><div class="flex items-center gap-1"><button aria-label="Inbox notifications" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">mail</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-hot ring-2 ring-shell-bg"></span></button><button aria-label="Alerts" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-warm ring-2 ring-shell-bg"></span></button></div><div class="h-7 w-[1px] bg-border-subtle"></div><div class="flex items-center gap-space-xs pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-border-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKLyyv5oEThrEBK1kOu9d885WSHu5uMzQZFjJgLQyPXiuwk00YS1a4M9jxQFjd2-Ksr-reE136uCll9DfVL8cG0xBKycJoDKuGo0FJZUwlrdjPN61HSOywTH_n4y-5T9Q6VjSve9C_nLz2XTYQINf0qNoy_le1JK7kxVM4ZeMQR4UOI2C3ZCdFelpZGdbsgEzTLBKGui_o9DTRuE1oTClDxKTVXiLDglubfPzeWDXLM7eyAbv7gBT_"/><div class="hidden xl:flex flex-col text-left"><span class="text-body-sm font-semibold text-on-surface leading-tight">Maya Singh</span><span class="text-[11px] text-muted-gray leading-tight">Product Lead</span></div></div></div></header><main class="flex-1 p-space-lg bg-shell-bg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Sub-Header & Main Action Toolbar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm uppercase tracking-wider">Qualification Engine v3.4</span>
+<span class="text-muted-gray text-body-sm">·</span>
+<span class="text-muted-gray font-label-sm">Deterministic Weighted Scoring</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Qualification &amp; Scoring Logic</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Configure deterministic IF/THEN scoring weight cards, temperature thresholds, and simulate real-time qualification scores.
+      </p>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low text-body-charcoal font-label-md hover:bg-surface-container transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Restore Defaults</span>
+</button>
+<button class="px-4 py-2 rounded-xl bg-mint-soft text-primary font-label-md hover:bg-mint-tint transition-all flex items-center gap-1.5 shadow-sm active:scale-95" onclick="triggerSimulationPulse()" type="button">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Simulate Score</span>
+</button>
+<button class="px-5 py-2 rounded-full bg-emerald-vivid text-on-secondary font-label-md hover:bg-secondary transition-all shadow-[0_4px_16px_rgba(21,148,95,0.25)] flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Save Scoring Model</span>
+</button>
+</div>
+</div>
+<!-- Sub-navigation tabs -->
+<div class="flex items-center justify-between overflow-x-auto pb-1">
+<nav class="flex items-center gap-2 p-1 rounded-2xl bg-surface-container-low">
+<a class="px-4 py-2 rounded-xl font-label-md text-body-charcoal hover:bg-shell-bg transition-colors" href="#">Questions &amp; Logic</a>
+<a class="px-4 py-2 rounded-xl font-label-md bg-shell-bg text-primary shadow-sm flex items-center gap-2" href="#">
+<span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>
+<span>Scoring Model &amp; Weights</span>
+</a>
+<a class="px-4 py-2 rounded-xl font-label-md text-body-charcoal hover:bg-shell-bg transition-colors" href="#">Thresholds (Hot / Warm / Cold)</a>
+<a class="px-4 py-2 rounded-xl font-label-md text-body-charcoal hover:bg-shell-bg transition-colors" href="#">Field Mappings</a>
+</nav>
+<div class="hidden lg:flex items-center gap-2 text-muted-gray text-body-sm font-label-sm">
+<span class="material-symbols-outlined text-[18px] text-status-success">verified</span>
+<span>Model sync: Active across 12 live capture channels</span>
+</div>
+</div>
+<!-- Top Row: Temperature Threshold Overview & Dynamic Visual Gauge Ribbon -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Cold Leads Tier -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-status-cold font-label-sm font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">ac_unit</span>
+            Cold Leads
+          </span>
+<span class="font-kpi-metric text-kpi-metric text-status-cold">0 – 39 <span class="text-body-sm text-muted-gray font-normal">pts</span></span>
+</div>
+<p class="font-body-sm text-body-sm text-body-charcoal leading-relaxed">
+          Low purchase intent, exploratory visits, missing budget or incompatible timeline. Nurture via long-term email drip.
+        </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">51</span>
+<span class="text-body-sm text-muted-gray">leads (19%)</span>
+</div>
+<span class="text-label-sm font-label-sm text-status-cold">Auto-route: Drip Queue</span>
+</div>
+</div>
+<!-- Warm Leads Tier -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-amber-50 text-status-warm font-label-sm font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">wb_sunny</span>
+            Warm Leads
+          </span>
+<span class="font-kpi-metric text-kpi-metric text-status-warm">40 – 69 <span class="text-body-sm text-muted-gray font-normal">pts</span></span>
+</div>
+<p class="font-body-sm text-body-sm text-body-charcoal leading-relaxed">
+          Demonstrated business need, moderate budget fit, evaluation stage within 3–6 months. Route to marketing qualification cadence.
+        </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">142</span>
+<span class="text-body-sm text-muted-gray">leads (53%)</span>
+</div>
+<span class="text-label-sm font-label-sm text-status-warm">Auto-route: SDR Cadence</span>
+</div>
+</div>
+<!-- Hot Leads Tier -->
+<div class="p-space-lg rounded-2xl bg-mint-tint shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-red-50 text-status-hot font-label-sm font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+            Hot Leads
+          </span>
+<span class="font-kpi-metric text-kpi-metric text-emerald-vivid">70 – 100 <span class="text-body-sm text-muted-gray font-normal">pts</span></span>
+</div>
+<p class="font-body-sm text-body-sm text-body-charcoal leading-relaxed">
+          High budget ($20k+ / ₹5L+), immediate deployment (&lt; 30–60 days), executive decision-maker engaged. Instant handoff &amp; calendar invite.
+        </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary">74</span>
+<span class="text-body-sm text-muted-gray">leads (28%)</span>
+</div>
+<span class="text-label-sm font-label-sm text-emerald-vivid font-semibold">Auto-route: Instant Book</span>
+</div>
+</div>
+</div>
+<!-- Horizontal Range Threshold Visualizer Bar -->
+<div class="p-space-md rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm font-label-sm text-body-charcoal">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-status-cold"></span>Cold Zone (0–39)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-status-warm"></span>Warm Zone (40–69)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>Hot Qualifying Range (70–100)</span>
+</div>
+<div class="relative w-full h-3 rounded-full bg-surface-container-high overflow-hidden flex">
+<div class="h-full bg-status-cold" style="width: 40%;"></div>
+<div class="h-full bg-status-warm" style="width: 30%;"></div>
+<div class="h-full bg-gradient-to-r from-emerald-vivid to-status-hot" style="width: 30%;"></div>
+</div>
+<div class="flex justify-between text-[11px] text-muted-gray font-mono px-0.5">
+<span>0 pts</span>
+<span class="pl-4">Cutoff: 40 pts</span>
+<span class="pr-2">VIP Cutoff: 70 pts</span>
+<span>100 pts</span>
+</div>
+</div>
+<!-- Main Grid: 7 Columns Rule Engine (Left) + 5 Columns Interactive Live Simulator (Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column (7 cols): Human-Readable IF/THEN Rules -->
+<div class="lg:col-span-7 flex flex-col gap-space-md min-w-0">
+<!-- Category 1: Budget & Financial Fit -->
+<div class="p-space-lg rounded-2xl bg-shell-bg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-xl bg-mint-tint flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Budget &amp; Financial Fit</h2>
+<span class="text-body-sm text-muted-gray">Core commercial criteria · Max contribution: +35 pts</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-mint-soft text-primary font-label-sm font-semibold">+35 pts cap</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Rule 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-mint-tint/50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-primary font-mono text-label-sm font-semibold shadow-2xs">R1</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-secondary font-semibold">lead.budget_range</code>
+<span class="text-body-sm text-muted-gray">&gt;=</span>
+<span class="font-semibold text-body-sm text-on-surface">$30,000</span>
+<span class="text-muted-gray text-body-sm">OR</span>
+<span class="font-semibold text-body-sm text-on-surface">&gt;= ₹5,00,000</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm font-bold">ADD +25 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-body-charcoal text-[11px] font-medium hidden sm:inline">High Impact</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<!-- Rule 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-mint-tint/50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-primary font-mono text-label-sm font-semibold shadow-2xs">R2</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-secondary font-semibold">lead.budget_range</code>
+<span class="text-body-sm text-muted-gray">BETWEEN</span>
+<span class="font-semibold text-body-sm text-on-surface">$10,000 – $29,999</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm font-bold">ADD +15 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<!-- Rule 3 (Penalty) -->
+<div class="p-3.5 rounded-xl bg-red-50/50 hover:bg-red-50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-status-hot font-mono text-label-sm font-semibold shadow-2xs">R3</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-status-hot font-semibold">lead.budget_range</code>
+<span class="text-body-sm text-muted-gray">EQUALS</span>
+<span class="font-semibold text-body-sm text-body-charcoal">"&lt; $5,000" OR "No Budget"</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-red-100 text-status-hot font-label-sm font-bold">SUBTRACT -15 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-red-100 text-status-hot text-[11px] font-medium hidden sm:inline">Penalty</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Category 2: Timeline & Deployment Urgency -->
+<div class="p-space-lg rounded-2xl bg-shell-bg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-xl bg-mint-tint flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[20px]">pace</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Timeline &amp; Deployment Urgency</h2>
+<span class="text-body-sm text-muted-gray">Implementation velocity signals · Max contribution: +25 pts</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-mint-soft text-primary font-label-sm font-semibold">+25 pts cap</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Rule 4 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-mint-tint/50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-primary font-mono text-label-sm font-semibold shadow-2xs">R4</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-secondary font-semibold">lead.target_timeline</code>
+<span class="text-body-sm text-muted-gray">&lt;= 30 days ("Immediate / Q1")</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm font-bold">ADD +20 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[11px] font-medium hidden sm:inline">Urgent Rollout</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<!-- Rule 5 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-mint-tint/50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-primary font-mono text-label-sm font-semibold shadow-2xs">R5</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-secondary font-semibold">lead.target_timeline</code>
+<span class="text-body-sm text-muted-gray">EQUALS</span>
+<span class="font-semibold text-body-sm text-on-surface">"1 – 3 months"</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm font-bold">ADD +10 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<!-- Rule 6 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-mint-tint/50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-primary font-mono text-label-sm font-semibold shadow-2xs">R6</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-secondary font-semibold">lead.target_timeline</code>
+<span class="text-body-sm text-muted-gray">EQUALS</span>
+<span class="font-semibold text-body-sm text-body-charcoal">"Exploring / &gt; 6 months"</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-muted-gray font-label-sm font-bold">ADD +0 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-muted-gray text-[11px] font-medium hidden sm:inline">Neutral</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Category 3: Service Fit & Technical Scope -->
+<div class="p-space-lg rounded-2xl bg-shell-bg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-xl bg-mint-tint flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Service Fit &amp; Technical Scope</h2>
+<span class="text-body-sm text-muted-gray">Product match and CRM capabilities · Max contribution: +20 pts</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-mint-soft text-primary font-label-sm font-semibold">+20 pts cap</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Rule 7 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-mint-tint/50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-primary font-mono text-label-sm font-semibold shadow-2xs">R7</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-secondary font-semibold">lead.service_interest</code>
+<span class="text-body-sm text-muted-gray">IN</span>
+<span class="font-semibold text-body-sm text-on-surface">["AI Automation", "Enterprise Custom Workflow"]</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm font-bold">ADD +15 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[11px] font-medium hidden sm:inline">Core Fit</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<!-- Rule 8 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-mint-tint/50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-primary font-mono text-label-sm font-semibold shadow-2xs">R8</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-secondary font-semibold">company.tech_stack</code>
+<span class="text-body-sm text-muted-gray">CONTAINS</span>
+<span class="font-semibold text-body-sm text-on-surface">["HubSpot", "Salesforce", "Custom API"]</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm font-bold">ADD +5 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-body-charcoal text-[11px] font-medium hidden sm:inline">Tech Synergy</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Category 4: Buying Authority & Decision Maker -->
+<div class="p-space-lg rounded-2xl bg-shell-bg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-xl bg-mint-tint flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Buying Authority &amp; Decision Maker</h2>
+<span class="text-body-sm text-muted-gray">Persona qualification &amp; executive power · Max contribution: +15 pts</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-mint-soft text-primary font-label-sm font-semibold">+15 pts cap</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Rule 9 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-mint-tint/50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-primary font-mono text-label-sm font-semibold shadow-2xs">R9</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-secondary font-semibold">lead.authority_level</code>
+<span class="text-body-sm text-muted-gray">IN</span>
+<span class="font-semibold text-body-sm text-on-surface">["C-Suite", "VP", "Head of Dept", "Sole Buyer"]</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm font-bold">ADD +15 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[11px] font-medium hidden sm:inline">Executive Lead</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<!-- Rule 10 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-mint-tint/50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-primary font-mono text-label-sm font-semibold shadow-2xs">R10</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-secondary font-semibold">lead.authority_level</code>
+<span class="text-body-sm text-muted-gray">EQUALS</span>
+<span class="font-semibold text-body-sm text-body-charcoal">"Individual Contributor / Researcher"</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-body-charcoal font-label-sm font-bold">ADD +5 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Category 5: Geographic & Service-Area Rules -->
+<div class="p-space-lg rounded-2xl bg-shell-bg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-xl bg-mint-tint flex items-center justify-center text-emerald-vivid">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Geographic &amp; Service-Area Rules</h2>
+<span class="text-body-sm text-muted-gray">Jurisdiction and operating presence · Max contribution: +10 pts</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-mint-soft text-primary font-label-sm font-semibold">+10 pts cap</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Rule 11 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-mint-tint/50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-primary font-mono text-label-sm font-semibold shadow-2xs">R11</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-secondary font-semibold">company.headquarters</code>
+<span class="text-body-sm text-muted-gray">IN</span>
+<span class="font-semibold text-body-sm text-on-surface">["United States", "United Kingdom", "India", "Canada", "EU"]</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid font-label-sm font-bold">ADD +10 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[11px] font-medium hidden sm:inline">Primary Market</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<!-- Rule 12 (Hard Disqualification) -->
+<div class="p-3.5 rounded-xl bg-red-50/50 hover:bg-red-50 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5 flex-1 min-w-0">
+<span class="px-2 py-0.5 rounded bg-shell-bg text-status-hot font-mono text-label-sm font-semibold shadow-2xs">R12</span>
+<div class="flex flex-wrap items-center gap-1.5 font-body-md text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">IF</span>
+<code class="px-1.5 py-0.5 rounded bg-shell-bg font-mono text-body-sm text-status-hot font-semibold">company.headquarters</code>
+<span class="text-body-sm text-muted-gray">IN</span>
+<span class="font-semibold text-body-sm text-body-charcoal">"Non-Serviceable Regions"</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-body-charcoal font-mono text-[11px] font-bold">THEN</span>
+<span class="px-2 py-0.5 rounded-full bg-red-100 text-status-hot font-label-sm font-bold">SUBTRACT -30 pts</span>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<span class="px-2 py-0.5 rounded-full bg-red-100 text-status-hot text-[11px] font-medium hidden sm:inline">Strict Gate</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container rounded-full peer peer-checked:bg-emerald-vivid peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-shell-bg after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Add New Scoring Rule CTA Button -->
+<button class="w-full py-3.5 rounded-2xl bg-surface-container-low hover:bg-mint-soft/60 text-secondary font-label-md flex items-center justify-center gap-2 transition-all group" type="button">
+<span class="w-6 h-6 rounded-full bg-mint-soft group-hover:bg-emerald-vivid group-hover:text-on-secondary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</span>
+<span>Add New Scoring Rule or Conditional Branch</span>
+</button>
+</div>
+<!-- Right Column (5 cols): Live Test Simulator & Factor Breakdown -->
+<div class="lg:col-span-5 flex flex-col gap-space-md lg:sticky lg:top-20">
+<!-- Interactive Scoring Simulator Card -->
+<div class="p-space-lg rounded-2xl bg-shell-bg shadow-[0_12px_32px_-4px_rgba(11,59,42,0.08)] flex flex-col gap-space-md relative overflow-hidden transition-all duration-300" id="simulatorCard">
+<!-- Prospect Selector & Live Flag -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-vivid"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-primary">Live Test Simulator</span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-mint-tint text-secondary font-mono text-[11px]">SANDBOX #8492</span>
+</div>
+<!-- Sample Lead Profile Capsule -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-2.5 min-w-0">
+<img class="w-10 h-10 rounded-full object-cover shrink-0" data-alt="Corporate headshot portrait of Olivia Martin, VP of Growth, professional lighting, modern studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgEF-j8C6eyF4JbQh0-QGPM7Sa_8CtkuIGU64i1Q35AFQVBQkMkwhCIYukQLSE222uY9Ah7xYmUJjifTrScsrEpvbStJT5SuGTHUGpNT12E-zOlP2gquT2dxuAwUWha3Wao6wkdT--ylgHWbOYbAoCGILu_Q0f5tsX7DWmA0SXxR7IwfcgE8LulpDfC72HBTVG6cCPtunbiiwfMyeEQZwwwbREUEzv-lSjDbpiB14EP1nZ0xV6Yhmo"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-on-surface truncate font-semibold">Olivia Martin</span>
+<span class="text-body-sm text-muted-gray truncate">VP of Growth · Apex Global</span>
+</div>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-shell-bg text-secondary font-label-sm shadow-2xs hover:bg-mint-tint transition-colors shrink-0 flex items-center gap-1" type="button">
+<span>Change Lead</span>
+<span class="material-symbols-outlined text-[14px]">unfold_more</span>
+</button>
+</div>
+<!-- Semicircular Qualification Gauge Graphic -->
+<div class="flex flex-col items-center justify-center pt-2">
+<div class="relative w-56 h-28 flex items-end justify-center">
+<!-- Semicircular SVG Dial -->
+<svg class="w-56 h-28" fill="none" viewbox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+<!-- Background Arc (180 deg) -->
+<path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e9efea" stroke-linecap="round" stroke-width="16"></path>
+<!-- Filled Arc for 86% score: dasharray math: circumference = pi*80 ~= 251.3. 86% of 251.3 ~= 216.1 -->
+<path class="transition-all duration-700 ease-out" d="M 20 100 A 80 80 0 0 1 180 100" id="gaugePath" stroke="#15945F" stroke-dasharray="251.3" stroke-dashoffset="35.2" stroke-linecap="round" stroke-width="16"></path>
+</svg>
+<!-- Gauge Center Metric -->
+<div class="absolute bottom-0 flex flex-col items-center">
+<div class="flex items-baseline gap-1">
+<span class="font-kpi-metric text-display-lg text-primary font-extrabold tracking-tight" id="calculatedScore">86</span>
+<span class="text-headline-sm font-headline-sm text-muted-gray">/100</span>
+</div>
+</div>
+</div>
+<!-- Tier Tag & Handoff Action -->
+<div class="flex flex-col items-center gap-1 mt-3">
+<span class="px-3 py-1 rounded-full bg-red-50 text-status-hot font-label-md font-bold flex items-center gap-1.5 shadow-sm" id="tierBadge">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+              Hot Lead Qualified
+            </span>
+<span class="text-body-sm text-muted-gray text-center flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">bolt</span>
+              Triggered: Instant SDR Calendar Handoff (Salesforce)
+            </span>
+</div>
+</div>
+<!-- Factor Breakdown List (Detailed Audit) -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-muted-gray uppercase tracking-wider">Factor Breakdown</span>
+<span class="text-[11px] font-mono text-muted-gray">7 active rules matched</span>
+</div>
+<div class="flex flex-col gap-1.5 max-h-56 overflow-y-auto pr-1">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-body-sm">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">check_circle</span>
+<span class="text-on-surface truncate">Budget &amp; ARR Fit</span>
+<span class="text-muted-gray text-[11px] hidden sm:inline">(Budget $36k/yr)</span>
+</div>
+<span class="font-mono text-label-sm text-emerald-vivid font-semibold shrink-0">+25 pts</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-body-sm">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">check_circle</span>
+<span class="text-on-surface truncate">Timeline Urgency</span>
+<span class="text-muted-gray text-[11px] hidden sm:inline">(&lt; 30 days immediate)</span>
+</div>
+<span class="font-mono text-label-sm text-emerald-vivid font-semibold shrink-0">+20 pts</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-body-sm">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">check_circle</span>
+<span class="text-on-surface truncate">Service Fit</span>
+<span class="text-muted-gray text-[11px] hidden sm:inline">(AI Custom Workflow)</span>
+</div>
+<span class="font-mono text-label-sm text-emerald-vivid font-semibold shrink-0">+15 pts</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-body-sm">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">check_circle</span>
+<span class="text-on-surface truncate">Buying Authority</span>
+<span class="text-muted-gray text-[11px] hidden sm:inline">(VP of Growth)</span>
+</div>
+<span class="font-mono text-label-sm text-emerald-vivid font-semibold shrink-0">+15 pts</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-body-sm">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">check_circle</span>
+<span class="text-on-surface truncate">Geographic Location</span>
+<span class="text-muted-gray text-[11px] hidden sm:inline">(New York, US)</span>
+</div>
+<span class="font-mono text-label-sm text-emerald-vivid font-semibold shrink-0">+10 pts</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-body-sm">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[16px] text-emerald-vivid">check_circle</span>
+<span class="text-on-surface truncate">Multi-seat CRM Sync</span>
+<span class="text-muted-gray text-[11px] hidden sm:inline">(HubSpot Enterprise)</span>
+</div>
+<span class="font-mono text-label-sm text-emerald-vivid font-semibold shrink-0">+5 pts</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-red-50/70 text-body-sm">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[16px] text-status-hot">error_outline</span>
+<span class="text-status-hot truncate">Risk Factor Adjustment</span>
+<span class="text-muted-gray text-[11px] hidden sm:inline">(Awaiting SecOps Form)</span>
+</div>
+<span class="font-mono text-label-sm text-status-hot font-semibold shrink-0">-4 pts</span>
+</div>
+</div>
+</div>
+<!-- Simulation Variable Sliders / Selectors -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2.5">
+<span class="font-label-sm text-body-charcoal font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+            Simulate Changing Input Parameters:
+          </span>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex flex-col gap-1">
+<label class="text-[11px] text-muted-gray font-medium">Budget Selected</label>
+<select class="w-full px-2.5 py-1.5 text-body-sm rounded-lg bg-shell-bg text-on-surface focus:outline-none" id="budgetSim" onchange="recalculateSimulation()">
+<option selected="" value="25">&gt; $30,000 (+25)</option>
+<option value="15">$10,000 - $29,999 (+15)</option>
+<option value="-15">&lt; $5,000 / None (-15)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-[11px] text-muted-gray font-medium">Timeline Expected</label>
+<select class="w-full px-2.5 py-1.5 text-body-sm rounded-lg bg-shell-bg text-on-surface focus:outline-none" id="timelineSim" onchange="recalculateSimulation()">
+<option selected="" value="20">&lt; 30 days (+20)</option>
+<option value="10">1 - 3 months (+10)</option>
+<option value="0">&gt; 6 months (+0)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Simulator Bottom Actions -->
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 py-2.5 rounded-xl bg-primary text-on-primary font-label-md hover:bg-primary-container transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+<span>Batch Evaluate (100 Leads)</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low text-body-charcoal hover:bg-surface-container transition-colors flex items-center justify-center shadow-sm" title="View Score Audit Log" type="button">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</button>
+</div>
+</div>
+<!-- Quick Guidance & Help Banner -->
+<div class="p-space-md rounded-2xl bg-mint-tint shadow-sm flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-emerald-vivid text-[22px] shrink-0">tips_and_updates</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-primary font-semibold">Deterministic Logic Priority</span>
+<p class="font-body-sm text-body-sm text-body-charcoal">
+            Rules evaluate from top-to-bottom. Negative penalization rules execute unconditionally. Threshold limits take effect in chat widgets within 60 seconds of saving.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function recalculateSimulation() {
+    const budgetVal = parseInt(document.getElementById('budgetSim').value, 10);
+    const timelineVal = parseInt(document.getElementById('timelineSim').value, 10);
+    
+    // Base static factors: Service Fit (15) + Authority (15) + Geo (10) + CRM Sync (5) - Risk (4) = 41
+    const baseOtherFactors = 41;
+    let newScore = baseOtherFactors + budgetVal + timelineVal;
+    
+    // Clamp between 0 and 100
+    newScore = Math.max(0, Math.min(100, newScore));
+
+    const scoreEl = document.getElementById('calculatedScore');
+    const badgeEl = document.getElementById('tierBadge');
+    const gaugePath = document.getElementById('gaugePath');
+
+    // Update Score Number
+    scoreEl.innerText = newScore;
+
+    // Semi-circle circumference is ~251.3
+    // Offset = 251.3 * (1 - score / 100)
+    const newOffset = 251.3 * (1 - (newScore / 100));
+    gaugePath.setAttribute('stroke-dashoffset', newOffset.toFixed(1));
+
+    // Update Tier Badges & Stroke Colors based on NovaLead Thresholds
+    if (newScore >= 70) {
+      gaugePath.setAttribute('stroke', '#15945F');
+      badgeEl.className = "px-3 py-1 rounded-full bg-red-50 text-status-hot font-label-md font-bold flex items-center gap-1.5 shadow-sm";
+      badgeEl.innerHTML = `<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span> Hot Lead Qualified`;
+    } else if (newScore >= 40) {
+      gaugePath.setAttribute('stroke', '#E9A23B');
+      badgeEl.className = "px-3 py-1 rounded-full bg-amber-50 text-status-warm font-label-md font-bold flex items-center gap-1.5 shadow-sm";
+      badgeEl.innerHTML = `<span class="material-symbols-outlined text-[16px]">wb_sunny</span> Warm Lead Candidate`;
+    } else {
+      gaugePath.setAttribute('stroke', '#6F8E9E');
+      badgeEl.className = "px-3 py-1 rounded-full bg-surface-container text-status-cold font-label-md font-bold flex items-center gap-1.5 shadow-sm";
+      badgeEl.innerHTML = `<span class="material-symbols-outlined text-[16px]">ac_unit</span> Cold Lead Tier`;
+    }
+  }
+
+  function triggerSimulationPulse() {
+    const simCard = document.getElementById('simulatorCard');
+    simCard.classList.add('ring-2', 'ring-emerald-vivid');
+    setTimeout(() => {
+      simCard.classList.remove('ring-2', 'ring-emerald-vivid');
+    }, 600);
+    recalculateSimulation();
+  }
+</script></main></div></div></div></body></html>

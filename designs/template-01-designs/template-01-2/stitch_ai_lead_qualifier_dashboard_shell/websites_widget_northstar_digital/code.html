@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#e1e3ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#79fbc8", "on-background": "#171c25", "surface-container-high": "#e5e8f5", "secondary": "#5f5e5e", "on-primary": "#ffffff", "tertiary": "#005940", "outline-variant": "#c4c5d9", "tertiary-fixed": "#77fac7", "primary-fixed-dim": "#bac3ff", "on-secondary-fixed-variant": "#474646", "primary": "#0034dc", "on-primary-fixed": "#00105b", "on-surface-variant": "#444656", "secondary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#00513a", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002115", "surface-dim": "#d6dae7", "inverse-surface": "#2c303a", "outline": "#747687", "inverse-primary": "#bac3ff", "background": "#f9f9ff", "on-secondary-fixed": "#1c1b1b", "primary-container": "#3152f4", "secondary-fixed": "#e5e2e1", "surface-container-highest": "#dfe2ef", "error": "#ba1a1a", "inverse-on-surface": "#edf0fd", "secondary-container": "#e2dfde", "on-secondary-container": "#636262", "on-surface": "#171c25", "surface-container": "#eaedfb", "surface": "#f9f9ff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#002fc9", "tertiary-container": "#007454", "surface-tint": "#2649ec", "surface-variant": "#dfe2ef", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-container-low": "#f1f3ff", "tertiary-fixed-dim": "#58ddac", "on-error": "#ffffff", "primary-fixed": "#dee0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "2.5rem", "space-xl": "1.5rem", "space-sm": "0.75rem", "space-2xl": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "card-padding": "1.5rem", "space-2xs": "0.25rem", "shell-padding": "1.75rem", "gutter-grid": "1.25rem", "space-lg": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-kpi": ["Plus Jakarta Sans"], "display-kpi-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "metric-mono": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-kpi": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-kpi-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "metric-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-low font-body-md text-on-surface antialiased min-h-screen"><div class="min-h-screen p-0 md:p-6 lg:p-8 flex justify-center items-start"><div class="w-full max-w-[1440px] bg-surface-container-lowest rounded-none md:rounded-[28px] shadow-[0_16px_40px_rgba(23,28,37,0.06)] overflow-hidden flex relative min-h-[calc(100vh-4rem)]"><aside class="w-60 shrink-0 bg-surface-container-low flex flex-col justify-between p-4 overflow-y-auto"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-2 py-1"><img alt="Nova AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between cursor-pointer group"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nova AI</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-on-surface transition-colors">unfold_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Northstar Digital</span></div></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Workspace</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-xl transition-colors bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inbox" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-lg text-label-lg">Inbox</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Leads</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-label-lg text-label-lg">Follow-ups</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Agent</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-lg text-label-lg">Qualification</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-lg text-label-lg">Knowledge Base</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-label-lg text-label-lg">Websites &amp; Widget</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-lg text-label-lg">Analytics</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-lg text-label-lg">Integrations</span></a></nav></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Administration</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Team</span></a><a class="flex items-center justify-between px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-label-lg text-label-lg">Billing &amp; Usage</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div></div><div class="flex flex-col gap-3 mt-6 pt-4"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-label-lg text-label-lg">Help &amp; Support</span></a><div class="p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(20,25,40,0.03)] flex flex-col gap-2.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Starter Plan</span><span class="font-label-sm text-label-sm text-tertiary font-bold">Active</span></div><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">742 / 1,000</span><span class="font-label-sm text-label-sm">74%</span></div><div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">Monthly AI conversations</span></div><a class="mt-1 w-full py-1.5 px-3 bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md rounded-lg text-center transition-colors" data-path="billing-and-usage" href="#">Upgrade Plan</a></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest"><header class="h-16 px-6 lg:px-8 bg-surface-container-lowest flex items-center justify-between shrink-0 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-10"><div class="flex items-center gap-4 flex-1"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full cursor-pointer"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-tertiary/20"></span><span class="font-label-md text-label-md text-on-surface">northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="relative max-w-md w-full hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search leads, chats, workflows..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-4"><button class="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_4px_12px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Create</span></button><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Maya Singh</span><span class="font-body-sm text-body-sm text-on-surface-variant">Product Lead</span></div></div></div></header><main class="flex-1 p-6 lg:p-shell-padding overflow-y-auto bg-surface-container-lowest"><div class="flex flex-col w-full gap-8">
+<!-- PAGE HEADER -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Websites &amp; Widget</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+          2 Domains Configured
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Manage connected domains, inspect live AI widget status, and configure embed code.
+      </p>
+</div>
+<!-- Header Actions -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Usage Pill -->
+<div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">1 of 2 Websites Used</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Starter Plan</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">dns</span>
+</div>
+</div>
+<!-- Secondary Action -->
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container-low transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">code</span>
+<span>Embed Guide</span>
+</button>
+<!-- Primary Action -->
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-lg text-label-lg shadow-[0_8px_20px_rgba(49,82,244,0.28)] hover:opacity-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Website</span>
+</button>
+</div>
+</div>
+<!-- KPI OVERVIEW CARDS -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- KPI 1: Active Domains -->
+<div class="flex flex-col justify-between p-5 rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.03)] hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">domain</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">50% Quota</span>
+</div>
+<div class="mt-4 flex flex-col">
+<span class="font-display-kpi text-display-kpi text-on-surface tracking-tight">1 / 2</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">Active Domains (Starter Plan)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full mt-3 overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 50%"></div>
+</div>
+</div>
+<!-- KPI 2: Widget Traffic & Leads -->
+<div class="flex flex-col justify-between p-5 rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.03)] hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-low text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12.4%
+        </span>
+</div>
+<div class="mt-4 flex flex-col">
+<span class="font-display-kpi text-display-kpi text-on-surface tracking-tight">428</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">Leads from 742 Sessions</span>
+</div>
+<div class="flex items-center gap-2 mt-3 font-body-sm text-body-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span>57.6% qualification conversion</span>
+</div>
+</div>
+<!-- KPI 3: Snippet Health -->
+<div class="flex flex-col justify-between p-5 rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.03)] hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant">Telemetry Ping</span>
+</div>
+<div class="mt-4 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-display-kpi text-display-kpi text-on-surface tracking-tight">1</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-normal">Operational</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">1 Pending script injection</span>
+</div>
+<div class="flex items-center gap-3 mt-3">
+<span class="flex items-center gap-1.5 font-label-sm text-label-sm text-tertiary font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-tertiary/20"></span>
+          Prod 200 OK
+        </span>
+<span class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+          Staging Idle
+        </span>
+</div>
+</div>
+<!-- KPI 4: Assigned AI Agent (Dark Hero Balance Card) -->
+<div class="flex flex-col justify-between p-5 rounded-2xl bg-gradient-to-br from-[#242424] to-[#121212] text-white shadow-[0_16px_36px_rgba(15,15,20,0.22)]">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-white/15 text-white tracking-wider uppercase">v3.4 Prod</span>
+</div>
+<div class="mt-4 flex flex-col">
+<span class="font-headline-lg text-headline-lg text-white font-bold tracking-tight">Nova AI</span>
+<span class="font-label-md text-label-md text-white/70 mt-0.5">Autonomous Lead Qualification</span>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2 text-white/80 font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+<span>1.2s avg latency</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Model Active</span>
+</div>
+</div>
+</div>
+<!-- WEBSITES LIST CONTAINER -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Connected Websites</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live ping status and telemetry for injected client widgets.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Filter Domains" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="this.classList.add('animate-spin'); setTimeout(()=&gt;this.classList.remove('animate-spin'), 600);" title="Refresh Health Checks" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- CARD 1: PRIMARY PRODUCTION WEBSITE -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-[0_10px_30px_rgba(20,25,40,0.04)] p-6 lg:p-7 flex flex-col gap-6 transition-all hover:shadow-[0_16px_40px_rgba(20,25,40,0.06)]">
+<!-- Top Row / Domain Identity & Status -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[26px] text-primary">language</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2.5">
+<a class="font-headline-md text-headline-md text-on-surface hover:text-primary transition-colors flex items-center gap-1.5 group" href="https://northstardigital.com" rel="noopener noreferrer" target="_blank">
+<span>northstardigital.com</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-primary transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">open_in_new</span>
+</a>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+                Default / Production
+              </span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                Verified 4 mins ago
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Primary brand portal &amp; corporate inbound funnel. Real-time traffic stream active.
+            </p>
+</div>
+</div>
+<!-- Pill Badges -->
+<div class="flex flex-wrap items-center gap-2 self-start md:self-auto">
+<!-- Script Status Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-tertiary font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Installed &amp; Verified</span>
+<span class="font-metric-mono text-[11px] px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface">200 OK</span>
+</div>
+<!-- Widget Status Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F8F3] text-tertiary font-label-md text-label-md">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span>Widget Live</span>
+</div>
+</div>
+</div>
+<!-- Agent & Telemetry Matrix (Bento style) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 p-4 rounded-xl bg-surface-container-low">
+<!-- Metric 1 -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Leads Qualified</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface">428</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-[#FDF2F3] text-[#F04452]">74 Hot</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">High conversion propensity</span>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AI Conversations</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface">742</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 1,000</span>
+</div>
+<div class="w-full h-1 bg-surface-container-high rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Triage Latency</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface">1.2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">seconds</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span> Sub-second response target
+          </span>
+</div>
+<!-- Metric 4: Assigned AI Agent -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest shadow-xs justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Assigned Agent</span>
+<div class="flex items-center gap-2.5 mt-1">
+<div class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary-container to-primary flex items-center justify-center text-on-primary font-label-md text-label-md font-bold shadow-xs">
+              N
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Nova AI</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">v3.4 Enterprise Triage</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">486 knowledge pages sync</span>
+</div>
+</div>
+<!-- Quick Embed Snippet Preview -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">terminal</span> Active CDN Snippet
+          </span>
+<button class="inline-flex items-center gap-1.5 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="navigator.clipboard.writeText('&lt;script src=\'https://cdn.northstardigital.com/widget/v2.js\' data-site-id=\'ns_prod_84920\' async&gt;&lt;/script&gt;'); const b=this.querySelector('.txt'); b.textContent='Copied!'; setTimeout(()=&gt;b.textContent='Copy Snippet', 2000);" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span class="txt">Copy Snippet</span>
+</button>
+</div>
+<div class="relative bg-surface-container-low rounded-xl p-3.5 font-metric-mono text-[13px] text-on-surface overflow-x-auto flex items-center justify-between">
+<code class="text-on-surface select-all">&lt;script src="https://cdn.northstardigital.com/widget/v2.js" data-site-id="ns_prod_84920" async&gt;&lt;/script&gt;</code>
+<span class="hidden md:inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant ml-4 shrink-0">
+            CDN Edge • Global v2.8.4
+          </span>
+</div>
+</div>
+<!-- Action Buttons Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+<div class="flex flex-wrap items-center gap-2.5">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors" href="https://northstardigital.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">launch</span>
+<span>Open Site</span>
+</a>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors" onclick="document.getElementById('preview-drawer').classList.toggle('hidden');" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Preview Widget</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors" onclick="const btn=this; btn.innerHTML='&lt;span class=\'material-symbols-outlined text-[18px] animate-spin\'&gt;refresh&lt;/span&gt;&lt;span&gt;Checking CDN...&lt;/span&gt;'; setTimeout(()=&gt;{ btn.innerHTML='&lt;span class=\'material-symbols-outlined text-[18px] text-tertiary\'&gt;check_circle&lt;/span&gt;&lt;span&gt;Verified (200 OK)&lt;/span&gt;'; }, 1200);" type="button">
+<span class="material-symbols-outlined text-[18px]">published_with_changes</span>
+<span>Check Installation</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Settings</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-secondary hover:text-error hover:bg-error-container/40 font-label-md text-label-md transition-colors" title="Pause AI Widget on this domain" type="button">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+<span>Pause Widget</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2: STAGING / DEVELOPMENT ENVIRONMENT -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-[0_10px_30px_rgba(20,25,40,0.03)] p-6 lg:p-7 flex flex-col gap-6 relative overflow-hidden transition-all hover:shadow-[0_16px_40px_rgba(20,25,40,0.05)]">
+<!-- Subtle top tint indicating pending/warning configuration -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-container-high"></div>
+<!-- Top Row / Domain Identity & Status -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center shrink-0 text-on-surface-variant shadow-xs">
+<span class="material-symbols-outlined text-[26px]">devices</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="font-headline-md text-headline-md text-on-surface">staging.northstardigital.com</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                Staging Environment
+              </span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                No telemetry ping received
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Sandbox staging domain for QA testing new AI qualification flows and prompt updates.
+            </p>
+</div>
+</div>
+<!-- Pill Badges -->
+<div class="flex flex-wrap items-center gap-2 self-start md:self-auto">
+<!-- Script Detection Warning Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FEF8EC] text-[#F5A524] font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#F5A524]"></span>
+<span>Script Not Detected</span>
+</div>
+<!-- Widget Status Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F1F5F8] text-[#7190A8] font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[14px]">pause</span>
+<span>Widget Paused</span>
+</div>
+</div>
+</div>
+<!-- Performance & Usage Grid (Zero State / Inactive) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 p-4 rounded-xl bg-surface-container-low/70">
+<!-- Metric 1 -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest opacity-75 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Leads Generated</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Awaiting live traffic</span>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest opacity-75 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AI Conversations</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sandbox sessions: 0</span>
+</div>
+<!-- Metric 3 -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest opacity-75 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Snippet Status</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[18px] text-[#F5A524]">pending</span>
+<span class="font-label-lg text-label-lg text-on-surface">Pending Injection</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Target: &lt;head&gt; element</span>
+</div>
+<!-- Metric 4: Assigned AI Agent -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest opacity-75 shadow-xs justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Assigned Agent</span>
+<div class="flex items-center gap-2 mt-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-label-md text-label-md font-bold">
+              S
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Nova AI (Sandbox)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Strict Test Protocol</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Prompt v3.5-RC1 draft</span>
+</div>
+</div>
+<!-- Diagnostics Banner Callout -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl bg-[#FEF8EC]/60">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#F5A524] text-[22px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Embed script snippet missing on root HTML</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last checked 18 mins ago — No ping detected on <code class="font-metric-mono">staging.northstardigital.com</code>. Run diagnostic verification or send instructions to your developer.</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors self-start sm:self-auto shrink-0 shadow-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">forward_to_inbox</span>
+<span>Email Dev Guide</span>
+</button>
+</div>
+<!-- Action Buttons Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+<div class="flex flex-wrap items-center gap-2.5">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_4px_12px_rgba(49,82,244,0.25)] hover:opacity-95 transition-all" onclick="const b=this; b.innerHTML='&lt;span class=\'material-symbols-outlined text-[18px] animate-spin\'&gt;sync&lt;/span&gt;&lt;span&gt;Running Diagnostics...&lt;/span&gt;'; setTimeout(()=&gt;{ b.innerHTML='&lt;span class=\'material-symbols-outlined text-[18px] text-[#F5A524]\'&gt;error_outline&lt;/span&gt;&lt;span&gt;No snippet found. Retry?&lt;/span&gt;'; }, 1400);" type="button">
+<span class="material-symbols-outlined text-[18px]">troubleshoot</span>
+<span>Check Installation</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors" onclick="alert('Snippet for staging:\n&lt;script src=\'https://cdn.northstardigital.com/widget/v2.js\' data-site-id=\'ns_stage_91823\' async&gt;&lt;/script&gt;');" type="button">
+<span class="material-symbols-outlined text-[18px]">code</span>
+<span>Get Embed Code</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Settings</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<!-- Disabled button until script verified -->
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-secondary bg-surface-container-high cursor-not-allowed opacity-60 font-label-md text-label-md" disabled="" title="Verify snippet before activating widget" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Resume / Activate</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- PLAN LIMIT & UPGRADE BANNER -->
+<div class="rounded-2xl bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-low p-6 lg:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-sm">
+<div class="flex items-start gap-4 max-w-2xl">
+<div class="w-12 h-12 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-[0_4px_12px_rgba(49,82,244,0.3)]">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Starter Plan Limit — 1 Website Slot Remaining</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-semibold">1 / 2 Allocated</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
+          Your Starter Plan supports up to 2 active domains. Need multiple client domains, agency sub-accounts, unlimited staging environments, or white-labeled CDN delivery without limits?
+        </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 shrink-0">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors shadow-xs" type="button">
+        View All Plan Features
+      </button>
+<button class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-lg text-label-lg shadow-[0_8px_20px_rgba(49,82,244,0.28)] hover:opacity-95 transition-opacity flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">upgrade</span>
+<span>Upgrade to Premium</span>
+</button>
+</div>
+</div>
+<!-- INTERACTIVE PREVIEW DRAWER / MODAL SIMULATION (Toggled via "Preview Widget") -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-xs flex justify-end" id="preview-drawer">
+<div class="w-full max-w-md bg-surface-container-lowest h-full shadow-2xl p-6 flex flex-col justify-between overflow-y-auto">
+<div class="flex flex-col gap-5">
+<div class="flex items-center justify-between pb-3 bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">smart_toy</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Widget Live Preview</span>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" onclick="document.getElementById('preview-drawer').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm flex items-center justify-between">
+<span>Target: <strong class="text-on-surface font-semibold">northstardigital.com</strong></span>
+<span class="px-2 py-0.5 rounded-full bg-[#E8F8F3] text-tertiary font-label-sm text-label-sm font-bold">200 OK</span>
+</div>
+<!-- Simulated Floating AI Chat Widget -->
+<div class="flex flex-col rounded-2xl bg-surface-container-low overflow-hidden shadow-lg">
+<!-- Widget Header -->
+<div class="bg-primary-container text-on-primary p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary font-bold flex items-center justify-center text-sm shadow-xs">
+                N
+              </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-primary font-bold leading-tight">Nova AI</span>
+<span class="font-body-sm text-[11px] text-on-primary-container">Northstar Revenue Concierge</span>
+</div>
+</div>
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+</div>
+<!-- Messages -->
+<div class="p-4 flex flex-col gap-3 min-h-[220px] bg-surface-container-lowest">
+<div class="p-3 rounded-xl rounded-tl-none bg-surface-container-low text-on-surface font-body-sm text-body-sm max-w-[85%]">
+              Hello! Welcome to Northstar Digital. Are you looking to scale client pipeline automation this quarter?
+            </div>
+<div class="p-3 rounded-xl rounded-tr-none bg-primary-container text-on-primary font-body-sm text-body-sm max-w-[85%] self-end">
+              Yes, we need automated qualification for 500+ monthly enterprise leads.
+            </div>
+<div class="p-3 rounded-xl rounded-tl-none bg-surface-container-low text-on-surface font-body-sm text-body-sm max-w-[85%]">
+              Nova AI can handle that autonomously with 1.2s qualification turnaround. Would you like to view our enterprise case study?
+            </div>
+</div>
+<!-- Input mock -->
+<div class="p-3 bg-surface-container-low flex items-center gap-2">
+<input class="flex-1 bg-surface-container-lowest px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none" disabled="" placeholder="Reply to Nova AI..." type="text"/>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pt-4 flex flex-col gap-2">
+<button class="w-full py-2.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg text-center" onclick="document.getElementById('preview-drawer').classList.add('hidden')" type="button">
+          Close Preview
+        </button>
+<button class="w-full py-2 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md text-center hover:bg-surface-container-highest transition-colors" type="button">
+          Widget Styling Settings
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SIDEBAR SELECTION INJECTION SCRIPT (Fulfills Critical Navigation Requirement) -->
+<script>
+  (function updateSidebarActiveState() {
+    // Find all sidebar navigation links
+    const navLinks = document.querySelectorAll('aside nav a');
+    navLinks.forEach(link => {
+      const path = link.getAttribute('data-path');
+      if (path === 'websites-and-widget') {
+        // Apply active electric cobalt pill styling
+        link.className = 'flex items-center gap-3 px-3 py-2 rounded-xl bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)] transition-all';
+        const icon = link.querySelector('.material-symbols-outlined');
+        if (icon) icon.className = 'material-symbols-outlined text-[20px] text-on-primary';
+      } else {
+        // Ensure muted default state for Dashboard, Knowledge Base, and all others
+        link.className = 'flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors';
+        const icon = link.querySelector('.material-symbols-outlined');
+        if (icon) icon.className = 'material-symbols-outlined text-[20px] text-on-surface-variant';
+      }
+    });
+  })();
+</script></main></div></div></div></body></html>

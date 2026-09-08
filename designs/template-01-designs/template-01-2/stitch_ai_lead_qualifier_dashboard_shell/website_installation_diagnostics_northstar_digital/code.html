@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#e1e3ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#79fbc8", "on-background": "#171c25", "surface-container-high": "#e5e8f5", "secondary": "#5f5e5e", "on-primary": "#ffffff", "tertiary": "#005940", "outline-variant": "#c4c5d9", "tertiary-fixed": "#77fac7", "primary-fixed-dim": "#bac3ff", "on-secondary-fixed-variant": "#474646", "primary": "#0034dc", "on-primary-fixed": "#00105b", "on-surface-variant": "#444656", "secondary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#00513a", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002115", "surface-dim": "#d6dae7", "inverse-surface": "#2c303a", "outline": "#747687", "inverse-primary": "#bac3ff", "background": "#f9f9ff", "on-secondary-fixed": "#1c1b1b", "primary-container": "#3152f4", "secondary-fixed": "#e5e2e1", "surface-container-highest": "#dfe2ef", "error": "#ba1a1a", "inverse-on-surface": "#edf0fd", "secondary-container": "#e2dfde", "on-secondary-container": "#636262", "on-surface": "#171c25", "surface-container": "#eaedfb", "surface": "#f9f9ff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#002fc9", "tertiary-container": "#007454", "surface-tint": "#2649ec", "surface-variant": "#dfe2ef", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-container-low": "#f1f3ff", "tertiary-fixed-dim": "#58ddac", "on-error": "#ffffff", "primary-fixed": "#dee0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "2.5rem", "space-xl": "1.5rem", "space-sm": "0.75rem", "space-2xl": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "card-padding": "1.5rem", "space-2xs": "0.25rem", "shell-padding": "1.75rem", "gutter-grid": "1.25rem", "space-lg": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-kpi": ["Plus Jakarta Sans"], "display-kpi-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "metric-mono": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-kpi": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-kpi-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "metric-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-low font-body-md text-on-surface antialiased min-h-screen"><div class="min-h-screen p-0 md:p-6 lg:p-8 flex justify-center items-start"><div class="w-full max-w-[1440px] bg-surface-container-lowest rounded-none md:rounded-[28px] shadow-[0_16px_40px_rgba(23,28,37,0.06)] overflow-hidden flex relative min-h-[calc(100vh-4rem)]"><aside class="w-60 shrink-0 bg-surface-container-low flex flex-col justify-between p-4 overflow-y-auto"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-2 py-1"><img alt="Nova AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between cursor-pointer group"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nova AI</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-on-surface transition-colors">unfold_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Northstar Digital</span></div></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Workspace</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-xl transition-colors bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inbox" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-lg text-label-lg">Inbox</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Leads</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-label-lg text-label-lg">Follow-ups</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Agent</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-lg text-label-lg">Qualification</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-lg text-label-lg">Knowledge Base</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-label-lg text-label-lg">Websites &amp; Widget</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-lg text-label-lg">Analytics</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-lg text-label-lg">Integrations</span></a></nav></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Administration</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Team</span></a><a class="flex items-center justify-between px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-label-lg text-label-lg">Billing &amp; Usage</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div></div><div class="flex flex-col gap-3 mt-6 pt-4"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-label-lg text-label-lg">Help &amp; Support</span></a><div class="p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(20,25,40,0.03)] flex flex-col gap-2.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Starter Plan</span><span class="font-label-sm text-label-sm text-tertiary font-bold">Active</span></div><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">742 / 1,000</span><span class="font-label-sm text-label-sm">74%</span></div><div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">Monthly AI conversations</span></div><a class="mt-1 w-full py-1.5 px-3 bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md rounded-lg text-center transition-colors" data-path="billing-and-usage" href="#">Upgrade Plan</a></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest"><header class="h-16 px-6 lg:px-8 bg-surface-container-lowest flex items-center justify-between shrink-0 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-10"><div class="flex items-center gap-4 flex-1"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full cursor-pointer"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-tertiary/20"></span><span class="font-label-md text-label-md text-on-surface">northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="relative max-w-md w-full hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search leads, chats, workflows..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-4"><button class="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_4px_12px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Create</span></button><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Maya Singh</span><span class="font-body-sm text-body-sm text-on-surface-variant">Product Lead</span></div></div></div></header><main class="flex-1 p-6 lg:p-shell-padding overflow-y-auto bg-surface-container-lowest"><div class="flex flex-col w-full">
+<!-- Interactive Script to Ensure Left Navigation Reflects "Websites & Widget" as Active -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const activeClasses = "bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]".split(" ");
+      const inactiveClasses = "text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface".split(" ");
+
+      document.querySelectorAll("aside a[data-path]").forEach(link => {
+        if (link.getAttribute("data-path") === "websites-and-widget") {
+          link.classList.remove(...inactiveClasses);
+          link.classList.add(...activeClasses);
+        } else {
+          link.classList.remove(...activeClasses);
+          link.classList.add(...inactiveClasses);
+        }
+      });
+    });
+  </script>
+<!-- Top Breadcrumb & Actions Bar -->
+<div class="flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-1.5">
+<nav class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-on-surface cursor-pointer transition-colors">Websites &amp; Widget</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-semibold text-on-surface flex items-center gap-1.5 bg-surface-container-low px-2.5 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            northstardigital.com
+          </span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary-container font-medium">Installation &amp; Diagnostics</span>
+</nav>
+<div class="flex flex-col mt-0.5">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Website Installation &amp; Diagnostics</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+            Deploy Nova AI widget snippet, verify real-time connection status, and inspect domain runtime security.
+          </p>
+</div>
+</div>
+<!-- Header Action Buttons -->
+<div class="flex items-center gap-3 shrink-0 self-start md:self-center">
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-xl font-label-lg text-label-lg shadow-[0_2px_8px_rgba(20,25,40,0.04)] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">open_in_new</span>
+<span>View Documentation</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_8px_20px_rgba(49,82,244,0.28)] hover:opacity-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Test Live Widget</span>
+</button>
+</div>
+</div>
+<!-- Secondary Tab Navigation Pills (Embedded Pill Container) -->
+<div class="p-1 bg-surface-container-low rounded-2xl flex items-center gap-1 overflow-x-auto">
+<button class="px-3.5 py-1.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap" type="button">
+        Overview
+      </button>
+<button class="px-4 py-1.5 rounded-xl font-label-md text-label-md bg-primary-container text-on-primary shadow-[0_4px_12px_rgba(49,82,244,0.3)] transition-all whitespace-nowrap" type="button">
+        Installation &amp; Snippet
+      </button>
+<button class="px-3.5 py-1.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap" type="button">
+        Appearance &amp; Editor
+      </button>
+<button class="px-3.5 py-1.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap" type="button">
+        Behavior &amp; Rules
+      </button>
+<button class="px-3.5 py-1.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap" type="button">
+        Lead Capture &amp; Forms
+      </button>
+<button class="px-3.5 py-1.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap" type="button">
+        Diagnostics &amp; Logs
+      </button>
+</div>
+<!-- Installation Method Selector Bar -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-1">Choose Deployment Architecture</span>
+<div class="flex flex-wrap items-center gap-2">
+<button class="flex items-center gap-2.5 px-4 py-2 bg-primary-container text-on-primary rounded-xl font-label-md text-label-md shadow-[0_4px_14px_rgba(49,82,244,0.25)]" type="button">
+<span class="material-symbols-outlined text-[18px]">javascript</span>
+<span>JavaScript (Async)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+</button>
+<button class="flex items-center gap-2.5 px-4 py-2 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">integration_instructions</span>
+<span>WordPress</span>
+</button>
+<button class="flex items-center gap-2.5 px-4 py-2 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">shopping_bag</span>
+<span>Shopify</span>
+</button>
+<button class="flex items-center gap-2.5 px-4 py-2 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tag</span>
+<span>Google Tag Manager</span>
+</button>
+<button class="flex items-center gap-2.5 px-4 py-2 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">code_blocks</span>
+<span>Webflow / Custom CMS</span>
+</button>
+</div>
+</div>
+<!-- Main Two-Column Installation & Telemetry Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+<!-- Left Main Installation Card (~65%) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-[22px] p-6 lg:p-7 shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface">Async JavaScript Snippet</span>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed/30 text-tertiary font-bold">Recommended</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Paste this script snippet immediately before the closing <code class="px-1.5 py-0.5 bg-surface-container-low text-primary font-mono text-body-sm rounded">&lt;/head&gt;</code> tag on all target pages.
+            </p>
+</div>
+</div>
+<!-- Sleek Dark Charcoal Code Block -->
+<div class="bg-inverse-surface text-inverse-on-surface rounded-2xl overflow-hidden shadow-[0_16px_36px_rgba(15,15,20,0.18)] flex flex-col">
+<!-- Code Block Header -->
+<div class="bg-on-background/60 px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-error/70 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim/70 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-primary-fixed-dim/70 inline-block"></span>
+</div>
+<span class="font-label-sm text-label-sm text-surface-container-highest tracking-wide uppercase">HTML / Vanilla JS</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest/10 text-on-primary font-label-sm text-label-sm rounded-md font-mono">
+                v2.4.2 · Production Edge CDN
+              </span>
+</div>
+<!-- Code Actions -->
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-inverse-on-surface rounded-lg font-label-md text-label-md transition-colors" title="Send snippet instructions via email" type="button">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>Email Developer</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 bg-primary-container hover:bg-primary-container/90 text-on-primary rounded-lg font-label-md text-label-md shadow-[0_4px_12px_rgba(49,82,244,0.4)] transition-all" id="copyBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copyText">Copy Code</span>
+</button>
+</div>
+</div>
+<!-- Code Display -->
+<div class="p-5 font-mono text-body-sm leading-relaxed overflow-x-auto select-all">
+<span class="text-outline-variant">&lt;</span><span class="text-primary-fixed-dim font-semibold">script</span>
+<span class="text-tertiary-fixed-dim">src</span><span class="text-inverse-on-surface">=</span><span class="text-tertiary-fixed">"https://cdn.northstardigital.com/widget/v2.js"</span>
+<span class="text-tertiary-fixed-dim">data-site-id</span><span class="text-inverse-on-surface">=</span><span class="text-tertiary-fixed">"ns_prod_84920"</span>
+<span class="text-primary-fixed-dim">async</span>
+<span class="text-primary-fixed-dim">defer</span><span class="text-outline-variant">&gt;&lt;/</span><span class="text-primary-fixed-dim font-semibold">script</span><span class="text-outline-variant">&gt;</span>
+</div>
+<!-- Code Inset Footer Stats -->
+<div class="px-5 py-2.5 bg-on-background/40 flex items-center justify-between text-surface-container-highest font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+                Gzip Size: 14.8 KB
+              </span>
+<span>·</span>
+<span>Brotli: 12.1 KB</span>
+</div>
+<span class="text-outline-variant font-mono">Workspace ID: ns_prod_84920</span>
+</div>
+</div>
+<!-- 3-Step Guided Workflow -->
+<div class="flex flex-col gap-3.5 mt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Implementation Walkthrough</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+<!-- Step 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Copy Snippet</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Grab your unique production script tag containing workspace key <code class="px-1 py-0.5 bg-surface-container text-on-surface font-mono text-[11px] rounded">ns_prod_84920</code>.
+              </p>
+</div>
+<!-- Step 2 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">2</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Paste in &lt;head&gt;</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Insert before the closing header tag inside your CMS layout template or via Google Tag Manager container.
+              </p>
+</div>
+<!-- Step 3 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">3</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Verify &amp; Publish</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Reload your production site and run real-time verification to register initial telemetry handshake.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Telemetry & Verification Status Card (~35%) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-[22px] p-6 lg:p-7 shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">Telemetry &amp; Live Verification</span>
+<span class="p-1.5 bg-surface-container-low rounded-lg text-primary-container">
+<span class="material-symbols-outlined text-[20px]">sensors</span>
+</span>
+</div>
+<!-- Target Domain Badge -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">lock</span>
+<span class="font-label-lg text-label-lg text-on-surface font-mono">northstardigital.com</span>
+</div>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="https://northstardigital.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+<!-- Status Card Pill / Active Ping Box -->
+<div class="p-4.5 rounded-2xl bg-gradient-to-br from-tertiary-fixed/15 via-surface-container-low to-surface-container-low flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Live Runtime State</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-tertiary font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+              Active (200 OK)
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">Installed and Online</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Heartbeat confirmed across US-East &amp; EU edge nodes.</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2 text-on-surface-variant">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Last Heartbeat</span>
+<span class="font-metric-mono text-metric-mono text-on-surface font-medium">2 mins ago</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Edge Latency</span>
+<span class="font-metric-mono text-metric-mono text-tertiary font-medium">18ms CDN</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Checklist -->
+<div class="flex flex-col gap-2.5 pt-1">
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface">Script Ingestion</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              Verified
+            </span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface">DOM Hook Mount</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              #nova-root
+            </span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface">SSL / Cipher Health</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+              TLS 1.3
+            </span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface">Assigned Agent</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">Nova AI (Autonomous)</span>
+</div>
+</div>
+<!-- Action Trigger Buttons -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_4px_14px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" id="checkInstallBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">autorenew</span>
+<span>Check Installation</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">send</span>
+<span>Send Test Beacon</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Diagnostics & Runtime Health Section -->
+<div class="flex flex-col gap-4 mt-2">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-3">
+<h2 class="font-headline-md text-headline-md text-on-surface">Runtime Health &amp; Security Diagnostics</h2>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            4/4 Checks Passing
+          </span>
+</div>
+<button class="flex items-center gap-1.5 text-primary hover:text-primary-container font-label-md text-label-md self-start sm:self-auto transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Re-run Diagnostics</span>
+</button>
+</div>
+<!-- 4 Diagnostics Status Tiles -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-[20px] shadow-[0_10px_30px_rgba(20,25,40,0.03)] flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<div class="p-2 rounded-xl bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[20px]">ecg_heart</span>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed/30 text-tertiary font-bold">Operational</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Widget Ping &amp; Heartbeat</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Regular 60s telemetry beacon received. Zero dropped socket connections.</p>
+</div>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Last Ping:</span>
+<span class="font-mono text-on-surface font-medium">12:44:02 PM EST</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-[20px] shadow-[0_10px_30px_rgba(20,25,40,0.03)] flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<div class="p-2 rounded-xl bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed/30 text-tertiary font-bold">Up to Date</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Configuration Sync</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Config revision v2.4 in sync with edge KV storage. Instant cache invalidation active.</p>
+</div>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Cache Status:</span>
+<span class="font-mono text-on-surface font-medium">HIT (Edge Tier 1)</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-[20px] shadow-[0_10px_30px_rgba(20,25,40,0.03)] flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<div class="p-2 rounded-xl bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed/30 text-tertiary font-bold">Authorized</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Allowed Domain Locking</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Requests locked to https://northstardigital.com. Cross-origin spoofing actively blocked.</p>
+</div>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Origin Lock:</span>
+<span class="font-mono text-on-surface font-medium">STRICT (1 Origin)</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-5 rounded-[20px] shadow-[0_10px_30px_rgba(20,25,40,0.03)] flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<div class="p-2 rounded-xl bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed/30 text-tertiary font-bold">Compliant</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">CSP &amp; CORS Headers</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Both `connect-src` and `script-src` whitelist policies match production guidelines.</p>
+</div>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Header Validation:</span>
+<span class="font-mono text-on-surface font-medium">Valid Directives</span>
+</div>
+</div>
+</div>
+<!-- Expandable Troubleshooting Panel -->
+<div class="bg-surface-container-lowest rounded-[22px] p-6 shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex flex-col gap-4">
+<div class="flex items-start justify-between cursor-pointer" onclick="toggleTroubleshoot()">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-xl bg-primary-fixed flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Troubleshooting: Widget not appearing or blocked by Ad-Blockers?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resolve script blocking issues and configure custom reverse proxy domain routing</span>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-transform duration-200" id="expandToggleIcon" type="button">
+<span class="material-symbols-outlined text-[22px]">expand_less</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 pt-3" id="troubleshootContent">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            If your browser privacy extensions (e.g., uBlock Origin, Brave Shields) or strict corporate firewalls flag CDN tracking scripts, verify that <code class="px-1.5 py-0.5 bg-surface-container-low text-primary font-mono text-body-sm rounded">cdn.northstardigital.com</code> is whitelisted in your organization's DNS resolver or configure our custom first-party reverse proxy CNAME.
+          </p>
+<!-- CNAME Option Box -->
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Recommended DNS CNAME Entry</span>
+<div class="flex items-center gap-2 font-mono text-body-sm text-on-surface">
+<span class="px-2 py-0.5 bg-surface-container rounded font-semibold text-primary">CNAME</span>
+<span>widget.northstardigital.com</span>
+<span class="text-outline">→</span>
+<span class="text-on-surface-variant">edge.northstar-cdn.net</span>
+</div>
+</div>
+<button class="self-start md:self-auto px-3.5 py-1.5 bg-surface-container-lowest hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md transition-colors shadow-sm" type="button">
+              Copy DNS Record
+            </button>
+</div>
+<div class="flex flex-wrap items-center gap-4 pt-1">
+<a class="flex items-center gap-1.5 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" href="#">
+<span>View CNAME Proxy Setup Guide</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="text-outline">·</span>
+<a class="flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">contact_support</span>
+<span>Contact Engineering Support</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interactions Script -->
+<script>
+    // Copy Code snippet functionality
+    const copyBtn = document.getElementById("copyBtn");
+    const copyText = document.getElementById("copyText");
+    const codeSnippet = `<script src="https://cdn.northstardigital.com/widget/v2.js" data-site-id="ns_prod_84920" async defer><\/script>`;
+
+    if (copyBtn) {
+      copyBtn.addEventListener("click", () => {
+        navigator.clipboard.writeText(codeSnippet).then(() => {
+          copyText.textContent = "Copied!";
+          setTimeout(() => {
+            copyText.textContent = "Copy Code";
+          }, 2000);
+        });
+      });
+    }
+
+    // Check installation button animation
+    const checkInstallBtn = document.getElementById("checkInstallBtn");
+    if (checkInstallBtn) {
+      checkInstallBtn.addEventListener("click", function() {
+        const icon = this.querySelector(".material-symbols-outlined");
+        const span = this.querySelector("span:not(.material-symbols-outlined)");
+        if (icon) icon.classList.add("animate-spin");
+        if (span) span.textContent = "Verifying...";
+        setTimeout(() => {
+          if (icon) icon.classList.remove("animate-spin");
+          if (span) span.textContent = "Verified (200 OK)";
+        }, 1200);
+      });
+    }
+
+    // Toggle Troubleshooting Collapse
+    function toggleTroubleshoot() {
+      const content = document.getElementById("troubleshootContent");
+      const icon = document.getElementById("expandToggleIcon");
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        icon.style.transform = "rotate(0deg)";
+      } else {
+        content.classList.add("hidden");
+        icon.style.transform = "rotate(180deg)";
+      }
+    }
+  </script>
+</div></main></div></div></div></body></html>

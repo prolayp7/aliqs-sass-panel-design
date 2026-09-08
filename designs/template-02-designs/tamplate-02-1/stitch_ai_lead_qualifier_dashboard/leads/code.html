@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#171d1a","status-success":"#15945F","mint-tint":"#F0FAF5","on-secondary-fixed":"#002112","on-secondary":"#ffffff","canvas-bg":"#F2F4F3","status-cold":"#6F8E9E","surface-container":"#e9efea","tertiary-container":"#003c25","tertiary-fixed":"#8ef7c0","surface":"#f5fbf5","on-secondary-fixed-variant":"#005233","surface-container-low":"#eff5f0","on-tertiary-container":"#43af7d","inverse-surface":"#2c322e","shell-bg":"#FFFFFF","surface-dim":"#d5dcd6","primary-fixed":"#bdedd4","on-primary-fixed-variant":"#224f3d","secondary-fixed":"#99f6c2","status-hot":"#E55252","surface-tint":"#3b6753","secondary-container":"#99f6c2","on-primary-container":"#78a68f","on-primary-fixed":"#002115","mint-soft":"#DCF4E8","on-secondary-container":"#02734a","muted-gray":"#8A938E","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#005234","surface-container-highest":"#dee4df","on-error":"#ffffff","on-background":"#171d1a","on-tertiary":"#ffffff","status-warm":"#E9A23B","secondary-fixed-dim":"#7dd9a7","background":"#f5fbf5","border-subtle":"#DDE2DF","inverse-primary":"#a2d1b9","surface-bright":"#f5fbf5","outline":"#717973","secondary":"#006c45","tertiary":"#002415","on-surface-variant":"#414944","tertiary-fixed-dim":"#71dba5","inverse-on-surface":"#ecf2ed","surface-container-high":"#e4eae4","error-container":"#ffdad6","surface-variant":"#dee4df","primary-container":"#0b3b2a","on-error-container":"#93000a","error":"#ba1a1a","on-tertiary-fixed":"#002112","outline-variant":"#c0c8c2","on-primary":"#ffffff","body-charcoal":"#3E4742","primary-fixed-dim":"#a2d1b9","emerald-vivid":"#15945F","primary":"#002417"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.5rem","space-2xl":"2.5rem","space-3xl":"3rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","shell-padding":"2rem","gutter-tablet":"1rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-2xs":"0.25rem","space-xl":"2rem"},"fontFamily":{"label-md":["Inter"],"kpi-metric":["Manrope"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Manrope"],"headline-sm":["Manrope"],"body-sm":["Inter"],"body-md":["Inter"],"display-lg":["Manrope"],"headline-md":["Manrope"]},"fontSize":{"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"kpi-metric":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased min-h-screen"><div class="p-gutter-mobile lg:p-gutter-desktop min-h-screen flex"><div class="w-full rounded-[24px] bg-shell-bg shadow-[0_8px_32px_-4px_rgba(11,59,42,0.05),0_2px_8px_-2px_rgba(17,23,20,0.03)] border border-border-subtle flex relative overflow-hidden"><aside class="w-64 flex-shrink-0 bg-shell-bg border-r border-border-subtle flex flex-col justify-between h-auto py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="NovaLead Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U_RVWV9ukk3tUR50J2SFd0itvU9dlX7o1A9fwm0wprNWdIyFnoq8sezQTdb0HgP2Po9iKsE0S8zozl9C4DV8nv1tDCSvX5wPShj2kRgGMqL2y0hvOejE1VMoBLbEzsYpUXESUaK3Ui0rtTEpTl40fhJC5zX3970t55eATUaLoUb6Nuj33LwyUbrCGKZNqYaz8z3ryi3zcO9grKYQPTngsFy4DvIJ2ICTC6f4mtC2OOH6kAs48xwjt6Tlw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">NovaLead</span></div><button class="flex items-center justify-between px-space-xs py-space-2xs rounded-lg bg-surface-container-low text-body-sm font-label-sm text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="flex items-center gap-1.5 truncate"><span class="w-2 h-2 rounded-full bg-emerald-vivid"></span>Northstar Digital</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">Menu</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="dashboard" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">grid_view</span><span class="font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="inbox" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">chat</span><span class="font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Inbox</span></div><span class="px-1.5 py-0.5 rounded-full bg-mint-soft text-emerald-vivid text-[10px] font-bold">12+</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs rounded-lg transition-all bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full" data-path="leads" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px] text-emerald-vivid">group</span><span class="font-body-md text-on-surface font-semibold">Leads</span></div></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">schedule_send</span><span class="font-body-md">Follow-ups</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">smart_toy</span><span class="font-body-md">AI Agent</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">rule</span><span class="font-body-md">Qualification</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">menu_book</span><span class="font-body-md">Knowledge Base</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">widgets</span><span class="font-body-md">Websites &amp; Widget</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="automations" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">account_tree</span><span class="font-body-md">Automations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">bar_chart</span><span class="font-body-md">Analytics</span></a></nav></div><div class="flex flex-col gap-space-xs px-space-xs"><div class="px-space-xs text-[10px] uppercase font-bold tracking-wider text-muted-gray">General</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-mint-tint text-on-surface font-semibold relative before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-emerald-vivid before:rounded-r-full"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">hub</span><span class="font-body-md">Integrations</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="team" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">badge</span><span class="font-body-md">Team</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">notifications</span><span class="font-body-md">Notifications</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">receipt_long</span><span class="font-body-md">Billing &amp; Usage</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">settings</span><span class="font-body-md">Settings</span></a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-body-md text-on-surface-variant hover:bg-mint-tint hover:text-on-surface transition-all group" data-path="help" href="#"><span class="material-symbols-outlined text-[20px] text-muted-gray group-hover:text-emerald-vivid transition-colors">help</span><span class="font-body-md">Help</span></a></nav></div></div><div class="px-space-md pt-space-xs"><div class="rounded-xl bg-gradient-to-br from-primary-container to-primary p-space-sm text-on-primary flex flex-col gap-space-xs shadow-[0_6px_20px_-2px_rgba(11,59,42,0.18)]"><div class="flex items-center justify-between"><span class="text-[11px] font-semibold text-mint-soft tracking-wide">Starter Plan</span><span class="text-[11px] text-muted-gray">74%</span></div><div class="text-body-sm font-label-md text-on-primary font-medium">742 / 1,000 Conv.</div><div class="w-full h-1.5 bg-tertiary-container rounded-full overflow-hidden"><div class="h-full bg-status-success rounded-full w-[74%]"></div></div><div class="pt-1 flex items-center justify-between"><span class="text-[10px] text-mint-soft/80">Renews in 11 days</span><button class="px-space-xs py-1 rounded-full bg-status-success text-on-secondary text-[11px] font-semibold hover:opacity-90 transition-opacity" type="button">Upgrade</button></div></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-shell-bg"><header class="h-16 px-space-lg border-b border-border-subtle flex items-center justify-between gap-space-md bg-shell-bg sticky top-0 z-30"><div class="flex-1 max-w-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-muted-gray text-[20px]">search</span><input class="w-full pl-10 pr-12 py-2 text-body-sm rounded-xl border border-border-subtle bg-mint-tint/40 text-on-surface placeholder-muted-gray focus:bg-shell-bg focus:border-status-success focus:ring-2 focus:ring-mint-soft focus:outline-none transition-all" placeholder="Search leads, visitors, conversations..." type="text"/><div class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container border border-border-subtle text-[10px] font-medium text-muted-gray font-mono">⌘F</div></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-mint-tint border border-border-subtle text-body-sm font-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-status-success"></span><span>northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span></div><div class="flex items-center gap-1"><button aria-label="Inbox notifications" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">mail</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-hot ring-2 ring-shell-bg"></span></button><button aria-label="Alerts" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-mint-tint hover:text-emerald-vivid transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-warm ring-2 ring-shell-bg"></span></button></div><div class="h-7 w-[1px] bg-border-subtle"></div><div class="flex items-center gap-space-xs pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-border-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKLyyv5oEThrEBK1kOu9d885WSHu5uMzQZFjJgLQyPXiuwk00YS1a4M9jxQFjd2-Ksr-reE136uCll9DfVL8cG0xBKycJoDKuGo0FJZUwlrdjPN61HSOywTH_n4y-5T9Q6VjSve9C_nLz2XTYQINf0qNoy_le1JK7kxVM4ZeMQR4UOI2C3ZCdFelpZGdbsgEzTLBKGui_o9DTRuE1oTClDxKTVXiLDglubfPzeWDXLM7eyAbv7gBT_"/><div class="hidden xl:flex flex-col text-left"><span class="text-body-sm font-semibold text-on-surface leading-tight">Maya Singh</span><span class="text-[11px] text-muted-gray leading-tight">Product Lead</span></div></div></div></header><main class="flex-1 p-space-lg bg-shell-bg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Page Header & Top Controls -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Leads</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-mint-tint text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-pulse"></span>
+          267 Total Leads
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Manage, qualify, and route website prospects captured by Nova AI in real-time.
+      </p>
+</div>
+<!-- Actions & Views Toolbar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Saved Views Selector -->
+<div class="relative inline-block text-left">
+<button class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-emerald-vivid">bookmark</span>
+<span>All Qualified Leads</span>
+<span class="material-symbols-outlined text-[18px] text-muted-gray">expand_more</span>
+</button>
+</div>
+<!-- View Switcher (Table / Kanban) -->
+<div class="inline-flex p-1 rounded-xl bg-surface-container-low text-on-surface-variant shadow-inner">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[17px] text-emerald-vivid">table_rows</span>
+<span>Table</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-muted-gray hover:text-on-surface font-label-sm text-label-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[17px]">view_kanban</span>
+<span>Kanban</span>
+</button>
+</div>
+<!-- Export CSV Pill -->
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-lowest text-primary hover:bg-mint-tint transition-all shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Export CSV</span>
+</button>
+<!-- Primary Action: + Add Lead -->
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary hover:bg-secondary transition-all shadow-md font-label-md text-label-md group" type="button">
+<span class="material-symbols-outlined text-[18px] text-mint-soft group-hover:rotate-90 transition-transform">add</span>
+<span>Add Lead</span>
+</button>
+</div>
+</div>
+<!-- Four KPI Metric Cards Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: New Leads (Active Forest Highlight) -->
+<div class="relative overflow-hidden rounded-[18px] bg-gradient-to-br from-primary-container to-primary p-space-md text-on-primary shadow-md flex flex-col justify-between group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-emerald-vivid/10 blur-xl"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-mint-soft/80 font-bold">Inbound Volume</span>
+<span class="font-headline-sm text-headline-sm text-on-primary font-bold">New Leads</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-mint-soft/15 flex items-center justify-center text-mint-soft group-hover:bg-emerald-vivid group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="flex items-baseline gap-2">
+<span class="font-kpi-metric text-kpi-metric text-on-primary">42</span>
+<span class="inline-flex items-center gap-0.5 text-mint-soft font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+            +12 today
+          </span>
+</div>
+<button aria-label="View New Leads" class="w-8 h-8 rounded-full bg-mint-soft/10 hover:bg-mint-soft/20 flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-primary">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Hot Leads -->
+<div class="relative overflow-hidden rounded-[18px] bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray font-bold">High Intent</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Hot Leads</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-status-hot/10 flex items-center justify-center text-status-hot">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-kpi-metric text-kpi-metric text-on-surface">18</span>
+<span class="font-body-sm text-body-sm text-muted-gray">Top 5% intent score (&gt;85)</span>
+</div>
+<div class="flex items-center">
+<span class="px-2 py-1 rounded-full bg-error-container text-status-hot font-label-sm text-label-sm font-bold">Action Now</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Unassigned -->
+<div class="relative overflow-hidden rounded-[18px] bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray font-bold">Routing Queue</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Unassigned</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-status-warm/15 flex items-center justify-center text-status-warm">
+<span class="material-symbols-outlined text-[18px]">assignment_late</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-kpi-metric text-kpi-metric text-on-surface">9</span>
+<span class="font-body-sm text-body-sm text-status-warm font-medium">Requires routing to sales</span>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-mint-tint text-secondary font-label-sm text-label-sm font-bold hover:bg-mint-soft transition-colors" type="button">
+          Auto-Route
+        </button>
+</div>
+</div>
+<!-- Card 4: Follow-up Due -->
+<div class="relative overflow-hidden rounded-[18px] bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-muted-gray font-bold">SLA Targets</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Follow-up Due</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-mint-tint flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-kpi-metric text-kpi-metric text-on-surface">14</span>
+<span class="font-body-sm text-body-sm text-emerald-vivid font-medium">4 urgent calls today</span>
+</div>
+<div class="flex -space-x-1.5 overflow-hidden">
+<span class="inline-block h-6 w-6 rounded-full ring-2 ring-shell-bg bg-surface-container text-body-charcoal font-label-sm text-[10px] text-center leading-6 font-bold">MS</span>
+<span class="inline-block h-6 w-6 rounded-full ring-2 ring-shell-bg bg-surface-container text-body-charcoal font-label-sm text-[10px] text-center leading-6 font-bold">AD</span>
+<span class="inline-block h-6 w-6 rounded-full ring-2 ring-shell-bg bg-surface-container text-body-charcoal font-label-sm text-[10px] text-center leading-6 font-bold">EA</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Temperature Navigation Bar & Multi-filter Controls -->
+<div class="rounded-[18px] bg-surface-container-lowest p-space-sm shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<!-- Temperature Segment Tabs -->
+<div class="inline-flex p-1 rounded-xl bg-surface-container-low max-w-full overflow-x-auto">
+<button class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm" type="button">
+<span>All Leads</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-body-charcoal font-bold text-[10px]">267</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+<span class="w-2 h-2 rounded-full bg-status-hot"></span>
+<span>Hot</span>
+<span class="text-muted-gray text-[10px]">74</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+<span class="w-2 h-2 rounded-full bg-status-warm"></span>
+<span>Warm</span>
+<span class="text-muted-gray text-[10px]">142</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+<span class="w-2 h-2 rounded-full bg-status-cold"></span>
+<span>Cold</span>
+<span class="text-muted-gray text-[10px]">51</span>
+</button>
+</div>
+<!-- Search Input with ⌘K Hint -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-muted-gray text-[18px]">search</span>
+<input class="w-full pl-9 pr-14 py-2 text-body-sm font-body-sm rounded-xl bg-surface-container-low text-on-surface placeholder-muted-gray focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all" placeholder="Search leads by name, company, email..." type="text"/>
+<div class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container text-[10px] font-medium text-muted-gray font-mono">⌘K</div>
+</div>
+</div>
+<!-- Secondary Filter Pills Row -->
+<div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+<div class="flex flex-wrap items-center gap-2">
+<!-- Stage Filter -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-body-charcoal font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+<span class="text-muted-gray">Stage:</span>
+<span class="font-semibold text-primary">All Stages</span>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span>
+</button>
+<!-- Owner Filter -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-body-charcoal font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+<span class="text-muted-gray">Owner:</span>
+<span class="font-semibold text-primary">All Owners</span>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span>
+</button>
+<!-- Source Filter -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-body-charcoal font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+<span class="text-muted-gray">Source:</span>
+<span class="font-semibold text-primary">All Sources</span>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span>
+</button>
+<!-- Service Filter -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-body-charcoal font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+<span class="text-muted-gray">Service:</span>
+<span class="font-semibold text-primary">All Services</span>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span>
+</button>
+<!-- More Filters -->
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>More Filters</span>
+</button>
+</div>
+<button class="inline-flex items-center gap-1 text-muted-gray hover:text-primary font-label-sm text-label-sm transition-colors px-2 py-1" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset</span>
+</button>
+</div>
+</div>
+<!-- Bulk Actions Bar (Active State: 3 Leads Selected) -->
+<div class="rounded-xl bg-primary text-on-primary px-space-md py-2.5 shadow-md flex flex-wrap items-center justify-between gap-space-sm animate-fadeIn">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-md bg-secondary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-label-md text-label-md text-on-primary font-semibold">3 leads selected</span>
+<span class="h-4 w-px bg-on-primary/20"></span>
+<button class="text-mint-soft hover:underline font-label-sm text-label-sm" type="button">Deselect all</button>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<!-- Assign Owner Action -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-mint-soft hover:bg-mint-soft hover:text-primary transition-all font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">person_add</span>
+<span>Assign Owner</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<!-- Change Stage Action -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-mint-soft hover:bg-mint-soft hover:text-primary transition-all font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+<span>Change Stage</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<!-- Push to CRM Action -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-status-success text-on-secondary hover:opacity-90 transition-all font-label-sm text-label-sm shadow-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">hub</span>
+<span>Push to HubSpot</span>
+</button>
+<!-- Mark Temperature Action -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-mint-soft hover:bg-mint-soft hover:text-primary transition-all font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">thermostat</span>
+<span>Temperature</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<!-- Quick Export Selection -->
+<button aria-label="Export Selected" class="p-1.5 rounded-lg bg-primary-container text-mint-soft hover:bg-mint-soft hover:text-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+</button>
+</div>
+</div>
+<!-- Detailed Data Table Container -->
+<div class="rounded-[18px] bg-surface-container-lowest shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<!-- Table Header -->
+<thead class="bg-surface-container-low text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-3.5 pl-4 pr-2 w-10" scope="col">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-3.5 px-3 font-semibold" scope="col">Lead Prospect</th>
+<th class="py-3.5 px-3 font-semibold" scope="col">AI Score</th>
+<th class="py-3.5 px-3 font-semibold" scope="col">Temp</th>
+<th class="py-3.5 px-3 font-semibold" scope="col">Service</th>
+<th class="py-3.5 px-3 font-semibold" scope="col">Stage</th>
+<th class="py-3.5 px-3 font-semibold" scope="col">Assigned Rep</th>
+<th class="py-3.5 px-3 font-semibold" scope="col">Inbound Source</th>
+<th class="py-3.5 px-3 font-semibold" scope="col">Next Follow-up</th>
+<th class="py-3.5 px-3 font-semibold" scope="col">Activity</th>
+<th class="py-3.5 pr-4 pl-2 text-right font-semibold" scope="col">Actions</th>
+</tr>
+</thead>
+<!-- Table Body -->
+<tbody class="divide-y-0 text-body-sm font-body-sm text-body-charcoal">
+<!-- Row 1 (Selected - Olivia Martin) -->
+<tr class="bg-mint-tint/50 hover:bg-mint-tint transition-colors">
+<td class="py-3.5 pl-4 pr-2">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Corporate headshot of Olivia Martin with clean studio lighting, confident expression, neutral green background tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcvtGNWJDfAr-MYy3Gt6EX1BhesmwQ2Dk-J5Ia0n17PST4TnsFyVP-_zmbXMLQ5EI0vDN2FJz1WnbOAY3XDrvsZ2YOHj-eInsZ2CVyYLPY-HaedPGZMCyZinGPcyHnsU1Eo1V9fMKyLuQOcsHcgo34N2oo8XYV0zNQT35GNG8WEZ7UnUPJ3ebDJsdDw9kWiZXBu5GEcjWy0I-tdGfegTeO1keyeFVShRIQGsXwLktCkgEELI0enk2-"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Olivia Martin</span>
+<span class="material-symbols-outlined text-[15px] text-emerald-vivid" title="AI Verified">verified</span>
+</div>
+<span class="text-body-sm text-on-surface-variant truncate">VP of Growth, Apex Global</span>
+<span class="text-[11px] text-muted-gray truncate">o.martin@apexglobal.io</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-status-success/15 flex items-center justify-center font-headline-sm text-headline-sm font-bold text-status-success">
+                  96
+                </div>
+<div class="w-12 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-status-success h-full rounded-full" style="width: 96%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-status-hot font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-hot"></span>
+                Hot Lead
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                AI Automation
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-mint-soft text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">phone_in_talk</span>
+                Discovery Call
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<img alt="Maya Singh" class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKLyyv5oEThrEBK1kOu9d885WSHu5uMzQZFjJgLQyPXiuwk00YS1a4M9jxQFjd2-Ksr-reE136uCll9DfVL8cG0xBKycJoDKuGo0FJZUwlrdjPN61HSOywTH_n4y-5T9Q6VjSve9C_nLz2XTYQINf0qNoy_le1JK7kxVM4ZeMQR4UOI2C3ZCdFelpZGdbsgEzTLBKGui_o9DTRuE1oTClDxKTVXiLDglubfPzeWDXLM7eyAbv7gBT_"/>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Maya Singh</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-muted-gray">search</span>
+                Google Organic
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-emerald-vivid font-bold">Today, 3:30 PM</span>
+<span class="text-[11px] text-muted-gray">SLA: In 28m</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant font-mono">2m ago</span>
+</td>
+<td class="py-3.5 pr-4 pl-2 text-right">
+<button class="p-1 rounded-lg hover:bg-surface-container text-muted-gray hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 (Selected - Ethan Brooks) -->
+<tr class="bg-mint-tint/50 hover:bg-mint-tint transition-colors">
+<td class="py-3.5 pl-4 pr-2">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container text-secondary flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-sm">
+                  EB
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Ethan Brooks</span>
+</div>
+<span class="text-body-sm text-on-surface-variant truncate">CTO, Vortex Tech</span>
+<span class="text-[11px] text-muted-gray truncate">ethan@vortextech.io</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-status-success/15 flex items-center justify-center font-headline-sm text-headline-sm font-bold text-status-success">
+                  92
+                </div>
+<div class="w-12 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-status-success h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-status-hot font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-hot"></span>
+                Hot Lead
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                AI Automation
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">desktop_windows</span>
+                Demo Scheduled
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of Alexandra Deff, corporate sales professional, soft emerald-tinted backdrop with high key natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJUU8ftojh-eLv4kBNXPsen63k3CfUEPuneffnCzSw-mSCir4CXkUKy1DEt3Qz3pjM7eWKLdj1f1CxNv6_P4oISfc_TnTemnR2qgUdE7oPdZ1z5zCTnDL6j3ttCaYGQY1LM3sjXPlJ4xfRmqS81l1EzQzVz8rPXd-HzdrWY1bmWJALJZWGlonudtk85_RznvbEGYjhapr7PWZpESKV_Yj38ntbnXkh9dLRGPsfdnvedbFTZWF1gdFX"/>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Alexandra Deff</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-muted-gray">input</span>
+                Direct Inbound
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Tomorrow, 11:00 AM</span>
+<span class="text-[11px] text-muted-gray">Confirmed via Calendly</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant font-mono">14m ago</span>
+</td>
+<td class="py-3.5 pr-4 pl-2 text-right">
+<button class="p-1 rounded-lg hover:bg-surface-container text-muted-gray hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 (Selected - Sophia Chen) -->
+<tr class="bg-mint-tint/50 hover:bg-mint-tint transition-colors">
+<td class="py-3.5 pl-4 pr-2">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Professional modern portrait of Sophia Chen in business casual, clean architecture office setting with soft greenery in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWbWG2FetLfqJrya_n2D-TkARZc7zVlzrmhz4RiFlWYHoEsFysVfcUXqL-N1dUttMYPbKqKioel6dvD8Ivq9BOfATVKug7_0vP_ZtfsLvFhBTOiXj6xZoUjNeMC01JZJ9pHNvZtEFpeigNi_v_c18_CgI7MvOgSnCwdWsUq7OtjwmJMK-BsQRqtZ8p_0xMRyMbltSfj4uL5nJVul9NJSx4ifbWhaGWvrFV4qL9PFM-1rT8ANU9-xzc"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Sophia Chen</span>
+<span class="material-symbols-outlined text-[15px] text-emerald-vivid" title="Enterprise Lead">star</span>
+</div>
+<span class="text-body-sm text-on-surface-variant truncate">Head of Sales, SaaSiFy Labs</span>
+<span class="text-[11px] text-muted-gray truncate">sophia@saasify.co</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-status-success/15 flex items-center justify-center font-headline-sm text-headline-sm font-bold text-status-success">
+                  89
+                </div>
+<div class="w-12 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-status-success h-full rounded-full" style="width: 89%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-status-hot font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-hot"></span>
+                Hot Lead
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                Web Development
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-mint-tint text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">send</span>
+                SDR Handoff
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<img alt="Maya Singh" class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKLyyv5oEThrEBK1kOu9d885WSHu5uMzQZFjJgLQyPXiuwk00YS1a4M9jxQFjd2-Ksr-reE136uCll9DfVL8cG0xBKycJoDKuGo0FJZUwlrdjPN61HSOywTH_n4y-5T9Q6VjSve9C_nLz2XTYQINf0qNoy_le1JK7kxVM4ZeMQR4UOI2C3ZCdFelpZGdbsgEzTLBKGui_o9DTRuE1oTClDxKTVXiLDglubfPzeWDXLM7eyAbv7gBT_"/>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Maya Singh</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-muted-gray">ads_click</span>
+                Targeted Ads
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-status-hot font-bold">Today, 5:00 PM</span>
+<span class="text-[11px] text-status-hot">Requires prep deck</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant font-mono">42m ago</span>
+</td>
+<td class="py-3.5 pr-4 pl-2 text-right">
+<button class="p-1 rounded-lg hover:bg-surface-container text-muted-gray hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 (Unselected - Liam Wilson) -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 pl-4 pr-2">
+<input class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container text-body-charcoal flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-sm">
+                  LW
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Liam Wilson</span>
+<span class="text-body-sm text-on-surface-variant truncate">Operations Dir, Cloudscale Co</span>
+<span class="text-[11px] text-muted-gray truncate">liam@cloudscale.net</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-status-warm/15 flex items-center justify-center font-headline-sm text-headline-sm font-bold text-status-warm">
+                  78
+                </div>
+<div class="w-12 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-status-warm h-full rounded-full" style="width: 78%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-warm/15 text-status-warm font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warm"></span>
+                Warm Lead
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                E-commerce
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-mint-tint text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">smart_toy</span>
+                AI Qualified
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container text-[11px] font-bold flex items-center justify-center text-primary">EA</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Edwin Adenike</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-muted-gray">input</span>
+                Direct Inbound
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-body-charcoal font-semibold">Nov 28, 2:00 PM</span>
+<span class="text-[11px] text-muted-gray">Standard Cadence</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant font-mono">1h ago</span>
+</td>
+<td class="py-3.5 pr-4 pl-2 text-right">
+<button class="p-1 rounded-lg hover:bg-surface-container text-muted-gray hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</td>
+</tr>
+<!-- Row 5 (Unselected - Elena Rostova / Unassigned) -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 pl-4 pr-2">
+<input class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-mint-tint text-secondary flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-sm">
+                  ER
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Elena Rostova</span>
+<span class="text-body-sm text-on-surface-variant truncate">Product Strategist, Starlight AI</span>
+<span class="text-[11px] text-muted-gray truncate">elena@starlight.ai</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-status-warm/15 flex items-center justify-center font-headline-sm text-headline-sm font-bold text-status-warm">
+                  84
+                </div>
+<div class="w-12 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-status-warm h-full rounded-full" style="width: 84%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-warm/15 text-status-warm font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warm"></span>
+                Warm Lead
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                AI Automation
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-mint-tint text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">smart_toy</span>
+                AI Qualified
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-status-warm/15 text-status-warm font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">person_off</span>
+                Unassigned
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-muted-gray">share</span>
+                Organic LinkedIn
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-sm text-label-sm text-status-hot font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">error</span>
+                Needs Owner
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant font-mono">2h ago</span>
+</td>
+<td class="py-3.5 pr-4 pl-2 text-right">
+<button class="p-1 rounded-lg hover:bg-surface-container text-muted-gray hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</td>
+</tr>
+<!-- Row 6 (Unselected - Marcus Vance) -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 pl-4 pr-2">
+<input class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container text-body-charcoal flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-sm">
+                  MV
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Marcus Vance</span>
+<span class="text-body-sm text-on-surface-variant truncate">Founder, Hyperflow Systems</span>
+<span class="text-[11px] text-muted-gray truncate">marcus@hyperflow.com</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm font-bold text-on-surface-variant">
+                  62
+                </div>
+<div class="w-12 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-status-warm h-full rounded-full" style="width: 62%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-warm/15 text-status-warm font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warm"></span>
+                Warm Lead
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                SEO Optimization
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-body-charcoal font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">mark_email_read</span>
+                Contacted
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container text-[11px] font-bold flex items-center justify-center text-primary">IO</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Isaac Oluwaseun</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-muted-gray">search</span>
+                Google Organic
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-body-charcoal font-semibold">Nov 29, 11:30 AM</span>
+<span class="text-[11px] text-muted-gray">Follow-up #2</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant font-mono">4h ago</span>
+</td>
+<td class="py-3.5 pr-4 pl-2 text-right">
+<button class="p-1 rounded-lg hover:bg-surface-container text-muted-gray hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</td>
+</tr>
+<!-- Row 7 (Unselected - Chloe Bennett / Cold Lead) -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 pl-4 pr-2">
+<input class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container text-body-charcoal flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-sm">
+                  CB
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Chloe Bennett</span>
+<span class="text-body-sm text-on-surface-variant truncate">VP Marketing, RetailWave</span>
+<span class="text-[11px] text-muted-gray truncate">c.bennett@retailwave.io</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-status-cold/15 flex items-center justify-center font-headline-sm text-headline-sm font-bold text-status-cold">
+                  41
+                </div>
+<div class="w-12 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-status-cold h-full rounded-full" style="width: 41%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-status-cold font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-cold"></span>
+                Cold Lead
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                E-commerce
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-muted-gray font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">rate_review</span>
+                In Review
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container text-[11px] font-bold flex items-center justify-center text-primary">DO</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">David Oshodi</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-muted-gray">ads_click</span>
+                Targeted Ads
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-status-cold font-medium">Nurture Campaign</span>
+<span class="text-[11px] text-muted-gray">Auto Drip Sequence</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="text-body-sm text-on-surface-variant font-mono">1d ago</span>
+</td>
+<td class="py-3.5 pr-4 pl-2 text-right">
+<button class="p-1 rounded-lg hover:bg-surface-container text-muted-gray hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer & Comprehensive Pagination Controls -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="text-body-sm font-body-sm text-on-surface-variant">
+          Showing <span class="font-semibold text-primary">1–7</span> of <span class="font-semibold text-primary">267</span> leads
+        </span>
+<!-- Rows Per Page Dropdown -->
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-on-surface-variant">
+<span>Show:</span>
+<button class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm hover:bg-mint-tint transition-colors" type="button">
+<span>10 per page</span>
+<span class="material-symbols-outlined text-[16px] text-muted-gray">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Pagination Buttons -->
+<div class="flex items-center gap-1">
+<button class="inline-flex items-center justify-center p-1.5 rounded-lg text-muted-gray hover:text-primary hover:bg-surface-container-lowest transition-colors disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm flex items-center justify-center" type="button">
+          1
+        </button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-lowest font-label-sm text-label-sm transition-colors flex items-center justify-center" type="button">
+          2
+        </button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-lowest font-label-sm text-label-sm transition-colors flex items-center justify-center" type="button">
+          3
+        </button>
+<span class="w-6 text-center text-muted-gray text-body-sm font-medium">...</span>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-lowest font-label-sm text-label-sm transition-colors flex items-center justify-center" type="button">
+          39
+        </button>
+<button class="inline-flex items-center justify-center p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></div></div></body></html>

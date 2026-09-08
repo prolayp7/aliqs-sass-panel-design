@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#e1e3ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#79fbc8", "on-background": "#171c25", "surface-container-high": "#e5e8f5", "secondary": "#5f5e5e", "on-primary": "#ffffff", "tertiary": "#005940", "outline-variant": "#c4c5d9", "tertiary-fixed": "#77fac7", "primary-fixed-dim": "#bac3ff", "on-secondary-fixed-variant": "#474646", "primary": "#0034dc", "on-primary-fixed": "#00105b", "on-surface-variant": "#444656", "secondary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#00513a", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002115", "surface-dim": "#d6dae7", "inverse-surface": "#2c303a", "outline": "#747687", "inverse-primary": "#bac3ff", "background": "#f9f9ff", "on-secondary-fixed": "#1c1b1b", "primary-container": "#3152f4", "secondary-fixed": "#e5e2e1", "surface-container-highest": "#dfe2ef", "error": "#ba1a1a", "inverse-on-surface": "#edf0fd", "secondary-container": "#e2dfde", "on-secondary-container": "#636262", "on-surface": "#171c25", "surface-container": "#eaedfb", "surface": "#f9f9ff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#002fc9", "tertiary-container": "#007454", "surface-tint": "#2649ec", "surface-variant": "#dfe2ef", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-container-low": "#f1f3ff", "tertiary-fixed-dim": "#58ddac", "on-error": "#ffffff", "primary-fixed": "#dee0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "2.5rem", "space-xl": "1.5rem", "space-sm": "0.75rem", "space-2xl": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "card-padding": "1.5rem", "space-2xs": "0.25rem", "shell-padding": "1.75rem", "gutter-grid": "1.25rem", "space-lg": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-kpi": ["Plus Jakarta Sans"], "display-kpi-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "metric-mono": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-kpi": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-kpi-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "metric-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-low font-body-md text-on-surface antialiased min-h-screen"><div class="min-h-screen p-0 md:p-6 lg:p-8 flex justify-center items-start"><div class="w-full max-w-[1440px] bg-surface-container-lowest rounded-none md:rounded-[28px] shadow-[0_16px_40px_rgba(23,28,37,0.06)] overflow-hidden flex relative min-h-[calc(100vh-4rem)]"><aside class="w-60 shrink-0 bg-surface-container-low flex flex-col justify-between p-4 overflow-y-auto"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-2 py-1"><img alt="Nova AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIzIYHbtFlrLY130WJzA13e724hpsIQIda28j6khX9HCROBRw-A1RnX4859UIy06w136DL45CVVg_Q0ileAYCELXx6mvHUBe3M2FG93CGxMF2lWL10YiMZU3rQ3w134P8hdhO6inrJbG9dJAYXY3VHsfOsPC6IITJ2GbTr96wn1Ir8ahtkDPj_AKJOBb60ImcuwYSLOtrH5gCgXY0Psrb8karl1HGeZeHHKHT2BXG90PXwdV7z-5K_Zw"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between cursor-pointer group"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Nova AI</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-on-surface transition-colors">unfold_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Northstar Digital</span></div></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Workspace</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-xl transition-colors bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inbox" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-lg text-label-lg">Inbox</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Leads</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-label-lg text-label-lg">Follow-ups</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Agent</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="qualification" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-lg text-label-lg">Qualification</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-lg text-label-lg">Knowledge Base</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="websites-and-widget" href="#"><span class="material-symbols-outlined text-[20px]">widgets</span><span class="font-label-lg text-label-lg">Websites &amp; Widget</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-lg text-label-lg">Analytics</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="integrations" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-lg text-label-lg">Integrations</span></a></nav></div><div class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-3 mb-1 tracking-wider">Administration</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Team</span></a><a class="flex items-center justify-between px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing-and-usage" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-label-lg text-label-lg">Billing &amp; Usage</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div></div><div class="flex flex-col gap-3 mt-6 pt-4"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span class="font-label-lg text-label-lg">Help &amp; Support</span></a><div class="p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(20,25,40,0.03)] flex flex-col gap-2.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Starter Plan</span><span class="font-label-sm text-label-sm text-tertiary font-bold">Active</span></div><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">742 / 1,000</span><span class="font-label-sm text-label-sm">74%</span></div><div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 74.2%"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">Monthly AI conversations</span></div><a class="mt-1 w-full py-1.5 px-3 bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md rounded-lg text-center transition-colors" data-path="billing-and-usage" href="#">Upgrade Plan</a></div></div></aside><div class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest"><header class="h-16 px-6 lg:px-8 bg-surface-container-lowest flex items-center justify-between shrink-0 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-10"><div class="flex items-center gap-4 flex-1"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full cursor-pointer"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-tertiary/20"></span><span class="font-label-md text-label-md text-on-surface">northstardigital.com</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="relative max-w-md w-full hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search leads, chats, workflows..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-4"><button class="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-[0_4px_12px_rgba(49,82,244,0.25)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Create</span></button><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSXdHa1-FVHlKmrwdM8jxmP1bMLCpJlaAj8xSNb_Zyfb2sNlh4TduaCv5uQ8y53RAgzt4NdOkuKuzphMe6hZZ9LQHoxo0AKyGxA0qOW8KCt4tuz9lv1hgDmKYIDFOPEjEc1wChG7dDsDJeHGeGi_OcjQuvCXj0J1cV8-Pm8-GLV_SMIkdEWBMUS43bs-j_82ljELV1cWPM9bA8fjiT2LzqVsmMBvaPioP4hQPmWaC_6d_mlePiT9BmvA"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Maya Singh</span><span class="font-body-sm text-body-sm text-on-surface-variant">Product Lead</span></div></div></div></header><main class="flex-1 p-6 lg:p-shell-padding overflow-y-auto bg-surface-container-lowest"><div class="flex flex-col w-full">
+<div class="relative flex flex-col xl:flex-row gap-6 items-start w-full">
+<!-- Main Content Stage -->
+<div class="flex-1 min-w-0 flex flex-col gap-6 w-full">
+<!-- Page Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Team</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+              3 of 3 Seats Used
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Manage team members, roles, lead routing permissions, and seat allocations.
+          </p>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_8px_20px_rgba(49,82,244,0.32)] ring-4 ring-primary-container/20 hover:opacity-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Invite Member</span>
+</button>
+</div>
+</div>
+<!-- Navigation Pill Tabs -->
+<div class="flex items-center gap-1 p-1 bg-surface-container-low rounded-full w-fit">
+<button class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_4px_12px_rgba(49,82,244,0.3)]" type="button">
+<span>Members</span>
+<span class="px-1.5 py-0.2 rounded-full bg-white/20 text-on-primary font-label-sm text-label-sm">3</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" type="button">
+<span>Teams</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">2</span>
+</button>
+<button class="px-4 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" type="button">
+          Routing Rules
+        </button>
+<button class="px-4 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" type="button">
+          Performance &amp; Workload
+        </button>
+</div>
+<!-- Seat-Limit Callout Banner -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-low p-5 shadow-[0_4px_20px_rgba(20,25,40,0.03)] flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">workspace_premium</span>
+</div>
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Starter Plan Seat Limit Reached (3/3 Allocated)</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Cap Hit</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              You have used all 3 member seats included with your Starter Plan. To collaborate with additional SDRs, sales engineers, or managers with custom role permissions, upgrade to Premium.
+            </p>
+<div class="flex items-center gap-2 mt-1 font-metric-mono text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                3 seats active
+              </span>
+<span>•</span>
+<span class="text-on-surface font-label-sm text-label-sm">0 seats remaining</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto shrink-0 justify-end">
+<a class="px-3 py-2 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" href="#">Compare Plans</a>
+<button class="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_4px_12px_rgba(49,82,244,0.28)] hover:opacity-95 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Upgrade to Premium</span>
+</button>
+</div>
+</div>
+<!-- Quick Telemetry Bento Metrics -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Total Pipeline Managed</span>
+<span class="font-display-kpi text-headline-lg text-on-surface mt-1">39 Leads</span>
+<span class="font-body-sm text-body-sm text-tertiary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+              +14% this week
+            </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[24px]">dataset</span>
+</div>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Live Rep Availability</span>
+<span class="font-display-kpi text-headline-lg text-on-surface mt-1">2 / 3 Online</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">1 in discovery call</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/30 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.04)] flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Avg AI Routing Time</span>
+<span class="font-display-kpi text-headline-lg text-on-surface mt-1">1.8s</span>
+<span class="font-body-sm text-body-sm text-tertiary mt-0.5">SLA: &lt; 5.0s</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+</div>
+</div>
+<!-- Members Table Container -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(20,25,40,0.04)] overflow-hidden">
+<div class="p-4 bg-surface-container-low flex items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">All Members</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Northstar Workspace</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md border-collapse">
+<thead class="bg-surface-container-low/50 text-on-surface-variant font-label-md text-label-md tracking-wider uppercase">
+<tr>
+<th class="py-3.5 px-4 font-semibold" scope="col">Team Member</th>
+<th class="py-3.5 px-4 font-semibold" scope="col">Role</th>
+<th class="py-3.5 px-4 font-semibold" scope="col">Team</th>
+<th class="py-3.5 px-4 font-semibold" scope="col">Website Access</th>
+<th class="py-3.5 px-4 font-semibold" scope="col">Availability</th>
+<th class="py-3.5 px-4 font-semibold" scope="col">Workload &amp; Leads</th>
+<th class="py-3.5 px-4 font-semibold" scope="col">Status</th>
+<th class="py-3.5 px-4 font-semibold" scope="col">Last Active</th>
+<th class="py-3.5 px-4 font-semibold text-right" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1: Maya Singh -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0" data-alt="Corporate headshot portrait of Maya Singh, female product lead, confident smile, clean soft studio lighting with neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfFoKMw8bRdZFzUaTqmFE5r-x4ugunoYjk8sxafRDF3Clnf42IhJMbSbDa6Oe_6LMtiiBk_vOL14OmKUrNY6h1ccxD-49PspN85cw50CoSubtMqXedqNg15GEUc8okAaVIb1SXrY1mZ-eMOPQNE5eQULUvnyaSKKuuKBroVE1lkUGfOigvu5nuDmuvpVAjJWwV42EEA6bTkBWTZv_48GkeQwsWPbi-60KkIKZTv4vIsqIhU_Cy2xQ"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-body-lg font-semibold text-on-surface truncate">Maya Singh</span>
+<span class="px-1.5 py-0.2 rounded text-[10px] uppercase font-label-sm bg-primary/10 text-primary font-bold">Owner</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">maya@northstardigital.com</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">
+                    Sales Manager
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm">
+                    Inbound Sales
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">public</span>
+                    northstardigital.com <span class="text-on-surface font-semibold">(All)</span>
+</span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#E8F8F3] text-[#20B486] font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#20B486]"></span>
+                    Available
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col gap-1 w-36">
+<div class="flex items-center justify-between">
+<span class="font-metric-mono text-body-sm text-on-surface font-semibold">18 leads</span>
+<span class="font-label-sm text-[10px] text-error uppercase font-bold">High</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Active
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap font-body-sm text-body-sm text-tertiary font-medium">
+                  Active now
+                </td>
+<td class="py-4 px-4 whitespace-nowrap text-right">
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Arjun Mehta -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0" data-alt="Portrait of Arjun Mehta, professional male sales representative, smart casual attire, contemporary minimalist office workspace backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdvldrDd1Jh7xlNsN0yswnq2kltf7I1BXVIF5kXMm4Y9wvsUFnOzRzoV6XPxszF6Tiom5PBYSagpYJ6stwgy6Wgo72dpDBZmILP4cxND-LlnFgQSi9nYWLDQqSXkfI90EmEzt3nDwcn19v9qvMhjp0CnQAZStDWqvdR1dfQidTFRMlqJ36ujB3XEyB5bezXyyVJZQm2-I66u27MIRct1GTa6RGfisMTmaPt6ekBye9Pe6Z8OuaPIA"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-lg font-semibold text-on-surface truncate">Arjun Mehta</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">arjun@northstardigital.com</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">
+                    Sales Representative
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm">
+                    Inbound Sales
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">public</span>
+                    northstardigital.com
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FEF8EC] text-[#F5A524] font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#F5A524]"></span>
+                    Busy (In Discovery Call)
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col gap-1 w-36">
+<div class="flex items-center justify-between">
+<span class="font-metric-mono text-body-sm text-on-surface font-semibold">12 leads</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase font-bold">Optimal</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Active
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap font-body-sm text-body-sm text-on-surface-variant">
+                  14m ago
+                </td>
+<td class="py-4 px-4 whitespace-nowrap text-right">
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Riya Sen -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0" data-alt="Portrait of Riya Sen, female enterprise SDR specialist with glasses, smiling warmly in modern corporate office with cobalt accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbWryp6ULvNWc7ev4LRPg9KDIeoCbYD40_HNx3IbS7R_ftVldRe_YDsDePpcoIRDIilnj5vh4kVFu8IUplv9uXdqnzicZyr88EnE4awGGjQZqXgjZ4tQXWJwLwxsZwQjSQhTxUEZ8YYRX5Bgl3RAyZRbsXRHhnKrXd5mwUW16_VG5NF32PaEbkcrc9HIO_5BtJYL79LI9XL6nT2Vi7Ij61c0TN-DnQc_rM8tRa9MB7O8zKetiDSEY"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-lg font-semibold text-on-surface truncate">Riya Sen</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">riya@northstardigital.com</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">
+                    Sales Representative
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm">
+                    Enterprise Lead Gen
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">public</span>
+                    northstardigital.com
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#F1F5F8] text-[#7190A8] font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#7190A8]"></span>
+                    Offline
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col gap-1 w-36">
+<div class="flex items-center justify-between">
+<span class="font-metric-mono text-body-sm text-on-surface font-semibold">9 leads</span>
+<span class="font-label-sm text-[10px] text-tertiary uppercase font-bold">Light</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim rounded-full" style="width: 45%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Active
+                  </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap font-body-sm text-body-sm text-on-surface-variant">
+                  2h ago
+                </td>
+<td class="py-4 px-4 whitespace-nowrap text-right">
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-4 bg-surface-container-low/30 flex flex-col sm:flex-row items-center justify-between gap-3 font-body-sm text-body-sm text-on-surface-variant">
+<span>Showing 3 of 3 members in Northstar Digital</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded-lg bg-surface-container-high text-on-surface-variant/50 cursor-not-allowed" disabled="" type="button">Previous</button>
+<span class="px-2 py-1 font-label-sm text-label-sm text-on-surface font-bold">1</span>
+<button class="px-3 py-1 rounded-lg bg-surface-container-high text-on-surface-variant/50 cursor-not-allowed" disabled="" type="button">Next</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Open Slide-out Drawer: "Invite New Member" -->
+<div class="w-full xl:w-[420px] shrink-0 bg-surface-container-lowest rounded-2xl shadow-[0_20px_50px_rgba(20,25,40,0.14)] flex flex-col overflow-hidden relative self-stretch" id="inviteDrawer">
+<!-- Drawer Header -->
+<div class="p-5 bg-surface-container-low flex items-center justify-between shrink-0">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">Invite New Member</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Configure lead routing &amp; seat</span>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content -->
+<div class="p-5 flex-1 flex flex-col gap-5 overflow-y-auto">
+<!-- Upgrade Warning Inside Drawer -->
+<div class="p-4 rounded-xl bg-[#FEF8EC] text-on-surface flex flex-col gap-2">
+<div class="flex items-center gap-2 text-[#F5A524] font-semibold">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="font-label-md text-label-md tracking-tight">Seat Quota Reached</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Your Starter Plan includes 3 team seats. Inviting this member will add <strong>+1 seat ($24/mo)</strong> or upgrade your workspace to Premium for unlimited team collaboration.
+          </p>
+</div>
+<!-- Form Elements -->
+<div class="flex flex-col gap-4">
+<!-- Work Email -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Work Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[18px] text-outline">mail</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container-low rounded-xl font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="colleague@northstardigital.com" type="email" value="priya.sharma@northstardigital.com"/>
+</div>
+</div>
+<!-- Role -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Role &amp; Permissions</label>
+<a class="font-label-sm text-label-sm text-primary hover:underline" href="#">View Matrix</a>
+</div>
+<div class="relative">
+<select class="w-full h-11 px-3.5 bg-surface-container-low rounded-xl font-body-md text-body-md text-on-surface focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 outline-none transition-all appearance-none cursor-pointer">
+<option selected="" value="rep">Sales Representative</option>
+<option value="manager">Sales Manager</option>
+<option value="admin">Admin</option>
+<option value="viewer">Viewer</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Can claim leads, reply in Team Inbox, and log qualifications.
+            </p>
+</div>
+<!-- Team Assignment -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Team Assignment</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="p-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Inbound Sales</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span>Enterprise SDR</span>
+</button>
+</div>
+</div>
+<!-- Website Access -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Website &amp; Lead Source Access</label>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-primary" type="checkbox"/>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold">northstardigital.com</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Primary marketing site and inbound AI widget</span>
+</div>
+</label>
+<label class="flex items-center gap-3 cursor-pointer opacity-70">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary" type="checkbox"/>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface">demo.northstardigital.com</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Product sandbox widget</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Routing Priority / Workload Cap -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Max Active Leads Cap</label>
+<span class="font-metric-mono text-label-md text-primary font-bold">15 leads</span>
+</div>
+<input class="w-full accent-primary-container cursor-pointer" max="30" min="5" type="range" value="15"/>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>5 (Light)</span>
+<span>15 (Standard)</span>
+<span>30 (Heavy)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Sticky Footer -->
+<div class="p-4 bg-surface-container-low flex items-center justify-between gap-3 shrink-0">
+<button class="px-4 py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" type="button">
+          Cancel
+        </button>
+<button class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_8px_20px_rgba(49,82,244,0.3)] hover:opacity-95 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">credit_card</span>
+<span>Upgrade to Add Seat ($24/mo)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Ensure the left sidebar 'Team' navigation item is actively highlighted per critical prompt requirements
+  (function setActiveSidebarNavigation() {
+    const navLinks = document.querySelectorAll('aside nav a[data-path]');
+    navLinks.forEach(link => {
+      if (link.getAttribute('data-path') === 'team') {
+        link.className = 'flex items-center gap-3 px-3 py-2 rounded-xl bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(49,82,244,0.3)]';
+        const icon = link.querySelector('.material-symbols-outlined');
+        if (icon) icon.className = 'material-symbols-outlined text-[20px] text-on-primary';
+      } else {
+        link.className = 'flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors';
+        const icon = link.querySelector('.material-symbols-outlined');
+        if (icon) icon.className = 'material-symbols-outlined text-[20px] text-on-surface-variant';
+      }
+    });
+  })();
+</script></main></div></div></div></body></html>
