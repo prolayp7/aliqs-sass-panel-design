@@ -12,7 +12,7 @@ const concepts = [
   },
   { id: "02", name: "Calm Intelligence", description: "An executive lead platform: nested floating white panels, cobalt actions, and a charcoal hero anchor.", palette: ["#F3F4F6", "#FFFFFF", "#3152F4", "#151515", "#20B486"], href: "/design-02", available: true },
   { id: "03", name: "Ignition Desk", description: "A dealership-grade operations desk: dark navy command shell, glowing orange actions, and priority-coded lead cards built for high-velocity follow-up.", palette: ["#020617", "#f97316", "#3b82f6", "#ef4444", "#10b981"], href: "/design-03", available: true },
-  { id: "04", name: "Pipeline Canvas", description: "A visual journey from capture to sales action.", palette: ["#F7F8FA", "#4F46E5", "#EA4B35"], available: false },
+  { id: "04", name: "Clarity Desk", description: "The category standard at Stripe/Linear finish: white canvas, one confident sky-blue accent, and a clean grid — Ignition Desk's layout, reimagined bright.", palette: ["#F8FAFC", "#FFFFFF", "#0EA5E9", "#EF4444", "#10B981"], href: "/design-04", available: true },
   { id: "05", name: "Midnight Terminal", description: "A dark analytical command center for RevOps.", palette: ["#07090D", "#818CF8", "#22D3EE"], available: false },
   { id: "06", name: "Carbon Lime Inspector", description: "A dense lead queue with persistent AI intelligence.", palette: ["#080A09", "#D9FF62", "#B9A7FF"], available: false },
 ];
@@ -32,7 +32,7 @@ export default function Gallery() {
         <div>
           <h1>Six ways to make every lead actionable.</h1>
         </div>
-        <p>Choose a direction to review the same qualification workflow through a different visual and operational lens. Designs 01, 02, and 03 are ready to explore.</p>
+        <p>Choose a direction to review the same qualification workflow through a different visual and operational lens. Designs 01, 02, 03, and 04 are ready to explore.</p>
       </section>
 
       <section className="concept-grid" aria-label="Design concepts">
