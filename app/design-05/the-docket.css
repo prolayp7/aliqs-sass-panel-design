@@ -1,0 +1,46 @@
+/* The Docket — monochrome editorial system.
+   Layout lives on Tailwind utilities; this file only holds what Tailwind can't
+   express cleanly: the marquee loop, the in-place exhibit unfold, and the
+   skeleton shimmer used for the loading-state demonstration. */
+
+.td-shell { font-variant-numeric: tabular-nums; }
+.td-shell *:focus-visible { outline: 2px solid #0a0a0a; outline-offset: 2px; }
+.td-shell ::selection { background: #0a0a0a; color: #fff; }
+.td-shell ::-webkit-scrollbar { width: 8px; height: 8px; }
+.td-shell ::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 999px; }
+
+/* Signal ticker */
+.td-marquee-wrap { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.td-marquee-track { display: flex; width: max-content; animation: td-scroll 38s linear infinite; }
+.td-marquee-wrap:hover .td-marquee-track { animation-play-state: paused; }
+
+@keyframes td-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* In-place exhibit unfold (docket rows + inbox rows) */
+.td-exhibit { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 280ms cubic-bezier(.16,1,.3,1); }
+.td-exhibit.td-open { grid-template-rows: 1fr; }
+.td-exhibit > div { overflow: hidden; }
+
+/* Overlay entrances */
+@keyframes td-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes td-fade-fast { from { opacity: 0; transform: translateY(-4px) scale(.98); } to { opacity: 1; transform: none; } }
+.td-pop { animation: td-fade 200ms ease-out; }
+.td-pop-fast { animation: td-fade-fast 150ms ease-out; }
+
+/* Skeleton shimmer for the loading-state demonstration */
+.td-skel { position: relative; overflow: hidden; background: #efefef; }
+.td-skel::after { content: ""; position: absolute; inset: 0; transform: translateX(-100%); background: linear-gradient(90deg, transparent, rgba(255,255,255,.9), transparent); animation: td-shimmer 1.3s infinite; }
+@keyframes td-shimmer { to { transform: translateX(100%); } }
+
+.td-spin { animation: td-rotate 900ms linear infinite; }
+@keyframes td-rotate { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .td-marquee-track { animation: none; }
+  .td-skel::after { animation: none; }
+  .td-spin { animation: none; }
+  .td-exhibit { transition: none; }
+}

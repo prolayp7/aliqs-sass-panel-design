@@ -1,0 +1,28 @@
+/* The Registry — Twenty-CRM-inspired object workspace.
+   Layout lives on Tailwind utilities; this file only holds what Tailwind can't
+   express cleanly: focus/selection theming, the skeleton shimmer, and the
+   record-view cross-fade. */
+
+.reg-shell { font-variant-numeric: tabular-nums; }
+.reg-shell *:focus-visible { outline: 2px solid #3E63DD; outline-offset: 1px; border-radius: 4px; }
+.reg-shell ::selection { background: #3E63DD; color: #fff; }
+.reg-shell ::-webkit-scrollbar { width: 8px; height: 8px; }
+.reg-shell ::-webkit-scrollbar-thumb { background: #d8d8dc; border-radius: 999px; }
+
+@keyframes reg-fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes reg-fade-fast { from { opacity: 0; transform: translateY(-4px) scale(.98); } to { opacity: 1; transform: none; } }
+.reg-pop { animation: reg-fade 190ms ease-out; }
+.reg-pop-fast { animation: reg-fade-fast 140ms ease-out; }
+
+.reg-skel { position: relative; overflow: hidden; background: #efeff1; }
+.reg-skel::after { content: ""; position: absolute; inset: 0; transform: translateX(-100%); background: linear-gradient(90deg, transparent, rgba(255,255,255,.9), transparent); animation: reg-shimmer 1.3s infinite; }
+@keyframes reg-shimmer { to { transform: translateX(100%); } }
+
+.reg-spin { animation: reg-rotate 900ms linear infinite; }
+@keyframes reg-rotate { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .reg-skel::after { animation: none; }
+  .reg-spin { animation: none; }
+  .reg-pop, .reg-pop-fast { animation: none; }
+}
